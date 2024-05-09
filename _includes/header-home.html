@@ -1,0 +1,46 @@
+<header class="header-home" role="banner">
+  <!-- wrap -->
+  <div class="wrap container-fluid">
+    <!-- row main-nav-->
+    <nav class="row middle-xs">
+      <!-- col -->
+      <div class="col-xs-6 start-xs">
+        <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      </div>
+      <!-- col end -->
+      <!-- col -->
+      <div class="col-xs-6 end-xs">
+        <ul>
+          <li><a href="#">Ubicación y horarios</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">Signal</a></li>
+        </ul>
+      </div>
+      <!-- col end -->
+    </nav>
+    <!-- row main-nav end -->
+    <!-- row -->
+    <div class="row reverse middle-xs">
+      <!-- col -->
+      <div class="col-xs-12 col-sm-5">
+        <figure>
+          <img src="{{ page.hamburguesa }}">
+        </figure>
+      </div>
+      <!-- col end -->
+      <!-- col -->
+      <div class="col-xs-12 col-sm-7">
+        <h1 class="giant">{{ page.title }}</h1>
+        <ul>
+          <li><a href="#">¿Dónde?</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <!-- col end -->
+    </div>
+    <!-- row end -->
+  </div>
+  <!-- wrap end -->
+</header>
