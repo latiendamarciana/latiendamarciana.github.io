@@ -8,17 +8,124 @@ body{
 	font-family: $paragraph;
 	background-color: $bright;
 	color: $purple;
+	font-kerning: auto;
+}
+
+ul{
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+
+.inline.list{
+	& li{
+		display: inline-block;
+	}
 }
 
 // Text
 
 h1, h2, h3, h4, h5, h6{
 	font-family: $heading;
-	font-weight: 100;
+	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
+  	font-variation-settings:
+    "wdth" 100;
+	text-transform: uppercase;
+	color: $purple;
+}
+
+h2, h3, h4, h5, h6{
+	letter-spacing: .1rem;
 }
 
 a{
 	color: inherit;
+	&:hover{
+		color: inherit;
+	}
 }
 
+h1.giant{
+	font-size: 2.027rem;
+}
 
+h1{
+	font-size: 2.027rem;
+	letter-spacing: .125rem;
+}
+
+h2{
+	font-size: 1.602rem;
+}
+
+h3{
+	font-size: 1.424rem;
+}
+
+h4{
+	font-size: 1.266rem;
+}
+
+p.mid{
+	font-size: 1.125rem;
+}
+
+p.base{
+	font-size: 1rem;
+}
+
+p.small{
+	font-size: .79rem;
+}
+
+// Buttons/links
+
+.button{
+	display: inline-block;
+	font-family: $heading;
+	text-transform: uppercase;
+}
+
+.button.big{
+	font-size: 1.424rem;
+	letter-spacing: .15rem;
+	padding: .375rem 1rem;
+	border: 2px solid $purple;
+}
+
+.link{
+	font-family: $heading;
+	text-transform: uppercase;
+}
+
+.link.big{
+	font-size: 1.802rem;
+	letter-spacing: .1rem;
+}
+
+.link.mid{
+	font-size: 1.602rem;
+	letter-spacing: .12rem;
+}
+
+// Sections
+
+header{
+	background-color: $purple;
+	& h1{
+		color: $red-orange-light;
+	}
+	& .button{
+		background-color: $bright;
+		border: 2px $bright solid !important;
+	}
+	& .ghost{
+		background-color: $transparent;
+		border: 2px $bright solid !important;
+		color: $bright;
+	}
+}
