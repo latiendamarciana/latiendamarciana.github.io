@@ -122,6 +122,9 @@ header{
 	& .button{
 		background-color: $bright;
 		border: 2px $bright solid !important;
+		&:hover{
+			text-decoration: none;
+		}
 	}
 	& .ghost{
 		background-color: $transparent;
