@@ -2,14 +2,23 @@
 @import 'variables';
 
 
-// Texto
+// General
 
 body{
-	font-family: "Jost", sans-serif;
+	font-family: $paragraph;
+	background-color: $bright;
+	color: $purple;
 }
 
-h1, h2, h3, h4{
-	font-family: "League Gothic", sans-serif;
+// Text
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $heading;
 	font-weight: 100;
 }
+
+a{
+	color: inherit;
+}
+
 
