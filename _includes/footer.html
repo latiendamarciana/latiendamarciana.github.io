@@ -1,35 +1,45 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
+<footer>
+  <!-- wrapper -->
+  <div class="wrapper container-fluid">
+    <!-- row -->
+    <div class="row">
+      <!-- col -->
+      <div class="col-xs-12 col-sm-2">
+        <a rel="author" href="{{ "/" | relative_url }}">
+          <img src="../assets/images/marciana.svg" alt="">
+        </a>
+      </div>
+      <!-- col end -->
+      <!-- col -->
+      <div class="col-xs-12 col-sm-4">
+        <ul>
+          <li><a href="#">313 2240575</a></li>
+          <li><a href="#">latiendamarciana@pm.me</a></li>
+        </ul>        
+      </div>
+      <!-- col end -->
+      <!-- col -->
+      <div class="col-xs-12 col-sm-6">
+        <ul>
+          <li><a href="#">Ubicación y horarios</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">Signal</a></li>
         </ul>
       </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
+      <!-- col end -->
     </div>
-
+    <!-- row end -->
+    <!-- row -->
+    <div class="row">
+      <!-- col -->
+      <div class="col-xs-12 col-sm-offset-2">
+        <p>@2024 Fluorescente.design Hecho con <3 en Medellín.</p>
+      </div>
+      <!-- col end -->
+    </div>
+    <!-- row end -->
   </div>
-
+  <!-- wrapper end -->
 </footer>
