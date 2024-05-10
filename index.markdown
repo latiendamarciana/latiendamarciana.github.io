@@ -5,4 +5,5 @@ layout: home
 hamburguesa: "/assets/images/hamburguesa.jpg"
 title: Hamburguesas veganas, calcas, música y accesorios.
 ubicacion-especial: "/assets/images/bazar.jpg"
+ubicacion-regular: "/assets/images/cervantes.jpg"
 ---
