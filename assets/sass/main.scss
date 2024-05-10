@@ -11,6 +11,12 @@ body{
 	font-kerning: auto;
 }
 
+.wrapper{
+	box-sizing: border-box;
+  	max-width: 71rem;
+  	margin: 0 auto;
+}
+
 ul{
 	padding: 0;
 }
@@ -23,6 +29,17 @@ li{
 	& li{
 		display: inline-block;
 	}
+}
+
+// UI kit
+
+.container-fluid{
+	padding-right: 1.5rem;
+  	padding-left: 1.5rem;
+}
+
+figure{
+	margin: 0;
 }
 
 // Text
@@ -112,6 +129,14 @@ p.small{
 	letter-spacing: .12rem;
 }
 
+// Nav
+
+nav{
+	& .nav-links{
+		color: $bright;
+	}
+}
+
 // Sections
 
 header{
@@ -131,4 +156,8 @@ header{
 		border: 2px $bright solid !important;
 		color: $bright;
 	}
+}
+
+footer{
+	background-color: $yellow;
 }
