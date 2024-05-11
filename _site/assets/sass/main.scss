@@ -50,17 +50,9 @@ figure{
 
 h1, h2, h3, h4, h5, h6{
 	font-family: $heading;
-	font-optical-sizing: auto;
-  	font-weight: 400;
-  	font-style: normal;
-  	font-variation-settings:
-    "wdth" 100;
 	text-transform: uppercase;
 	color: $purple;
-}
-
-h2, h3, h4, h5, h6{
-	letter-spacing: .1rem;
+	letter-spacing: .125rem;
 }
 
 a{
@@ -72,15 +64,29 @@ a{
 
 h1.giant{
 	font-size: 2.027rem;
+	line-height: 100%;
+	letter-spacing: .3rem;
+}
+
+h2.giant{
+	font-size: 2.027rem;
+	line-height: 100%;
+	letter-spacing: .3rem;
+}
+
+h3.giant{
+	font-size: 2.027rem;
+	letter-spacing: .2rem;
 }
 
 h1{
 	font-size: 2.027rem;
-	letter-spacing: .125rem;
+	letter-spacing: .2rem;
 }
 
 h2{
 	font-size: 1.602rem;
+	letter-spacing: .175rem;
 }
 
 h3{
@@ -137,7 +143,7 @@ p.small{
 			width: 0%;
 			background-color: $transparent;
 			position: relative;
-			top: 0;
+			top: 6px;
 			transition: width .5s;
 		}
 		&:hover{
@@ -158,7 +164,17 @@ p.small{
 
 .link.mid{
 	font-size: 1.602rem;
-	letter-spacing: .16rem;
+	letter-spacing: .175rem;
+}
+
+.link.icon{
+	font-size: 1.625rem;
+	& a{
+		&:after{
+			content: none;
+		}
+	}
+
 }
 
 // Nav
