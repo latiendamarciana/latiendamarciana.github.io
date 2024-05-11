@@ -226,13 +226,44 @@ footer{
 	background-color: $yellow;
 }
 
+// Slideshow
+.slideshow{
+}
+
+.slideshow-buttons{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: -50%;
+	& li{
+		display: inline-block;
+		z-index: 1;
+	}
+}
+
+.slideshow-dotnav{
+	display: flex;
+	margin-top: 37.5%;
+	justify-content: center;
+	& li{
+		display: inline-block;
+		z-index: 1;
+		color: $bright;
+		&:hover{
+			color: $purple;
+		}
+	}
+
+}
+
 // Sr only
 
- .sr-only {
-	position:absolute;
-	left:-10000px;
-	top:auto;
-	width:1px;
-	height:1px;
-	overflow:hidden;
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
 }

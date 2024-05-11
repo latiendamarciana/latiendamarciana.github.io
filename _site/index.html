@@ -42,9 +42,9 @@
   <!-- wrap -->
   <div class="wrapper container-fluid">
     <!-- row main-nav desk-->
-    <nav class="row main-nav desk hidden-xs visible-flex-lg middle-lg">
+    <nav class="row main-nav desk hidden-xs hidden-sm visible-flex-lg middle-lg">
       <!-- col -->
-      <div class="col-lg-3">
+      <div class="col-sm-3">
         <div class="sr-only">
           <h1>La tienda marciana</h1>
         </div>
@@ -54,7 +54,7 @@
       </div>
       <!-- col end -->
       <!-- col -->
-      <div class="col-lg-9 end-lg">
+      <div class="col-sm-9 end-sm">
         <ul>
           <li class="link mid"><a href="#">Ubicación y horarios</a></li>
           <li class="link mid"><a href="#">Productos</a></li>
@@ -70,9 +70,32 @@
     <div class="row reverse middle-xs">
       <!-- col -->
       <div class="col-xs-12 col-sm-5 hidden-xs visible-sm">
-        <figure>
-          <img src="/assets/images/hamburguesa.jpg">
-        </figure>
+        <!-- slideshow -->
+        <div uk-slideshow="animation: fade; ratio: 1:1; autoplay: true; autoplay-interval: 4000" class="slideshow">
+            <!-- slideshow items -->
+            <ul class="uk-slideshow-items">
+                <li>
+                    <img src="/assets/images/hamburguesa.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="/assets/images/hamburguesa-2.jpg" alt="" uk-cover>
+                </li>
+            </ul>
+            <!-- slideshow items end -->
+            <!-- slideshow buttons -->
+            <ul class="slideshow-buttons">
+              <li><a href uk-slideshow-item="previous"><span class="icon icon-prev"></span></a></li>
+              <li><a href uk-slideshow-item="next"><span class="icon icon-next"></span></a></li>
+            </ul>
+            <!-- slideshow buttons end -->
+            <!-- slideshow dotnav -->
+            <ul class="slideshow-dotnav">
+              <li uk-slideshow-item="0"><a href>1</a></li>
+              <li uk-slideshow-item="1"><a href>2</a></li>
+            </ul>
+            <!-- slideshow dotnav end -->
+        </div>
+        <!-- slideshow end -->
       </div>
       <!-- col end -->
       <!-- col -->
