@@ -31,6 +31,11 @@ li{
 	}
 }
 
+::selection, -moz-selection{
+  color: $bright;
+  background: $purple-dark;
+}
+
 // UI kit
 
 .container-fluid{
@@ -105,23 +110,51 @@ p.small{
 	display: inline-block;
 	font-family: $heading;
 	text-transform: uppercase;
+	&:hover{
+		transition: $transition;
+	}
 }
 
 .button.big{
 	font-size: 1.424rem;
 	letter-spacing: .15rem;
-	padding: .375rem 1rem;
-	border: 2px solid $purple;
+	padding: .5rem 1.2rem;
+	border: 3px solid $purple;
 }
 
 .link{
 	font-family: $heading;
 	text-transform: uppercase;
+	display: inline-block;
+	margin-right: 1.5rem;
+	&:last-child{
+		margin-right: 0;
+		}
+	& a{
+		&:after{
+			content: "";
+			display: block;
+			height: 2px;
+			width: 0%;
+			background-color: $transparent;
+			position: relative;
+			top: 0;
+			transition: width .5s;
+		}
+		&:hover{
+			text-decoration: none;
+			color: $red-orange-light;
+			&:after{
+				background-color: $red-orange-light;
+				width: 40%;
+			}
+		}
+	}	
 }
 
 .link.big{
 	font-size: 1.802rem;
-	letter-spacing: .1rem;
+	letter-spacing: .2rem;
 }
 
 .link.mid{
@@ -137,27 +170,54 @@ nav{
 	}
 }
 
+.main-nav.desk{
+	color: $bright;
+	padding: 2rem 0;
+	& ul{
+		display: inline-block;
+	}
+}
+
 // Sections
 
 header{
 	background-color: $purple;
 	& h1{
 		color: $red-orange-light;
+		margin-bottom: 2rem;
 	}
 	& .button{
 		background-color: $bright;
-		border: 2px $bright solid !important;
+		border: $bright solid !important;
+		margin-right: 1rem;
+		&:last-child{
+			margin-right: 0;
+		}
 		&:hover{
 			text-decoration: none;
+			background-color: $red-orange-light;
+			border: $red-orange-light solid !important;
+			color: $bright;
 		}
 	}
 	& .ghost{
 		background-color: $transparent;
-		border: 2px $bright solid !important;
+		border: $bright solid !important;
 		color: $bright;
 	}
 }
 
 footer{
 	background-color: $yellow;
+}
+
+// Sr only
+
+ .sr-only {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
 }

@@ -1,3 +1,5 @@
+@import 'font-face';
+@import 'variables';
 
 // xs - Up to 768px
 @media only screen and (max-width: 48em){
@@ -19,6 +21,30 @@
   .hidden-sm{
     display: none;
   }
+  // Text
+  h1.giant{
+    font-size: 4.624rem;
+    line-height: 100%;
+  }
+  h1{
+    font-size: 3.248rem;
+  }
+  h2{
+    font-size: 2.566rem;
+  }
+  h3{
+    font-size: 2.027rem;
+  }
+  h4{
+    font-size: 1.602rem;
+  }
+  // Buttons/links
+  .button.big{
+    font-size: 1.802rem;
+    letter-spacing: .2rem;
+    padding: .5rem 1.5rem;
+    border: 2px solid $purple;
+  }
 }
 
 // lg - from 962
@@ -27,10 +53,14 @@
   .visible-lg{
     display: block;
   }
-  .visible-lg-flex{
+  .visible-flex-lg{
     display: flex;
   }
   .hidden-lg{
     display: none;
   }
+  .container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+}
 }
