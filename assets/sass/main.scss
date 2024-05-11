@@ -131,7 +131,7 @@ p.small{
 	font-family: $heading;
 	text-transform: uppercase;
 	display: inline-block;
-	margin-right: 1.5rem;
+	margin-right: 1.25rem;
 	&:last-child{
 		margin-right: 0;
 		}
@@ -213,7 +213,7 @@ nav{
 	}
 	& .nav-buttons{
 		position: relative;
-		top: .5rem;
+		top: .6rem;
 		& .link{
 			& a{
 				&:hover{
