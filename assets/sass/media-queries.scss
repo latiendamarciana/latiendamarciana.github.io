@@ -68,5 +68,17 @@
   .container-fluid{
     padding-right: 0;
     padding-left: 0;
+  }
+  // Slideshow
+  .slideshow-dotnav{
+    margin-top: 30%;
+  }
 }
+
+// lg - from 1200
+@media only screen and (min-width: 75em) {
+  // Slideshow
+  .slideshow-dotnav{
+    margin-top: 32%;
+  }
 }

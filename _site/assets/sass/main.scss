@@ -193,6 +193,37 @@ nav{
 	}
 }
 
+
+.logo{
+	width: 100%;
+	aspect-ratio: 6 / 2.5;
+	background-image: url("../images/la-tienda-marciana-logo.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nav-shrink{
+	background-color: $brighter;
+	color: $purple !important;
+	padding: .5rem 0 !important;
+	& .logo{
+		width: 4.5rem;
+		aspect-ratio: 1 / 1;
+		background-image: url("../images/marciana.svg");
+	}
+	& .nav-buttons{
+		position: relative;
+		top: .5rem;
+		& .link{
+			& a{
+				&:hover{
+					color: $red-orange;
+				}
+			}
+		}
+	}
+}
+
 // Sections
 
 header{
@@ -234,26 +265,55 @@ footer{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: -50%;
+	margin-top: -55%;
 	& li{
 		display: inline-block;
 		z-index: 1;
+		& a{
+			font-size: 3rem;
+			color: $bright;
+			&:hover{
+				text-decoration: none;
+				color: $purple;
+			}
+		}
 	}
 }
 
 .slideshow-dotnav{
 	display: flex;
-	margin-top: 37.5%;
+	margin-top: 22%;
 	justify-content: center;
 	& li{
 		display: inline-block;
 		z-index: 1;
-		color: $bright;
-		&:hover{
-			color: $purple;
+		margin-right: 0.75rem;
+		&:last-child{
+			margin-right: 0;
 		}
 	}
-
+	& a{
+		&:before{
+			content: "";
+			display: inline-block;
+			width: 0.375rem;
+			height: 0.375rem;
+			background-color: $bright;
+			border-radius: 50%;
+		}
+		&:hover{
+			&:before{
+				background-color: $purple;
+			}
+		}
+	}
+	& .uk-active{
+		& a{
+			&:before{
+				background-color: $purple;
+			}
+		}
+	}
 }
 
 // Sr only

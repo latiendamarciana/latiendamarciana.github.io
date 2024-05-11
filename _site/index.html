@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.20.8/dist/css/uikit.min.css" />
   <!-- UIkit JS -->
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.20.8/dist/js/uikit.min.js"></script>
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- nav shrink -->
+  <script src="/assets/js/nav-shrink.js"></script>
   <!-- Custom styles -->
   <link rel="stylesheet" href="/assets/css/main.css">
   <!-- Media queries -->
@@ -39,47 +43,68 @@
   <link rel="manifest" href="/site.webmanifest">
 </head>
 <body><header class="header-home" role="banner">
+  <!-- main-nav desk-->
+  <nav id="main-nav-desk" class="main-nav desk hidden-xs hidden-sm visible-lg" uk-sticky="animation: start: 100; uk-animation-slide-top;">
+    <!-- wrap -->
+    <div class="wrapper container-fluid">
+      <!-- row -->
+      <div class="row middle-lg">
+        <!-- col -->
+        <div class="col-sm-3">
+          <div class="sr-only">
+            <h1>La tienda marciana</h1>
+          </div>
+          <a href="/">
+            <div class="logo">              
+            </div>
+          </a>
+        </div>
+        <!-- col end -->
+        <!-- col -->
+        <div class="col-sm-9 end-sm">
+          <ul class="nav-buttons">
+            <li class="link mid"><a href="#">Ubicación y horarios</a></li>
+            <li class="link mid"><a href="#">Productos</a></li>
+            <li class="link mid"><a href="#">Contacto</a></li>
+            <li class="link icon"><a href=""><span class="icon icon-telegram"></span></a></li>
+            <li class="link icon"><a href=""><span class="icon icon-signal"></span></a></li>
+          </ul>
+        </div>
+        <!-- col end -->        
+      </div>
+      <!-- row end -->
+    </div>
+    <!-- wrap end -->
+  </nav>
+  <!-- row main-nav desk end -->
   <!-- wrap -->
   <div class="wrapper container-fluid">
-    <!-- row main-nav desk-->
-    <nav class="row main-nav desk hidden-xs hidden-sm visible-flex-lg middle-lg">
-      <!-- col -->
-      <div class="col-sm-3">
-        <div class="sr-only">
-          <h1>La tienda marciana</h1>
-        </div>
-        <a href="/">
-          <img src="assets/images/la-tienda-marciana-logo.svg" alt="la tienda marciana">
-        </a>
-      </div>
-      <!-- col end -->
-      <!-- col -->
-      <div class="col-sm-9 end-sm">
-        <ul>
-          <li class="link mid"><a href="#">Ubicación y horarios</a></li>
-          <li class="link mid"><a href="#">Productos</a></li>
-          <li class="link mid"><a href="#">Contacto</a></li>
-          <li class="link icon"><a href=""><span class="icon icon-telegram"></span></a></li>
-          <li class="link icon"><a href=""><span class="icon icon-signal"></span></a></li>
-        </ul>
-      </div>
-      <!-- col end -->
-    </nav>
-    <!-- row main-nav desk end -->
     <!-- row -->
-    <div class="row reverse middle-xs">
+    <div class="row middle-xs">
+      <!-- col -->
+      <div class="col-xs-12 col-sm-7">
+        <h1 class="giant">Hamburguesas veganas, calcas, música y accesorios.</h1>
+        <div>
+          <a class="button big" href="#">¿Dónde?</a>
+          <a class="button big ghost" href="#">Contacto</a>
+        </div>
+      </div>
+      <!-- col end -->
       <!-- col -->
       <div class="col-xs-12 col-sm-5 hidden-xs visible-sm">
         <!-- slideshow -->
         <div uk-slideshow="animation: fade; ratio: 1:1; autoplay: true; autoplay-interval: 4000" class="slideshow">
             <!-- slideshow items -->
             <ul class="uk-slideshow-items">
+              
                 <li>
-                    <img src="/assets/images/hamburguesa.jpg" alt="" uk-cover>
+                    <img src="/assets/images/hamburguesa.jpg" alt="hamburguesa rica" uk-cover>
                 </li>
+              
                 <li>
-                    <img src="/assets/images/hamburguesa-2.jpg" alt="" uk-cover>
+                    <img src="/assets/images/hamburguesa-2.jpg" alt="hamburguesa buena" uk-cover>
                 </li>
+              
             </ul>
             <!-- slideshow items end -->
             <!-- slideshow buttons -->
@@ -90,23 +115,14 @@
             <!-- slideshow buttons end -->
             <!-- slideshow dotnav -->
             <ul class="slideshow-dotnav">
-              <li uk-slideshow-item="0"><a href>1</a></li>
-              <li uk-slideshow-item="1"><a href>2</a></li>
+              <li uk-slideshow-item="0"><a href></a></li>
+              <li uk-slideshow-item="1"><a href></a></li>
             </ul>
             <!-- slideshow dotnav end -->
         </div>
-        <!-- slideshow end -->
+        <!-- slideshow end -->  
       </div>
-      <!-- col end -->
-      <!-- col -->
-      <div class="col-xs-12 col-sm-7">
-        <h1 class="giant">Hamburguesas veganas, calcas, música y accesorios.</h1>
-        <div>
-          <a class="button big" href="#">¿Dónde?</a>
-          <a class="button big ghost" href="#">Contacto</a>
-        </div>
-      </div>
-      <!-- col end -->
+      <!-- col end -->      
     </div>
     <!-- row end -->
   </div>
