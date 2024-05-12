@@ -194,7 +194,7 @@ nav{
 }
 
 .main-nav.mobile{
-	background-color: $bright;
+	background-color: $brighter;
 	padding: 0.5rem 0;
 	&{
 		.hamburger{
@@ -255,6 +255,8 @@ nav{
  	color: $bright;
  	font-family: $heading;
  	& .link{
+ 		display: block;
+ 		margin: 0;
  		& a{
  			&:after{
  			 	content: none;
@@ -367,6 +369,19 @@ footer{
 				background-color: $purple;
 			}
 		}
+	}
+}
+
+.slideshow.mobile{
+	margin-bottom: 2.5rem;
+	& .slideshow-buttons{
+		margin-top: -40%;
+		& a{
+			font-size: 2rem;
+		}
+	}
+	& .slideshow-dotnav{
+		margin-top: 18%;
 	}
 }
 

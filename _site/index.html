@@ -104,6 +104,39 @@
     <!-- wrapper end -->
   </nav>
   <!-- main nav mobile end -->
+  <!-- wrapper -->
+  <div class="wrapper visible-xs hidden-sm hidden-lg">
+    <!-- slideshow -->
+    <div uk-slideshow="animation: fade; ratio: 3:2; autoplay: true; autoplay-interval: 4000" class="slideshow mobile">
+        <!-- slideshow items -->
+        <ul class="uk-slideshow-items">
+          
+            <li>
+                <img src="/assets/images/hamburguesa.jpg" alt="hamburguesa rica" uk-cover>
+            </li>
+          
+            <li>
+                <img src="/assets/images/hamburguesa-2.jpg" alt="hamburguesa buena" uk-cover>
+            </li>
+          
+        </ul>
+        <!-- slideshow items end -->
+        <!-- slideshow buttons -->
+        <ul class="slideshow-buttons">
+          <li><a href uk-slideshow-item="previous"><span class="icon icon-prev"></span></a></li>
+          <li><a href uk-slideshow-item="next"><span class="icon icon-next"></span></a></li>
+        </ul>
+        <!-- slideshow buttons end -->
+        <!-- slideshow dotnav -->
+        <ul class="slideshow-dotnav">
+          <li uk-slideshow-item="0"><a href></a></li>
+          <li uk-slideshow-item="1"><a href></a></li>
+        </ul>
+        <!-- slideshow dotnav end -->
+    </div>
+    <!-- slideshow end -->    
+  </div>
+  <!-- wrapper end -->
   <!-- wrap -->
   <div class="wrapper container-fluid">
     <!-- row -->
@@ -288,6 +321,12 @@
               <ul class="modal-nav-links">
                 <li class="link mid">
                   <a href="">Ubicación y horarios</a>
+                </li>
+                <li class="link mid">
+                  <a href="">Productos</a>
+                </li>
+                <li class="link mid">
+                  <a href="">Contacto</a>
                 </li>
               </ul>
             </div>

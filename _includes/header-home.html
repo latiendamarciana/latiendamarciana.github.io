@@ -60,6 +60,35 @@
     <!-- wrapper end -->
   </nav>
   <!-- main nav mobile end -->
+  <!-- wrapper -->
+  <div class="wrapper visible-xs hidden-sm hidden-lg">
+    <!-- slideshow -->
+    <div uk-slideshow="animation: fade; ratio: 3:2; autoplay: true; autoplay-interval: 4000" class="slideshow mobile">
+        <!-- slideshow items -->
+        <ul class="uk-slideshow-items">
+          {% for hamburguesas in page.hamburguesas %}
+            <li>
+                <img src="{{ hamburguesas }}" uk-cover>
+            </li>
+          {% endfor %}
+        </ul>
+        <!-- slideshow items end -->
+        <!-- slideshow buttons -->
+        <ul class="slideshow-buttons">
+          <li><a href uk-slideshow-item="previous"><span class="icon icon-prev"></span></a></li>
+          <li><a href uk-slideshow-item="next"><span class="icon icon-next"></span></a></li>
+        </ul>
+        <!-- slideshow buttons end -->
+        <!-- slideshow dotnav -->
+        <ul class="slideshow-dotnav">
+          <li uk-slideshow-item="0"><a href></a></li>
+          <li uk-slideshow-item="1"><a href></a></li>
+        </ul>
+        <!-- slideshow dotnav end -->
+    </div>
+    <!-- slideshow end -->    
+  </div>
+  <!-- wrapper end -->
   <!-- wrap -->
   <div class="wrapper container-fluid">
     <!-- row -->
