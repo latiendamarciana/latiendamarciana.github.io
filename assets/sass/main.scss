@@ -63,7 +63,7 @@ a{
 }
 
 h1.giant{
-	font-size: 2.027rem;
+	font-size: 2.281rem;
 	line-height: 100%;
 	letter-spacing: .3rem;
 }
@@ -193,6 +193,20 @@ nav{
 	}
 }
 
+.main-nav.mobile{
+	background-color: $bright;
+	padding: 0.5rem 0;
+	&{
+		.hamburger{
+			font-size: 1.75rem;
+			&:hover{
+				text-decoration: none;
+				color: $orange;
+			}
+		}
+	}
+}
+
 
 .logo{
 	width: 100%;
@@ -200,6 +214,12 @@ nav{
 	background-image: url("../images/la-tienda-marciana-logo.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.logo.xs{
+	width: 4rem;
+	aspect-ratio: 1 / 1;
+	background-image: url("../images/marciana.svg");	
 }
 
 .nav-shrink{
@@ -224,13 +244,47 @@ nav{
 	}
 }
 
+#modal-nav{
+	background-color: $purple;
+	& .wrapper{
+		background-color: $purple;
+	}
+}
+
+.modal-nav-links{
+ 	color: $bright;
+ 	font-family: $heading;
+ 	& .link{
+ 		& a{
+ 			&:after{
+ 			 	content: none;
+ 			}
+ 		}
+ 	}
+}
+
+.modal-close{
+	font-size: 1.75rem;
+	margin-top: 1.5rem;
+	color: $bright;
+	&:hover{
+		text-decoration: none;
+		color: $orange;
+	} 
+	& svg{
+		display: none;
+	}
+}
+
 // Sections
 
-header{
+.header-home{
 	background-color: $purple;
+	padding-bottom: 2rem;
+	margin-bottom: 1.5rem;
 	& h1{
 		color: $red-orange-light;
-		margin-bottom: 2rem;
+		margin-bottom: 1.5rem;
 	}
 	& .button{
 		background-color: $bright;
@@ -257,9 +311,9 @@ footer{
 	background-color: $yellow;
 }
 
+
+
 // Slideshow
-.slideshow{
-}
 
 .slideshow-buttons{
 	display: flex;

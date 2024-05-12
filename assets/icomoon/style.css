@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ycz522');
-  src:  url('fonts/icomoon.eot?ycz522#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ycz522') format('truetype'),
-    url('fonts/icomoon.woff?ycz522') format('woff'),
-    url('fonts/icomoon.svg?ycz522#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ge8tx5');
+  src:  url('fonts/icomoon.eot?ge8tx5#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ge8tx5') format('truetype'),
+    url('fonts/icomoon.woff?ge8tx5') format('woff'),
+    url('fonts/icomoon.svg?ge8tx5#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -45,4 +45,7 @@
 }
 .icon-next:before {
   content: "\e906";
+}
+.icon-hamburger-bite:before {
+  content: "\e907";
 }

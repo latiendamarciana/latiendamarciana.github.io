@@ -76,7 +76,34 @@
     </div>
     <!-- wrap end -->
   </nav>
-  <!-- row main-nav desk end -->
+  <!-- main-nav desk end -->
+  <!-- main nav mobile -->
+  <nav id="main-nav-mobile" class="main-nav mobile visible-xs hidden-lg" uk-sticky="start: 200; animation: uk-animation-slide-top; show-on-up: true">
+    <!-- wrapper -->
+    <div class="wrapper container-fluid">
+      <!-- row -->
+      <div class="row middle-xs">
+        <!-- col -->
+        <div class="col-xs-6">
+          <a href="/">
+            <div class="logo xs">              
+            </div>
+          </a>
+        </div>
+        <!-- col end -->
+        <!-- col -->
+        <div class="col-xs-6 end-xs">
+          <a class="hamburger" uk-toggle="target: #modal-nav">
+            <span class="icon icon-hamburger-bite"></span>
+          </a>
+        </div>
+        <!-- col end -->
+      </div>
+      <!-- row end -->
+    </div>
+    <!-- wrapper end -->
+  </nav>
+  <!-- main nav mobile end -->
   <!-- wrap -->
   <div class="wrapper container-fluid">
     <!-- row -->
@@ -237,6 +264,40 @@
     <!-- row end -->
   </div>
   <!-- wrapper end -->
-</footer></body>
+</footer>
+
+<!-- Modal nav -->
+<div id="modal-nav" class="uk-modal-full" uk-modal>
+  <div class="uk-modal-dialog">
+        <!-- wrapper -->
+        <div class="wrapper container-fluid">
+          <!-- row -->
+          <div class="row">
+            <div class="col-xs-12 end-xs">
+              <a class="uk-modal-close modal-close" uk-close><span class="icon icon-close" type="button"></span></a>
+            </div>
+          </div>
+          <!-- row end -->
+          <!-- row -->
+          <div class="row center-xs">
+            <!-- col -->
+            <div class="col-xs-12">
+              <a href="/">
+                <img src="../assets/images/la-tienda-marciana-logo.svg" alt="">
+              </a>
+              <ul class="modal-nav-links">
+                <li class="link mid">
+                  <a href="">Ubicación y horarios</a>
+                </li>
+              </ul>
+            </div>
+            <!-- col end -->
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- wrapper end -->
+    </div>
+</div>
+<!-- Modal nav end --></body>
 
 </html>
