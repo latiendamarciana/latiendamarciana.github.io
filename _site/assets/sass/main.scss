@@ -105,14 +105,17 @@ h4{
 
 p.mid{
 	font-size: 1.125rem;
+	line-height: 125%;
 }
 
 p.base{
 	font-size: 1rem;
+	line-height: 125%;
 }
 
 p.small{
 	font-size: .79rem;
+	line-height: 125%;
 }
 
 // Buttons/links
@@ -341,6 +344,7 @@ nav{
 .location-hours{
 	& h2{
 		color: $red-orange;
+		margin-bottom: 1rem;
 	}
 }
 
@@ -349,7 +353,7 @@ nav{
 .regular-location{
 	margin-bottom: 2rem;
 	& figure{
-		margin-bottom: .75rem;
+		margin-bottom: 1.5rem;
 	}
 	& h3{
 		margin: 0 0 .25rem 0;
@@ -372,10 +376,14 @@ nav{
 		padding: 0 1rem 2rem 1rem;
 	}
 	& figure{
-		margin-bottom: 1rem;
+		margin-bottom: 1.5rem;
 	}
 	& h3{
 		color: $bright;
+		margin: 0 0 1rem 0;
+	}
+	p{
+		margin: 0 0 1rem 0;
 	}
 }
 
