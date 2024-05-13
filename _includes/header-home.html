@@ -1,65 +1,6 @@
 <header class="header-home" role="banner">
-  <!-- main-nav desk-->
-  <nav id="main-nav-desk" class="main-nav desk hidden-xs hidden-sm visible-lg" uk-sticky="animation: start: 100; uk-animation-slide-top;">
-    <!-- wrap -->
-    <div class="wrapper container-fluid">
-      <!-- row -->
-      <div class="row middle-lg">
-        <!-- col -->
-        <div class="col-sm-3">
-          <div class="sr-only">
-            <h1>La tienda marciana</h1>
-          </div>
-          <a href="/">
-            <div class="logo">              
-            </div>
-          </a>
-        </div>
-        <!-- col end -->
-        <!-- col -->
-        <div class="col-sm-9 end-sm">
-          <ul class="nav-buttons">
-            <li class="link mid"><a href="#">Ubicación y horarios</a></li>
-            <li class="link mid"><a href="#">Productos</a></li>
-            <li class="link mid"><a href="#">Contacto</a></li>
-            <li class="link icon"><a href=""><span class="icon icon-telegram"></span></a></li>
-            <li class="link icon"><a href=""><span class="icon icon-signal"></span></a></li>
-          </ul>
-        </div>
-        <!-- col end -->        
-      </div>
-      <!-- row end -->
-    </div>
-    <!-- wrap end -->
-  </nav>
-  <!-- main-nav desk end -->
-  <!-- main nav mobile -->
-  <nav id="main-nav-mobile" class="main-nav mobile visible-xs hidden-lg" uk-sticky="start: 200; animation: uk-animation-slide-top; show-on-up: true">
-    <!-- wrapper -->
-    <div class="wrapper container-fluid">
-      <!-- row -->
-      <div class="row middle-xs">
-        <!-- col -->
-        <div class="col-xs-6">
-          <a href="/">
-            <div class="logo xs">              
-            </div>
-          </a>
-        </div>
-        <!-- col end -->
-        <!-- col -->
-        <div class="col-xs-6 end-xs">
-          <a class="hamburger" uk-toggle="target: #modal-nav">
-            <span class="icon icon-hamburger-bite"></span>
-          </a>
-        </div>
-        <!-- col end -->
-      </div>
-      <!-- row end -->
-    </div>
-    <!-- wrapper end -->
-  </nav>
-  <!-- main nav mobile end -->
+  {%- include main-nav-desk.html -%}
+  {%- include main-nav-mobile.html -%}
   <!-- wrapper -->
   <div class="wrapper visible-xs hidden-sm hidden-lg">
     <!-- slideshow -->

@@ -46,6 +46,10 @@ figure{
 	margin: 0;
 }
 
+.no-padding{
+	padding: 0;
+}
+
 // Text
 
 h1, h2, h3, h4, h5, h6{
@@ -53,6 +57,7 @@ h1, h2, h3, h4, h5, h6{
 	text-transform: uppercase;
 	color: $purple;
 	letter-spacing: .125rem;
+	line-height: 100%;
 }
 
 a{
@@ -87,6 +92,7 @@ h1{
 h2{
 	font-size: 2.027rem;
 	letter-spacing: .175rem;
+	margin-bottom: 1rem;
 }
 
 h3{
@@ -207,7 +213,6 @@ nav{
 	}
 }
 
-
 .logo{
 	width: 100%;
 	aspect-ratio: 6 / 2.5;
@@ -300,10 +305,12 @@ nav{
 
 // Sections
 
+// Header
+
 .header-home{
 	background-color: $purple;
-	padding-bottom: 2rem;
-	margin-bottom: 1.5rem;
+	padding-bottom: 3rem;
+	margin-bottom: 2rem;
 	& h1{
 		color: $red-orange-light;
 		margin-bottom: 1.5rem;
@@ -329,11 +336,48 @@ nav{
 	}
 }
 
-footer{
-	background-color: $yellow;
+// Location
+
+.location-hours{
+	& h2{
+		color: $red-orange;
+	}
 }
 
+// Regular location
 
+.regular-location{
+	margin-bottom: 2rem;
+	& figure{
+		margin-bottom: .75rem;
+	}
+	& h3{
+		margin: 0 0 .25rem 0;
+	}
+	& h4{
+		margin: 0 0 .25rem 0;
+	}
+	p{
+		margin: 0 0 1rem 0;
+	}
+}
+
+// Special location
+
+.special-location{
+	background-color: $red-orange;
+	color: $bright;
+	margin-bottom: 3rem;
+	& .text{
+		padding: 0 1rem 2rem 1rem;
+	}
+	& figure{
+		margin-bottom: 1rem;
+	}
+	& h3{
+		color: $bright;
+	}
+}
 
 // Slideshow
 
@@ -404,6 +448,45 @@ footer{
 		margin-top: 18%;
 	}
 }
+
+// footer
+
+footer{
+	padding: 2rem 0 4rem 0;
+	background-color: $yellow;
+	& .marciana{
+		display: block;
+		margin-bottom: 2rem;
+	}
+	& .inline{
+		& li{
+			display: block !important;
+		}
+	}
+	& .social{
+		margin-top: .5rem;
+		margin-bottom: -.75rem;
+		& li{
+			display: inline-block;
+			margin-right: 1rem;
+			&:last-child{
+				margin-right: 0;
+			}
+			& a{
+				font-size: 2rem;
+			}
+		}
+	}
+	& .icon-heart{
+		color: $red-orange;
+		position: relative;
+		top: .15rem;
+	}
+	& .contact{
+		margin-bottom: 2.5rem;
+	}
+}
+
 
 // Sr only
 
