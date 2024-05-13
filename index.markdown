@@ -7,5 +7,7 @@ hamburguesas:
 - /assets/images/hamburguesa-2.jpg" alt="hamburguesa buena
 title: Hamburguesas veganas, calcas, música y accesorios.
 ubicacion-especial: "/assets/images/bazar.jpg"
+ubicacion-especial-32: "/assets/images/bazar-32.jpg"
 ubicacion-regular: "/assets/images/cervantes.jpg"
+ubicacion-regular-32: "/assets/images/cervantes-32.jpg"
 ---

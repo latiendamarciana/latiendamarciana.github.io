@@ -22,11 +22,13 @@
   }
   // Text
   h1.giant{
-    font-size: 4.624rem;
+    font-size: 3.25rem;
+    // font-size: 4.624rem;
     line-height: 100%;
   }
   h2.giant{
-    font-size: 4.624rem;
+    font-size: 3.25rem;
+    // font-size: 4.624rem;
     line-height: 100%;   
   }
   h3.giant{
@@ -50,6 +52,25 @@
     letter-spacing: .2rem;
     padding: .5rem 1.5rem;
     border: 2px solid $purple;
+  }
+  .header-home{
+    padding-top: 3.5rem;
+  }
+  #modal-nav{
+    .logo{
+      width: 60%;
+      margin: 0 auto 4rem auto;
+    }
+  }
+  .location-hours{
+    & h2{
+      margin-bottom: 1.5rem;
+    }
+  }
+  .special-location{
+    & figure{
+      margin-bottom: 0;
+    }
   }
 }
 
