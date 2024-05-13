@@ -67,9 +67,26 @@
       margin-bottom: 1.5rem;
     }
   }
+  .regular-location{
+    & figure{
+      margin-bottom: 0;
+    }
+    & .text{
+      padding-left: .5rem;
+    }
+  }
+  .color-col{
+     padding-left: 1rem;
+     padding-right: 1rem;
+    }
   .special-location{
     & figure{
       margin-bottom: 0;
+    }
+    & p{
+      &:last-child{
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -89,6 +106,9 @@
   .container-fluid{
     padding-right: 0;
     padding-left: 0;
+  }
+  h1.giant, h2.giant{
+    font-size: 4.624rem;
   }
   // Slideshow
   .slideshow-dotnav{
