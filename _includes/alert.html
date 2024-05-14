@@ -3,9 +3,9 @@
 	<div class="wrapper container-fluid">
 		<!-- row -->
 		<div class="row top-xs middle-sm">
-			{% for alert in site.data.alert%}
+			{% for alert in site.data.alert %}
 			<div class="col-xs-10">
-				<p class="base">{{ alert.text }} <a href="{{ alert.url }}">{{ alert.link }}</a></p>
+				<p class="base">{{ alert.text }} <a href="{{ alert.url }}" uk-scroll="offset: 40">{{ alert.link }}</a></p>
 			</div>
 			<div class="col-xs-2 end-xs">
 	          <a class="uk-alert-close close" uk-close><span class="icon icon-close"></span></a>
