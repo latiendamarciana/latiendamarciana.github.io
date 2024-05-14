@@ -21,15 +21,13 @@
                   <a href="/" class="logo">
                   </a>
                   <ul class="links">
-                    <li class="link mid">
-                      <a href="">Ubicación y horarios</a>
-                    </li>
-                    <li class="link mid">
-                      <a href="/productos">Productos</a>
-                    </li>
-                    <li class="link mid">
-                      <a href="">Contacto</a>
-                    </li>
+                    {% for post in site.pages %}
+                       {% if post.url != "/" and post.title != nil %}
+                       <li class="link mid">
+                          <a href="{{ post.url }}">{{ post.title }}</a>
+                       </li>
+                       {% endif %}
+                    {% endfor %} 
                   </ul>
                   <ul class="social inline list">
                     <li>
