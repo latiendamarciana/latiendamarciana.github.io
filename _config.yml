@@ -24,13 +24,27 @@ description: >- # this means to ignore newlines until "baseurl:"
   Hamburguesas veganas, calcas, música y accesorios.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  latiendamarciana
+github_username: latiendamarciana
 lang: es
+image: 
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+# variables
+telegram: https://t.me/latiendamarciana
+signal: https://signal.me/#eu/k39cdu6ixjsOUap1axbCoxnT9RqLmnbqMaUlSq6OnL1xpwThb8pGk7NvsPkKUaaB  
+email: latiendamarciana@pm.me
+
+location-heading: Ubicación y horarios
+days: Martes a sábado
+location: "Pasaje Cervantes: <br>Carrera 42A con calle 48."
+morning: 11:00 a.m a 2:30 p.m. - O hasta que se acaben las hamburguesas.
+night: 6:00 p.m. a 8:00 p.m. - O hasta que se acaben las hamburguesas.
+location-image-mobile: 
+location-image: 
 
 # Exclude from processing.
 # The following items will not be processed, by default.

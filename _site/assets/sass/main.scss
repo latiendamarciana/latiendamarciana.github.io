@@ -216,6 +216,12 @@ nav{
 	}
 }
 
+.link.icon{
+	& a{
+		transition: $transition-quick;
+	}
+}
+
 .logo{
 	width: 100%;
 	aspect-ratio: 6 / 2.5;
@@ -477,11 +483,6 @@ footer{
 		display: block;
 		margin-bottom: 2rem;
 	}
-	& .inline{
-		& li{
-			display: block !important;
-		}
-	}
 	& .social{
 		margin-top: .5rem;
 		margin-bottom: -.75rem;
@@ -492,6 +493,7 @@ footer{
 				margin-right: 0;
 			}
 			& a{
+				transition: $transition-quick;
 				font-size: 2rem;
 			}
 		}
@@ -503,6 +505,23 @@ footer{
 	}
 	& .contact{
 		margin-bottom: 2.5rem;
+	}
+}
+
+.footer-links, .contact{
+	& a{
+		transition: $transition-quick;
+	}
+}
+
+.closure{
+	& a{
+		transition: $transition-quick;
+		font-weight: 600;
+		&:hover{
+			color: $red-orange;
+			text-decoration: underline;
+		}
 	}
 }
 
