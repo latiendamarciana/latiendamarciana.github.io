@@ -58,7 +58,7 @@
   }
   #modal-nav{
     .logo{
-      width: 60%;
+      width: 50%;
       margin: 0 auto 4rem auto;
     }
   }
@@ -113,6 +113,54 @@
   // Slideshow
   .slideshow-dotnav{
     margin-top: 30%;
+  }
+  .header-home{
+    padding-top: 0;
+    padding-bottom: 5rem;
+    margin-bottom: 3rem;
+  }
+  .special-location{
+    margin-bottom: 4rem;
+    & .text{
+      padding-left: 2rem;
+    }
+  }
+  footer{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    .marciana{
+      position: relative;
+      top: -1.5rem;
+      margin-bottom: -1.5rem;
+    }
+    .contact{
+      & a{
+        &:hover{
+          text-decoration: none;
+          color: $red-orange;
+        }
+      }
+    }
+    .footer-links, .social{
+      display: inline-block;
+      & li{
+        display: inline-block;
+        margin-right: 1rem;
+        & a{
+          &:hover{
+            text-decoration: none;
+            color: $red-orange;
+          }
+        }
+      }
+      .social{
+        & li{
+          & a{
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
   }
 }
 
