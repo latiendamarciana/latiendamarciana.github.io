@@ -1,10 +1,10 @@
   {%- include main-nav-mobile.html -%}
-<header class="header-home" role="banner" uk-scrollspy="cls: uk-animation-fade; delay: 100">
+<header class="header-home" role="banner">
   {%- include main-nav-desk.html -%}
   <!-- wrapper -->
   <div class="wrapper visible-xs hidden-sm hidden-lg">
     <!-- slideshow -->
-    <div uk-slideshow="animation: fade; ratio: 3:2; autoplay: true; autoplay-interval: 4000" class="slideshow mobile">
+    <div uk-slideshow="animation: fade; ratio: 3:2; autoplay: true; autoplay-interval: 4000" class="slideshow mobile" uk-scrollspy="cls: uk-animation-fade; delay: 100">
         <!-- slideshow items -->
         <ul class="uk-slideshow-items">
           {% for hamburguesas in page.hamburguesas %}
@@ -33,7 +33,7 @@
   <!-- wrap -->
   <div class="wrapper container-fluid">
     <!-- row -->
-    <div class="row middle-xs">
+    <div class="row middle-xs" uk-scrollspy="cls: uk-animation-fade; delay: 100">
       <!-- col -->
       <div class="col-xs-12 col-sm-7">
         <h1 class="giant">{{ page.title }}</h1>
@@ -46,7 +46,7 @@
       <!-- col -->
       <div class="col-xs-12 col-sm-5 hidden-xs visible-sm">
         <!-- slideshow -->
-        <div uk-slideshow="animation: fade; ratio: 1:1; autoplay: true; autoplay-interval: 4000" class="slideshow">
+        <div uk-slideshow="animation: fade; ratio: 1:1; autoplay: true; autoplay-interval: 4000" class="slideshow" uk-scrollspy="cls: uk-animation-fade; delay: 100">
             <!-- slideshow items -->
             <ul class="uk-slideshow-items">
               {% for hamburguesas in page.hamburguesas %}

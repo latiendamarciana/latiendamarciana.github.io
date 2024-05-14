@@ -43,7 +43,7 @@
   <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>  <!-- main nav mobile -->
-  <nav id="main-nav-mobile" class="main-nav mobile visible-xs hidden-lg" uk-sticky="start: 200; animation: uk-animation-slide-top; show-on-up: true">
+  <nav id="main-nav-mobile" class="main-nav mobile visible-xs hidden-lg" uk-sticky="start: 200; animation: uk-animation-slide-top; show-on-up: true" uk-scrollspy="cls: uk-animation-fade; delay: 100">
     <!-- wrapper -->
     <div class="wrapper container-fluid">
       <!-- row -->
@@ -68,8 +68,8 @@
     </div>
     <!-- wrapper end -->
   </nav>
-  <!-- main nav mobile end --><header class="header-home" role="banner" uk-scrollspy="cls: uk-animation-fade; delay: 100">  <!-- main-nav desk-->
-  <nav id="main-nav-desk" class="main-nav desk hidden-xs hidden-sm visible-lg" uk-sticky="animation: start: 100; uk-animation-slide-top;">
+  <!-- main nav mobile end --><header class="header-home" role="banner">  <!-- main-nav desk-->
+  <nav id="main-nav-desk" class="main-nav desk hidden-xs hidden-sm visible-lg" uk-sticky="animation: start: 100; uk-animation-slide-top;" uk-scrollspy="cls: uk-animation-fade; delay: 100">
     <!-- wrap -->
     <div class="wrapper container-fluid">
       <!-- row -->
@@ -104,7 +104,7 @@
   <!-- main-nav desk end --><!-- wrapper -->
   <div class="wrapper visible-xs hidden-sm hidden-lg">
     <!-- slideshow -->
-    <div uk-slideshow="animation: fade; ratio: 3:2; autoplay: true; autoplay-interval: 4000" class="slideshow mobile">
+    <div uk-slideshow="animation: fade; ratio: 3:2; autoplay: true; autoplay-interval: 4000" class="slideshow mobile" uk-scrollspy="cls: uk-animation-fade; delay: 100">
         <!-- slideshow items -->
         <ul class="uk-slideshow-items">
           
@@ -137,7 +137,7 @@
   <!-- wrap -->
   <div class="wrapper container-fluid">
     <!-- row -->
-    <div class="row middle-xs">
+    <div class="row middle-xs" uk-scrollspy="cls: uk-animation-fade; delay: 100">
       <!-- col -->
       <div class="col-xs-12 col-sm-7">
         <h1 class="giant">Hamburguesas veganas, calcas, música y accesorios.</h1>
@@ -150,7 +150,7 @@
       <!-- col -->
       <div class="col-xs-12 col-sm-5 hidden-xs visible-sm">
         <!-- slideshow -->
-        <div uk-slideshow="animation: fade; ratio: 1:1; autoplay: true; autoplay-interval: 4000" class="slideshow">
+        <div uk-slideshow="animation: fade; ratio: 1:1; autoplay: true; autoplay-interval: 4000" class="slideshow" uk-scrollspy="cls: uk-animation-fade; delay: 100">
             <!-- slideshow items -->
             <ul class="uk-slideshow-items">
               
