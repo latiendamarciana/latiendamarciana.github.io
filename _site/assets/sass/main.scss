@@ -3,6 +3,27 @@
 
 // General
 
+.yellow{
+	background-color: $yellow;
+}
+
+.red-orange{
+	background-color: $red-orange;
+}
+
+.purple{
+	background-color: $purple;
+}
+
+.red-orange-light{
+	background-color: $red-orange-light;
+}
+
+
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	font-family: $paragraph;
 	background-color: $bright;
@@ -186,6 +207,43 @@ p.small{
 
 }
 
+// Alert
+
+.alert{
+	margin-bottom: 0;
+	background-color: $purple-dark;
+	color: $red-orange-light;
+	padding: 1rem 0 1.5rem 0;
+	& p{
+		margin-bottom: 0;
+		& a{
+			font-weight: 600;
+			text-decoration: none !important;
+			transition: $transition-quick;
+			&:hover{
+				text-decoration: underline !important;
+				color: $bright !important;
+			}
+		}
+	}
+	& svg{
+		display: none;
+	}
+	& .close{
+		position: relative;
+		top: .4rem;
+		left: 0;
+		font-size: 1rem;
+		color: $red-orange-light;
+		opacity: 1;
+		transition: $transition-quick;
+		&:hover{
+			text-decoration: none;
+			color: $bright;
+		}
+	}
+}
+
 // Nav
 
 nav{
@@ -345,6 +403,27 @@ nav{
 	}
 }
 
+.header{
+	padding-bottom: 0;
+	margin-bottom: 0;
+	& .nav-buttons{
+		& .link{
+			& a{
+				color: $purple;
+				&:hover{
+					color: $red-orange;
+					&:after{
+						background-color: $red-orange;
+					}
+				}
+				&:after{
+					color: $red-orange;
+				}
+			}
+		}
+	}
+}
+
 // Location
 
 .event-title{
@@ -386,9 +465,8 @@ nav{
 // Special location
 
 .special-location{
-	background-color: $red-orange;
 	color: $bright;
-	margin-bottom: 3rem;
+	margin-bottom: 1.5rem;
 	& .text{
 		padding: 0 1rem 2rem 1rem;
 	}
@@ -477,6 +555,7 @@ nav{
 // footer
 
 footer{
+	margin-top: 2rem;
 	padding: 2rem 0 4rem 0;
 	background-color: $yellow;
 	& .marciana{

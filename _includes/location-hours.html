@@ -5,7 +5,9 @@
 		<div class="row" uk-scrollspy="cls: uk-animation-fade; delay: 100">
 			<!-- col -->
 			<div class="col-xs-12">
-				<h2>Ubicación y horarios</h2>
+				{% for location in site.data.location-hours %}
+      				<h2>{{ location.heading }}</h2>
+    			{% endfor %}
 			</div>
 			<!-- col end -->
 		</div>
@@ -26,30 +28,29 @@
 					<!-- col end -->
 					<!-- col -->
 					<div class="col-xs-12 col-sm-6 text">
-						<h3>Martes a sábado:</h3>
-						<p class="mid">Pasaje Cervantes:<br>
-						Carrera 42A con calle 48.</p>
-						<h4>Mañana/Tarde</h4>
-						<p class="mid">11:00 a.m a 2:30 p.m. - O hasta que se acaben las hamburguesas.</p>
-						<h4>Noche</h4>
-						<p class="mid">6:00 p.m. a 8:00 p.m. - O hasta que se acaben las hamburguesas.</p>
-					</div>
+						{% for location in site.data.location-hours %}
+		      				<h3>{{ location.days }}</h3>
+		      				<p class="mid">{{ location.location }}</p>
+		      				<h4>{{ location.morning-heading }}</h4>
+		      				<p class="mid">{{ location.morning }}</p>
+		      				<h4>{{ location.night-heading }}</h4>
+		      				<p class="mid">{{ location.night }}</p>
+		    			{% endfor %}
 					<!-- col end -->
 				</div>
 				<!-- row end -->				
 			</div>
 			<!-- col end -->
 			<!-- col -->
-			<div class="col-xs-12 color-col">
+			{% for event in site.data.special-events %}
+				<div class="col-xs-12 color-col">
 				<!-- row -->
-				<div class="row special-location middle-sm">
+				<div id="eventos-especiales" class="row special-location {{ event.color }} middle-sm">
 					<!-- col -->
 					<div class="col-xs-12 col-sm-6 text">
-						<p class="base event-title">Evento</p>
-						<h3 class="giant">Vinilada vol.5</h3>
-						<p class="mid">Pasaje Cervantes:<br>
-						Carrera 42a con calle 48<br>
-						9:00 a.m a 4:00 p.m. - O hasta que se acaben las hamburguesas.</p>
+						<p class="base event-title">{{ event.pre-heading }}</p>
+						<h3 class="giant">{{ event.heading }}</h3>
+						<p class="mid">{{ event.text }}</p>
 					</div>
 					<!-- col end -->
 					<!-- col -->
@@ -64,6 +65,7 @@
 				<!-- row end -->				
 			</div>
 			<!-- col end -->
+			{% endfor %}
 		</div>
 		<!-- row end -->
 	</div>	

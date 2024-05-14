@@ -42,7 +42,24 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 </head>
-<body>  <!-- main nav mobile -->
+<body><div class="alert" uk-alert>
+	<!-- wrapper -->
+	<div class="wrapper container-fluid">
+		<!-- row -->
+		<div class="row top-xs middle-sm">
+			
+			<div class="col-xs-10">
+				<p class="base">Estaré en la Vinilada Marciana Vol.1, el domingo 1 de Junio. <a href="/#eventos-especiales">Más información.</a></p>
+			</div>
+			<div class="col-xs-2 end-xs">
+	          <a class="uk-alert-close close" uk-close><span class="icon icon-close"></span></a>
+			</div>
+			
+		</div>
+		<!-- row end -->
+	</div>
+	<!-- wrapper end -->
+</div>  <!-- main nav mobile -->
   <nav id="main-nav-mobile" class="main-nav mobile visible-xs hidden-lg" uk-sticky="start: 200; animation: uk-animation-slide-top; show-on-up: true" uk-scrollspy="cls: uk-animation-fade; delay: 100">
     <!-- wrapper -->
     <div class="wrapper container-fluid">
@@ -89,7 +106,7 @@
         <div class="col-sm-9 end-sm">
           <ul class="nav-buttons">
             <li class="link mid"><a href="#">Ubicación y horarios</a></li>
-            <li class="link mid"><a href="#">Productos</a></li>
+            <li class="link mid"><a href="/productos">Productos</a></li>
             <li class="link mid"><a href="#">Contacto</a></li>
             <li class="link icon"><a href=""><span class="icon icon-telegram"></span></a></li>
             <li class="link icon"><a href=""><span class="icon icon-signal"></span></a></li>
@@ -103,7 +120,7 @@
   </nav>
   <!-- main-nav desk end --><!-- wrapper -->
   <div class="wrapper visible-xs hidden-sm hidden-lg">
-    <!-- slideshow -->
+    <!-- slideshow mobile -->
     <div uk-slideshow="animation: fade; ratio: 3:2; autoplay: true; autoplay-interval: 4000" class="slideshow mobile" uk-scrollspy="cls: uk-animation-fade; delay: 100">
         <!-- slideshow items -->
         <ul class="uk-slideshow-items">
@@ -124,17 +141,20 @@
           <li><a href uk-slideshow-item="next"><span class="icon icon-next"></span></a></li>
         </ul>
         <!-- slideshow buttons end -->
-        <!-- slideshow dotnav -->
-        <ul class="slideshow-dotnav">
-          <li uk-slideshow-item="0"><a href></a></li>
-          <li uk-slideshow-item="1"><a href></a></li>
-        </ul>
-        <!-- slideshow dotnav end -->
+          <!-- slideshow dotnav -->
+          <ul class="slideshow-dotnav">
+            
+               <li uk-slideshow-item="0"><a href></a></li>
+            
+               <li uk-slideshow-item="1"><a href></a></li>
+            
+          </ul>
+          <!-- slideshow dotnav end -->
     </div>
     <!-- slideshow end -->    
   </div>
   <!-- wrapper end -->
-  <!-- wrap -->
+  <!-- wraper header -->
   <div class="wrapper container-fluid">
     <!-- row -->
     <div class="row middle-xs" uk-scrollspy="cls: uk-animation-fade; delay: 100">
@@ -149,7 +169,7 @@
       <!-- col end -->
       <!-- col -->
       <div class="col-xs-12 col-sm-5 hidden-xs visible-sm">
-        <!-- slideshow -->
+        <!-- slideshow desk -->
         <div uk-slideshow="animation: fade; ratio: 1:1; autoplay: true; autoplay-interval: 4000" class="slideshow" uk-scrollspy="cls: uk-animation-fade; delay: 100">
             <!-- slideshow items -->
             <ul class="uk-slideshow-items">
@@ -195,7 +215,9 @@
 		<div class="row" uk-scrollspy="cls: uk-animation-fade; delay: 100">
 			<!-- col -->
 			<div class="col-xs-12">
-				<h2>Ubicación y horarios</h2>
+				
+      				<h2>Ubicación y horarios</h2>
+    			
 			</div>
 			<!-- col end -->
 		</div>
@@ -216,30 +238,29 @@
 					<!-- col end -->
 					<!-- col -->
 					<div class="col-xs-12 col-sm-6 text">
-						<h3>Martes a sábado:</h3>
-						<p class="mid">Pasaje Cervantes:<br>
-						Carrera 42A con calle 48.</p>
-						<h4>Mañana/Tarde</h4>
-						<p class="mid">11:00 a.m a 2:30 p.m. - O hasta que se acaben las hamburguesas.</p>
-						<h4>Noche</h4>
-						<p class="mid">6:00 p.m. a 8:00 p.m. - O hasta que se acaben las hamburguesas.</p>
-					</div>
+						
+		      				<h3>Martes a sábado (Excepto eventos especiales)</h3>
+		      				<p class="mid">Pasaje Cervantes: <br>Carrera 42A con calle 48.</p>
+		      				<h4>Mañana/tarde</h4>
+		      				<p class="mid">11:00 a.m a 2:30 p.m. - O hasta que se acaben las hamburguesas.</p>
+		      				<h4>Noche</h4>
+		      				<p class="mid">6:00 p.m. a 8:00 p.m. - O hasta que se acaben las hamburguesas.</p>
+		    			
 					<!-- col end -->
 				</div>
 				<!-- row end -->				
 			</div>
 			<!-- col end -->
 			<!-- col -->
-			<div class="col-xs-12 color-col">
+			
+				<div class="col-xs-12 color-col">
 				<!-- row -->
-				<div class="row special-location middle-sm">
+				<div id="eventos-especiales" class="row special-location red-orange middle-sm">
 					<!-- col -->
 					<div class="col-xs-12 col-sm-6 text">
-						<p class="base event-title">Evento</p>
-						<h3 class="giant">Vinilada vol.5</h3>
-						<p class="mid">Pasaje Cervantes:<br>
-						Carrera 42a con calle 48<br>
-						9:00 a.m a 4:00 p.m. - O hasta que se acaben las hamburguesas.</p>
+						<p class="base event-title">Evento especial</p>
+						<h3 class="giant">Vinilada Marciana Vol.1</h3>
+						<p class="mid">Pasaje Cervantes:<br> Carrera 42a con calle 48<br> 9:00 a.m a 4:00 p.m. - O hasta que se acaben las hamburguesas.</p>
 					</div>
 					<!-- col end -->
 					<!-- col -->
@@ -254,6 +275,7 @@
 				<!-- row end -->				
 			</div>
 			<!-- col end -->
+			
 		</div>
 		<!-- row end -->
 	</div>	
@@ -282,7 +304,7 @@
       <div class="col-xs-12 col-lg-6 last-lg end-lg">
         <ul class="footer-links">
           <li><a class="link mid" href="#">Ubicación y horarios</a></li>
-          <li><a class="link mid" href="#">Productos</a></li>
+          <li><a class="link mid" href="/productos">Productos</a></li>
           <li><a class="link mid" href="#">Contacto</a></li>
           <ul class="social">
             <li><a href="https://t.me/latiendamarciana" target="_blank"><span class="icon icon-telegram"></span></a></li>
@@ -331,7 +353,7 @@
                       <a href="">Ubicación y horarios</a>
                     </li>
                     <li class="link mid">
-                      <a href="">Productos</a>
+                      <a href="/productos">Productos</a>
                     </li>
                     <li class="link mid">
                       <a href="">Contacto</a>

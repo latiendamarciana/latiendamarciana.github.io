@@ -38,14 +38,6 @@ telegram: https://t.me/latiendamarciana
 signal: https://signal.me/#eu/k39cdu6ixjsOUap1axbCoxnT9RqLmnbqMaUlSq6OnL1xpwThb8pGk7NvsPkKUaaB  
 email: latiendamarciana@pm.me
 
-location-heading: Ubicación y horarios
-days: Martes a sábado
-location: "Pasaje Cervantes: <br>Carrera 42A con calle 48."
-morning: 11:00 a.m a 2:30 p.m. - O hasta que se acaben las hamburguesas.
-night: 6:00 p.m. a 8:00 p.m. - O hasta que se acaben las hamburguesas.
-location-image-mobile: 
-location-image: 
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

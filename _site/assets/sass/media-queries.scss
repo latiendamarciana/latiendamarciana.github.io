@@ -53,6 +53,12 @@
     padding: .5rem 1.5rem;
     border: 2px solid $purple;
   }
+  .alert{
+    padding: 1rem 0 1.5rem 0;
+    & .close{
+      font-size: 1.25rem;
+    }
+  }
   .header-home{
     padding-top: 3.5rem;
   }
@@ -75,11 +81,11 @@
       padding-left: .75rem;
     }
   }
-  .color-col{
-     padding-left: 1rem;
-     padding-right: 1rem;
-    }
   .special-location{
+    margin-bottom: 2rem;
+    &:last-child{
+      margin-bottom: 0;
+    }
     & figure{
       margin-bottom: 0;
     }
@@ -88,6 +94,9 @@
         margin-bottom: 0;
       }
     }
+  }
+  footer{
+    margin-top: 3rem;
   }
 }
 
@@ -122,12 +131,12 @@
   }
   // location
   .special-location{
-    margin-bottom: 4rem;
     & .text{
       padding-left: 2rem;
     }
   }
   footer{
+    margin-top: 4rem;
     padding-top: 3rem;
     padding-bottom: 2rem;
     .marciana{
