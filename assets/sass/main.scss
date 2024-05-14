@@ -19,7 +19,6 @@
 	background-color: $red-orange-light;
 }
 
-
 html{
 	scroll-behavior: smooth;
 }
@@ -329,6 +328,11 @@ nav{
 
 .modal-nav{
 	height: 86vh;
+	& .active{
+		& a{
+			color: $red-orange-light;
+		}
+	}
 }
 
 .modal-nav{
@@ -418,6 +422,20 @@ nav{
 				}
 				&:after{
 					color: $red-orange;
+				}
+			}
+		}
+	}
+}
+
+.header{
+	& .nav-buttons{
+		& .active{
+			& a{
+				color: $red-orange;
+				&:after{
+					background-color: $red-orange;
+					width: 40%;
 				}
 			}
 		}

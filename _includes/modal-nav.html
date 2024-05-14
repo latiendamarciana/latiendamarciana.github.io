@@ -23,7 +23,7 @@
                   <ul class="links">
                     {% for post in site.pages %}
                        {% if post.url != "/" and post.title != nil %}
-                       <li class="link mid">
+                       <li class="link mid {% if post.url == page.url %}active{% endif %}">
                           <a href="{{ post.url }}">{{ post.title }}</a>
                        </li>
                        {% endif %}
