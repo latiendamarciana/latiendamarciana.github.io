@@ -196,6 +196,12 @@ p.small{
 	letter-spacing: .175rem;
 }
 
+.link.base{
+	font-size: 1.424rem;
+	letter-spacing: .15rem;
+}
+
+
 .link.icon{
 	font-size: 1.625rem;
 	& a{
@@ -285,12 +291,20 @@ nav{
 	background-image: url("../images/la-tienda-marciana-logo.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	&:hover{
+		transition: $transition-quick;
+		transform: scale(1.01);
+	}
 }
 
 .logo.xs{
 	width: 4rem;
 	aspect-ratio: 1 / 1;
 	background-image: url("../images/marciana.svg");	
+	&:hover{
+		transition: $transition-quick;
+		transform: scale(1.01);
+	}	
 }
 
 .nav-shrink{
@@ -569,6 +583,62 @@ nav{
 		margin-top: 18%;
 	}
 }
+
+// Products
+
+.products-filter{
+	margin: 0 0 2.5rem 0;
+	& .uk-active{
+		color: $red-orange;
+		& a{
+			&:after{
+				width: 40%;
+				background-color: $red-orange;
+			}
+		}
+	}
+	& a{
+		&:after{
+			top: 4px;
+		}
+		&:hover{
+			color: $red-orange;
+			&:after{
+				background-color: $red-orange;
+			}
+		}
+	}
+}
+
+.products{
+	& .product-modal-link{
+		text-decoration: none;
+	}
+	& li{
+		& h3{
+			margin: .75rem 0 .5rem 0;
+			&:hover{
+				transition: $transition-quick;
+				color: $red-orange;
+			}
+		}
+		& figure{
+			margin-bottom: 0;
+			transition: $transition-quick;
+			&:hover{
+				transform: scale(1.03);
+			}
+		}
+		& p{
+			margin: 0;
+		}
+	}
+}
+
+.product-modal{
+	background-color: $bright;
+}
+
 
 // footer
 

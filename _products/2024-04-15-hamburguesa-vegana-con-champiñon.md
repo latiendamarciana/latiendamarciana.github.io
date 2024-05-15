@@ -1,13 +1,13 @@
 ---
-title: "Hamburguesa Vegana con cebolla"
+title: "Hamburguesa Vegana con champiñon"
 price: "$12.000 ($13.000 con calca de $2.000)"
 image: /assets/images/hamburguesa-2.jpg
 alt: "Hamburguesa rica"
-modal: "hamburguesa-cebolla"
+modal: "hamburguesa-champiñon"
 categories:
 - Todos	
 - Comida
-date: 2024-04-14
+date: 2024-04-15
 excerpt: "Pan integral de 100 gramos, hummus de garbanzo, lechuga, tomate, torta de lentejas de 100 gramos y salsa napolitana."
 slideshow-images:
 - /assets/images/hamburguesa.jpg" alt="hamburguesa rica

@@ -5,7 +5,8 @@ image: /assets/images/hamburguesa.jpg
 alt: "Hamburguesa rica"
 modal: "hamburguesa"
 categories:
-- Calcas	
+- Todos	
+- Calcas
 date: 2024-04-13
 excerpt: "Pan integral de 100 gramos, hummus de garbanzo, lechuga, tomate, torta de lentejas de 100 gramos y salsa napolitana."
 slideshow-images:

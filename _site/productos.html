@@ -50,7 +50,7 @@
 		<div class="row top-xs middle-sm">
 			
 			<div class="col-xs-10">
-				<p class="base">Estaré en la Vinilada Marciana Vol.1, el domingo 1 de Junio. <a href="ubicación-y-horarios/#eventos-especiales" uk-scroll="offset: 40">Más información.</a></p>
+				<p class="base">Estaré en la Vinilada Marciana Vol.1, el domingo 1 de Junio. <a href="ubicación-y-horarios#eventos-especiales" uk-scroll="offset: 40">Más información.</a></p>
 			</div>
 			<div class="col-xs-2 end-xs">
 	          <a class="uk-alert-close close" uk-close><span class="icon icon-close"></span></a>
@@ -147,47 +147,82 @@
       <div uk-filter="target: .js-filter">
 
         <!-- row -->
-        <ul class="row">
-          <li class="uk-active" uk-filter-control><a href="#">Todos</a></li>
+        <ul class="row products-filter">
+          <li class="uk-active link base" uk-filter-control uk-scrollspy="cls: uk-animation-fade; delay: 100"><a href="#">Todos</a></li>
           
-            <li uk-filter-control=".Calcas"><a href="#">Calcas</a></li>
+          <li class="link base" uk-filter-control=".Comida"><a href="#">Comida</a></li>
           
-            <li uk-filter-control=".Comida"><a href="#">Comida</a></li>
+          <li class="link base" uk-filter-control=".Calcas"><a href="#">Calcas</a></li>
+          
+          <li class="link base" uk-filter-control=".Música"><a href="#">Música</a></li>
+          
+          <li class="link base" uk-filter-control=".Accesorios"><a href="#">Accesorios</a></li>
           
         </ul>
         <!-- row end -->
         <!-- row -->
-        <ul class="js-filter row">
+        <ul class="js-filter row products" uk-scrollspy="cls: uk-animation-fade; delay: 100">
           <!-- col -->
           
-          <li class="Calcas col-lg-3">
-            <a uk-toggle="target: #hamburguesa">
-              <figure>
-                <img src="/assets/images/hamburguesa.jpg" alt="Hamburguesa Vegana">
-              </figure>
+          <li class="Todos Calcas col-lg-3">
+            <a class="product-modal-link" uk-toggle="target: #hamburguesa">
+                <figure>
+                  <img src="/assets/images/hamburguesa.jpg" alt="Hamburguesa Vegana">
+                </figure>
+              <h3>Hamburguesa Vegana</h3>
+              <p>$12.000 ($13.000 con calca de $2.000)</p>
             </a>
-            <h3>Hamburguesa Vegana</h3>
-            <p>$12.000 ($13.000 con calca de $2.000)</p>
           </li>
-          <div id="hamburguesa" class="uk-modal-full" uk-modal>
+          <div id="hamburguesa" class="product-modal uk-modal-full" uk-modal>
             <div class="uk-modal-dialog">
+              <!-- wrapper -->
+              <div class="wrapper container-fluid">
+                
+              </div>
+              <!-- wrapper end -->
                 <h3>Hamburguesa Vegana</h3>
                 <a class="uk-modal-close modal-close" uk-close><span class="icon icon-close" type="button"></span></a>
             </div>
           </div>  
           
-          <li class="Comida col-lg-3">
-            <a uk-toggle="target: #hamburguesa-cebolla">
-              <figure>
-                <img src="/assets/images/hamburguesa-2.jpg" alt="Hamburguesa Vegana con cebolla">
-              </figure>
+          <li class="Todos Comida col-lg-3">
+            <a class="product-modal-link" uk-toggle="target: #hamburguesa-cebolla">
+                <figure>
+                  <img src="/assets/images/hamburguesa-2.jpg" alt="Hamburguesa Vegana con cebolla">
+                </figure>
+              <h3>Hamburguesa Vegana con cebolla</h3>
+              <p>$12.000 ($13.000 con calca de $2.000)</p>
             </a>
-            <h3>Hamburguesa Vegana con cebolla</h3>
-            <p>$12.000 ($13.000 con calca de $2.000)</p>
           </li>
-          <div id="hamburguesa-cebolla" class="uk-modal-full" uk-modal>
+          <div id="hamburguesa-cebolla" class="product-modal uk-modal-full" uk-modal>
             <div class="uk-modal-dialog">
+              <!-- wrapper -->
+              <div class="wrapper container-fluid">
+                
+              </div>
+              <!-- wrapper end -->
                 <h3>Hamburguesa Vegana con cebolla</h3>
+                <a class="uk-modal-close modal-close" uk-close><span class="icon icon-close" type="button"></span></a>
+            </div>
+          </div>  
+          
+          <li class="Todos Comida col-lg-3">
+            <a class="product-modal-link" uk-toggle="target: #hamburguesa-champiñon">
+                <figure>
+                  <img src="/assets/images/hamburguesa-2.jpg" alt="Hamburguesa Vegana con champiñon">
+                </figure>
+              <h3>Hamburguesa Vegana con champiñon</h3>
+              <p>$12.000 ($13.000 con calca de $2.000)</p>
+            </a>
+          </li>
+          <div id="hamburguesa-champiñon" class="product-modal uk-modal-full" uk-modal>
+            <div class="uk-modal-dialog">
+              <!-- wrapper -->
+              <div class="wrapper container-fluid">
+                
+              </div>
+              <!-- wrapper end -->
+                <h3>Hamburguesa Vegana con champiñon</h3>
                 <a class="uk-modal-close modal-close" uk-close><span class="icon icon-close" type="button"></span></a>
             </div>
           </div>  
