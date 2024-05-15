@@ -25,7 +25,8 @@
             {% if post.url != "/" and post.title != nil %}
             <li><a class="link mid" href="{{ post.url }}">{{ post.title }}</a></li>
             {% endif %}
-          {% endfor %}    
+          {% endfor %}
+          <li class="link mid"><a uk-toggle="target: #contact-modal">Contacto</a></li>    
           <ul class="social">
             {% for social in site.data.social %}
               <li><a href="{{ social.url }}" target="_blank"><span class="icon {{ social.icon }}"></span></a></li>

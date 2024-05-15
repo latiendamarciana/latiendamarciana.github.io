@@ -681,6 +681,23 @@ nav{
 	top: -4%;
 }
 
+// contact
+.contact-m{
+	background-color: $bright;
+	& .modal-close{
+		color: $purple;
+		&:hover{
+			color: $red-orange;
+		}
+	}
+	& .uk-modal-dialog{
+		background-color: $bright;
+		& .contact-content{
+			height: 90vh;
+		}
+	}
+}
+
 // footer
 
 footer{

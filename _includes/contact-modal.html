@@ -1,0 +1,31 @@
+<!-- Modal nav -->
+<div id="contact-modal" class="uk-modal-full contact-m" uk-modal>
+  <div class="uk-modal-dialog">
+        <!-- wrapper -->
+        <div class="wrapper container-fluid">
+          <!-- row -->
+          <div class="row">
+            <div class="col-xs-12 end-xs">
+              <a class="uk-modal-close modal-close" uk-close><span class="icon icon-close" type="button"></span></a>
+            </div>
+          </div>
+          <!-- row end --> 
+          <!-- row -->
+          <div class="row contact-content middle-xs">
+            <!-- col -->
+            <div class="col-xs-12 col-sm-6">
+              {% for heading in site.data.contact %}
+              <figure>
+                <img src="{{ heading.marciana }}" alt="Marciana">
+              </figure>
+              <h2>{{ heading.heading }}</h2>
+              {% endfor %}
+            </div>
+            <!-- col end -->
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- wrapper end -->
+    </div>
+</div>
+<!-- Modal nav end -->           

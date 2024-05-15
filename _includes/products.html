@@ -1,0 +1,96 @@
+<!-- wrapper -->
+<div class="wrapper container-fluid">
+
+  <!-- products -->
+  <div uk-filter="target: .js-filter">
+
+    <!-- row -->
+    <ul class="row products-filter">
+      <li class="uk-active link base" uk-filter-control uk-scrollspy="cls: uk-animation-fade; delay: 100"><a href="#">Todos</a></li>
+      {% for category in site.data.categories %}
+      <li class="link base" uk-filter-control=".{{ category.categories | join: ' .' }}"><a href="#">{{ category.categories }}</a></li>
+      {% endfor %}
+    </ul>
+    <!-- row end -->
+    <!-- row -->
+    <ul class="js-filter row products" uk-scrollspy="cls: uk-animation-fade; delay: 100">
+      <!-- col -->
+      {% for product in site.products %}
+      <li class="{{ product.categories | join: ' '}} col-xs-12 col-sm-4 col-lg-3">
+        <a class="product-modal-link" uk-toggle="target: #{{ product.modal }}">
+            <figure>
+              <img src="{{ product.image }}" alt="{{ product.title }}">
+            </figure>
+          <h4>{{ product.title }}</h4>
+          <p>{{ product.price }}</p>
+        </a>
+      </li>
+      <div id="{{ product.modal }}" class="product-modal uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+          <!-- wrapper -->
+          <div class="wrapper container-fluid">
+            <!-- row -->
+            <div class="row">
+              <!-- col -->
+              <div class="col-xs-12 end-xs">
+                <a class="uk-modal-close modal-close" uk-close><span class="icon icon-close" type="button"></span></a>
+              </div>
+              <!-- col end -->
+            </div>
+            <!-- row end -->
+            <!-- row -->
+            <div class="row product-content middle-xs">
+              <!-- col -->
+              <div class="col-xs-12 col-sm-7">
+                  <!-- slideshow -->
+                  <div uk-slideshow="animation: fade; ratio: 1:1; autoplay: true; autoplay-interval: 4000" class="slideshow product" uk-scrollspy="cls: uk-animation-fade; delay: 100">
+                      <!-- slideshow items -->
+                      <ul class="uk-slideshow-items">
+                        {% for items in product.slideshow-images %}
+                          <li>
+                            <img src="{{ items }}" uk-cover>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                      <!-- slideshow items end -->
+                      <!-- slideshow buttons -->
+                      <ul class="slideshow-buttons">
+                        <li><a href uk-slideshow-item="previous"><span class="icon icon-prev"></span></a></li>
+                        <li><a href uk-slideshow-item="next"><span class="icon icon-next"></span></a></li>
+                      </ul>
+                      <!-- slideshow buttons end -->
+                      <!-- slideshow dotnav -->
+                      <ul class="slideshow-dotnav">
+                        {% for items in product.slideshow-images %}
+                           <li uk-slideshow-item="{{ forloop.index0 }}"><a href></a></li>
+                        {% endfor %}
+                      </ul>
+                      <!-- slideshow dotnav end -->
+                  </div>
+                  <!-- slideshow end -->                      
+              </div>
+
+              <!-- col end -->
+              <!-- col -->
+              <div class="col-xs-12 col-sm-5 product-info">
+                <h3>{{ product.title }}</h3>
+                <p class="big">{{ product.price }}</p>
+                <p class="mid">{{ product.excerpt }}</p>
+              </div>
+              <!-- col end -->
+            </div>
+            <!-- row end -->
+          </div>
+          <!-- wrapper end -->
+            
+        </div>
+      </div>  
+      {% endfor %}
+      <!-- col end -->
+    </ul>
+    <!-- row end -->
+  </div>
+  <!-- products end -->
+
+</div>
+<!-- wrapper end -->
