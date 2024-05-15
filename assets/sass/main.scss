@@ -123,6 +123,11 @@ h4{
 	font-size: 1.602rem;
 }
 
+p.big{
+	font-size: 1.425rem;
+	line-height: 125%;
+}
+
 p.mid{
 	font-size: 1.125rem;
 	line-height: 125%;
@@ -588,6 +593,12 @@ nav{
 
 .products-filter{
 	margin: 0 0 2.5rem 0;
+	& li{
+		margin-bottom: 1rem;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
 	& .uk-active{
 		color: $red-orange;
 		& a{
@@ -615,7 +626,8 @@ nav{
 		text-decoration: none;
 	}
 	& li{
-		& h3{
+		margin-bottom: 2rem;
+		& h3, & h4{
 			margin: .75rem 0 .5rem 0;
 			&:hover{
 				transition: $transition-quick;
@@ -637,8 +649,37 @@ nav{
 
 .product-modal{
 	background-color: $bright;
+	& .modal-close{
+		color: $purple;
+		&:hover{
+			color: $red-orange;
+		}
+	}
+	& .uk-modal-dialog{
+		background-color: $bright;
+		& .product-content{
+			height: 90vh;
+		}
+		& h3{
+			color: $red-orange;
+			margin-bottom: .5rem;
+		}
+		& p.big{
+			margin: 0 0 .75rem 0;
+		}
+	}
 }
 
+.slideshow.product{
+	& .slideshow-dotnav{
+		margin-top: 24%;
+	}
+}
+
+.product-info{
+	position: relative;
+	top: -4%;
+}
 
 // footer
 

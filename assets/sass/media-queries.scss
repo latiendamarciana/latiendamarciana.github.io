@@ -11,6 +11,14 @@
   }
 }
 
+// xs-1 from 375
+@media only screen and (min-width: 23.438em){
+  .product-info{
+    position: relative;
+    top: -13%;
+  }
+} 
+
 // sm - from 768
 @media only screen and (min-width: 48em) {
   // visible/hidden
@@ -95,6 +103,14 @@
       }
     }
   }
+  .product-info{
+    position: inherit;
+  }
+  .slideshow.product{
+    & .slideshow-dotnav{
+      margin-top: 30%;
+    }
+  }  
   footer{
     margin-top: 3rem;
   }
@@ -134,6 +150,14 @@
     & .text{
       padding-left: 2rem;
     }
+  }
+  .slideshow.product{
+    & .slideshow-dotnav{
+      margin-top: 38%;
+    }
+  }  
+  .product-info{
+    padding-left: 1rem;
   }
   footer{
     margin-top: 4rem;
