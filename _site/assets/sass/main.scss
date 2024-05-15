@@ -217,7 +217,7 @@ p.small{
 		margin-bottom: 0;
 		& a{
 			font-weight: 600;
-			text-decoration: none !important;
+			// text-decoration: none !important;
 			transition: $transition-quick;
 			&:hover{
 				text-decoration: underline !important;
@@ -615,6 +615,7 @@ footer{
 	& a{
 		transition: $transition-quick;
 		font-weight: 600;
+		text-decoration: underline;
 		&:hover{
 			color: $red-orange;
 			text-decoration: underline;

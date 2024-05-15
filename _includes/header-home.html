@@ -8,9 +8,9 @@
     <div uk-slideshow="animation: fade; ratio: 3:2; autoplay: true; autoplay-interval: 4000" class="slideshow mobile" uk-scrollspy="cls: uk-animation-fade; delay: 100">
         <!-- slideshow items -->
         <ul class="uk-slideshow-items">
-          {% for hamburguesas in page.hamburguesas %}
+          {% for items in page.header-slideshow %}
             <li>
-                <img src="{{ hamburguesas }}" uk-cover>
+                <img src="{{ items }}" uk-cover>
             </li>
           {% endfor %}
         </ul>
@@ -23,7 +23,7 @@
         <!-- slideshow buttons end -->
           <!-- slideshow dotnav -->
           <ul class="slideshow-dotnav">
-            {% for hamburguesas in page.hamburguesas%}
+            {% for items in page.header-slideshow %}
                <li uk-slideshow-item="{{ forloop.index0 }}"><a href></a></li>
             {% endfor %}
           </ul>
@@ -51,9 +51,9 @@
         <div uk-slideshow="animation: fade; ratio: 1:1; autoplay: true; autoplay-interval: 4000" class="slideshow" uk-scrollspy="cls: uk-animation-fade; delay: 100">
             <!-- slideshow items -->
             <ul class="uk-slideshow-items">
-              {% for hamburguesas in page.hamburguesas %}
+              {% for items in page.header-slideshow %}
                 <li>
-                    <img src="{{ hamburguesas }}" uk-cover>
+                    <img src="{{ items }}" uk-cover>
                 </li>
               {% endfor %}
             </ul>
@@ -66,7 +66,7 @@
             <!-- slideshow buttons end -->
             <!-- slideshow dotnav -->
             <ul class="slideshow-dotnav">
-              {% for hamburguesas in page.hamburguesas%}
+              {% for items in page.header-slideshow %}
                  <li uk-slideshow-item="{{ forloop.index0 }}"><a href></a></li>
               {% endfor %}
             </ul>
