@@ -1,9 +1,9 @@
 ---
-title: "CD Tupamaros"
+title: "CD Britney"
 price: "$12.000"
 image: /assets/images/hamburguesa-2.jpg
 alt: "Hamburguesa rica"
-modal: "cd-tupamaros"
+modal: "cd-britney"
 categories:
 - Todos	
 - Música

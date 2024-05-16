@@ -11,14 +11,25 @@
           </div>
           <!-- row end --> 
           <!-- row -->
-          <div class="row contact-content middle-xs">
+          <div class="row middle-xs">
             <!-- col -->
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-4 col-sm-4">
               {% for item in site.data.contact %}
               <figure>
                 <img src="{{ item.marciana }}" alt="Marciana">
               </figure>
-              <h2>{{ item.heading }}</h2>
+              {% endfor %}
+            </div>
+            <!-- col end -->
+          </div>
+          <!-- row end -->
+          <!-- row -->
+          <div class="row">
+            <!-- col -->
+            <div class="col-xs-12 col-sm-6">
+              {% for item in site.data.contact %}
+                <h2>{{ item.heading }}</h2>
+                <p class="base">{{ item.text }}</p>
               {% endfor %}
             </div>
             <!-- col end -->
