@@ -290,16 +290,20 @@ nav{
 	}
 }
 
-.logo{
+.logo, .logo-nav{
 	width: 100%;
 	aspect-ratio: 6 / 2.5;
-	background-image: url("../images/la-tienda-marciana-logo.svg");
+	background-image: url("../images/la-tienda-marciana-logo-bright.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	&:hover{
 		transition: $transition-quick;
 		transform: scale(1.01);
 	}
+}
+
+.logo-nav{
+	background-image: url("../images/la-tienda-marciana-logo-nav.svg");
 }
 
 .logo.xs{
@@ -339,7 +343,7 @@ nav{
 	& .wrapper{
 		background-color: $purple;
 	}
-	& .logo{
+	& .logo, & .logo-nav{
 		display: block;
 		margin-bottom: 3rem;
 	}
@@ -522,13 +526,7 @@ nav{
 // Slideshow
 
 .slideshow-buttons{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: -55%;
 	& li{
-		display: inline-block;
-		z-index: 1;
 		& a{
 			font-size: 3rem;
 			color: $bright;
@@ -541,9 +539,7 @@ nav{
 }
 
 .slideshow-dotnav{
-	display: flex;
-	margin-top: 22%;
-	justify-content: center;
+	bottom: -1rem;
 	& li{
 		display: inline-block;
 		z-index: 1;
@@ -577,16 +573,12 @@ nav{
 }
 
 .slideshow.mobile{
-	margin-bottom: 2.5rem;
-	& .slideshow-buttons{
-		margin-top: -40%;
+	
+
 		& a{
 			font-size: 2rem;
 		}
-	}
-	& .slideshow-dotnav{
-		margin-top: 18%;
-	}
+
 }
 
 // Products
@@ -657,9 +649,6 @@ nav{
 	}
 	& .uk-modal-dialog{
 		background-color: $bright;
-		& .product-content{
-			height: 90vh;
-		}
 		& h3{
 			color: $red-orange;
 			margin-bottom: .5rem;
@@ -670,15 +659,16 @@ nav{
 	}
 }
 
+.product-content{
+    margin-top: 20%;
+}
+
 .slideshow.product{
-	& .slideshow-dotnav{
-		margin-top: 24%;
-	}
+
 }
 
 .product-info{
-	position: relative;
-	top: -4%;
+
 }
 
 // contact
@@ -702,11 +692,15 @@ nav{
 
 footer{
 	margin-top: 2rem;
-	padding: 2rem 0 4rem 0;
-	background-color: $yellow;
+	padding: 2rem 0;
+	background-color: $purple-dark;
+	color: $bright;
+	& p{
+		text-align: center;
+	}
 	& .marciana{
 		display: block;
-		margin-bottom: 2rem;
+		margin-bottom: .5rem;
 	}
 	& .social{
 		margin-top: .5rem;
@@ -733,7 +727,7 @@ footer{
 	}
 }
 
-.footer-links, .contact{
+.contact{
 	& a{
 		transition: $transition-quick;
 	}
@@ -745,7 +739,7 @@ footer{
 		font-weight: 600;
 		text-decoration: underline;
 		&:hover{
-			color: $red-orange;
+			color: $red-orange-light;
 			text-decoration: underline;
 		}
 	}

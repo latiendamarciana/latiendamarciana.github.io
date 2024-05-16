@@ -2,48 +2,25 @@
   <!-- wrapper -->
   <div class="wrapper container-fluid">
     <!-- row -->
-    <div class="row center-xs start-lg">
-      <!-- col -->
-      <div class="col-xs-5 col-lg-2">
-        <a class="marciana" href="{{ "/" | relative_url }}">
-          <img src="../assets/images/marciana.svg" alt="">
-        </a>
+    <div class="row center-xs start-sm">
+        <!-- col -->
+        <div class="col-xs-4 col-sm-2">
+          <a class="marciana" href="{{ "/" | relative_url }}">
+            <img src="../assets/images/marciana-footer.svg" alt="">
+          </a>
+        </div>
+        <!-- col end -->
       </div>
-      <!-- col end -->
-      <!-- col -->
-      <div class="col-xs-12 col-lg-4 last-xs">
-        <ul class="contact">
-          <li><a class="link mid" href="tel:+573132240575" target="_blank">313 2240575</a></li>
-          <li><a  class="link mid" href="mailto:{{ site.email }}" target="_blank">latiendamarciana@pm.me</a></li>
-        </ul>        
+      <!-- row end -->
+      <!-- row -->
+      <div class="row">
+        <!-- col -->
+        <div class="col-xs-12 closure">
+            <p>@2024 <a href="{{ site.author-url }}" target="_blank">{{ site.author }}</a><br class="visible-xs hidden-sm hidden-lg"> Hecho con <span class="icon icon-heart"></span> en Medellín.</p>
+        </div>
+        <!-- col end -->
       </div>
-      <!-- col end -->
-      <!-- col -->
-      <div class="col-xs-12 col-lg-6 last-lg end-lg">
-        <ul class="footer-links">
-          {% for post in site.pages %}
-            {% if post.url != "/" and post.title != nil %}
-            <li><a class="link mid" href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endif %}
-          {% endfor %}
-          <li class="link mid"><a uk-toggle="target: #contact-modal">Contacto</a></li>    
-          <ul class="social">
-            {% for social in site.data.social %}
-              <li><a href="{{ social.url }}" target="_blank"><span class="icon {{ social.icon }}"></span></a></li>
-            {% endfor %}
-          </ul>
-        </ul>
-      </div>
-      <!-- col end -->
-    </div>
-    <!-- row end -->
-    <!-- row -->
-    <div class="row center-xs start-lg closure">
-      <!-- col -->
-      <div class="col-xs-12 col-lg-offset-2">
-        <p>@2024 <a href="{{ site.author-url }}" target="_blank">{{ site.author }}</a><br class="visible-xs hidden-sm hidden-lg"> Hecho con <span class="icon icon-heart"></span> en Medellín.</p>
-      </div>
-      <!-- col end -->
+      <!-- row end -->
     </div>
     <!-- row end -->
   </div>

@@ -5,7 +5,7 @@
   <!-- wrapper -->
   <div class="wrapper visible-xs hidden-sm hidden-lg">
     <!-- slideshow mobile -->
-    <div uk-slideshow="animation: fade; ratio: 3:2; autoplay: true; autoplay-interval: 4000" class="slideshow mobile" uk-scrollspy="cls: uk-animation-fade; delay: 100">
+    <div uk-slideshow="animation: fade; ratio: 3:2; autoplay: true; autoplay-interval: 4000" class="uk-position-relative uk-visible-toggle uk-light slideshow mobile" uk-scrollspy="cls: uk-animation-fade; delay: 100" tabindex="-1">
         <!-- slideshow items -->
         <ul class="uk-slideshow-items">
           {% for items in page.header-slideshow %}
@@ -17,12 +17,12 @@
         <!-- slideshow items end -->
         <!-- slideshow buttons -->
         <ul class="slideshow-buttons">
-          <li><a href uk-slideshow-item="previous"><span class="icon icon-prev"></span></a></li>
-          <li><a href uk-slideshow-item="next"><span class="icon icon-next"></span></a></li>
+          <li><a class="uk-position-center-left" href uk-slideshow-item="previous"><span class="icon icon-prev"></span></a></li>
+          <li><a class="uk-position-center-right" href uk-slideshow-item="next"><span class="icon icon-next"></span></a></li>
         </ul>
         <!-- slideshow buttons end -->
           <!-- slideshow dotnav -->
-          <ul class="slideshow-dotnav">
+          <ul class="slideshow-dotnav uk-position-bottom-center">
             {% for items in page.header-slideshow %}
                <li uk-slideshow-item="{{ forloop.index0 }}"><a href></a></li>
             {% endfor %}
@@ -48,7 +48,7 @@
       <!-- col -->
       <div class="col-xs-12 col-sm-5 hidden-xs visible-sm">
         <!-- slideshow desk -->
-        <div uk-slideshow="animation: fade; ratio: 1:1; autoplay: true; autoplay-interval: 4000" class="slideshow" uk-scrollspy="cls: uk-animation-fade; delay: 100">
+        <div uk-slideshow="animation: fade; ratio: 1:1; autoplay: true; autoplay-interval: 4000" class="uk-position-relative uk-visible-toggle uk-light slideshow" uk-scrollspy="cls: uk-animation-fade; delay: 100" tabindex="-1">
             <!-- slideshow items -->
             <ul class="uk-slideshow-items">
               {% for items in page.header-slideshow %}
@@ -60,12 +60,12 @@
             <!-- slideshow items end -->
             <!-- slideshow buttons -->
             <ul class="slideshow-buttons">
-              <li><a href uk-slideshow-item="previous"><span class="icon icon-prev"></span></a></li>
-              <li><a href uk-slideshow-item="next"><span class="icon icon-next"></span></a></li>
+              <li><a class="uk-position-center-left" href uk-slideshow-item="previous"><span class="icon icon-prev"></span></a></li>
+              <li><a class="uk-position-center-right" href uk-slideshow-item="next"><span class="icon icon-next"></span></a></li>
             </ul>
             <!-- slideshow buttons end -->
             <!-- slideshow dotnav -->
-            <ul class="slideshow-dotnav">
+            <ul class="slideshow-dotnav uk-position-bottom-center">
               {% for items in page.header-slideshow %}
                  <li uk-slideshow-item="{{ forloop.index0 }}"><a href></a></li>
               {% endfor %}

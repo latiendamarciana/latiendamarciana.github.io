@@ -43,7 +43,7 @@
               <!-- col -->
               <div class="col-xs-12 col-sm-7">
                   <!-- slideshow -->
-                  <div uk-slideshow="animation: fade; ratio: 1:1; autoplay: true; autoplay-interval: 4000" class="slideshow product" uk-scrollspy="cls: uk-animation-fade; delay: 100">
+                  <div uk-slideshow="animation: fade; ratio: 1:1; autoplay: true; autoplay-interval: 4000" class="uk-position-relative uk-visible-toggle uk-light slideshow product" uk-scrollspy="cls: uk-animation-fade; delay: 100" tabindex="-1">
                       <!-- slideshow items -->
                       <ul class="uk-slideshow-items">
                         {% for items in product.slideshow-images %}
@@ -55,12 +55,12 @@
                       <!-- slideshow items end -->
                       <!-- slideshow buttons -->
                       <ul class="slideshow-buttons">
-                        <li><a href uk-slideshow-item="previous"><span class="icon icon-prev"></span></a></li>
-                        <li><a href uk-slideshow-item="next"><span class="icon icon-next"></span></a></li>
+                        <li><a class="uk-position-center-left" href uk-slideshow-item="previous"><span class="icon icon-prev"></span></a></li>
+                        <li><a class="uk-position-center-right" href uk-slideshow-item="next"><span class="icon icon-next"></span></a></li>
                       </ul>
                       <!-- slideshow buttons end -->
                       <!-- slideshow dotnav -->
-                      <ul class="slideshow-dotnav">
+                      <ul class="slideshow-dotnav uk-position-bottom-center">
                         {% for items in product.slideshow-images %}
                            <li uk-slideshow-item="{{ forloop.index0 }}"><a href></a></li>
                         {% endfor %}

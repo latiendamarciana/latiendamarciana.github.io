@@ -140,7 +140,7 @@
   <!-- main-nav desk end --><!-- wrapper -->
   <div class="wrapper visible-xs hidden-sm hidden-lg">
     <!-- slideshow mobile -->
-    <div uk-slideshow="animation: fade; ratio: 3:2; autoplay: true; autoplay-interval: 4000" class="slideshow mobile" uk-scrollspy="cls: uk-animation-fade; delay: 100">
+    <div uk-slideshow="animation: fade; ratio: 3:2; autoplay: true; autoplay-interval: 4000" class="uk-position-relative uk-visible-toggle uk-light slideshow mobile" uk-scrollspy="cls: uk-animation-fade; delay: 100" tabindex="-1">
         <!-- slideshow items -->
         <ul class="uk-slideshow-items">
           
@@ -156,12 +156,12 @@
         <!-- slideshow items end -->
         <!-- slideshow buttons -->
         <ul class="slideshow-buttons">
-          <li><a href uk-slideshow-item="previous"><span class="icon icon-prev"></span></a></li>
-          <li><a href uk-slideshow-item="next"><span class="icon icon-next"></span></a></li>
+          <li><a class="uk-position-center-left" href uk-slideshow-item="previous"><span class="icon icon-prev"></span></a></li>
+          <li><a class="uk-position-center-right" href uk-slideshow-item="next"><span class="icon icon-next"></span></a></li>
         </ul>
         <!-- slideshow buttons end -->
           <!-- slideshow dotnav -->
-          <ul class="slideshow-dotnav">
+          <ul class="slideshow-dotnav uk-position-bottom-center">
             
                <li uk-slideshow-item="0"><a href></a></li>
             
@@ -189,7 +189,7 @@
       <!-- col -->
       <div class="col-xs-12 col-sm-5 hidden-xs visible-sm">
         <!-- slideshow desk -->
-        <div uk-slideshow="animation: fade; ratio: 1:1; autoplay: true; autoplay-interval: 4000" class="slideshow" uk-scrollspy="cls: uk-animation-fade; delay: 100">
+        <div uk-slideshow="animation: fade; ratio: 1:1; autoplay: true; autoplay-interval: 4000" class="uk-position-relative uk-visible-toggle uk-light slideshow" uk-scrollspy="cls: uk-animation-fade; delay: 100" tabindex="-1">
             <!-- slideshow items -->
             <ul class="uk-slideshow-items">
               
@@ -205,12 +205,12 @@
             <!-- slideshow items end -->
             <!-- slideshow buttons -->
             <ul class="slideshow-buttons">
-              <li><a href uk-slideshow-item="previous"><span class="icon icon-prev"></span></a></li>
-              <li><a href uk-slideshow-item="next"><span class="icon icon-next"></span></a></li>
+              <li><a class="uk-position-center-left" href uk-slideshow-item="previous"><span class="icon icon-prev"></span></a></li>
+              <li><a class="uk-position-center-right" href uk-slideshow-item="next"><span class="icon icon-next"></span></a></li>
             </ul>
             <!-- slideshow buttons end -->
             <!-- slideshow dotnav -->
-            <ul class="slideshow-dotnav">
+            <ul class="slideshow-dotnav uk-position-bottom-center">
               
                  <li uk-slideshow-item="0"><a href></a></li>
               
@@ -307,62 +307,25 @@
   <!-- wrapper -->
   <div class="wrapper container-fluid">
     <!-- row -->
-    <div class="row center-xs start-lg">
-      <!-- col -->
-      <div class="col-xs-5 col-lg-2">
-        <a class="marciana" href="/">
-          <img src="../assets/images/marciana.svg" alt="">
-        </a>
+    <div class="row center-xs start-sm">
+        <!-- col -->
+        <div class="col-xs-4 col-sm-2">
+          <a class="marciana" href="/">
+            <img src="../assets/images/marciana-footer.svg" alt="">
+          </a>
+        </div>
+        <!-- col end -->
       </div>
-      <!-- col end -->
-      <!-- col -->
-      <div class="col-xs-12 col-lg-4 last-xs">
-        <ul class="contact">
-          <li><a class="link mid" href="tel:+573132240575" target="_blank">313 2240575</a></li>
-          <li><a  class="link mid" href="mailto:latiendamarciana@pm.me" target="_blank">latiendamarciana@pm.me</a></li>
-        </ul>        
+      <!-- row end -->
+      <!-- row -->
+      <div class="row">
+        <!-- col -->
+        <div class="col-xs-12 closure">
+            <p>@2024 <a href="https://fluorescente.design" target="_blank">Fluorescente.design</a><br class="visible-xs hidden-sm hidden-lg"> Hecho con <span class="icon icon-heart"></span> en Medellín.</p>
+        </div>
+        <!-- col end -->
       </div>
-      <!-- col end -->
-      <!-- col -->
-      <div class="col-xs-12 col-lg-6 last-lg end-lg">
-        <ul class="footer-links">
-          
-            
-            <li><a class="link mid" href="/ubicación-y-horarios">Ubicación y horarios</a></li>
-            
-          
-            
-            <li><a class="link mid" href="/productos">Productos</a></li>
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-          <li class="link mid"><a uk-toggle="target: #contact-modal">Contacto</a></li>    
-          <ul class="social">
-            
-              <li><a href="https://t.me/latiendamarciana" target="_blank"><span class="icon icon-telegram"></span></a></li>
-            
-              <li><a href="https://signal.me/#eu/k39cdu6ixjsOUap1axbCoxnT9RqLmnbqMaUlSq6OnL1xpwThb8pGk7NvsPkKUaaB" target="_blank"><span class="icon icon-signal"></span></a></li>
-            
-          </ul>
-        </ul>
-      </div>
-      <!-- col end -->
-    </div>
-    <!-- row end -->
-    <!-- row -->
-    <div class="row center-xs start-lg closure">
-      <!-- col -->
-      <div class="col-xs-12 col-lg-offset-2">
-        <p>@2024 <a href="https://fluorescente.design" target="_blank">Fluorescente.design</a><br class="visible-xs hidden-sm hidden-lg"> Hecho con <span class="icon icon-heart"></span> en Medellín.</p>
-      </div>
-      <!-- col end -->
+      <!-- row end -->
     </div>
     <!-- row end -->
   </div>
@@ -387,7 +350,7 @@
               <div class="row center-xs ">
                 <!-- col -->
                 <div class="col-xs-10">
-                  <a href="/" class="logo">
+                  <a href="/" class="logo-nav">
                   </a>
                   <ul class="links">
                     
@@ -419,14 +382,6 @@
                     </li>
                     <li>
                       <a href=""><span class="icon icon-signal"></span></a>
-                    </li>
-                  </ul>
-                  <ul class="links">
-                    <li class="link mid">
-                      <a href="">313 2240575</a>
-                    </li>
-                    <li class="link mid">
-                      <a href="">latiendamarciana@pm.me</a>
                     </li>
                   </ul>
                 </div>
@@ -463,6 +418,24 @@
               </figure>
               <h2>Todavía no puedo hacer domicilios, pero ante cualquier duda o comentario no dudes en contactarme llenando este formulario.</h2>
               
+            </div>
+            <!-- col end -->
+            <!-- col -->
+            <div class="col-xs-12 col-sm-6">
+              <form class="contact-form" action="https://formsubmit.co/your@email.com" method="POST" accept-charset="UTF-8">
+                <input type="hidden" name="_next" value="https://fluorescente.design/mensaje-enviado/">
+                <input type="text" name="_honey" style="display:none">
+                <label for="name">Nombre*</label>
+                <input type="text" name="yourName" id="name" required>
+                <label for="email">Correo electrónico*</label>
+                <input type="email" id="email" name="yourEmail" required>
+                <input type="hidden" name="_gotcha"><!-- use this to prevent spam -->
+                <label for="message">Mensaje*</label>
+                <textarea id="message" name="yourMessage" required></textarea>
+                <button class="button mid" type="submit">Enviar</button>
+                <button class="button mid ghost">Volver</button>
+                <p class="p-small">*Campos requeridos</p>
+              </form>
             </div>
             <!-- col end -->
           </div>

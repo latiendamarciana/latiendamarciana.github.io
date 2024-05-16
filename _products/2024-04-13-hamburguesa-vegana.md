@@ -1,5 +1,5 @@
 ---
-title: "Hamburguesa Vegana"
+title: "Calca hamburguesa"
 price: "$12.000 ($13.000 con calca de $2.000)"
 image: /assets/images/hamburguesa.jpg
 alt: "Hamburguesa rica"
