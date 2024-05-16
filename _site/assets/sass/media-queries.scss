@@ -107,9 +107,9 @@
       margin-bottom: 0;
     }
   }  
-  .slideshow.product{
-
-  }  
+  .contact-content{
+    margin-top: 10%;
+  } 
   footer{
     margin-top: 3rem;
     & p{
@@ -160,6 +160,13 @@
     & li{
       margin-bottom: 1rem;
     }
+  }
+  .contact-content{
+    margin-top: 0;
+    height: 90vh;
+  }
+  .contact-info{
+    margin-top: -6rem;
   }
   footer{
     margin-top: 4rem;

@@ -161,6 +161,14 @@ p.small{
 	border: 3px solid $purple;
 }
 
+.button.mid{
+	font-size: 1.424rem;
+	letter-spacing: .15rem;
+	padding: .5rem 1.2rem;
+	border: 3px solid $purple;
+}
+
+
 .link{
 	font-family: $heading;
 	text-transform: uppercase;
@@ -686,15 +694,64 @@ nav{
 	}
 }
 
+:focus-visible{
+	outline: 2px solid $lila-light;
+}
+
 form{
+	margin-bottom: 3rem;
 	input, label, textarea{
 		display: block;
-		width: 100%;
+		width: 90%;
 	}
 	label{
 		font-weight: 600;
 		font-size: 1rem;
 		margin-bottom: .5rem;
+	}
+	input, textarea{
+		color: $gray-5;
+		font-size: 1rem;
+		font-family: $paragraph;
+		margin-bottom: 1rem;
+		background-color: $bright;
+		border-radius: .2rem;
+		padding: .5rem 1rem;
+		border: 1px solid $purple-dark;
+		&:focus-visible{
+			border: 1px solid $transparent;
+		}
+	}
+	& textarea{
+		height: 6rem;
+	}
+	& .buttons{
+		& li{
+			display: inline-block;
+			margin-right: 1rem;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+	& button{
+		background-color: $purple;
+		color: $bright;
+		cursor: pointer;
+		&:hover{
+			color: $bright;
+			background-color: $red-orange-light;
+			border: 3px solid $red-orange-light !important;
+		}
+	}
+	& .ghost{
+		color: $purple;
+		background-color: $bright;
+		&:hover{
+			color: $bright;
+			background-color: $red-orange-light;
+			border: 3px solid $red-orange-light;
+		}
 	}
 }
 
@@ -731,15 +788,6 @@ footer{
 		color: $red-orange;
 		position: relative;
 		top: .15rem;
-	}
-	& .contact{
-		margin-bottom: 2.5rem;
-	}
-}
-
-.contact{
-	& a{
-		transition: $transition-quick;
 	}
 }
 
