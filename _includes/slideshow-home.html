@@ -1,0 +1,24 @@
+<div uk-slideshow="animation: fade; ratio: 1:1; autoplay: true; autoplay-interval: 4000" class="uk-position-relative uk-visible-toggle uk-light slideshow" uk-scrollspy="cls: uk-animation-fade; delay: 100" tabindex="-1">
+    <!-- slideshow items -->
+    <ul class="uk-slideshow-items">
+      {% for items in page.header-slideshow %}
+        <li>
+            <img src="{{ items }}" uk-cover>
+        </li>
+      {% endfor %}
+    </ul>
+    <!-- slideshow items end -->
+    <!-- slideshow buttons -->
+    <ul class="slideshow-buttons">
+      <li><a class="uk-position-center-left" href uk-slideshow-item="previous"><span class="icon icon-prev"></span></a></li>
+      <li><a class="uk-position-center-right" href uk-slideshow-item="next"><span class="icon icon-next"></span></a></li>
+    </ul>
+    <!-- slideshow buttons end -->
+    <!-- slideshow dotnav -->
+    <ul class="slideshow-dotnav uk-position-bottom-center">
+      {% for items in page.header-slideshow %}
+         <li uk-slideshow-item="{{ forloop.index0 }}"><a href></a></li>
+      {% endfor %}
+    </ul>
+    <!-- slideshow dotnav end -->
+</div>

@@ -14,11 +14,11 @@
           <div class="row contact-content middle-xs">
             <!-- col -->
             <div class="col-xs-12 col-sm-6">
-              {% for heading in site.data.contact %}
+              {% for item in site.data.contact %}
               <figure>
-                <img src="{{ heading.marciana }}" alt="Marciana">
+                <img src="{{ item.marciana }}" alt="Marciana">
               </figure>
-              <h2>{{ heading.heading }}</h2>
+              <h2>{{ item.heading }}</h2>
               {% endfor %}
             </div>
             <!-- col end -->
