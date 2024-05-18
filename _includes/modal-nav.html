@@ -31,12 +31,11 @@
                        <li class="link mid"><a uk-toggle="target: #contact-modal">Contacto</a></li> 
                   </ul>
                   <ul class="social inline list">
-                    <li>
-                      <a href=""><span class="icon icon-telegram"></span></a>
-                    </li>
-                    <li>
-                      <a href=""><span class="icon icon-signal"></span></a>
-                    </li>
+                    {% for social in site.data.social %}
+                      <li>
+                        <a href="{{ social.url }}" target="_blank"><span class="icon {{ social.icon }}"></span></a>
+                      </li>
+                    {% endfor %}
                   </ul>
                 </div>
                 <!-- col end -->

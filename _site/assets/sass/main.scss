@@ -388,6 +388,11 @@ nav{
 			&:last-child{
 				margin-right: 0;
 			}
+			& a{
+				&:hover{
+					text-decoration: none;
+				}
+			}
 		}
 	}
 }
@@ -674,6 +679,18 @@ nav{
     margin-top: 20%;
 }
 
+.product-info{
+	& .button{
+		margin: .5rem 0 2rem 0;
+		text-decoration: none;
+		&:hover{
+			color: $bright;
+			background-color: $red-orange-light;
+			border: solid 3px $red-orange-light;
+		}
+	}
+}
+
 // contact
 .contact-m{
 	background-color: $bright;
@@ -695,7 +712,7 @@ nav{
 }
 
 :focus-visible{
-	outline: 2px solid $lila-light;
+	outline: 2px solid $red-orange-light;
 }
 
 form{
@@ -752,6 +769,12 @@ form{
 			background-color: $red-orange-light;
 			border: 3px solid $red-orange-light;
 		}
+	}
+	& .icon-arrow-right-small{
+		font-size: 1.5rem;
+		position: relative;
+		top: .4rem;
+		margin-left: .25rem;
 	}
 }
 

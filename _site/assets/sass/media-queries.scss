@@ -99,10 +99,15 @@
       }
     }
   }
+  .product-content{
+    margin-top: 5%;
+  }
   .product-info{
     position: inherit;
   }
   .products-filter{
+    margin: 0 0 1rem 0;
+    padding-bottom: 1rem;
     & li{
       margin-bottom: 0;
     }
