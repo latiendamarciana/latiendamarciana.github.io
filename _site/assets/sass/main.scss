@@ -520,7 +520,6 @@ nav{
 
 .special-location{
 	color: $bright;
-	margin-bottom: 1.5rem;
 	& .text{
 		padding: 0 1rem 2rem 1rem;
 	}
@@ -534,6 +533,14 @@ nav{
 	p{
 		margin: 0 0 1.25rem 0;
 	}
+}
+.special-locations{
+  & .color-col{
+    margin-bottom: 1.5rem;
+    &:last-child{
+	    margin-bottom: 0;
+	  }
+  }
 }
 
 // Slideshow

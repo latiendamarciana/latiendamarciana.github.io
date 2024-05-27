@@ -22,7 +22,11 @@
   <link rel="stylesheet" href="{{ "../assets/css/main.css" | relative_url }}">
   <!-- Media queries -->
   <link rel="stylesheet" href="{{ "../assets/css/media-queries.css" | relative_url }}">
-  {%- seo -%}
+  <!-- Plausible -->
+  <script defer data-domain="latiendamarciana.com" src="https://plausible.io/js/script.js"></script>
+  <meta property="og:image" content="{{ site.url }}/{{ site.image }}">
+  <!-- Jekyll SEO tag -->
+  {% seo %}
   {%- feed_meta -%}
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

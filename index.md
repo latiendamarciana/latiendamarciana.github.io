@@ -4,8 +4,8 @@
 layout: home
 title: home
 header-slideshow: 
-- /assets/images/hamburguesa.jpg" alt="hamburguesa rica
-- /assets/images/hamburguesa-2.jpg" alt="hamburguesa buena
+- /assets/images/home-slideshow/hamburguesa-vegana.jpg" alt="hamburguesa vegana
+- /assets/images/home-slideshow/cds.jpg" alt="cds de música
 title: Hamburguesas veganas, calcas, música y accesorios.
 where-button: ¿Dónde?
 where-url: /#ubicación-y-horarios

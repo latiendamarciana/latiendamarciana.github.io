@@ -1,11 +1,10 @@
 - heading: "Ubicación y horarios"
   days: "Martes a sábado (Excepto eventos especiales)"
-  location: "Pasaje Cervantes: <br>Carrera 42A con calle 48."
-  morning-heading: "Mañana/tarde"
-  morning: "11:00 a.m a 2:30 p.m. - O hasta que se acaben las hamburguesas."
-  night-heading: "Noche"
-  night: "6:00 p.m. a 8:00 p.m. - O hasta que se acaben las hamburguesas."
-  special-location: "/assets/images/bazar.jpg"
-  special-location-32: "/assets/images/bazar-32.jpg"
+  location: "<strong>Pasaje Cervantes:</strong> <br>Carrera 42A con calle 48."
+  text: "<strong>Mañana/tarde:</strong> 11:30 a.m a 2:30 p.m.*
+  <br>
+  <strong>Noche:</strong> 6:30 p.m. a 8:30 p.m.*
+  <br><br>
+  *O hasta que sea acaben las hamburguesas."
   regular-location: "/assets/images/cervantes-1200x1200.jpg"
   regular-location-32: "/assets/images/cervantes-1200x800.jpg"
