@@ -23,7 +23,7 @@ email: latiendamarciana@pm.me
 description: >- # this means to ignore newlines until "baseurl:"
   Hamburguesas veganas, calcas, música y accesorios.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://latiendamarciana.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: latiendamarciana
 lang: es
 image: 
