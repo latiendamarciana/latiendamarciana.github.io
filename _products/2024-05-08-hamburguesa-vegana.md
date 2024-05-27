@@ -3,7 +3,7 @@ title: "Hamburguesa vegana"
 price: "$12.000"
 image: /assets/images/products/hamburguesa-vegana.jpg
 alt: "Hamburguesa vegana"
-modal: "cd-britney"
+modal: "hamburguesa"
 categories:
 - Todos	
 - Comida

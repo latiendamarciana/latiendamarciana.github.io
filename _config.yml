@@ -26,11 +26,12 @@ description: >- # this means to ignore newlines until "baseurl:"
 tagline: Hamburguesas veganas, calcas, música y accesorios.
 url: "https://latiendamarciana.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: latiendamarciana
+author: Fluorescente.design
+author-url: https://fluorescente.design
 lang: es
 locale: es_CO
 image: assets/images/la-tienda-marciana-card-image.jpg
 logo: assets/images/la-tienda-marciana-logo.png
-
 
 # Build settings
 theme: minima
@@ -41,9 +42,7 @@ plugins:
 
 # variables
 telegram: https://t.me/latiendamarciana
-signal: https://signal.me/#eu/k39cdu6ixjsOUap1axbCoxnT9RqLmnbqMaUlSq6OnL1xpwThb8pGk7NvsPkKUaaB  
-author: Fluorescente.design
-author-url: https://fluorescente.design
+signal: https://signal.me/#eu/k39cdu6ixjsOUap1axbCoxnT9RqLmnbqMaUlSq6OnL1xpwThb8pGk7NvsPkKUaaB
 
 collections: 
   products:
