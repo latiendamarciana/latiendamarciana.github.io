@@ -1,12 +1,17 @@
 ---
 permalink: /404.html
-layout: default
+layout: special-message
 ---
 
   <!-- row -->
   <div class="row center-xs middle-xs not-found">
     <!-- col -->
     <div class="col-xs-12">
+      {% for item in site.data.contact %}
+        <figure>
+          <img src="{{ item.marciana }}" alt="Marciana">
+        </figure>
+      {% endfor %}
       <h1 class="giant">404</h1>
       <p class="mid">La página que buscas no existe :(</p>      
     </div>

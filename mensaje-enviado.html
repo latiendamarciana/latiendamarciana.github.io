@@ -1,14 +1,21 @@
 ---
 permalink: /mensaje-enviado.html
-layout: default
+layout: special-message
+link: "/"
 ---
 
   <!-- row -->
-  <div class="row center-xs middle-xs not-found">
+  <div class="row center-xs middle-xs">
     <!-- col -->
     <div class="col-xs-12">
-      <h1 class="giant">Mensaje Enviado</h1>
-      <p class="mid">La página que buscas no existe :(</p>      
+      {% for item in site.data.contact %}
+        <figure>
+          <img src="{{ item.marciana }}" alt="Marciana">
+        </figure>
+      {% endfor %}
+      <h2>Gracias por escribirme :)</h2>
+      <p class="mid">El mensaje ha llegado a mi correo y responderé tan pronto como pueda.</p>
+      <a href="/"class="button mid">Volver</a>
     </div>
     <!-- col-end -->
   </div>
