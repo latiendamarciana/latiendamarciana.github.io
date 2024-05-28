@@ -857,7 +857,29 @@ footer{
 
 // 404
 .not-found{
-	height: 35vh;
+		& .marciana{
+		margin-bottom: -2rem;
+		& img{
+			width: 15rem;
+		}
+	}
+}
+
+// Message confirmation
+.message-confirmation{
+	& h2{
+		& span{
+			color: $red-orange;
+			position: relative;
+			top: .2rem;
+		}
+	}
+	& .marciana{
+		margin-bottom: -2rem;
+		& img{
+			width: 15rem;
+		}
+	}
 }
 
 // Sr only
