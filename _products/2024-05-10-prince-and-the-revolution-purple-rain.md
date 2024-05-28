@@ -7,7 +7,7 @@ modal: "prince-and-the-revolution-purple-rain-disco-compacto"
 categories:
 - Todos	
 - Música
-date: 2024-05-08
+date: 2024-05-10
 excerpt: "Álbum <i>Purple Rain</i>, de Prince and the Revolution, de 1984. El disco tiene algunas marcas muy leves que no impiden que suene perfectamente."
 slideshow-images:
 - /assets/images/products/prince-and-the-revolution-purple-rain-portada.jpg

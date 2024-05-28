@@ -7,7 +7,7 @@ modal: "bjork-debut-disco-compacto"
 categories:
 - Todos	
 - Música
-date: 2024-05-08
+date: 2024-05-09
 excerpt: "Álbum <i>Debut</i>, de Björk, de 1993. El disco tiene algunas marcas muy leves que no impiden que suene perfectamente."
 slideshow-images:
 - /assets/images/products/bjork-debut-portada.jpg" alt="bjork debut portada
