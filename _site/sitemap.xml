@@ -30,6 +30,9 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/mensaje-enviado.html</loc>
+</url>
+<url>
 <loc>http://localhost:4000/assets/icomoon/demo.html</loc>
 <lastmod>2024-05-11T19:54:54-05:00</lastmod>
 </url>
