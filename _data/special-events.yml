@@ -1,6 +1,12 @@
-- heading: "San Alejo Junio 1"
+- heading: "San Alejo / Junio 1"
   pre-heading: "Evento especial"
-  text: "Parque de Bolívar:<br> Calle 54 con carrera 48<br> 9:00 a.m a 4:00 p.m. - O hasta que se acaben las hamburguesas."
+  text: "Estaré en el San Alejo en el Parque de Bolívar:
+  <br>
+  <br>
+  Calle 54 con carrera 48<br> 9:00 a.m a 4:00 p.m.* 
+  <br>
+  <br>
+  *O hasta que se acaben las hamburguesas."
   color: "red-orange"
   special-location: "/assets/images/san-alejo-1200x1200.jpg"
   special-location-32: "/assets/images/san-alejo-1200x800.jpg"
