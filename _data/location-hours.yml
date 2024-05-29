@@ -3,8 +3,9 @@
   location: "Pasaje Cervantes: <br>Carrera 42A con calle 48."
   text: "Mañana/tarde: 11:30 a.m a 2:30 p.m.*
   <br>
-  Noche: 6:30 p.m. a 8:30 p.m.*
+  Noche: 6:30 p.m. a 8:30 p.m.* **
   <br><br>
-  *O hasta que sea acaben las hamburguesas."
+  *O hasta que sea acaben las hamburguesas.<br>
+  **A partir del jueves 30 de mayo."
   regular-location: "/assets/images/cervantes-1200x1200.jpg"
   regular-location-32: "/assets/images/cervantes-1200x800.jpg"
