@@ -8,9 +8,9 @@ categories:
 - Todos	
 - Comida
 date: 2024-05-08
-excerpt: "Pan integral de 100 gramos, torta de lentejas de 100 gramos, hummus de garbanzo, lechuga, tomate, salsa napolitana. Le puedes agregar guacamole y picado de cebolla y tomate con cilantro."
+excerpt: "Pan integral de 100 gramos, torta de lentejas de 100 gramos, hummus de garbanzo, lechuga, tomate y salsa napolitana. Le puedes agregar guacamole y picado de cebolla roja y tomate con cilantro."
 slideshow-images:
 - /assets/images/products/hamburguesa-vegana.jpg" alt="hamburguesa vegana
-- /assets/images/products/hamburguesa-vegana-abierta.jpg" alt="hamburguesa vegana abierta
 - /assets/images/home-slideshow/hamburguesa-vegana-en-cervantes.jpg" alt="Una persona agregando aderezo a una hamburguesa vegana
+- /assets/images/products/hamburguesa-vegana-abierta.jpg" alt="hamburguesa vegana abierta
 ---
