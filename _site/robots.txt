@@ -1,2 +1,3 @@
 User-agent: *
 Sitemap: https://latiendamarciana.com/sitemap.xml
+Disallow: https://latiendamarciana.com/assets/icomoon/demo.html
