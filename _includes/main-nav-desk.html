@@ -23,7 +23,7 @@
               <li class="link mid {% if post.url == page.url %}active{% endif %}"><a href="{{ post.url }}">{{ post.title }}</a></li>
               {% endif %}
             {% endfor %}
-              <li class="link mid"><a uk-toggle="target: #contact-modal">Contacto</a></li> 
+              <li class="link mid"><a uk-toggle="target: #contact-modal">Domicilios y contacto</a></li> 
             {% for social in site.data.social %}
               <li class="link icon"><a href="{{ social.url }}" target="_blank"><span class="icon {{ social.icon }}"></span></a></li>
             {% endfor %}

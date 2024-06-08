@@ -141,7 +141,7 @@
             
               
             
-              <li class="link mid"><a uk-toggle="target: #contact-modal">Contacto</a></li> 
+              <li class="link mid"><a uk-toggle="target: #contact-modal">Domicilios y contacto</a></li> 
             
               <li class="link icon"><a href="https://t.me/latiendamarciana" target="_blank"><span class="icon icon-telegram"></span></a></li>
             
@@ -428,7 +428,7 @@
                     
                        
                     
-                       <li class="link mid"><a uk-toggle="target: #contact-modal">Contacto</a></li> 
+                       <li class="link mid"><a uk-toggle="target: #contact-modal">Domicilios y contacto</a></li> 
                   </ul>
                   <ul class="social inline list">
                     
@@ -483,8 +483,8 @@
               </div>
               <!-- row end -->              
               
-                <h2>Todavía no puedo hacer domicilios, pero ante cualquier duda o comentario no dudes en contactarme llenando este formulario.</h2>
-                <p class="base">El mensaje se demora unos treinta segundos para salir. Probablemente no podré responder inmediatamente pero lo haré apenas pueda. Gracias :)</p>
+                <h2>Puedes pedir domicilios o hacer comentarios llenando este formulario.</h2>
+                <p class="base">El mensaje se demora unos treinta segundos para salir. Probablemente no podré responder inmediatamente pero estoy pendiente. Gracias :)<br><br> Horario para domicilios: Martes a sábado de 10:00 a.m. a 6:00 p.m.</p>
               
             </div>
             <!-- col end -->
@@ -497,6 +497,8 @@
                 <input type="text" name="yourName" id="name" placeholder="ej: Juana Marciana" required>
                 <label for="email">Correo electrónico*</label>
                 <input type="email" id="email" name="yourEmail" placeholder="ej: juana@latiendamarciana.com" required>
+                <label for="phone">Número de celular (sin espacios)</label>
+                <input type="tel" id="phone" pattern="[0-9]{10}" inputmode="numeric" name="yourPhone" placeholder="ej: 3331234567">
                 <input type="hidden" name="_gotcha"><!-- use this to prevent spam -->
                 <label for="message">Mensaje*</label>
                 <textarea id="message" name="yourMessage" placeholder="Escribe lo que quieres decir" required></textarea>
