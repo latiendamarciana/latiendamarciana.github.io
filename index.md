@@ -12,5 +12,5 @@ header-slideshow:
 title: Hamburguesas veganas, calcas, música y accesorios.
 where-button: ¿Dónde?
 where-url: /#ubicación-y-horarios
-contact-button: Contacto
+contact-button: Domicilios
 ---
