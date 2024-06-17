@@ -122,6 +122,13 @@
       text-align: left;
     }
   }
+  .big-anouncement-content{
+    & figure{
+      -ms-flex-preferred-size: 50% !important;
+      flex-basis: 50% !important;
+      max-width: 50% !important;
+    }
+  }
 }
 
 // lg - from 962

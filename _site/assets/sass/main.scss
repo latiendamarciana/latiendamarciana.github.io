@@ -890,6 +890,26 @@ footer{
 	}
 }
 
+// Big anouncement
+.big-anouncement{
+	& .uk-modal-dialog{
+		height: 100%;
+		background-color: $purple;
+	}
+	& .big-anouncement-content{
+		height: 100vh;
+		& figure{
+		-ms-flex-preferred-size: 66.66666667%;
+		  flex-basis: 66.66666667%;
+		  max-width: 66.66666667%;
+		  margin: 0 auto;
+		}
+		& h1{
+			color: $bright;
+		}
+	}
+}
+
 // Sr only
 
 .sr-only:not(:focus):not(:active) {
