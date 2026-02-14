@@ -1,0 +1,26 @@
+@font-face{
+	font-family: 'Kombin';
+	src: url('../fonts/kombin/Kombin.ttf') format('ttf'),
+		url('../fonts/kombin/Kombin.woff') format('woff'),
+		url('../fonts/kombin/Kombin.woff2') format('woff2');
+	font-style: normal;
+	font-display: swap;	
+}
+
+@font-face{
+	font-family: 'Fraunces';
+	src: url('../fonts/fraunces/Fraunces-VariableFont.ttf') format('ttf'),
+		url('../fonts/fraunces/Fraunces-VariableFont.woff') format('woff'),
+		url('../fonts/fraunces/Fraunces-VariableFont.woff2') format('woff2');
+	font-style: normal;
+	font-display: swap;		
+}
+
+@font-face{
+	font-family: 'Fraunces';
+	src: url('../fonts/fraunces/Fraunces-Italic-VariableFont.ttf') format('ttf'),
+		url('../fonts/fraunces/Fraunces-Italic-VariableFont.woff') format('woff'),
+		url('../fonts/fraunces/Fraunces-Italic-VariableFont.woff2') format('woff2');
+	font-style: italic;		
+	font-display: swap;
+}

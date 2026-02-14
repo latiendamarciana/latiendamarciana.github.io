@@ -1,5 +1,0 @@
-User-agent: *
-Sitemap: https://latiendamarciana.com/sitemap.xml
-Disallow: /assets/icomoon/demo.html
-Disallow: /mensaje-enviado
-

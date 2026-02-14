@@ -1,30 +1,11 @@
-<footer uk-scrollspy="cls: uk-animation-fade; delay: 100">
-  <!-- wrapper -->
-  <div class="wrapper container-fluid">
-    <!-- row -->
-    <div class="row center-xs start-sm">
-        <!-- col -->
-        <div class="col-xs-4 col-sm-2">
-          <a class="marciana" href="{{ "/" | relative_url }}">
-            <img src="../assets/images/marciana-footer.svg" alt="">
-          </a>
-        </div>
-        <!-- col end -->
-      </div>
-      <!-- row end -->
-      <!-- row -->
-      <div class="row">
-        <!-- col -->
-        <div class="col-xs-12 closure">
-            <p>@2024 <a href="{{ site.author-url }}" target="_blank">{{ site.author }}</a><br class="visible-xs hidden-sm hidden-lg"> Hecho con <span class="icon icon-heart"></span> en Medellín.</p>
-        </div>
-        <!-- col end -->
-      </div>
-      <!-- row end -->
-    </div>
-    <!-- row end -->
-  </div>
-  <!-- wrapper end -->
+<footer>
+	<div class="footer-container">
+		<h3>{{ page.footer-heading }}</h3>
+		<form method="post" action="">
+			<label for="newsletter">Correo electrónico</label>
+			<input type="email" name="newsletter" id="newsletter" pattern=".{4,64}" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
+			<button type="submit" aria-describedby="newsletter-note">Suscribirme</button>
+		</form>
+		<p class="note" id="newsletter-note">{{ page.newsletter-note }}</p>
+	</div>
 </footer>
-
-{%- include modal-nav.html -%}

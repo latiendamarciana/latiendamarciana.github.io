@@ -1,0 +1,191 @@
+:root{
+  --text: #333;
+  --martian-background: #F9F7F3;
+  --martian-light-gray: #F4F4EE;
+  --martian-vivid-salmon: #FF5C54;
+  --martian-vivid-purple: #9E2EAD;
+  --martian-purple: #75297F;
+  --martian-dark-purple: #5B2467;
+
+  --headings: 'Kombin', 'Fraunces', serif;
+  --headings-height: 112%;
+
+  --h1-xxl: 3.65rem;
+  --h1-xl: 2.875rem;
+  --h1-l: 2.281rem;
+  --h1: 2.025rem;
+  --h2: 1.8rem;
+  --h3: 1.425rem;
+  --h4: 1.125rem;
+  --h5: 1rem;
+  --h6: 0.888rem;
+
+  --paragraphs: 'Fraunces', sans-serif;
+  --paragraphs-height: 150%;
+
+  --p-s: 0.888rem;
+  --p-base: 1rem;
+  --p-m: 1.125rem;
+  --p-l: 1.6rem;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  background-color: var(--martian-background);
+  color: var(--text);
+  font-family: var(--paragraphs);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+body{
+  scroll-behavior: smooth;
+  font-synthesis: none;
+  display: flex;
+
+  height: 97vh;
+  align-items: center;
+  justify-content: center;
+}
+
+header, .main-container, .footer-container{
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  max-width: 640px;
+
+  text-align: center;
+}
+
+h1, h2, h3{
+  margin: 0;
+  color: var(--martian-vivid-purple);
+  font-family: var(--headings);
+  font-weight: normal;
+  line-height: var(--headings-height);
+}
+
+p, label{
+  margin: 0;
+  color: var(--martian-dark-purple);
+  line-height: var(--paragraphs-height);  
+}
+
+label{
+  display: block;
+  color: var(--martian-vivid-purple);
+  font-family: var(--headings);
+  font-size: var(--m);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 32%;
+  margin-bottom: .5rem;
+}
+
+input, textarea{
+  display: block;
+  width: 100%;
+  border: transparent;
+  border-bottom: 2px solid var(--martian-dark-purple);
+  padding: .5rem .75rem;
+  background-color: transparent;
+  color: var(--martian-dark-purple);
+  margin-bottom: 2rem;
+}
+
+input:focus, textarea:focus{
+  background-color: var(--martian-background);
+  outline: 2px dotted var(--martian-vivid-salmon);
+  color: var(--martian-dark-purple);
+}
+
+textarea{
+  resize: vertical;
+}
+
+button{
+  background-color: var(--martian-vivid-salmon);
+  color: var(--martian-background);
+  border: none;
+  border-radius: .375rem;
+  padding: .75rem 2rem;
+  font-family: var(--headings);
+  font-size: var(--p-m);
+  text-transform: uppercase;
+  letter-spacing: 32%;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+header{
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+header h1{
+  font-size: var(--h1-l);
+  margin-bottom: 1rem;
+}
+
+header p{
+  font-size: var(--p-m);
+  margin-bottom: var(--p-m);
+}
+
+main{
+  background-color: var(--martian-light-gray);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+main h2{
+  font-size: var(--h2);
+  margin-bottom: 2rem;
+}
+
+.note{
+  font-size: var(--p-s);
+}
+
+footer{
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  background-color: var(--martian-purple);
+}
+
+footer h3, footer label, footer p{
+  color: var(--martian-background);
+}
+
+footer h3{
+  font-size: var(--h2);
+  margin-bottom: 1.5rem;
+}
+
+footer input{
+  border-bottom: 2px solid var(--martian-background);
+  color: var(--martian-background);
+}
+
+footer input:focus{
+  background-color: var(--martian-vivid-purple);
+  color: var(--martian-background);
+}
+
+#Smallchat .Layout{
+  background-color: #FF5C54 !important;
+}
+
+#chaticon{
+  color: #F9F7F3 !important;
+}
+
+#Smallchat .Launcher-icon{
+  background-color: #FF5C54 !important;
+}
