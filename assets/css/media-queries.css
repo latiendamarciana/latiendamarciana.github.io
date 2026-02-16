@@ -13,7 +13,6 @@
   .hidden-sm{
     display: none;
   }
-
   .visible-sm{
     display: block;
   }
@@ -38,6 +37,11 @@
     width: 11.063rem;
     height: 10.875rem;
     margin: 0 auto 3rem auto;
+  }
+  .confirm-container{
+    display: flex;
+    height: 98vh;
+    align-items: center;  
   }
   /* Main */
   main h2{
@@ -90,7 +94,10 @@
     max-width: 50rem;
     margin-top: 0;
     padding-top: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  .thanks p{
+    margin-bottom: 2rem; 
   }
   header p{
     font-size: var(--p-l);

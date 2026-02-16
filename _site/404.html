@@ -73,14 +73,14 @@
       </div>
     </main><footer>
 	<div class="footer-container">
-		<figure class="email">
+		<figure class="email" aria-hidden="true">
 			<img src="assets/images/email.svg">
 		</figure>
 		<div class="heading-and-form">	
 			<h3></h3>
-			<form method="post" action="">
+			<form method="post" action="https://buttondown.com/api/emails/embed-subscribe/latiendamarciana" class="embeddable-buttondown-form" referrerpolicy="unsafe-url">
 				<label for="newsletter">Correo electrónico</label>
-				<input type="email" name="newsletter" id="newsletter" pattern=".{4,64}" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
+				<input type="email" name="email" id="newsletter" pattern=".{4,64}" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
 				<button type="submit" aria-describedby="newsletter-note">Suscribirme</button>
 				<p class="note" id="newsletter-note"></p>
 			</form>

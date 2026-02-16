@@ -94,10 +94,25 @@ figure{
   margin: 0;
 }
 
-p, label{
+a{
+  color: var(--martian-vivid-salmon);
+  font-weight: 600;
+  transition: var(--fade);
+}
+
+a:hover{
+  color: var(--martian-vivid-purple);
+}
+
+p, label, li{
   margin: 0;
   color: var(--martian-dark-purple);
   line-height: var(--paragraphs-height);  
+}
+
+ul{
+  margin-bottom: var(--p-base);
+  padding-left: 1rem;
 }
 
 label{
@@ -142,7 +157,7 @@ textarea{
 
 button, .button{
   background-color: var(--martian-vivid-salmon);
-  color: var(--martian-background);
+  color: #fff;
   border: none;
   border-radius: .375rem;
   padding: .75rem 1.5rem;
@@ -190,7 +205,7 @@ header{
   scroll-behavior: smooth;
 }
 
-.thanks-container{
+.thanks-container, .unconfirm-confirm-container{
   display: flex;
   height: 98vh;
   align-items: center;  
@@ -202,6 +217,23 @@ header{
 
 .thanks .logo{
   margin-bottom: 1.5rem;
+}
+
+.unconfirm-confirm{
+  text-align: left;
+}
+
+.unconfirm-confirm, .confirm h1{
+  max-width: 50rem;
+  font-size: var(--h1-l);
+}
+
+.unconfirm-confirm p, .unconfirm-confirm ul{
+  font-size: var(--p-m);
+}
+
+.unconfirm-confirm ul{
+  margin-bottom: var(--p-m);
 }
 
 .down{
@@ -225,7 +257,11 @@ header h1{
 }
 
 .thanks h1{
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.thanks p{
+  margin-bottom: 1.5rem;
 }
 
 header p{
