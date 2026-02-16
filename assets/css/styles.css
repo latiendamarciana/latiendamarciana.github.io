@@ -2,6 +2,7 @@
   --text: #333;
   --martian-background: #F9F7F3;
   --martian-light-gray: #F4F4EE;
+  --martian-light-salmon: #FF8882;
   --martian-vivid-salmon: #FF5C54;
   --martian-vivid-purple: #9E2EAD;
   --martian-purple: #75297F;
@@ -10,27 +11,61 @@
   --headings: 'Kombin', 'Fraunces', serif;
   --headings-height: 112%;
 
-  --h1-xxl: 3.65rem;
-  --h1-xl: 2.875rem;
+  --h1-xxl: 2.886rem;
+  --h1-xl: 2.566rem;
   --h1-l: 2.281rem;
   --h1: 2.025rem;
   --h2: 1.8rem;
-  --h3: 1.425rem;
-  --h4: 1.125rem;
-  --h5: 1rem;
-  --h6: 0.888rem;
+  --h3: 1.6rem;
+  --h4: 1.419rem;
+  --h5: 1.263rem;
+  --h6: 1.125rem;
 
   --paragraphs: 'Fraunces', sans-serif;
   --paragraphs-height: 150%;
 
-  --p-s: 0.888rem;
-  --p-base: 1rem;
-  --p-m: 1.125rem;
-  --p-l: 1.6rem;
+  --p-xl: 1.6rem;
+  --p-l: 1.375rem;
+  --p-m: 1.263rem;
+  --p-base: 1.125rem;
+  --p-s: 1rem;
+
+  --fade: all .4s ease;
+  --fade-in: fadeIn 3s;
 }
 
 *{
   box-sizing: border-box;
+}
+
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection, -moz-selection{
+  color: var(--martian-dark-purple);
+  background-color: var(--martian-light-salmon);
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(15%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.hidden-xs{
+  display: none;
+}
+
+.visible-xs{
+  display: block;
 }
 
 html{
@@ -43,23 +78,7 @@ html{
   font-variation-settings:
     "SOFT" 0,
     "WONK" 0;
-}
-
-body{
-  scroll-behavior: smooth;
-  font-synthesis: none;
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-}
-
-header, .main-container, .footer-container{
-  padding: 0 1.5rem;
-  margin: 0 auto;
-  max-width: 640px;
-
-  text-align: center;
+  scroll-behavior: smooth;   
 }
 
 h1, h2, h3{
@@ -68,6 +87,11 @@ h1, h2, h3{
   font-family: var(--headings);
   font-weight: normal;
   line-height: var(--headings-height);
+}
+
+/* Uikit */
+figure{
+  margin: 0;
 }
 
 p, label{
@@ -83,19 +107,25 @@ label{
   font-size: var(--m);
   font-weight: normal;
   text-transform: uppercase;
-  letter-spacing: 32%;
+  letter-spacing: 24%;
   margin-bottom: .5rem;
+}
+
+label:has(+ input:focus-visible), label:has(+ textarea:focus-visible) {
+  color: var(--martian-vivid-salmon);
+  transition: var(--fade);
 }
 
 input, textarea{
   display: block;
   width: 100%;
   border: transparent;
-  border-bottom: 2px solid var(--martian-dark-purple);
+  border-bottom: 1px solid var(--martian-dark-purple);
   padding: .5rem .75rem;
   background-color: transparent;
   color: var(--martian-dark-purple);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  transition: all .2s ease-out;
 }
 
 input:focus, textarea:focus{
@@ -106,25 +136,87 @@ input:focus, textarea:focus{
 
 textarea{
   resize: vertical;
+  margin-bottom: 2rem;
+  line-height: 150%;
 }
 
-button{
+button, .button{
   background-color: var(--martian-vivid-salmon);
   color: var(--martian-background);
   border: none;
   border-radius: .375rem;
-  padding: .75rem 2rem;
+  padding: .75rem 1.5rem;
   font-family: var(--headings);
   font-size: var(--p-m);
   text-transform: uppercase;
-  letter-spacing: 32%;
+  letter-spacing: 24%;
   cursor: pointer;
   margin-bottom: 1.5rem;
+  width: 100%;
+  transition: var(--fade);
+}
+
+button:hover, button:focus, .button:hover, .button:focus{
+  background-color: var(--martian-vivid-purple);
+  color: var(--martian-vivid-salmon);
+  text-decoration: none;
+}
+
+button:focus, .button:focus{
+  outline: 2px dotted var(--martian-vivid-salmon);
+  text-decoration: none;
+}
+
+button:active, button:active, .button:active, .button:active{
+  background-color: var(--martian-dark-purple);
+  text-decoration: none;
+}
+
+.button{
+  display: inline-block;
+  text-align: center;
+}
+
+/* Header */
+
+header, .main-container, .footer-container{
+  padding: 0 1.5rem;
+  margin: 0 auto;
 }
 
 header{
   padding-top: 1.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
+  scroll-behavior: smooth;
+}
+
+.thanks-container{
+  display: flex;
+  height: 98vh;
+  align-items: center;  
+}
+
+.thanks{
+  text-align: center;
+}
+
+.thanks .logo{
+  margin-bottom: 1.5rem;
+}
+
+.down{
+  font-size: 4.11rem;
+  color: var(--martian-light-gray);
+  position: relative;
+  z-index: 10;
+  bottom: 6.5rem;
+  animation: down 3s ease infinite;
+}
+
+.down:hover{
+  text-decoration: none;
+  color: var(--martian-vivid-salmon);
+  transition: color .5s ease;
 }
 
 header h1{
@@ -132,10 +224,34 @@ header h1{
   margin-bottom: 1rem;
 }
 
+.thanks h1{
+  margin-bottom: 2.5rem;
+}
+
 header p{
   font-size: var(--p-m);
   margin-bottom: var(--p-m);
 }
+
+header p:last-child{
+  margin-bottom: 0;
+}
+
+header .logo{
+  width: 8.25rem;
+  height: 8.063rem;
+}
+
+header .logo, footer .email{
+  margin: 0 auto 1.5rem auto;
+}
+
+header .logo img, footer .email img{
+  width: 100%;
+  height: auto;
+}
+
+/* Main */
 
 main{
   background-color: var(--martian-light-gray);
@@ -148,14 +264,34 @@ main h2{
   margin-bottom: 2rem;
 }
 
+main h2 span:before{
+  content: "\e902";
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .note{
   font-size: var(--p-s);
 }
+
+/* Footer */
 
 footer{
   padding-top: 3rem;
   padding-bottom: 6rem;
   background-color: var(--martian-purple);
+}
+
+footer .email{
+  width: 9rem;
+  height: 7.563rem;
 }
 
 footer h3, footer label, footer p{
@@ -168,7 +304,7 @@ footer h3{
 }
 
 footer input{
-  border-bottom: 2px solid var(--martian-background);
+  border-bottom: 1px solid var(--martian-background);
   color: var(--martian-background);
 }
 
@@ -177,14 +313,38 @@ footer input:focus{
   color: var(--martian-background);
 }
 
+/*Smallchat*/
+
 #Smallchat .Layout{
   background-color: #FF5C54 !important;
 }
 
-#chaticon{
-  color: #F9F7F3 !important;
+#Smallchat .Launcher:hover{
+  background-color: #9E2EAD !important;
 }
 
 #Smallchat .Launcher-icon{
   background-color: #FF5C54 !important;
+}
+
+#Smallchat .Launcher-icon:hover{
+  background-color: #9E2EAD !important;
+}
+
+#chaticon{
+  fill: #F9F7F3 !important;
+}
+
+#Smallchat .Launcher-icon:hover #chaticon{
+  fill: #FF5C54 !important;
+}
+
+/* Uikit */
+
+.uk-slideshow{
+  margin-bottom: 1.5rem;
+}
+
+.uk-slideshow-items{
+  border-radius: 0.75rem;
 }

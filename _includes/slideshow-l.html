@@ -1,0 +1,8 @@
+<div class="uk-slideshow hidden-xs visible-sm visible-l" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 4000; ratio: 3:2" aria-hidden="true">
+	<div class="uk-slideshow-items">
+		{% for slideshow-l-image in site.slideshow-l-images %}
+			<img src="{{ slideshow-l-image.image }}" loading="lazy" alt="{{ slideshow-l-image.alt }}">
+		{% endfor %}
+	</div>
+	<a class="down hidden-xs hidden-sm visible-l-inline" href="#header-heading" aria-hidden="true"><span class="icon icon-arrow-down"></span></a>	
+</div>

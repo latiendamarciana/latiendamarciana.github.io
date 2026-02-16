@@ -1,7 +1,7 @@
 <header>
-	<figure aria-hidden="true">
-		<img src="assets/images/marciana-salmon.svg">
-	</figure>	
-	<h1>{{ page.header-heading }}</h1>
-	<p>{{ page.header-paragraph }}</p>
+	{% include marciana.html %}
+	{% include slideshow-xs.html %}
+	{% include slideshow-l.html %}
+	<h1 id="header-heading">{{ page.header-heading }}</h1>
+	<p>{{ page.content }}</p>
 </header>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,25 +7,76 @@
 	<link rel="stylesheet" href="/assets/css/normalize.css">
 	<!-- Fontface -->
 	<link rel="stylesheet" href="/assets/css/fontface.css">
+		<!-- Uikit -->
+	<link rel="stylesheet" href="/assets/css/uikit/uikit.min.css">
+  <script src="/assets/js/uikit.min.js"></script>
+  <script src="/assets/js/uikit-icons.min.js"></script>
 	<!-- Custom styles -->
 	<link rel="stylesheet" href="/assets/css/styles.css">
 	<link rel="stylesheet" href="/assets/css/media-queries.css">
+	<!-- Icomoon -->
+	<link rel="stylesheet" href="/assets/css/icomoon/style.css">
 	<title>La tienda marciana</title>
 	<!-- Smallchat -->
-  <script src="https://embed.small.chat/T0758JG67T7C07609Z3M5E.js" async></script>
-  <!-- Favico -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<script src="https://embed.small.chat/T0758JG67T7C07609Z3M5E.js" async></script>
+	<!-- Plausible -->
+	<script defer data-domain="latiendamarciana.com" src="https://plausible.io/js/script.js"></script>
+	<!-- Favico -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
 	<header>
-	<figure aria-hidden="true">
-		<img src="assets/images/marciana-salmon.svg">
-	</figure>	
-	<h1>La Tienda Marciana: Comida vegana, obra gráfica y accesorios. (Estamos en etapa de pruebas)</h1>
-	<p>Encuéntranos los domingos en el Mercado Campesino del Parque de La Presidenta (Av. El Poblado entre calle 7D y 8). De 7 a. m. a 1 p. m., o hasta que se nos acabe la comida.<br><br>Escríbenos al chat de la parte inferior derecha :)</p>
+	<figure class="logo" aria-hidden="true">
+	<img src="/assets/images/marciana-salmon.svg" alt="">
+</figure>
+	<div class="uk-slideshow visible-xs hidden-sm hidden-l" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 4000; ratio: 1:1">
+	<div class="uk-slideshow-items">
+		
+			<img src="/assets/images/hamburguesas-1440-01.jpg" loading="lazy" alt="Hamburguesa marciana servida">
+		
+			<img src="/assets/images/hamburguesas-1440-02.jpg" loading="lazy" alt="Hamburguesa marciana servida abierta">
+		
+			<img src="/assets/images/hamburguesas-1440-03.jpg" loading="lazy" alt="Hamburguesa marciana servida abierta">
+		
+	</div>
+</div>
+	<div class="uk-slideshow hidden-xs visible-sm visible-l" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 4000; ratio: 3:2" aria-hidden="true">
+	<div class="uk-slideshow-items">
+		
+			<img src="/assets/images/hamburguesas-1600-01.jpg" loading="lazy" alt="Hamburguesa marciana servida">
+		
+			<img src="/assets/images/hamburguesas-1600-02.jpg" loading="lazy" alt="Hamburguesa marciana servida abierta">
+		
+			<img src="/assets/images/hamburguesas-1600-03.jpg" loading="lazy" alt="Hamburguesa marciana servida abierta">
+		
+	</div>
+	<a class="down hidden-xs hidden-sm visible-l-inline" href="#header-heading" aria-hidden="true"><span class="icon icon-arrow-down"></span></a>	
+</div>
+	<h1 id="header-heading">La Tienda Marciana:<br> Comida vegana, obra gráfica y accesorios. (Estamos en etapa de pruebas)</h1>
+	<p>Encuéntranos los domingos a partir del 22 de febrero, en el Mercado Campesino del Parque de La Presidenta (Av. El Poblado entre calle 7D y 8). De 7 a. m. a 1 p. m., o hasta que se nos acabe la comida.</p>
 </header>
+	<main>
+	<div class="main-container">
+		<h2>Si quieres hacer un encargo de mínimo cinco hamburguesas, llena este formulario o escribe en el chat de la esquina inferior izquierda ( <span></span> )</h2>
+		<form method="post" action="https://formsubmit.co/latiendamarciana@pm.me">
+			<input type="hidden" name="_next" value="https://latiendamarciana.com/gracias.html">
+			<input type="hidden" name="_subject" value="¡Nuevo mensaje marciano!">
+			<input type="hidden" name="_cc" value="tiendamarciana@proton.me">
+			<label for="name">Nombre</label>
+			<input required type="text" name="name" id="name" oninvalid="this.setCustomValidity('Por favor escribe tu nombre')" oninput="this.setCustomValidity('')">
+			<label for="phone">Teléfono celular</label>
+			<input required type="tel" name="phone" id="phone" pattern=".{7,}" oninvalid="this.setCustomValidity('Por favor escribe tu número de teléfono celular')" oninput="this.setCustomValidity('')">
+			<label for="email">Correo electrónico</label>
+			<input required type="email" name="email" id="email" pattern=".{4,64}" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
+			<label for="message">Mensaje</label>
+			<textarea required name="message" id="message" rows="5" pattern=".{4,}" oninvalid="this.setCustomValidity('Por favor escribe un mensaje')" oninput="this.setCustomValidity('')"></textarea>
+			<button type="submit" aria-describedby="form-note">Enviar</button>
+			<p class="note" id="form-note">Recuerda dejar tus datos reales para poder contactarte respecto a tu pedido. Sólo los usaremos con ese fin.</p>
+		</form>
+	<div class="main-container">
+</main>
 </body>
 </html>

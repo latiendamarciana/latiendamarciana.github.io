@@ -1,5 +1,163 @@
-@media (min-width: 810px){
-	body{
-		height: 97vh;
-	}
+/* Sm screens */
+
+@media screen and (min-width: 641px) {
+  :root{
+    --h1-xxl: 3.25rem;
+    --h1-xl: 2.875rem;
+    --h1-l: 2.563rem;
+    --h1: 2.281rem;
+    --h2: 2.025rem;
+    --h3: 1.8rem;
+  }
+
+  .hidden-sm{
+    display: none;
+  }
+
+  .visible-sm{
+    display: block;
+  }
+  input, textarea{
+    margin-bottom: 2rem;
+  }
+  button, .button{
+    width: initial;
+  }
+  /* Header */
+  header, .main-container, .footer-container{
+    padding: 0 3rem;
+  }
+  header{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+  header h1{
+    margin-bottom: 1.5rem;
+  }
+  header .logo{
+    width: 11.063rem;
+    height: 10.875rem;
+    margin: 0 auto 3rem auto;
+  }
+  /* Main */
+  main h2{
+    margin-bottom: 3rem;
+  }
+  footer .email{
+    display: none;
+  }
+  /* Uikit */
+  .uk-slideshow{
+    margin-bottom: 2rem;
+  }
+}
+
+/* L screens */
+
+@media screen and (min-width: 1025px) {
+  .hidden-l{
+    display: none;
+  }
+  .visible-l{
+    display: block;
+  }
+  .visible-l-inline{
+    display: inline-block;
+  }
+  input, textarea{
+    margin-bottom: 2rem;
+  }
+  /* Header */
+  header, .main-container, .footer-container{
+    padding: 0;
+  }
+  header{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+  }
+  header h1, header p{
+    margin: 0 auto;
+  }
+  header h1{
+    margin-top: -6.5rem;
+    margin-bottom: 1.5rem;
+    font-size: var(--h1-xl);
+    max-width: 63rem;
+    padding-top: 3rem;
+  }
+  .thanks h1{
+    max-width: 50rem;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 3rem;
+  }
+  header p{
+    font-size: var(--p-l);
+    margin-bottom: var(--p-l);
+    max-width: 50rem;
+  }
+  header .logo{
+    width: 8.938rem;
+    height: 8.75rem;
+    margin: 0 auto 2rem auto;
+  }
+  /* Main */
+  main{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .main-container, .footer-container{
+    max-width: 63.125rem;
+  }
+  .main-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+  }
+  main h2{
+    font-size: var(--h1-l);
+  }
+  /*Footer*/
+  footer{
+    padding-top: 6rem;
+    background-color: var(--martian-dark-purple);
+  }
+  .footer-container{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    background-color: var(--martian-purple);
+    padding: 3rem;
+    border-radius: 1rem;
+  }
+  footer .email{
+    display: initial;
+    width:  10.688rem;
+    height: auto;
+    margin: 0;
+  }
+  footer input{
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    width: initial;
+    margin-right: 2rem;
+    width: 63%;
+  }
+  /* Uikit */
+  .uk-slideshow{
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+}
+
+/* Reduced Motion */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -1,11 +1,16 @@
 <footer>
 	<div class="footer-container">
-		<h3>{{ page.footer-heading }}</h3>
-		<form method="post" action="">
-			<label for="newsletter">Correo electrónico</label>
-			<input type="email" name="newsletter" id="newsletter" pattern=".{4,64}" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
-			<button type="submit" aria-describedby="newsletter-note">Suscribirme</button>
-		</form>
-		<p class="note" id="newsletter-note">{{ page.newsletter-note }}</p>
+		<figure class="email">
+			<img src="assets/images/email.svg">
+		</figure>
+		<div class="heading-and-form">	
+			<h3>{{ page.footer-heading }}</h3>
+			<form method="post" action="">
+				<label for="newsletter">Correo electrónico</label>
+				<input type="email" name="newsletter" id="newsletter" pattern=".{4,64}" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
+				<button type="submit" aria-describedby="newsletter-note">Suscribirme</button>
+				<p class="note" id="newsletter-note">{{ page.newsletter-note }}</p>
+			</form>
+		</div>	
 	</div>
 </footer>
