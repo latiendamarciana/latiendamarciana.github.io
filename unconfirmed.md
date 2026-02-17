@@ -1,6 +1,6 @@
 ---
 layout: unconfirmed-confirmed
-permalink: /por-confirmar/
+permalink: /suscripcion-por-confirmar/
 heading: "Gracias por suscribirte a La Tienda Marciana :)"
 ---
 Solo falta un paso: revisa tu bandeja de entrada y confirma tu suscripción haciendo clic en el enlace que te enviamos.

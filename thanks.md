@@ -1,6 +1,6 @@
 ---
 layout: thanks
-permalink: /gracias/
+permalink: /mensaje-recibido/
 thanks-heading: "¡Mensaje recibido!"
 button: "Volver"
 ---

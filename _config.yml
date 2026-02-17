@@ -19,29 +19,37 @@
 # in the templates via {{ site.myvariable }}.
 
 title: La Tienda Marciana
-email: latiendamarciana@pm.me
+name: La Tienda Marciana
 description: >- # this means to ignore newlines until "baseurl:"
-  Comida vegana, obra gráfica y accesorios en Medellín Colombia.
+  La Tienda Marciana: Comida vegana, obra gráfica y accesorios en Medellín Colombia.
+email: latiendamarciana@pm.me
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://latiendamarciana.com" # the base hostname & protocol for your site, e.g. http://example.com
+author: Fluorescente
+author-url: "https://fluorescente.design"
 # twitter_username: jekyllrb
-title: La tienda marciana
-name: La tienda marciana
-github_username:  latiendamarciana
-url: "https://latiendamarciana.com"
+github_username: latiendamarciana
 lang: es
 locale: es_CO
+logo: assets/images/la-tienda-marciana-logo.svg
+image: assets/images/la-tienda-marciana-card-image.jpg
+social_image: assets/images/la-tienda-marciana-card-image.jpg
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 collections:
   slideshow-xs-images:
     output: true
   slideshow-l-images:
     output: true  
+
+webmaster_verifications:
+    google: lnZ4AtNlxnPSR2dYkaLXuiHiGcvBuIR5fBHrZGqmyiU    
 
 # Exclude from processing.
 # The following items will not be processed, by default.

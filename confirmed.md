@@ -1,6 +1,6 @@
 ---
 layout: confirmed
-permalink: /confirmado/
+permalink: /suscripcion-confirmada/
 heading: "¡Suscripción confirmada!"
 ---
 Ya estás adentro. A partir de ahora recibirás en tu correo:
