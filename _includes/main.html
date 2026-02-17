@@ -1,7 +1,7 @@
 <main>
 	<div class="main-container" uk-scrollspy="cls: uk-animation-fade; delay: 100">
-		<h2>{{ page.main-heading }}</h2>
-		<form method="post" action="https://formsubmit.co/latiendamarciana@pm.me">
+		<h2 id="contact-form-heading">{{ page.main-heading }}</h2>
+		<form method="post" action="https://formsubmit.co/latiendamarciana@pm.me" aria-labelledby="contact-form-heading">
 			<input type="hidden" name="_next" value="https://latiendamarciana.com/mensaje-recibido/">
 			<input type="hidden" name="_subject" value="¡Nuevo mensaje marciano!">
 			<input type="hidden" name="_cc" value="tiendamarciana@proton.me">

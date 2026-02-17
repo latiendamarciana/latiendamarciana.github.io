@@ -4,8 +4,8 @@
 			<img src="assets/images/email.svg" loading="lazy" alt="un bocadillo de historieta con un ícono de email por dentro" loading="lazy">
 		</figure>
 		<div class="heading-and-form">	
-			<h3>{{ page.footer-heading }}</h3>
-			<form method="post" action="https://buttondown.com/api/emails/embed-subscribe/latiendamarciana" class="embeddable-buttondown-form" referrerpolicy="unsafe-url">
+			<h3 id="newsletter-form-heading">{{ page.footer-heading }}</h3>
+			<form method="post" action="https://buttondown.com/api/emails/embed-subscribe/latiendamarciana" class="embeddable-buttondown-form" referrerpolicy="unsafe-url" aria-labelledby="newsletter-form-heading">
 				<label for="newsletter">Correo electrónico</label>
 				<input type="email" name="email" id="newsletter" pattern=".{4,64}" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
 				<button type="submit" aria-describedby="newsletter-note">Suscribirme</button>
