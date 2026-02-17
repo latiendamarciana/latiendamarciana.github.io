@@ -48,3 +48,7 @@ https://latiendamarciana.com/ (con barra - también funciona pero puede causar d
 Animación de entrada:
 
 uk-scrollspy="cls: uk-animation-fade; delay: 100"
+
+https://favicon.io/
+
+https://developers.facebook.com/tools/debug/ ásco 
