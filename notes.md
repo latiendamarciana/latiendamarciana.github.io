@@ -51,4 +51,10 @@ uk-scrollspy="cls: uk-animation-fade; delay: 100"
 
 https://favicon.io/
 
-https://developers.facebook.com/tools/debug/ ásco 
+https://developers.facebook.com/tools/debug/ Pide cuenta 
+
+https://cards-dev.twitter.com/validator Pide cuenta
+
+https://www.xcardvalidator.com/
+
+https://ogimage.info

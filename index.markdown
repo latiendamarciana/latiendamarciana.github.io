@@ -3,8 +3,9 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-description: "La Tienda Marciana: Comida vegana, obra gráfica y accesorios en Medellín Colombia."
-title: "La Tienda Marciana:<br> Comida vegana, obra gráfica y accesorios. (Estamos en etapa de pruebas)"
+description: "Comida vegana, obra gráfica y accesorios en Medellín Colombia."
+title: "La Tienda Marciana"
+header-heading: "La Tienda Marciana:<br> Comida vegana, obra gráfica y accesorios. (Estamos en etapa de pruebas)"
 main-heading: "Si quieres hacer un encargo de mínimo cinco hamburguesas, llena este formulario o escribe en el chat de la esquina inferior izquierda ( <span></span> )"
 form-note: "Recuerda dejar tus datos reales para poder contactarte respecto a tu pedido. Sólo los usaremos con ese fin."
 footer-heading: "Suscríbete para no perderte nuestras novedades"

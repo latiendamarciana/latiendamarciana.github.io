@@ -21,7 +21,7 @@
 title: La Tienda Marciana
 name: La Tienda Marciana
 description: >- # this means to ignore newlines until "baseurl:"
-  La Tienda Marciana: Comida vegana, obra gráfica y accesorios en Medellín Colombia.
+  Comida vegana, obra gráfica y accesorios en Medellín Colombia.
 email: latiendamarciana@pm.me
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://latiendamarciana.com" # the base hostname & protocol for your site, e.g. http://example.com
