@@ -4,10 +4,11 @@
 
 layout: home
 description: "La Tienda Marciana: Comida vegana, obra gráfica y accesorios en Medellín Colombia."
-header-heading: "La Tienda Marciana:<br> Comida vegana, obra gráfica y accesorios. (Estamos en etapa de pruebas)"
+title: "La Tienda Marciana:<br> Comida vegana, obra gráfica y accesorios. (Estamos en etapa de pruebas)"
 main-heading: "Si quieres hacer un encargo de mínimo cinco hamburguesas, llena este formulario o escribe en el chat de la esquina inferior izquierda ( <span></span> )"
 form-note: "Recuerda dejar tus datos reales para poder contactarte respecto a tu pedido. Sólo los usaremos con ese fin."
 footer-heading: "Suscríbete para no perderte nuestras novedades"
 newsletter-note: "Al suscribirte nos autorizas a enviarte boletines de correo. No usaremos tu correo para otros fines, ni lo compartiremos con terceros."
+image: "assets/images/la-tienda-marciana-card-image.jpg"
 ---
 Encuéntranos los domingos a partir del 22 de febrero, en el Mercado Campesino del Parque de La Presidenta (Av. El Poblado entre calle 7D y 8). De 7 a. m. a 1 p. m., o hasta que se nos acabe la comida.

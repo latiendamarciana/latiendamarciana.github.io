@@ -26,6 +26,7 @@ email: latiendamarciana@pm.me
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://latiendamarciana.com" # the base hostname & protocol for your site, e.g. http://example.com
 author: Fluorescente
+creator: Fluorescente
 author-url: "https://fluorescente.design"
 # twitter_username: jekyllrb
 github_username: latiendamarciana

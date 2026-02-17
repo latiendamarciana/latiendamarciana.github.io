@@ -36,6 +36,8 @@ https://www.siteleaf.com/blog/seo-with-jekyll-siteleaf/
 
 https://blog.webjeda.com/optimize-jekyll-seo/
 
+https://jekyll.github.io/jekyll-seo-tag/usage/
+
 
 Tu url: está bien, pero asegúrate de que no tenga barra al final si vas a usarla para construir enlaces internos. Por ejemplo:
 
