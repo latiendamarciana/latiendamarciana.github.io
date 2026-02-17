@@ -1,2 +1,9 @@
+# Robots.txt para La Tienda Marciana 👽
 User-agent: *
-Disallow: 
+Disallow: /mensaje-recibido/
+Disallow: /suscripcion-por-confirmar/
+Disallow: /suscripcion-confirmada/
+Allow: /
+
+# Indicamos dónde está nuestro sitemap
+Sitemap: https://latiendamarciana.com/sitemap.xml
