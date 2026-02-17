@@ -7,3 +7,4 @@ Allow: /
 
 # Indicamos dónde está nuestro sitemap
 Sitemap: https://latiendamarciana.com/sitemap.xml
+Sitemap: https://www.latiendamarciana.com/sitemap.xml
