@@ -101,7 +101,7 @@
   }
   header p{
     font-size: var(--p-l);
-    margin-bottom: var(--p-l);
+    margin-bottom: var(--p-m);
     max-width: 50rem;
   }
   header .logo{

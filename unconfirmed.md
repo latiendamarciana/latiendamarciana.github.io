@@ -9,4 +9,4 @@ Si no lo encuentras en unos minutos, revisa la carpeta de spam o correo no desea
 
 Si no te llegó, <a href="https://buttondown.com/latiendamarciana" target="_blank">intenta de nuevo haciendo clic aquí</a>, o escribe a <a href="mailto:latiendarmarciana@pm.me">latiendarmarciana@pm.me</a> para solicitar tu inscripción manual.
 
-<a href="https://latiendamarciana.com/" target="_blank">La Tienda Marciana</a>
+<a href="/" target="_blank">La Tienda Marciana</a>

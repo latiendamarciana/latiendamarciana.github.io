@@ -14,4 +14,4 @@ Prometemos usar tu correo únicamente para esto, no compartirlo con nadie, y que
 
 ¡Esperamos verte pronto por el mercado campesino o donde la tierra nos encuentre! :)
 
-<a href="https://latiendamarciana.com/" target="_blank">La Tienda Marciana</a>
+<a href="/" target="_blank">La Tienda Marciana</a>

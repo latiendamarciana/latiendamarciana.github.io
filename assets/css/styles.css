@@ -230,10 +230,7 @@ header{
 
 .unconfirm-confirm p, .unconfirm-confirm ul{
   font-size: var(--p-m);
-}
-
-.unconfirm-confirm ul{
-  margin-bottom: var(--p-m);
+  margin-bottom: var(--p-base);
 }
 
 .down{
@@ -266,7 +263,7 @@ header h1{
 
 header p{
   font-size: var(--p-m);
-  margin-bottom: var(--p-m);
+  margin-bottom: var(--p-base);
 }
 
 header p:last-child{

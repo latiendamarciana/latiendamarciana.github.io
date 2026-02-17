@@ -10,3 +10,11 @@ https://webfont.yabe.land/en/misc/convert-ttf-woff2/
 Label focus within
 
 https://benjamincrozat.com/label-focus-css
+
+
+Actualizar gemas
+
+https://www.kevsrobots.com/learn/jekyll/06_deploy.html
+
+bundle update
+
