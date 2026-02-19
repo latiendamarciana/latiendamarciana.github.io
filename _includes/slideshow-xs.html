@@ -1,7 +1,7 @@
 <div class="uk-slideshow visible-xs hidden-sm hidden-l" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 4000; ratio: 1:1" uk-scrollspy="cls: uk-animation-fade; delay: 100">
 	<div class="uk-slideshow-items">
 		{% for slideshow-xs-image in site.slideshow-xs-images %}
-			<img src="{{ slideshow-xs-image.image }}" loading="lazy" alt="{{ slideshow-xs-image.alt }}">
+			<img src="{{ slideshow-xs-image.image }}" fetchpriority="high" alt="{{ slideshow-xs-image.alt }}">
 		{% endfor %}
 	</div>
 </div>
