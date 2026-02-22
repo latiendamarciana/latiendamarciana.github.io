@@ -295,7 +295,12 @@ main{
 
 main h2{
   font-size: var(--h2);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+main p{
+  font-size: var(--p-m);
+  margin-bottom: 3rem;
 }
 
 main h2 span:before{
