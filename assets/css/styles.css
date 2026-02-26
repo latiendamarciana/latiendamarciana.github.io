@@ -111,6 +111,10 @@ p, label, li{
   line-height: var(--paragraphs-height);  
 }
 
+em{
+  color: inherit;
+}
+
 ul{
   margin-bottom: var(--p-base);
   padding-left: 1rem;
@@ -272,8 +276,8 @@ header p:last-child{
 }
 
 header .logo{
-  width: 6.438rem;
-  height: 6.563rem;
+  width: 9rem;
+  height: 9.188rem;
 }
 
 header .logo, footer .email{
@@ -387,3 +391,34 @@ footer input:focus{
 .uk-slideshow-items{
   border-radius: 0.75rem;
 }
+
+.uk-alert{
+  background-color: var(--martian-vivid-purple);
+  padding: 1.25rem 3.5rem 1.25rem 1.5rem;
+  margin-bottom: 0;
+}
+
+.uk-alert p{
+  color: var(--martian-background);
+  font-size: var(--p-base);
+}
+
+.uk-alert-close{
+  top: 1.5rem;
+  right: 1.5rem;
+  color: var(--martian-background);
+  cursor: pointer;
+  opacity: 1;
+  font-size: var(--p-s);
+}
+
+.uk-alert-close:hover{
+  text-decoration: none;
+  opacity: 1;
+  color: var(--martian-light-salmon);
+}
+
+.uk-alert-close svg{
+  display: none;
+}
+
