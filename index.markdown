@@ -5,7 +5,7 @@
 layout: home
 description: "Comida vegana, obra gráfica y accesorios en Medellín Colombia."
 title: "La Tienda Marciana"
-alert: "Los domingos **1 y 8 de marzo** _no estaré_ en el mercado campesino de La Presidenta."
+alert: "Los domingos **1 y 8 de marzo** _no estaremos_ en el mercado campesino de La Presidenta."
 header-heading: "La Tienda Marciana:<br> Comida vegana, obra gráfica y accesorios. (Estamos en etapa de pruebas)"
 main-heading: "Si quieres hacer un encargo, llena este formulario o escribe en el chat de la esquina inferior derecha ( <span></span> )"
 main-paragraph: "**Área de Cobertura:** San Antonio del Prado, La Estrella, Itagüí, Envigado y Sabaneta."
