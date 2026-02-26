@@ -415,7 +415,7 @@ footer input:focus{
 .uk-alert-close:hover{
   text-decoration: none;
   opacity: 1;
-  color: var(--martian-light-salmon);
+  color: var(--martian-vivid-salmon);
 }
 
 .uk-alert-close svg{
