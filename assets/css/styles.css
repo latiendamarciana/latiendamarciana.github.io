@@ -410,6 +410,7 @@ footer input:focus{
   cursor: pointer;
   opacity: 1;
   font-size: var(--p-s);
+  width: inherit;
 }
 
 .uk-alert-close:hover{
