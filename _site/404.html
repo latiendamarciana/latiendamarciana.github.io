@@ -6,23 +6,24 @@
   <!-- Preconnects -->
   <link rel="preload" href="/assets/css/styles.css" as="style">
   <link rel="preload" href="/assets/css/media-queries.css" as="style">
-  <link rel="preload" href="/assets/fonts/fraunces/Fraunces-VariableFont.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/assets/fonts/kombin/Kombin.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preconnect" href="/assets/fonts/fraunces/Fraunces-VariableFont.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="/assets/fonts/kombin/Kombin.woff" as="font" type="font/woff" crossorigin>
   <link rel="preconnect" href="https://embed.small.chat">
 	<!-- Uikit -->
-	<link rel="stylesheet" href="/assets/css/uikit/uikit.min.css">
+	<link rel="stylesheet" href="/assets/css/uikit/uikit.min.css" media="print" onload="this.media='all'">
   <script defer src="/assets/js/uikit.min.js"></script>
 	<!-- Custom styles -->
 	<link rel="stylesheet" href="/assets/css/styles.css">
-	<link rel="stylesheet" href="/assets/css/media-queries.css">
-  <!-- Fontface -->
-  <link rel="stylesheet" href="/assets/css/fontface.css">
-	<!-- Icomoon -->
-	<link rel="stylesheet" href="/assets/css/icomoon/style.css">
+	<link rel="stylesheet" href="/assets/css/media-queries.css" media="print" onload="this.media='all'">
+  <!-- JavaScript disabled -->
+  <noscript>
+    <link rel="stylesheet" href="/assets/css/uikit/uikit.min.css">
+    <link rel="stylesheet" href="/assets/css/media-queries.css">
+  </noscript>
 	<!-- Smallchat -->
 	<script defer src="https://embed.small.chat/T0758JG67T7C07609Z3M5E.js" async></script> 
 	<!-- Plausible -->
-	<script defer data-domain="latiendamarciana.com" src="https://plausible.io/js/script.js"></script> 
+	<script defer data-domain="latiendamarciana.com" src="https://plausible.io/js/script.js" async></script> 
 	<!-- Favico -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
