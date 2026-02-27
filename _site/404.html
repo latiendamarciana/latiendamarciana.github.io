@@ -3,34 +3,26 @@
 	<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      visibility: hidden; /* Better than display: none; (preserves layout space) */
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out; /* Smooth fade-in */
+    }
+  </style>
   <!-- Preconnects -->
   <link rel="preload" href="/assets/css/styles.css" as="style">
   <link rel="preload" href="/assets/css/media-queries.css" as="style">
   <link rel="preconnect" href="/assets/fonts/fraunces/Fraunces-VariableFont.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preconnect" href="/assets/fonts/kombin/Kombin.woff" as="font" type="font/woff" crossorigin>
   <link rel="preconnect" href="https://embed.small.chat">
-	<!-- Uikit -->
+	<!-- Uikit CSS -->
 	<link rel="stylesheet" href="/assets/css/uikit/uikit.min.css" media="print" onload="this.media='all'">
-  <script defer src="/assets/js/uikit.min.js"></script>
 	<!-- Custom styles -->
 	<link rel="stylesheet" href="/assets/css/styles.css">
 	<link rel="stylesheet" href="/assets/css/media-queries.css" media="print" onload="this.media='all'">
-  <!-- JavaScript disabled -->
-  <noscript>
-    <link rel="stylesheet" href="/assets/css/uikit/uikit.min.css">
-    <link rel="stylesheet" href="/assets/css/media-queries.css">
-  </noscript>
-	<!-- Smallchat -->
-	<script defer src="https://embed.small.chat/T0758JG67T7C07609Z3M5E.js" async></script> 
-	<!-- Plausible -->
-	<script defer data-domain="latiendamarciana.com" src="https://plausible.io/js/script.js" async></script> 
-	<!-- Favico -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<!-- Jekyll SEO -->
-	<!-- Begin Jekyll SEO tag v2.8.0 -->
+  <!-- Jekyll SEO -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>La Tienda Marciana | Comida vegana, obra gráfica y accesorios en Medellín Colombia.</title>
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="La Tienda Marciana" />
@@ -49,10 +41,17 @@
 {"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Fluorescente"},"description":"Comida vegana, obra gráfica y accesorios en Medellín Colombia.","headline":"La Tienda Marciana","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/la-tienda-marciana-logo.svg"},"name":"Fluorescente"},"url":"http://localhost:4000/404.html"}</script>
 <!-- End Jekyll SEO tag -->
 
+	<!-- Favico -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+  <!-- Plausible -->
+  <script defer data-domain="latiendamarciana.com" src="https://plausible.io/js/script.js" async></script> 
 </head>
 <body class="thanks-container">
 	<header class="thanks" uk-scrollspy="cls: uk-animation-fade; delay: 100">
-		<figure class="logo" aria-hidden="true" tabindex="-1" uk-scrollspy="cls: uk-animation-fade; delay: 10">
+		<figure class="logo" aria-hidden="true" tabindex="-1" uk-scrollspy="cls: uk-animation-fade; delay: 100">
 	<img src="/assets/images/marciana-salmon.svg" alt="logo de La Tienda Marciana, el rostro de una marciana de pelo corto mirando al espectador de medio perfil y sonriendo. Dibujada con estilo similar al de los dibujos animados americanos de entre los años 30 y 40 del siglo 20." fetchpriority="high">
 </figure>
 		<h1>Esta página no existe :/</h1>
