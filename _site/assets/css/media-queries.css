@@ -9,7 +9,6 @@
     --h2: 2.025rem;
     --h3: 1.8rem;
   }
-
   .hidden-sm{
     display: none;
   }
@@ -48,7 +47,11 @@
     margin-bottom: 1.5rem;
   }
   footer .email{
-    display: none;
+    width: 13.375rem;
+    height: 15.063rem;
+  }
+  footer h3{
+    text-align: center;
   }
   /* Uikit */
   .uk-slideshow{
@@ -139,17 +142,19 @@
     border-radius: 1rem;
   }
   footer .email{
-    display: initial;
-    width:  10.688rem;
-    height: auto;
+    width:  16rem;
+    height: 17.375rem;
     margin: 0;
+  }
+  footer h3{
+    text-align: left;
   }
   footer input{
     margin-bottom: 1.5rem;
     display: inline-block;
     width: initial;
     margin-right: 2rem;
-    width: 63%;
+    width: 100%;
   }
   /* Uikit */
   .uk-slideshow{
