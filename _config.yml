@@ -50,7 +50,7 @@ collections:
     output: true  
 
 webmaster_verifications:
-    google: lnZ4AtNlxnPSR2dYkaLXuiHiGcvBuIR5fBHrZGqmyiU    
+    google: lnZ4AtNlxnPSR2dYkaLXuiHiGcvBuIR5fBHrZGqmyiU     
 
 # Exclude from processing.
 # The following items will not be processed, by default.
