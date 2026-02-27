@@ -3,7 +3,6 @@
 		{% for slideshow-l-image in site.slideshow-l-images %}
       <img src="{{ slideshow-l-image-2x.image }}"
         srcset="{{ slideshow-l-image.image }} 1x, {{ slideshow-l-image.image-2x }} 2x"
-        sizes="(max-width: 640px) 100vw, (max-width: 1025px) 50vw, 800px"
         alt="{{ slideshow-l-image.alt }}"
         tabindex="-1"
         loading="lazy">
