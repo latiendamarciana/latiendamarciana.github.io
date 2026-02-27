@@ -411,6 +411,8 @@ footer input:focus{
   opacity: 1;
   font-size: var(--p-s);
   width: inherit;
+  background-color: transparent;
+  transition: none;
 }
 
 .uk-alert-close:hover{

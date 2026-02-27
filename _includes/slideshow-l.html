@@ -1,8 +1,14 @@
 <div class="uk-slideshow hidden-xs visible-sm visible-l" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 4000; ratio: 3:2" uk-scrollspy="cls: uk-animation-fade; delay: 10" aria-hidden="true" tabindex="-1">
 	<div class="uk-slideshow-items" tabindex="-1">
 		{% for slideshow-l-image in site.slideshow-l-images %}
-			<img src="{{ slideshow-l-image.image }}" alt="{{ slideshow-l-image.alt }}" tabindex="-1">
+      <img srcset="{{ slideshow-l-image.image }}, {{ slideshow-xs-image.image-2x }} 2x"
+        src="{{ slideshow-l-image.image-2x }}"
+        alt="{{ slideshow-l-image.alt }}"
+        tabindex="-1">
 		{% endfor %}
 	</div>
 	<a class="down hidden-xs hidden-sm visible-l-inline" href="#header-heading" aria-hidden="true" tabindex="-1"><span class="icon icon-arrow-down"></span></a>	
 </div>
+
+
+
