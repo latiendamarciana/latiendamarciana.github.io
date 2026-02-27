@@ -159,6 +159,7 @@ GEM
     jekyll-mentions (1.6.0)
       html-pipeline (~> 2.3)
       jekyll (>= 3.7, < 5.0)
+    jekyll-minibundle (3.0.0)
     jekyll-optional-front-matter (0.3.2)
       jekyll (>= 3.0, < 5.0)
     jekyll-paginate (1.1.0)
@@ -330,6 +331,7 @@ DEPENDENCIES
   github-pages
   http_parser.rb (~> 0.6.0)
   jekyll-feed (~> 0.12)
+  jekyll-minibundle
   jekyll-seo-tag
   jekyll-sitemap
   tzinfo (>= 1, < 3)
