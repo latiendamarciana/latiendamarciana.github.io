@@ -1,10 +1,10 @@
 <div class="uk-slideshow visible-xs hidden-sm hidden-l" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 4000; ratio: 1:1" uk-scrollspy="cls: uk-animation-fade; delay: 10">
 	<div class="uk-slideshow-items">
 		{% for slideshow-xs-image in site.slideshow-xs-images %}
-			<img srcset="{{ slideshow-xs-image.image }}, {{ slideshow-xs-image.image-2x }} 2x"
-        src="{{ slideshow-xs-image.image-2x }}"
-        alt="{{ slideshow-xs-image.alt }}" 
-        fetchpriority="high">
+      <img src="{{ slideshow-xs-image.image }}"
+        srcset="{{ slideshow-xs-image.image }} 1x, {{ slideshow-xs-image.image-2x }} 2x"
+        alt="{{ slideshow-xs-image.alt }}"
+        fetchpriority="high">  
 		{% endfor %}
 	</div>
 </div>
