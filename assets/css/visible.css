@@ -1,4 +1,5 @@
 body {
   visibility: visible;
   opacity: 1;
+  background: var(--martian-background);
 }

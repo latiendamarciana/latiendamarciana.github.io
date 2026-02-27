@@ -64,6 +64,7 @@
 }
 
 html{
+  background-color: var(--martian-dark-purple);
   color: var(--text);
   font-family: var(--paragraphs);
   font-optical-sizing: auto;
@@ -76,7 +77,6 @@ html{
 }
 
 body{
-  background-color: var(--martian-background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-display: swap; 
