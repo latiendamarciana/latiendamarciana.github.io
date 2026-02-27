@@ -95,13 +95,15 @@
         srcset="/assets/images/hamburguesas-800-01.jpg 1x, /assets/images/hamburguesas-1600-01.jpg 2x"
         alt="Una hamburguesa vegana de lentejas abierta, se ve el pan, la lechuga y la torta sin adiciones."
         tabindex="-1"
-        fetchpriority="high">
+        fetchpriority="high"
+        aria-hidden="true">
 		
       <img src=""
         srcset="/assets/images/hamburguesas-800-02.jpg 1x, /assets/images/hamburguesas-1600-02.jpg 2x"
         alt="Una hamburguesa vegana de lentejas con pan integral, tomate, hummus, y lechuga. La hamburguesa está puesta sobre un papel parafinado de cuadros verdes y blancos."
         tabindex="-1"
-        fetchpriority="high">
+        fetchpriority="high"
+        aria-hidden="true">
 		
 	</div>
 	<a class="down hidden-xs hidden-sm visible-l-inline" href="#header-heading" aria-hidden="true" tabindex="-1"><span class="icon icon-arrow-down"></span></a>	
@@ -121,11 +123,11 @@
 			<input type="hidden" name="_subject" value="¡Nuevo mensaje marciano!">
 			<input type="hidden" name="_cc" value="tiendamarciana@proton.me">
 			<label for="name">Nombre</label>
-			<input required type="text" name="name" id="name" oninvalid="this.setCustomValidity('Por favor escribe tu nombre')" oninput="this.setCustomValidity('')">
+			<input required type="text" name="name" id="name" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu nombre')" oninput="this.setCustomValidity('')">
 			<label for="phone">Teléfono celular</label>
-			<input required type="tel" name="phone" id="phone" pattern=".{7,}" oninvalid="this.setCustomValidity('Por favor escribe tu número de teléfono celular')" oninput="this.setCustomValidity('')">
+			<input required type="tel" name="phone" id="phone" pattern=".{7,}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu número de teléfono celular')" oninput="this.setCustomValidity('')">
 			<label for="email">Correo electrónico</label>
-			<input required type="email" name="email" id="email" pattern=".{4,64}" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
+			<input required type="email" name="email" id="email" pattern=".{4,64}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
 			<label for="message">Mensaje</label>
 			<textarea required name="message" id="message" rows="5" pattern=".{4,}" oninvalid="this.setCustomValidity('Por favor escribe un mensaje')" oninput="this.setCustomValidity('')"></textarea>
 			<button type="submit" aria-describedby="form-note">Enviar</button>
@@ -142,7 +144,7 @@
 			<h3 id="newsletter-form-heading">Suscríbete para no perderte nuestras novedades</h3>
 			<form method="post" action="https://buttondown.com/api/emails/embed-subscribe/latiendamarciana" class="embeddable-buttondown-form" referrerpolicy="unsafe-url" aria-labelledby="newsletter-form-heading">
 				<label for="newsletter">Correo electrónico</label>
-				<input type="email" name="email" id="newsletter" pattern=".{4,64}" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
+				<input type="email" name="email" id="newsletter" pattern=".{4,64}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
 				<button type="submit" aria-describedby="newsletter-note">Suscribirme</button>
 				<p class="note" id="newsletter-note">Al suscribirte nos autorizas a enviarte boletines de correo. No usaremos tu correo para otros fines, ni lo compartiremos con terceros.</p>
 			</form>

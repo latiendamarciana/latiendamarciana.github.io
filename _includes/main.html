@@ -9,11 +9,11 @@
 			<input type="hidden" name="_subject" value="¡Nuevo mensaje marciano!">
 			<input type="hidden" name="_cc" value="tiendamarciana@proton.me">
 			<label for="name">Nombre</label>
-			<input required type="text" name="name" id="name" oninvalid="this.setCustomValidity('Por favor escribe tu nombre')" oninput="this.setCustomValidity('')">
+			<input required type="text" name="name" id="name" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu nombre')" oninput="this.setCustomValidity('')">
 			<label for="phone">Teléfono celular</label>
-			<input required type="tel" name="phone" id="phone" pattern=".{7,}" oninvalid="this.setCustomValidity('Por favor escribe tu número de teléfono celular')" oninput="this.setCustomValidity('')">
+			<input required type="tel" name="phone" id="phone" pattern=".{7,}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu número de teléfono celular')" oninput="this.setCustomValidity('')">
 			<label for="email">Correo electrónico</label>
-			<input required type="email" name="email" id="email" pattern=".{4,64}" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
+			<input required type="email" name="email" id="email" pattern=".{4,64}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
 			<label for="message">Mensaje</label>
 			<textarea required name="message" id="message" rows="5" pattern=".{4,}" oninvalid="this.setCustomValidity('Por favor escribe un mensaje')" oninput="this.setCustomValidity('')"></textarea>
 			<button type="submit" aria-describedby="form-note">Enviar</button>

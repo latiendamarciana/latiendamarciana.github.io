@@ -5,7 +5,8 @@
         srcset="{{ slideshow-l-image.image }} 1x, {{ slideshow-l-image.image-2x }} 2x"
         alt="{{ slideshow-l-image.alt }}"
         tabindex="-1"
-        fetchpriority="high">
+        fetchpriority="high"
+        aria-hidden="true">
 		{% endfor %}
 	</div>
 	<a class="down hidden-xs hidden-sm visible-l-inline" href="#header-heading" aria-hidden="true" tabindex="-1"><span class="icon icon-arrow-down"></span></a>	

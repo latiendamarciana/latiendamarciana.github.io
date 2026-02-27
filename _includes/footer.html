@@ -7,7 +7,7 @@
 			<h3 id="newsletter-form-heading">{{ page.footer-heading }}</h3>
 			<form method="post" action="https://buttondown.com/api/emails/embed-subscribe/latiendamarciana" class="embeddable-buttondown-form" referrerpolicy="unsafe-url" aria-labelledby="newsletter-form-heading">
 				<label for="newsletter">Correo electrónico</label>
-				<input type="email" name="email" id="newsletter" pattern=".{4,64}" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
+				<input type="email" name="email" id="newsletter" pattern=".{4,64}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
 				<button type="submit" aria-describedby="newsletter-note">Suscribirme</button>
 				<p class="note" id="newsletter-note">{{ page.newsletter-note }}</p>
 			</form>
