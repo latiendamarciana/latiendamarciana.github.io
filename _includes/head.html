@@ -2,24 +2,26 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Normalize -->
-	<link rel="stylesheet" href="{{"../assets/css/normalize.css" | relative_url }}" as="style" onload="this.media='all'; this.onload=null;">
-  <noscript><link rel="stylesheet" href="{{ "../assets/css/normalize.css" | relative_url }}"></noscript>
+	<link rel="stylesheet" href="{{"../assets/css/normalize.css" | relative_url }}" media="print" onload="this.media='all'">
 	<!-- Fontface -->
-	<link rel="stylesheet" href="{{"../assets/css/fontface.css" | relative_url }}" as="style" onload="this.media='all'; this.onload=null;">
-  <noscript><link rel="stylesheet" href="{{"../assets/css/fontface.css" | relative_url }}"></noscript>
+	<link rel="stylesheet" href="{{"../assets/css/fontface.css" | relative_url }}" media="print" onload="this.media='all'">
 		<!-- Uikit -->
-	<link rel="stylesheet" href="{{"../assets/css/uikit/uikit.min.css" | relative_url }}" as="style" onload="this.media='all'; this.onload=null;">
-  <noscript><link rel="stylesheet" href="{{"../assets/css/uikit/uikit.min.css" | relative_url }}"></noscript>
+	<link rel="stylesheet" href="{{"../assets/css/uikit/uikit.min.css" | relative_url }}" media="print" onload="this.media='all'">
   <script defer src="{{ "../assets/js/uikit.min.js" | relative_url }}"></script>
-  <script defer  src="{{ "../assets/js/uikit-icons.min.js" | relative_url }}"></script>
+  <script defer src="{{ "../assets/js/uikit-icons.min.js" | relative_url }}"></script>
 	<!-- Custom styles -->
-	<link rel="stylesheet" href="{{"../assets/css/styles.css" | relative_url }}" as="style" onload="this.media='all'; this.onload=null;">
-  <noscript><link rel="stylesheet" href="{{"../assets/css/styles.css" | relative_url }}"></noscript>
-	<link rel="stylesheet" href="{{"../assets/css/media-queries.css" | relative_url }}" as="style" onload="this.media='all'; this.onload=null;">
-  <noscript><link rel="stylesheet" href="{{"../assets/css/media-queries.css" | relative_url }}"></noscript>
+	<link rel="stylesheet" href="{{"../assets/css/styles.css" | relative_url }}" as="style" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="{{"../assets/css/media-queries.css" | relative_url }}" media="print" onload="this.media='all'">
 	<!-- Icomoon -->
-	<link rel="stylesheet" href="{{"../assets/css/icomoon/style.css" | relative_url }}" as="style" onload="this.media='all'; this.onload=null;">
-  <noscript><link rel="stylesheet" href="{{"../assets/css/icomoon/style.css" | relative_url }}"></noscript>
+	<link rel="stylesheet" href="{{"../assets/css/icomoon/style.css" | relative_url }}" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="{{ "../assets/css/normalize.css" | relative_url }}">
+    <link rel="stylesheet" href="{{"../assets/css/fontface.css" | relative_url }}">
+    <link rel="stylesheet" href="{{"../assets/css/uikit/uikit.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{"../assets/css/styles.css" | relative_url }}">
+    <link rel="stylesheet" href="{{"../assets/css/media-queries.css" | relative_url }}">
+    <link rel="stylesheet" href="{{"../assets/css/icomoon/style.css" | relative_url }}">
+  </noscript>
 	<title>{{ site.title }}</title>
 	<!-- Smallchat -->
   <link rel="preconnect" href="https://embed.small.chat">
