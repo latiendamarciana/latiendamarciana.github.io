@@ -1,9 +1,0 @@
-html{
-  background-color: var(--martian-background);
-}
-
-body {
-  visibility: visible;
-  opacity: 1;
-  background: var(--martian-background);
-}

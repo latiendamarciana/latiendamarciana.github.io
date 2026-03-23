@@ -1,169 +1,106 @@
 /* Sm screens */
 
-@media screen and (min-width: 641px) {
-  :root{
-    --h1-xxl: 3.25rem;
-    --h1-xl: 2.875rem;
-    --h1-l: 2.563rem;
-    --h1: 2.281rem;
-    --h2: 2.025rem;
-    --h3: 1.8rem;
+@media screen and (min-width: 641px){
+  .full-width, .boxed-width{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
+  /* Display Hidden */
   .hidden-sm{
     display: none;
   }
   .visible-sm{
-    display: block;
+    display: inherit;
   }
-  input, textarea{
-    margin-bottom: 2rem;
+  /* Page */
+  .logo span{
+    font-size: 10.813rem;
   }
-  button, .button{
-    width: initial;
-  }
-  /* Header */
-  header, .main-container, .footer-container{
-    padding: 0 3rem;
-  }
-  header{
-    padding-top: 3rem;
-    padding-bottom: 4rem;
-  }
-  header h1{
-    margin-bottom: 1.5rem;
-  }
-  header .logo{
-    width: 11rem;
-    height: 11.25rem;
-    margin: 0 auto 3rem auto;
-  }
-  .confirm-container{
+  .thanks-container, .mailbox-and-info{
+    padding-bottom: 3rem;
     display: flex;
-    height: 98vh;
-    align-items: center;  
+    gap: 1.5rem;
   }
-  /* Main */
-  main h2{
-    margin-bottom: 1.5rem;
+  .thanks-container h2{
+    margin-bottom: 0 !important;
   }
-  footer .email{
-    width: 13.375rem;
-    height: 15.063rem;
+  .mailbox-and-info{
+    padding-bottom: 1rem;
   }
-  footer h3{
-    text-align: center;
+  .mailbox span{
+    font-size: 11.875rem;
   }
-  /* Uikit */
-  .uk-slideshow{
-    margin-bottom: 2rem;
+  .button-and-note{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .name-and-phone{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
 
 /* L screens */
 
 @media screen and (min-width: 1025px) {
-  .hidden-l{
+  :root{
+    --h6: 1.125rem;
+    --h5: 1.263rem;
+    --h4: 1.419rem;
+    --h3: 1.8rem;
+    --h2: 2.025rem;
+    --h1: 2.281rem;
+    --h1-l: 2.563rem;
+    --h1-xl: 2.875rem;
+    --h1-xxl: 3.65rem;
+  }
+  /* Display Hidden */
+  .hidden-lg{
     display: none;
   }
-  .visible-l{
-    display: block;
+  .visible-lg{
+    display: inherit;
   }
-  .visible-l-inline{
-    display: inline-block;
+  .full-width{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
-  input, textarea{
-    margin-bottom: 2rem;
+  .logo span{
+    font-size: 10rem;
   }
-  /* Header */
-  header, .main-container, .footer-container{
-    padding: 0;
+  .main-text{
+    columns: 2;
+    gap: 2rem;
   }
-  header{
-    text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 6rem;
-  }
-  header h1, header p{
-    margin: 0 auto;
-  }
-  header h1{
-    margin-top: -6.5rem;
-    margin-bottom: 1.5rem;
-    font-size: var(--h1-xl);
-    max-width: 63rem;
-    padding-top: 3rem;
-  }
-  .thanks h1{
-    max-width: 50rem;
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 1.5rem;
-  }
-  .thanks p{
-    margin-bottom: 2rem; 
-  }
-  header p{
-    font-size: var(--p-l);
-    margin-bottom: var(--p-m);
-    max-width: 50rem;
-  }
-  header .logo{
-    width: 11rem;
-    height: 11.25rem;
-    margin: 0 auto 3rem auto;
-  }
-  /* Main */
-  main{
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-  .main-container, .footer-container{
-    max-width: 63.125rem;
-  }
-  .main-container{
+  .newsletter-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 4rem;
+    gap: 2rem;
   }
-  main h2{
-    font-size: var(--h1-l);
+  .mailbox-and-info{
+    padding-bottom: 0;
   }
-  /*Footer*/
-  footer{
-    padding-top: 6rem;
-    background-color: var(--martian-dark-purple);
+  .newsletter .info{
+    margin-bottom: 0 !important;
+  }
+  .info h2{
+    font-size: var(--h1);
   }
   .footer-container{
-    display: flex;
-    align-items: center;
-    column-gap: 2rem;
-    background-color: var(--martian-purple);
-    padding: 3rem;
-    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
   }
-  footer .email{
-    width:  16rem;
-    height: 17.375rem;
-    margin: 0;
+  footer .info{
+    grid-column: 1 / 6;
   }
-  footer h3{
-    text-align: left;
+  footer form{
+    grid-column: 6 / 13;
   }
-  footer input{
-    margin-bottom: 1.5rem;
-    display: inline-block;
-    width: initial;
-    margin-right: 2rem;
-    width: 100%;
-  }
-  /* Uikit */
-  .uk-slideshow{
-    max-width: 50rem;
-    margin: 0 auto;
-  }
-  .uk-alert{
-    text-align: center;
-    padding: 1.25rem 1.5rem;
+  footer .info span{
+    font-size: 2.888rem;
   }
 }
 
