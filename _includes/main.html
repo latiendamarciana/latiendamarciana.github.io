@@ -1,0 +1,23 @@
+<main>
+	<div class="main-container" uk-scrollspy="cls: uk-animation-fade; delay: 100">
+    <div class="main-info">
+      <h2 id="contact-form-heading">{{ page.main-heading }}</h2>
+      <p>{{ page.main-paragraph | markdownify | remove: '<p>' | remove: '</p>'}}</p>
+    </div>  		
+		<form method="post" action="https://formsubmit.co/latiendamarciana@pm.me" aria-labelledby="contact-form-heading">
+			<input type="hidden" name="_next" value="https://latiendamarciana.com/mensaje-recibido/">
+			<input type="hidden" name="_subject" value="¡Nuevo mensaje marciano!">
+			<input type="hidden" name="_cc" value="tiendamarciana@proton.me">
+			<label for="name">Nombre</label>
+			<input required type="text" name="name" id="name" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu nombre')" oninput="this.setCustomValidity('')">
+			<label for="phone">Teléfono celular</label>
+			<input required type="tel" name="phone" id="phone" pattern=".{7,}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu número de teléfono celular')" oninput="this.setCustomValidity('')">
+			<label for="email">Correo electrónico</label>
+			<input required type="email" name="email" id="email" pattern=".{4,64}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
+			<label for="message">Mensaje</label>
+			<textarea required name="message" id="message" rows="5" pattern=".{4,}" oninvalid="this.setCustomValidity('Por favor escribe un mensaje')" oninput="this.setCustomValidity('')"></textarea>
+			<button type="submit" aria-describedby="form-note">Enviar</button>
+			<p class="note" id="form-note">{{ page.form-note }}</p>
+		</form>
+	</div>
+</main>
