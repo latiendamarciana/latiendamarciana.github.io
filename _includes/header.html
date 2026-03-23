@@ -1,0 +1,7 @@
+<header>
+	{% include marciana.html %}
+	{% include slideshow-xs.html %}
+	{% include slideshow-l.html %}
+	<h1 id="header-heading" uk-scrollspy="cls: uk-animation-fade; delay: 100">{{ page.header-heading }}</h1>
+	<div class="content" uk-scrollspy="cls: uk-animation-fade; delay: 10">{{ page.content | markdownify }}</div>
+</header>

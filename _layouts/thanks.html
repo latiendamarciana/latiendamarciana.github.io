@@ -1,3 +1,19 @@
 ---
 layout: compress
 ---
+
+<!DOCTYPE html>
+<html lang="es">
+	{% include head.html %}
+<body class="thanks-container">
+	<header class="thanks" uk-scrollspy="cls: uk-animation-fade; delay: 100">
+		{% include marciana.html %}
+		<h1>{{ page.thanks-heading }}</h1>
+		<p>{{ page.content }}<p>
+		<a class="button" href="/">{{ page.button }}</a>
+	</header>
+  <!-- Visible -->
+  <link rel="stylesheet" type="text/css" href="{{"../assets/css/visible.css" | relative_url }}">
+</body>
+
+</html>

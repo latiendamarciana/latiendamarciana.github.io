@@ -1,0 +1,4 @@
+<div uk-alert role="alert">
+  <p>{{ page.alert | markdownify | remove: '<p>' | remove: '</p>'}}</p>
+  <button aria-label="Cerrar alerta" class="uk-alert-close" tabindex="0" uk-close><span class="icon icon-close" aria-hidden="true"></span></button>
+</div>
