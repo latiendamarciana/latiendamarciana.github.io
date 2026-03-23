@@ -32,10 +32,10 @@
   --martian-dark-gray: #5F5C53;
   --martian-light-salmon: #FF8882;
   --martian-vivid-salmon: #FF5C54;
+  --martian-light-purple: #E798F1;
   --martian-vivid-purple: #9E2EAD;
   --martian-purple: #75297F;
   --martian-dark-purple: #5B2467;
-  --martian-light-purple: #D253E3;
 
   --headings: 'Caprasimo', 'EB Garamond', serif;
   --headings-line-height: 112%;
@@ -95,7 +95,7 @@ html{
 
 ::selection, -moz-selection{
   color: var(--text);
-  background-color: var(--martian-light-salmon);
+  background-color: var(--martian-light-purple);
 }
 
 body{
@@ -375,6 +375,7 @@ header{
 
 header h1{
   margin-bottom: 1rem !important;
+  background-color: var(--martian-light-salmon);
 }
 
 header h2{
@@ -398,7 +399,11 @@ header h2{
 .thanks-container{
   border-top: 1px solid var(--text);
   padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
+}
+
+.thanks-container h2{
+  margin-bottom: 0;
 }
 
 .smile{
@@ -411,11 +416,15 @@ header h2{
 
 .newsletter{
   background-color: var(--martian-mid-gray);
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 
 .newsletter h2{
   margin-bottom: 1rem !important;
+}
+
+.p-note{
+  margin-bottom: 0;
 }
 
 .newsletter button, footer button{
