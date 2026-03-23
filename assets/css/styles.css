@@ -35,7 +35,7 @@
   --martian-vivid-purple: #9E2EAD;
   --martian-purple: #75297F;
   --martian-dark-purple: #5B2467;
-  --martian-light-purple: #D253E3;
+  --martian-light-purple: #E798F1;
 
   --headings: 'Caprasimo', 'EB Garamond', serif;
   --headings-line-height: 112%;
@@ -95,7 +95,7 @@ html{
 
 ::selection, -moz-selection{
   color: var(--text);
-  background-color: var(--martian-light-salmon);
+  background-color: var(--martian-light-purple;
 }
 
 body{
