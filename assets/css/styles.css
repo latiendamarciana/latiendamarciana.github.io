@@ -388,8 +388,14 @@ header{
   font-size: 10rem;
 }
 
+header .h1-container{
+  margin-bottom: 1rem;
+}
+
 header h1{
-  margin-bottom: 1rem !important;
+  display: inline;
+  background: var(--martian-light-salmon) none repeat scroll 0 0;
+  box-decoration-break: clone;
 }
 
 header h2{

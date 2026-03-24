@@ -86,9 +86,6 @@
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  header h1{
-    background-color: var(--martian-light-salmon);
-  }
   .logo span{
     font-size: 10rem;
   }
