@@ -240,10 +240,11 @@ a:hover{
   color: var(--text);
   text-decoration: none;
   border-bottom: 1px solid var(--text);
+  background-color: var(--martian-light-salmon);
 }
 
 a:active{
-  color: var(--martian-dark-purple);
+  color: var(--text);
   text-decoration: none;
 }
 
