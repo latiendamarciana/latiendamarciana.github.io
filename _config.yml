@@ -34,7 +34,7 @@ lang: es
 locale: es_CO
 logo: assets/images/la-tienda-marciana-logo.svg
 image: assets/images/la-tienda-marciana-card-image.jpg
-social_image: assets/images/card-image.jpg
+social_image: assets/images/la-tienda-marciana-card-image.jpg
 
 # Build settings
 theme: minima
