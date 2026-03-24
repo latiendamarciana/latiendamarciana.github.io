@@ -43,6 +43,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+feed:
+  icon: assets/images/la-tienda-marciana-icon.png
+  logo: assets/images/la-tienda-marciana-logo.png
+
 collections:
   slideshow-xs-images:
     output: true
