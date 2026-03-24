@@ -5,4 +5,5 @@
 layout: home
 description: "Comida vegana, obra gráfica y accesorios en Medellín Colombia."
 title: "La Tienda Marciana"
+image: assets/images/la-tienda-marciana-card-image.jpg
 ---
