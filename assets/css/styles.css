@@ -179,11 +179,7 @@ h1{
   margin-bottom: var(--h1-xl);
 }
 
-.p-base{
-  font-size: var(--p-base);
-}
-
-p{
+p, li{
   margin: 0;
   font-family: var(--paragraphs);
   line-height: var(--paragraphs-line-height);
@@ -199,9 +195,18 @@ p{
   margin-bottom: var(--p-xs)
 }
 
-.p-base{
+ul.p-base{
+  padding-left: var(--p-base);
+  margin-bottom: var(--p-s);
+}
+
+.p-base, .p-base li{
   font-size: var(--p-base);
   margin-bottom: var(--p-s);
+}
+
+.p-base li{
+  margin-bottom: 0;
 }
 
 .p-m{
@@ -228,12 +233,13 @@ a{
   transition: var(--fade);
   font-weight: var(--bold);
   color: var(--martian-vivid-salmon);
+  cursor: pointer;
 }
 
 a:hover{
   color: var(--text);
   text-decoration: none;
-  border-bottom: 1px solid var(--martian-vivid-purple);
+  border-bottom: 1px solid var(--text);
 }
 
 a:active{
@@ -246,11 +252,16 @@ button, .button{
   line-height: 1.3;
 }
 
+.button{
+  border-bottom: none !important;
+}
+
 button, .button{
   font-size: var(--p-s);
   text-transform: uppercase;
   letter-spacing: 16%;
   font-family: var(--headings);
+  font-weight: var(--regular);
   border: 2px solid transparent;
   border-radius: .25rem;
   color: var(--bright);
@@ -267,6 +278,10 @@ button:hover, .button:hover, button:focus, .button:focus{
   background-color: var(--martian-vivid-purple);
   text-decoration: none;
   color: var(--martian-vivid-salmon);
+}
+
+.button:hover{
+  border-bottom: none;
 }
 
 button:active, .button:active{
@@ -474,6 +489,37 @@ footer label:has(+ input:focus-visible), footer label:has(+ textarea:focus-visib
   color: var(--martian-light-purple);
 }
 
+/* Message delivered */
+
+.message-delivered{
+  display: flex;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.message-delivered-container .smile, .confirmed-container .smile{
+  margin-bottom: 1rem;
+}
+
+.message-delivered-container .smile span, .confirmed-container .smile span{
+  font-size: 6.438rem;
+}
+
+.message-delivered-container h2, .unconfirmed-container h2, .confirmed-container h2{
+  margin-bottom: 1rem !important;
+}
+
+.message-delivered-container p, .unconfirmed-container .text, .confirmed-container .text{
+  margin-bottom: 1.5rem !important;
+}
+
+/* Unconfirmed */
+
+.unconfirmed, .confirmed{
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
 
 @font-face {
   font-family: 'icomoon';

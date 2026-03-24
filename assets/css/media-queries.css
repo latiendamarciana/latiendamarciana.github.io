@@ -43,6 +43,22 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+  /* Message delivered */
+  .message-delivered-container .smile span, .confirmed-container .smile span{
+    font-size: 9.25rem;
+  }
+  /* Unconfirmed */
+  .unconfirmed, .confirmed{
+    display: flex;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .unconfirmed-container .mailbox span{
+    font-size: 18.438rem;
+  }
 }
 
 /* L screens */
@@ -104,6 +120,29 @@
   }
   footer .info span{
     font-size: 2.888rem;
+  }
+  /* Message Delivered */
+  .message-delivered, .unconfirmed, .confirmed{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  /* Unconfirmed */
+  .unconfirmed h2{
+    margin-bottom: 2rem !important;
+  }
+  .unconfirmed p, .confirmed p{
+    break-inside: avoid;
+    margin-bottom: var(--p-s) !important;
+  }
+  .unconfirmed .text, .confirmed .text{
+    columns: 2;
+    text-align: left;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
