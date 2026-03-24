@@ -122,27 +122,32 @@
     font-size: 2.888rem;
   }
   /* Message Delivered */
-  .message-delivered, .unconfirmed, .confirmed{
+  .message-delivered, .not-found{
     justify-content: center;
     align-items: center;
     text-align: center;
   }
   /* Unconfirmed */
-  .unconfirmed h2{
-    margin-bottom: 2rem !important;
+  .unconfirmed, .confirmed{
+    justify-content: center;
+  }
+  .unconfirmed h2, .confirmed h2{
+    margin-bottom: 1rem !important;
+    font-size: var(--h1-xl);
   }
   .unconfirmed p, .confirmed p{
-    break-inside: avoid;
     margin-bottom: var(--p-s) !important;
   }
   .unconfirmed .text, .confirmed .text{
-    columns: 2;
     text-align: left;
-    margin-bottom: 2rem;
-    gap: 2rem;
+    margin-bottom: 2rem !important;
     max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+  }
+  .unconfirmed-container, .confirmed-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    max-width: 1008px;
   }
 }
 

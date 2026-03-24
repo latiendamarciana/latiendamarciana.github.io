@@ -498,14 +498,14 @@ footer label:has(+ input:focus-visible), footer label:has(+ textarea:focus-visib
 
 /* Message delivered */
 
-.message-delivered{
+.message-delivered, .not-found{
   display: flex;
   height: 100vh;
   justify-content: flex-start;
   align-items: center;
 }
 
-.message-delivered-container .smile, .confirmed-container .smile{
+.message-delivered-container .smile, .confirmed-container .smile, .not-found-container .dizzy{
   margin-bottom: 1rem;
 }
 
@@ -513,8 +513,16 @@ footer label:has(+ input:focus-visible), footer label:has(+ textarea:focus-visib
   font-size: 6.438rem;
 }
 
+.not-found-container .dizzy span{
+  font-size: 12rem;
+}
+
 .message-delivered-container h2, .unconfirmed-container h2, .confirmed-container h2{
   margin-bottom: 1rem !important;
+}
+
+.not-found-container h2{
+  margin-bottom: 1.5rem !important;
 }
 
 .message-delivered-container p, .unconfirmed-container .text, .confirmed-container .text{
@@ -570,4 +578,7 @@ footer label:has(+ input:focus-visible), footer label:has(+ textarea:focus-visib
 }
 .icon-arrow-right:before {
   content: "\e904";
+}
+.icon-dizzy:before {
+  content: "\e905";
 }
