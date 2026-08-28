@@ -249,8 +249,13 @@
     .location-container{
       margin: 0 auto;
       max-width: 1148px;
+      grid-template-columns: repeat(10, 1fr);
       figure{
         position: relative;
+        grid-column: 1 / 5;
+      }
+      .location-text{
+        grid-column: 5 / 11;
       }
     }
     .marciana-fondo{
