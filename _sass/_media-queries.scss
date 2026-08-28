@@ -8,6 +8,15 @@
   .visible-375 {
     display: inherit;
   }
+
+  .index-products{
+    .prev {
+        top: 27.5%;
+      }
+    .next {
+        top: 27.5%;
+      }
+  }
 }
 
 @media screen and (min-width: 414px) {
@@ -17,6 +26,14 @@
 
   .visible-414 {
     display: inherit;
+  }
+  .index-products{
+    .prev {
+        top: 30%;
+      }
+    .next {
+        top: 30%;
+      }
   }
 }
 
@@ -28,6 +45,14 @@
   .visible-500 {
     display: inherit;
   }
+  .index-products{
+    .prev {
+        top: 33%;
+      }
+    .next {
+        top: 33%;
+      }
+  }  
 }
 
 // Sm screens

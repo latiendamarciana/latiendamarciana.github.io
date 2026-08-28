@@ -84,18 +84,20 @@
     border-radius: var(--rounded-border-m);
   }
   .slideshow-content{
-    .uk-slideshow-items{
-    }
-    .prev {
-        top: 33%;
-      }
-    .next {
-        top: 33%;
-      }
     .uk-slideshow-nav{
       position: relative;
       top: 1.5rem;
     }
+  }
+}
+
+.product-card-slideshow{
+  margin-bottom: 3.5rem;
+  .uk-dotnav > * > *{
+    background-color: var(--neutral-20);
+  }
+  .uk-dotnav > .uk-active > *{
+    background-color: var(--neutral-60);
   }
 }
 
@@ -121,16 +123,6 @@
       &:hover{
         color: var(--bright-inferno);
         border-bottom: 1px solid var(--bright-inferno);
-      }
-    }
-    .button{
-      background-color: var(--bright-inferno);
-      &:hover{
-        background-color: var(--text);
-      }
-      &:focus{
-        color: var(--brown-0);
-        background-color: var(--text);
       }
     }
     .button-ghost{
