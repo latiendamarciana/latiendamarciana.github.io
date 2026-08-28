@@ -1,0 +1,80 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+{% include head.html %}
+  <body id="index">
+    {% include alert.html %}
+    {% include nav-mobile.html %}
+    {% include nav.html %}
+    <!-- Header Two Columns 01-->
+    <header class="header-two-columns-01 full-width">
+      {% include index-slideshow.html %}
+      <!-- Text  -->
+      <div class="header-text">
+        <h1 class="h-xxl">{{ page.header-heading }}</h1>
+        {{ page.content | markdownify | replace: '<p>', '<p class="p-base">' }}
+        <a class="button button-l bright-inferno">{{ page.header-button }}</a>
+      </div>  
+    </header>
+    <!-- Header Two Columns 01 end-->
+    {% include location-and-hours.html %}
+
+    <!-- Index Products -->
+    <section class="index-products">
+      <!-- Slideshow -->
+      <div uk-slideshow="ratio: 1:1.82; animation:push; autoplay:true; autoplay-interval: 4000">
+        <div class="slideshow-content" tabindex="-1">
+          <div class="uk-slideshow-items">
+            {% for post in site.posts %}
+            {% if post.featured == "true" %}
+            <article class="product-card">
+              <img 
+                srcset="
+                  {{ post.image-xs }} 686w,
+                  {{ post.image-sm }} 696w,
+                  {{ post.image-lg }} 880w"
+                sizes="
+                  (min-width: 1025px) 440px,
+                  (min-width: 641px) 348px,
+                  343px"
+                src="{{ post.src }}"  
+                alt="{{ post.alt }}"
+                loading="lazy">
+              <div class="product-card-info">
+                <h3 clas="heading">{{ post.title }}</h3>
+                {{ post.excerpt | markdownify | replace: '<p>', '<p class="p-xs">' }}
+                <p class="p-m bold">${{ post.price }}</p>
+                <nav>
+                  <ul>
+                    <li><a class="button button-s button-ghost">Detalles</a></li>
+                    {% if post.online == "true" %}
+                    <li><a class="button button-s">Comprar</a></li>
+                    {% else %}
+                    <li><a class="link link-xs">Sólo en sitio</a></li>
+                    {% endif %}
+                  </ul>  
+                </nav>
+              </div>
+            </article>
+            {% endif %}
+            {% endfor %} 
+          </div>
+          <a class="uk-position-center-left prev" href uk-slidenav-previous uk-slideshow-item="previous"><span class="icon icon-prev"></span></a>
+          <a class="uk-position-center-right next" href uk-slidenav-next uk-slideshow-item="next"><span class="icon icon-next"></span></a>
+          <ul class="uk-slideshow-nav uk-dotnav"></ul>
+        </div>  
+      </div>
+      <!-- Slideshow end  -->
+    </section>
+    <!-- Index Products End -->
+
+    {% include modal-nav.html %}
+
+
+    {% include uikit-javascript.html %}
+
+  </body>
+</html>    

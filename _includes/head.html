@@ -1,24 +1,18 @@
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Normalize -->
-  <link rel="stylesheet" href="{{"../assets/css/normalize.css" | relative_url }}">
-	<!-- Custom styles -->
-	<link rel="stylesheet" href="{{"../assets/css/styles.css" | relative_url }}">
-	<link rel="stylesheet" href="{{"../assets/css/media-queries.css" | relative_url }}" media="print" onload="this.media='all'">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <!-- Uikit CSS -->
+  <link rel="stylesheet" href="{{ 'assets/css/uikit/uikit.min.css' | relative_url }}">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}">
+  <!-- Favico -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- Plausible -->
+  <script defer data-domain="fluorescente.design" src="https://plausible.io/js/plausible.js"></script>
   <!-- Jekyll SEO -->
   {% seo %}
-	<!-- Favico -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-  <!-- Plausible -->
-  <script defer data-domain="latiendamarciana.com" src="https://plausible.io/js/script.js" async></script>
-  <!-- Privacy-friendly analytics by Plausible -->
-  <script async src="https://plausible.io/js/pa-5gSyEsQECqBL8DbKhS-wu.js"></script>
-  <script>
-    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-    plausible.init()
-  </script> 
-</head>
+</head>  

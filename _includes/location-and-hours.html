@@ -1,0 +1,30 @@
+<!-- Location and hours -->
+{% for item in site.posts-location %}
+<section class="location">
+  <article class="location-container">
+    <figure class="full-width">
+      <img 
+        srcset="
+          {{ item.image-xs }} 686w,
+          {{ item.image-sm }} 744w,
+          {{ item.image-lg }} 1416w"
+        sizes="
+          (min-width: 1025px) 708px,
+          (min-width: 641px) 348px,
+          343px"
+        src="{{ item.src }}"  
+        alt="{{ item.alt }}"
+        loading="lazy">
+    </figure>
+    <div class="location-text full-width">
+      <h2>{{ item.location-heading }}</h2>
+      <h3>{{ item.location-subheading }}</h3>
+      {{ item.content | markdownify | replace: '<p>', '<p class="p-base">' }}
+    </div>
+  </article>
+  <img class="location-bottom-background visible-xs hidden-sm hidden-lg" src="{{ item.location-background-xs-2 }}" alt="">
+  <img class="location-bottom-background hidden-xs visible-sm hidden-lg" src="{{ item.location-background-sm-2 }}" alt="">
+  <img class="location-bottom-background hidden-xs hidden-sm visible-lg marciana-fondo" src="{{ item.location-background-lg-2 }}" alt="">
+</section>
+{% endfor %}
+<!-- Location and hours -->

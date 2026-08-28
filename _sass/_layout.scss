@@ -1,0 +1,138 @@
+// Index
+
+#index{
+  header{
+    .uk-slideshow{
+      margin-bottom: -.5rem;
+    }
+    .header-text{
+      p{
+        margin-bottom: 1rem;
+        &:last-of-type{
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
+
+// Alert
+
+.alert{
+  background-color: var(--text);
+  padding: 3rem 1rem 1.75rem 1rem;
+  margin-bottom: 0;
+  .full-width{
+    padding: 0;
+  }
+  a{
+    text-decoration: none !important;
+    font-weight: var(--bold);
+    border-bottom: 1px solid var(--bright-vivid-indigo);
+    &:hover{
+      color: var(--brown-0) !important;
+      border-bottom: 1px solid var(--brown-0);
+    }
+  }
+  .uk-alert-close{
+    opacity: 1;
+    border-bottom: none;
+    border-bottom: 1px solid transparent;
+    &:hover{
+      border-bottom: 1px solid transparent;
+      .icon{
+        color: var(--brown-0);
+        transition: var(--fade);
+      }
+    }
+  }
+  p, .icon {
+    color: var(--bright-inferno);
+    margin-bottom: 0;
+  }
+}
+
+// Location
+
+.location{
+  background-color: var(--brown-0);
+  background-image: url(../images/fondo-ubicacion-xs.svg);
+  background-repeat: repeat-x;
+  padding-top: 3rem;
+  h2{
+    font-size: var(--h1);
+    margin-bottom: .5rem;
+  }
+  h3{
+    color: var(--text);
+  }
+  figure{
+    margin-bottom: 1.5rem;
+    img{
+      border-radius: var(--rounded-border-m);
+    }
+  }
+}
+
+// Products
+
+.index-products{
+  padding: 3rem 1rem;
+  .slideshow-content{
+    .uk-slideshow-items{
+      overflow: visible;
+      .product-card{
+        background-color: var(--brown-0);
+        border-radius: var(--rounded-border-m);
+        img{
+          height: calc(100vw - 2rem);
+          border-radius: var(--rounded-border-m) var(--rounded-border-m) 0 0;
+        }
+        .product-card-info{
+          margin: 1rem 1rem 1.5rem 1rem;
+          h3{
+            margin-bottom: .5rem;
+          }
+          p:nth-last-of-type(2){
+            margin-bottom: 1rem;
+          }
+          .link{
+            color: var(--text);
+            border-bottom: 1px solid var(--text);
+            &:hover{
+              color: var(--bright-inferno);
+              border-bottom: 1px solid var(--bright-inferno);
+            }
+          }
+          .button{
+            background-color: var(--bright-inferno);
+            &:hover{
+              background-color: var(--text);
+            }
+            &:focus{
+              color: var(--brown-0);
+              background-color: var(--text);
+            }
+          }
+          .button-ghost{
+            background-color: transparent;
+            &:hover{
+              color: var(--bright-inferno);
+              background-color: var(--text);
+            }
+            &:focus{
+              color: var(--brown-0);
+              background-color: var(--text);
+            }
+          }
+          nav{
+            ul{
+              display: flex;
+              gap: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+.full-width,
+.boxed-width {
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.full-width {
+  max-width: 1448px;
+}
+
+.boxed-width {
+  max-width: 1216px;
+}
+
+.no-padding{
+  padding: 0;
+}
+
+.hidden-xs {
+  display: none;
+}
+
+.visible-xs {
+  display: block;
+}
+
+
+.bright {
+  background-color: var(--bright);
+}
+
+.neutral-0 {
+  background-color: var(--neutral-0);
+}
+
+.neutral-10 {
+  background-color: var(--neutral-10);
+}
+
+.neutral-20 {
+  background-color: var(--neutral-20);
+}
+
+.neutral-30 {
+  background-color: var(--neutral-30);
+}
+
+.neutral-40 {
+  background-color: var(--neutral-40);
+}
+
+.neutral-50 {
+  background-color: var(--neutral-50);
+}
+
+.neutral-60 {
+  background-color: var(--neutral-60);
+}
+
+.neutral-70 {
+  background-color: var(--neutral-70);
+}
+
+.neutral-80 {
+  background-color: var(--neutral-80);
+}
+
+.neutral-90 {
+  background-color: var(--neutral-90);
+}
+
+
+.text {
+  background-color: var(--text);
+}
+
+.dark{
+  background-color: var(--dark);
+}
+
+.dark-m{
+  background-color: var(--dark-m);
+}
+
+
+.brown-0{
+  background-color: var(--brown-0);
+}
+
+.brown-10{
+  background-color: var(--brown-10);
+}
+
+.brown-20{
+  background-color: var(--brown-20);
+}
+
+.brown-30{
+  background-color: var(--brown-30);
+}
+
+.brown-40{
+  background-color: var(--brown-40);
+}
+
+.brown-50{
+  background-color: var(--brown-50);
+}
+
+.brown-60{
+  background-color: var(--brown-60);
+}
+
+.brown-70{
+  background-color: var(--brown-70);
+}
+
+.brown-80{
+  background-color: var(--brown-80);
+}
+
+.brown-90{
+  background-color: var(--brown-90);
+}
+
+.dark-brown{
+  background-color: var(--dark-brown);
+}
+
+
+
+.bright-inferno{
+  background-color: var(--bright-inferno);
+}
+
+.inferno{
+  background-color: var(--inferno);
+}
+
+.dark-inferno{
+  background-color: var(--dark-inferno);
+}
+
+
+.bright-vivid-indigo{
+  background-color: var(--bright-vivid-indigo);
+}
+
+.vivid-indigo{
+  background-color: var(--vivid-indigo);
+}
+
+.dark-vivid-indigo{
+  background-color: var(--dark-vivid-indigo);
+}
+
+
+.bright-vivid-pink{
+  background-color: var(--bright-vivid-pink);
+}
+
+.vivid-pink{
+  background-color: var(--vivid-pink);
+}
+
+.dark-vivid-pink{
+  background-color: var(--dark-vivid-pink);
+}
+
+
+.bright-turquoise{
+  background-color: var(--bright-turquoise);
+}
+
+.turquoise{
+  background-color: var(--turquoise);
+}
+
+.dark-turquoise{
+  background-color: var(--dark-turquoise);
+}

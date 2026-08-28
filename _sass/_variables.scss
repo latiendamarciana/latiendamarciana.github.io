@@ -1,0 +1,103 @@
+
+// CSS Variables
+
+:root{
+  // Colors
+  --bright: #FDFDFD;
+  --neutral-0: #FAFAFA;
+  --neutral-10: #EBEBEB;
+  --neutral-20: #D6D6D6;
+  --neutral-30: #C2C2C2;
+  --neutral-40: #ADADAD;
+  --neutral-50: #999999;
+  --neutral-60: #858585;
+  --neutral-70: #707070;
+  --neutral-80: #5C5C5C;
+  --neutral-90: #474747;
+
+  --text: #333;
+  --dark: #000;
+  --dark-m: #191919;
+
+  --brown-0: #FCF9F3;
+  --brown-10: #F3EDE6;
+  --brown-20: #E9E0D8;
+  --brown-30: #D6C7BD;
+  --brown-40: #C3AEA2;
+  --brown-50: #B09587;
+  --brown-60: #9D7C6C;
+  --brown-70: #774A36;
+  --brown-80: #64311B;
+  --brown-90: #521C03;
+  --dark-brown: #311001;
+
+  --bright-inferno: #FF988B;
+  --inferno: #FF543E;
+  --dark-inferno: #C53A28;
+
+  --bright-vivid-indigo: #AB66F2;
+  --vivid-indigo: #7300E9;
+  --dark-vivid-indigo: #4C019A;
+
+  --bright-vivid-pink: #FF9CC2;
+  --vivid-pink: #FF5A9A;
+  --dark-vivid-pink: #CE4278;
+
+  --bright-turquoise: #7FECEA;
+  --turquoise: #29DFDC;
+  --dark-turquoise: #1AA7A6;
+
+  // Headings
+  --headings: 'Fraunces', serif;
+  --headings-line-height: 1.12;
+  --soft: 30;
+  --wonk: 1;
+
+
+  // Paragraphs
+  --paragraphs: 'Fraunces', serif;
+  --paragraphs-line-height: 1.5;
+  --soft: 0;
+  --wonk: 1;
+
+  // Font Sizes
+  --h6: 1.125rem;
+  --h5: 1.263rem;
+  --h4: 1.419rem;
+  --h3: 1.6rem;
+  --h2: 1.8rem;
+  --h1: 2.025rem;
+  --h-l: 2.281rem;
+  --h-xl: 2.563rem;
+  --h-xxl: 2.881rem;
+  
+  --p-xxs: 0.79rem;
+  --p-xs: 0.888rem;
+  --p-s: 1rem;
+  --p-base: 1.125rem; 
+  --p-m: 1.263rem;
+  --p-l: 1.375rem;
+  --p-xl: 1.6rem;
+
+  // Font Weights
+  --thin: 100;
+  --extralight: 200;
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  --extrabold: 800;
+  --black: 900;
+
+  // Spaces and Others
+  --rounded-border-xs: .375rem;
+  --rounded-border-m: .75rem;
+  --rounded-border-l: 1rem;
+  --button-icon-space: .5rem;
+  --fade: all .4s ease;
+  --fade-in: fadeIn 3s;
+  --shadow: -3px 6px 12px 0px  var(--neutral-10);
+  --shadow-logo: 0 2px 6px 0px  rgba(173, 173, 173, 0.25);
+  --shadow-logo-hover: 0 8px 16px 0px  rgba(173, 173, 173, 0.25);
+}

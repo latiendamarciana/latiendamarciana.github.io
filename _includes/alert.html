@@ -1,0 +1,12 @@
+<!-- Alert -->
+{% for item in site.posts-alert %}
+{% if item.published == "true"%}
+<div class="alert" role="alert" uk-alert>
+  <div class="alert-container full-width">
+    <a href="" class="uk-alert-close" uk-close aria-label="Cerrar"><span class="icon icon-close"></span></a>
+    {{ item.content | markdownify | replace: '<p>', '<p class="p-s">' }}
+  </div>    
+</div>
+{% endif %}
+{% endfor %}
+<!-- Alert end -->

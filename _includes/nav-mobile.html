@@ -1,0 +1,31 @@
+<!-- Nav Mobile -->
+<div class="nav-container visible-xs hidden-sm hidden-lg" uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+  <nav class="boxed-width">
+    <ul class="nav-logo">
+      {% for item in site.posts-logos %}
+      <li><a href="{{ item.href }}" aria-label="{{ item.aria-label }}">
+        <img src="{{ item.logo-xs }}" alt="Logo de La Tienda Marciana. Una marciana que mira a la cámara y sonríe."></a>
+      </li>
+      {% endfor %}
+    </ul>
+    <ul class="links-social-buttons-search">
+      <li>
+        <ul class="nav-platforms">
+          {% for item in site.posts-platforms %}
+          <li><a href="{{ site.ko-fi_url }}" target="{{ item.target }}" aria-label="{{ item.aria-label }}"><span class="icon {{ item.icon }}"></span></a></li>
+          {% endfor %}
+        </ul>  
+      </li>
+      <li>
+        <ul class="search-toggle-navigation">
+          {% for item in site.posts-toggle-navigation %}
+          <li class="toggle-navigation">
+            <a href="{{ item.href }}" uk-toggle class="icon {{ item.icon }}" aria-label="{{ item.aria-label }}"></a>
+          </li>
+          {% endfor %} 
+        </ul>
+      </li>    
+    </ul>  
+  </nav>
+</div>
+<!-- Nav Mobile end -->
