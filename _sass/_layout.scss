@@ -78,21 +78,31 @@
 
 .index-products{
   padding: 3rem 1rem;
+  .uk-slideshow{
+    // max-height: 700px;
+    // overflow: hidden;
+    border-radius: var(--rounded-border-m);
+  }
   .slideshow-content{
     .uk-slideshow-items{
     }
     .prev {
-        top: 11.5rem;
+        top: 33%;
       }
     .next {
-        top: 11.5rem;
+        top: 33%;
       }
+    .uk-slideshow-nav{
+      position: relative;
+      top: 1.5rem;
+    }
   }
 }
 
 .product-card{
   background-color: var(--brown-0);
   border-radius: var(--rounded-border-m);
+  // max-height: 700px;
   img{
     height: calc(100vw - 2rem);
     border-radius: var(--rounded-border-m) var(--rounded-border-m) 0 0;

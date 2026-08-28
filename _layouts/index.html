@@ -25,7 +25,95 @@ layout: compress
     <!-- Index Products -->
     <section class="index-products">
       <!-- Slideshow -->
-      <div uk-slideshow="ratio: 1:1.8; animation:push; autoplay:true; autoplay-interval: 4000" class="visible-xs hidden-sm hidden-lg">
+      <div id="product-card-slideshow" uk-slideshow="ratio: 1:1.8; animation:push; autoplay:true; autoplay-interval: 4000" class="visible-375 hidden-414 hidden-500 hidden-sm">
+        <div class="slideshow-content" tabindex="-1">
+          <div class="uk-slideshow-items">
+            {% for post in site.posts %}
+            {% if post.featured == "true" %}
+            <article class="product-card">
+              <img 
+                srcset="
+                  {{ post.image-xs }} 686w,
+                  {{ post.image-sm }} 696w,
+                  {{ post.image-lg }} 880w"
+                sizes="
+                  (min-width: 1025px) 440px,
+                  (min-width: 641px) 348px,
+                  343px"
+                src="{{ post.src }}"  
+                alt="{{ post.alt }}"
+                loading="lazy">
+              <div class="product-card-info">
+                <h3 clas="heading">{{ post.title }}</h3>
+                {{ post.excerpt | markdownify | replace: '<p>', '<p class="p-xs">' }}
+                <p class="p-m bold">${{ post.price }}</p>
+                <nav>
+                  <ul>
+                    <li><a class="button button-s button-ghost">Detalles</a></li>
+                    {% if post.online == "true" %}
+                    <li><a class="button button-s">Comprar</a></li>
+                    {% else %}
+                    <li><a class="link link-xs">Sólo en sitio</a></li>
+                    {% endif %}
+                  </ul>  
+                </nav>
+              </div>
+            </article>
+            {% endif %}
+            {% endfor %} 
+          </div>
+          <a class="uk-position-center-left prev" href uk-slidenav-previous uk-slideshow-item="previous"><span class="icon icon-prev"></span></a>
+          <a class="uk-position-center-right next" href uk-slidenav-next uk-slideshow-item="next"><span class="icon icon-next"></span></a>
+          <ul class="uk-slideshow-nav uk-dotnav"></ul>
+        </div>  
+      </div>
+      <!-- Slideshow end  -->
+      <!-- Slideshow -->
+      <div id="product-card-slideshow" uk-slideshow="ratio: 1:1.66; animation:push; autoplay:true; autoplay-interval: 4000" class="visible-414 hidden-375 hidden-500 hidden-sm">
+        <div class="slideshow-content" tabindex="-1">
+          <div class="uk-slideshow-items">
+            {% for post in site.posts %}
+            {% if post.featured == "true" %}
+            <article class="product-card">
+              <img 
+                srcset="
+                  {{ post.image-xs }} 686w,
+                  {{ post.image-sm }} 696w,
+                  {{ post.image-lg }} 880w"
+                sizes="
+                  (min-width: 1025px) 440px,
+                  (min-width: 641px) 348px,
+                  343px"
+                src="{{ post.src }}"  
+                alt="{{ post.alt }}"
+                loading="lazy">
+              <div class="product-card-info">
+                <h3 clas="heading">{{ post.title }}</h3>
+                {{ post.excerpt | markdownify | replace: '<p>', '<p class="p-xs">' }}
+                <p class="p-m bold">${{ post.price }}</p>
+                <nav>
+                  <ul>
+                    <li><a class="button button-s button-ghost">Detalles</a></li>
+                    {% if post.online == "true" %}
+                    <li><a class="button button-s">Comprar</a></li>
+                    {% else %}
+                    <li><a class="link link-xs">Sólo en sitio</a></li>
+                    {% endif %}
+                  </ul>  
+                </nav>
+              </div>
+            </article>
+            {% endif %}
+            {% endfor %} 
+          </div>
+          <a class="uk-position-center-left prev" href uk-slidenav-previous uk-slideshow-item="previous"><span class="icon icon-prev"></span></a>
+          <a class="uk-position-center-right next" href uk-slidenav-next uk-slideshow-item="next"><span class="icon icon-next"></span></a>
+          <ul class="uk-slideshow-nav uk-dotnav"></ul>
+        </div>  
+      </div>
+      <!-- Slideshow end  -->
+      <!-- Slideshow -->
+      <div id="product-card-slideshow" uk-slideshow="ratio: 1:1.55; animation:push; autoplay:true; autoplay-interval: 4000" class="visible-500 hidden-375 hidden-414 hidden-sm">
         <div class="slideshow-content" tabindex="-1">
           <div class="uk-slideshow-items">
             {% for post in site.posts %}
@@ -72,7 +160,6 @@ layout: compress
     <!-- Index Products End -->
 
     {% include modal-nav.html %}
-
 
     {% include uikit-javascript.html %}
 

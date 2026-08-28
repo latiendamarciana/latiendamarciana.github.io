@@ -1,3 +1,35 @@
+// Product Slideshow media queries
+
+@media screen and (min-width: 375px) {
+  .hidden-375 {
+    display: none;
+  }
+
+  .visible-375 {
+    display: inherit;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .hidden-414 {
+    display: none;
+  }
+
+  .visible-414 {
+    display: inherit;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .hidden-500 {
+    display: none;
+  }
+
+  .visible-500 {
+    display: inherit;
+  }
+}
+
 // Sm screens
 @media screen and (min-width: 641px) {
   .full-width,
