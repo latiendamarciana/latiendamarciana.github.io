@@ -146,6 +146,9 @@
           width: 100%;
           height: auto;
         }
+        &:last-child{
+          display: none;
+        }
       }
     } 
   }
@@ -262,6 +265,12 @@
     padding-right: 2rem;
   }
 
+  .header-two-columns-01{
+    .uk-slideshow-items{
+      border-radius: 0 0 var(--rounded-border-l) 0;
+    }
+  }
+
   .location{
     padding: 6rem 0 0 0;
     background-image: url(../images/fondo-ubicacion-lg.svg);
@@ -283,9 +292,14 @@
   }
 
   .index-products{
-      .index-products-container{
+    .index-products-container{
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
+      .product-card{
+        &:last-child{
+          display: initial;
+        }
+      }
     } 
   }
 
