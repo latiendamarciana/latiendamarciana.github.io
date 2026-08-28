@@ -150,8 +150,6 @@
     } 
   }
 
- 
-
   .containers-container,
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
@@ -282,6 +280,13 @@
     .marciana-fondo{
       margin-top: -10rem;
     }
+  }
+
+  .index-products{
+      .index-products-container{
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    } 
   }
 
   .boxed-width{

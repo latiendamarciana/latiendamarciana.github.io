@@ -26,7 +26,8 @@ layout: compress
     <section class="index-products full-width">
       
       {% include index-products-slideshow.html %}
-      <div class="index-products-container">
+
+      <div class="index-products-container hidden-xs visible-sm visible-lg">
       {% for post in site.posts %}
       {% if post.featured == "true" %}
         <article class="product-card">

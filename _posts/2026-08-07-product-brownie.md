@@ -8,7 +8,7 @@ image-xs: "/assets/images/productos-carrusel/brownie-carrusel-productos-xs.jpg"
 image-sm: "/assets/images/productos/brownie-productos-sm.jpg"
 image-lg: "/assets/images/productos/brownie-productos-lg.jpg"
 alt: "Brownie vegano de chocolate"
-title: "Lorem ipsum dolor sit amet"
+title: "Brownie (vegano)"
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 price: "12.000"
 ---
