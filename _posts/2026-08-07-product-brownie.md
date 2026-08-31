@@ -1,7 +1,7 @@
 ---
 published: "true"
 featured: "true"
-online: "true"
+online: "false"
 src: "/assets/images/productos/brownie-productos-lg.jpg"
 image-xxs: "/assets/images/prductos/brownie-productos-xxs.jpg"
 image-xs: "/assets/images/productos-carrusel/brownie-carrusel-productos-xs.jpg"

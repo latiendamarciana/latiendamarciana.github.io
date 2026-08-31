@@ -3,25 +3,29 @@
   grid-template-columns: 1fr;
 }
 
-form label {
+label {
   font-size: var(--p-base);
   font-weight: var(--bold);
   display: block;
   margin-bottom: .5rem;
-  color: var(--dark);
+  color: var(--brown-0);
 }
 
 input:not([type="checkbox"]):not([type="radio"]),
 textarea {
   display: block;
   width: 100%;
-  margin-bottom: 1rem;
-  padding: .75rem 1rem;
+  margin-bottom: 1.5rem;
+  padding: .5rem .25rem;
   font-family: var(--paragraphs);
   font-size: var(--p-base);
-  color: var(--text);
-  border: 1px solid var(--neutral-30);
+  color: var(--brown-0);
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid var(--brown-0);
   transition: var(--fade);
+  background-color: transparent;
 }
 
 textarea {
@@ -33,11 +37,7 @@ textarea {
 label:has(+ input:focus-visible),
 label:has(+ textarea:focus-visible) {
   transition: var(--fade);
-  color: var(--nuetral-60);
-}
-
-.form-button {
-  margin-bottom: 1rem;
+  color: var(--bright-vivid-indigo);
 }
 
 .form-note {

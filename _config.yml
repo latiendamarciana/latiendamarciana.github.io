@@ -61,7 +61,9 @@ collections:
   posts-index-slideshow-images:
     output: true
   posts-location:
-    output: true        
+    output: true
+  posts-newsletter:
+    output: true      
   
 
 # Exclude from processing.

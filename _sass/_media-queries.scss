@@ -153,6 +153,28 @@
     } 
   }
 
+  .newsletter{
+    form{
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      align-items: baseline;
+      label{
+        grid-column: 1 / 7;
+      }
+      input{
+        grid-column: 1 / 6;
+      }
+      button{
+        grid-column: 6 / 7;
+        width: auto;
+        margin-left: 1.5rem;
+      }
+      .note{
+        grid-column: 1 / 7;
+      }
+    }
+  }
+
   .containers-container,
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
@@ -301,6 +323,24 @@
         }
       }
     } 
+  }
+
+  .newsletter{
+    padding-bottom: 0;
+    .newsletter-container{
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      align-items: center;
+      gap: 2rem;
+      img{
+        grid-column: 1 / 8;
+        margin-bottom: 0;
+      }
+      .newsletter-info-and-form{
+        grid-column: 8 / 13;
+        padding: 0 2rem 0 0;
+      }
+    }
   }
 
   .boxed-width{

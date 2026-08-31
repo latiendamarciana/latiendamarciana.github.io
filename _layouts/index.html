@@ -64,8 +64,44 @@ layout: compress
       </div> 
 
       <a class="button button-l" href="#">Ver todos los productos</a>
+
     </section>
     <!-- Index Products End -->
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="newsletter-container full-width">
+        {% for item in site.posts-newsletter %}
+        <img 
+            srcset="
+              {{ item.image-xs }} 686w,
+              {{ item.image-sm }} 696w,
+              {{ item.image-lg }} 880w"
+            sizes="
+              (min-width: 1025px) 440px,
+              (min-width: 641px) 348px,
+              343px"
+            src="{{ item.src }}"  
+            alt="{{ item.alt }}"
+            loading="lazy">
+        <div class="newsletter-info-and-form">
+          <div class="newsletter-info">
+            <h3>Suscríbete al boletín de correo para enterarte de novedades</h3>
+            <p>O agrega el <a class="link">RSS <span class="icon icon-rss"></span></a></p>
+          </div>
+          <form method="post" action="https://buttondown.com/api/emails/embed-subscribe/latiendamarciana" class="embeddable-buttondown-form" referrerpolicy="unsafe-url" aria-labelledby="newsletter-form-heading">
+            <label for="newsletter">Correo electrónico</label>
+            <input type="email" name="email" id="newsletter" pattern=".{4,64}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')" required>
+            <button class="button-base" type="submit" aria-describedby="newsletter-note">Suscríbete</button> 
+            <p class="note p-xs" id="newsletter-note">Al suscribirte me autorizas a enviarte boletines de correo. No usaré tu correo para otros fines, ni lo compartiré con terceros.</p>
+            </div>
+          </form>
+        </div>
+        {% endfor %}
+      </div>   
+    </section>
+
+    <!-- Newsletter end -->
 
     {% include modal-nav.html %}
 
