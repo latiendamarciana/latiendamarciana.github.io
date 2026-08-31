@@ -17,7 +17,7 @@
     <div class="newsletter-info-and-form">
       <div class="newsletter-info">
         <h3>{{ item.heading }}</h3>
-        <p>{{ item.rss-text }} <a class="link" href="{{ item.rss-url }}" target="_blank">{{ item.rss-link }} <span class="icon icon-rss"></span></a></p>
+        <p>{{ item.rss-text }} <a class="link" href="{{ item.rss-href }}" target="_blank">{{ item.rss-link }} <span class="icon icon-rss"></span></a></p>
       </div>
       <form method="post" action="https://buttondown.com/api/emails/embed-subscribe/latiendamarciana" class="embeddable-buttondown-form" referrerpolicy="unsafe-url" aria-labelledby="newsletter-form-heading">
         <label for="newsletter">{{ item.label }}</label>

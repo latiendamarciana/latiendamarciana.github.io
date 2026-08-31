@@ -8,6 +8,6 @@ heading: "Suscríbete al boletín de correo para enterarte de novedades"
 label: "Correo electrónico"
 rss-text: "o agrega el"
 rss-link: "RSS"
-rss-url: "/feed.xml"
+rss-href: "/feed.xml"
 button: "Suscríbete"
 ---

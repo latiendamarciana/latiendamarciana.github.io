@@ -22,8 +22,10 @@ title: La Tienda Marciana
 email: latiendamarciana@pm.me
 description: Obra gráfica, accesorios, música y comida a base de plantas
 author-url: "https://fluorescente.design"
+author-link-text: "fluorescente.design"
 author: Fluorescente
 creator: Fluorescente
+credits: "Diseño y desarrollo:"
 # twitter_username: jekyllrb
 github_username: fluorescente
 ko-fi_url: "https://ko-fi.com/latiendamarciana"
@@ -35,7 +37,6 @@ store-button: "Ver todos los productos"
 product-details-button: "Detalles"
 buy-button: "Comprar"
 offline-link: "Sólo en sitio"
-
 
 # Build settings
 # theme: minima
@@ -67,7 +68,9 @@ collections:
   posts-location:
     output: true
   posts-newsletter:
-    output: true      
+    output: true
+  posts-footer:
+    output: true        
   
 
 # Exclude from processing.
