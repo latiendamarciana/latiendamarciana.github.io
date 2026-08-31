@@ -1,0 +1,25 @@
+<!-- Footer -->
+<footer>
+  <nav class="full-width">
+    <ul class="footer-logo">
+      {% for item in site.posts-footer %}
+      {% if item.link-text == "inicio" %}
+      <li><a href="{{ item.href }}" class="logo"><span class="icon {{ item.logo }}" aria-label="{{ item.link-text }}"></a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>   
+    <ul class="footer-links">
+      {% for item in site.posts-footer %}
+      {% if item.link-text != "inicio" %}
+      <li>
+        <a href="{{ item.href }}">{{ item.link-text }}{% if item.link-text == "RSS" or item.link-text == "Propinas" %}<span class="icon {{ item.logo }}"></span>{% endif %}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>  
+  </nav>
+  <div class="credits">
+    <p class="p-s full-width">{{ site.credits }} <a href="{{ site.author-url }}" target="_blank">{{ site.author-link-text }}</a></p>
+  </div>  
+</footer>  
+<!-- Footer end -->

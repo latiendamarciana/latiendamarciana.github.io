@@ -371,7 +371,14 @@
   footer{
     padding: 2rem 0 0 0;
     nav{
-      padding-bottom: 2rem !important;
+      padding-bottom: 2.5rem !important;
+      .footer-logo{
+        .logo{
+          font-size: 7.25rem;
+          width: 7.25rem;
+          height: 7.25rem;
+        }
+      }
       .footer-links{
         display: flex;
         flex-direction: row;
