@@ -21,7 +21,6 @@
 title: La Tienda Marciana
 email: latiendamarciana@pm.me
 description: Obra gráfica, accesorios, música y comida a base de plantas
-url: "/estilos-y-componentes" # the base hostname & protocol for your site, e.g. http://example.com
 author-url: "https://fluorescente.design"
 author: Fluorescente
 creator: Fluorescente
@@ -32,6 +31,11 @@ lang: es
 locale: es_CO
 logo: assets/images/logo.png
 image: "assets/images/basic/estilos-y-componentes-basicos-card.png"
+store-button: "Ver todos los productos"
+product-details-button: "Detalles"
+buy-button: "Comprar"
+offline-link: "Sólo en sitio"
+
 
 # Build settings
 # theme: minima

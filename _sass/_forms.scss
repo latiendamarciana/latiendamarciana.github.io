@@ -37,7 +37,7 @@ textarea {
 label:has(+ input:focus-visible),
 label:has(+ textarea:focus-visible) {
   transition: var(--fade);
-  color: var(--bright-vivid-indigo);
+  color: var(--bright-inferno);
 }
 
 .form-note {

@@ -30,7 +30,7 @@
     font-weight: var(--bold);
     border-bottom: 1px solid var(--bright-vivid-indigo);
     &:hover{
-      color: var(--bright-vivid-indigo) !important;
+      color: var(--brown-0) !important;
       border-bottom: 1px solid var(--bright-vivid-indigo);
     }
   }
@@ -41,7 +41,7 @@
     &:hover{
       border-bottom: 1px solid transparent;
       .icon{
-        color: var(--bright-vivid-indigo);
+        color: var(--brown-0);
         transition: var(--fade);
       }
     }
@@ -174,7 +174,7 @@
           margin-left: .25rem;
         }
         &:hover{
-          color: var(--bright-vivid-indigo);
+          color: var(--brown-0);
           border-bottom: 1px solid var(--bright-vivid-indigo);
         }
       }
