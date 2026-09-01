@@ -31,18 +31,20 @@ layout: compress
       {% for post in site.posts %}
       {% if post.featured == "true" %}
         <article class="product-card">
-          <img 
-          srcset="
-            {{ post.image-xs }} 686w,
-            {{ post.image-sm }} 696w,
-            {{ post.image-lg }} 880w"
-          sizes="
-            (min-width: 1025px) 440px,
-            (min-width: 641px) 348px,
-            343px"
-          src="{{ post.src }}"  
-          alt="{{ post.alt }}"
-          loading="lazy">
+          <a>
+            <img 
+            srcset="
+              {{ post.image-xs }} 686w,
+              {{ post.image-sm }} 696w,
+              {{ post.image-lg }} 880w"
+            sizes="
+              (min-width: 1025px) 440px,
+              (min-width: 641px) 348px,
+              343px"
+            src="{{ post.src }}"  
+            alt="{{ post.alt }}"
+            loading="lazy">
+          </a>
           <div class="product-card-info">
             <h3 clas="heading">{{ post.title }}</h3>
             {{ post.excerpt | markdownify | replace: '<p>', '<p class="p-xs">' }}

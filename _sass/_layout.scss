@@ -104,7 +104,10 @@
 .product-card{
   background-color: var(--brown-0);
   border-radius: var(--rounded-border-m);
-  // max-height: 700px;
+  &:hover{
+    box-shadow: var(--shadow-logo-hover);
+    transition: var(--fade);
+  }
   img{
     height: calc(100vw - 2rem);
     height: auto;

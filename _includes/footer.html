@@ -12,7 +12,7 @@
       {% for item in site.posts-footer %}
       {% if item.link-text != "inicio" %}
       <li>
-        <a href="{{ item.href }}">{{ item.link-text }}{% if item.link-text == "RSS" or item.link-text == "Propinas" %}<span class="icon {{ item.logo }}"></span>{% endif %}</a>
+        <a href="{{ item.href }}" target="{{ item.target }}">{{ item.link-text }}{% if item.link-text == "RSS" or item.link-text == "Propinas" %}<span class="icon {{ item.logo }}"></span>{% endif %}</a>
       </li>
       {% endif %}
       {% endfor %}

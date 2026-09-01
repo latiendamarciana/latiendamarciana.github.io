@@ -10,4 +10,5 @@ rss-text: "o agrega el"
 rss-link: "RSS"
 rss-href: "/feed.xml"
 button: "Suscríbete"
+note: "Al suscribirte me autorizas a enviarte boletines de correo. No usaré tu correo para otros fines, ni lo compartiré con terceros."
 ---

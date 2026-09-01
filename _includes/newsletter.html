@@ -23,7 +23,7 @@
         <label for="newsletter">{{ item.label }}</label>
         <input type="email" name="email" id="newsletter" pattern=".{4,64}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')" required>
         <button class="button-base" type="submit" aria-describedby="newsletter-note">{{ item.button }}</button> 
-        <p class="note p-xs" id="newsletter-note">Al suscribirte me autorizas a enviarte boletines de correo. No usaré tu correo para otros fines, ni lo compartiré con terceros.</p>
+        <p class="note p-xs" id="newsletter-note">{{ item.note }}</p>
         </div>
       </form>
     </div>
