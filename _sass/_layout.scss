@@ -38,6 +38,7 @@
     opacity: 1;
     border-bottom: none;
     border-bottom: 1px solid transparent;
+    font-size: var(--p-base);
     &:hover{
       border-bottom: 1px solid transparent;
       .icon{
@@ -59,17 +60,20 @@
   background-image: url(../images/fondo-ubicacion-xs.svg);
   background-repeat: repeat-x;
   padding-top: 3rem;
-  h2{
-    font-size: var(--h1);
-    margin-bottom: .5rem;
-  }
-  h3{
-    color: var(--text);
-  }
-  figure{
-    margin-bottom: 1.5rem;
-    img{
-      border-radius: var(--rounded-border-m);
+  .location-container{
+    h2{
+      font-size: var(--h1);
+      margin-bottom: .5rem;
+    }
+    h3{
+      color: var(--text);
+    }
+    figure{
+      margin-bottom: 1.5rem;
+      position: relative;
+      img{
+        border-radius: var(--rounded-border-m);
+      }
     }
   }
 }
@@ -263,6 +267,34 @@ footer{
       &:hover{
         color: var(--bright);
         border-bottom: 1px solid var(--dark-m);
+      }
+    }
+  }
+}
+
+#modal-location{
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+  background-color: rgba(25, 25, 25, 0.25);
+  .modal-nav-close{
+    right: 1.5rem;
+  }
+  .modal-location-content{
+    background-image: url(../images/fondo-tienda-marciana.jpg);
+    color: var(--text);
+    width: 100%;
+    padding: 0;
+    .uk-close{
+      color: var(--dark-m) !important;
+      font-size: var(--h3);
+      &:hover{
+        color: var(--bright-vivid-indigo) !important;
+      }
+    } 
+    .location{
+      background-color: transparent;
+      img.visible-sm{
+        margin-top: -5rem;
       }
     }
   }

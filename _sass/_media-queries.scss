@@ -326,7 +326,6 @@
       max-width: 1148px;
       grid-template-columns: repeat(10, 1fr);
       figure{
-        position: relative;
         grid-column: 1 / 5;
       }
       .location-text{
@@ -386,6 +385,17 @@
         gap: 1.5rem;
         li{
           margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  #modal-location{
+    .modal-location-content{
+      max-width: 1148px !important;
+      .location{
+        img.visible-lg{
+          margin-top: -3.5rem;
         }
       }
     }
