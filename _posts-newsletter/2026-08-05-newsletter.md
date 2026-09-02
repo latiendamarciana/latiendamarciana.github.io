@@ -6,7 +6,7 @@ image-lg: "/assets/images/boletin-de-correo/marciana-boletin-de-correo-transpare
 alt: "Marciana vestida como cartera, repartiendo el correo"
 heading: "Suscríbete al boletín de correo para enterarte de novedades"
 label: "Correo electrónico"
-rss-text: "o agrega el"
+rss-text: "O agrega el"
 rss-link: "RSS"
 rss-href: "/feed.xml"
 button: "Suscríbete"

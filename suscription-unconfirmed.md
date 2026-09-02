@@ -1,9 +1,9 @@
 ---
 # --- Identificación ---
 layout: responses
-title: "La Tienda Marciana ubicación y horario"
-name: "Ubicación y horarios"
-permalink: /suscripcion-por-confirmar
+title: "La Tienda Marciana suscripción por confirmar"
+name: "Suscripción por confirmar"
+permalink: /suscripcion-por-confirmar/
 
 # --- SEO / Metadatos ---
 description: "platea sit eu id nisi litora libero. Neque vulputate consequat ac amet augue blandit maximus aliquet congue. Pharetra vestibulum posuere ornare faucibus fusce dictumst orci aenean eu facilisis ut volutpat commodo senectus purus."

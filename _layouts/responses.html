@@ -11,17 +11,26 @@ layout: compress
     {% include nav.html %}
 
     <!-- Responses -->
-    <section class="responses full-width">
+    <section class="responses {% if page.url == page.contact-responses-href %}contact-responses{% endif %} full-width">
       <figure>
         <img 
             srcset="
               {{ page.image-xs }} 686w,
+              {% if page.url == page.contact-responses-href %}
+              {{ page.image-sm }} 696w,
+              {% else %}
               {{ page.image-sm }} 448w,
+              {% endif %}
               {{ page.image-lg }} 880w"
             sizes="
               (min-width: 1025px) 440px,
+              {% if page.url == page.contact-responses-href %}
+              (min-width: 641px) 348px,
+              343px"
+              {% else %}
               (min-width: 641px) 224px,
               343px"
+              {% endif %}
             src="{{ page.src }}"  
             alt="{{ page.alt }}"
             loading="lazy">

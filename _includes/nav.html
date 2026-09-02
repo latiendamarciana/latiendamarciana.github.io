@@ -4,8 +4,8 @@
     <ul class="main-nav-links">
       {% for item in site.posts-nav-links %}
       <li>
-        <a href="{{ item.href }}" class="{% if page.url == item.url %}nav-link-active{% endif %}{{ item.class }}" target="{{ item.target }}" {% if item.link-text == "Dónde" %}uk-toggle{% endif %}>
-          {% if item.href != "/" %}{{ item.link-text }}{% endif %} {% if item.class == "platform" %}<span class="icon {{ item.icon }}" aria-label="{{ item.aria-label }}"></span>{% endif %} {% if item.class == "nav-logo" %}<img src="{{ item.logo-sm }}" aria-label="{{ item.aria-label }}">{% endif %}
+        <a href="{{ item.href }}" class="{{ item.class }} {% if page.url == item.active or page.url == item.href %}active{% endif %}" target="{{ item.target }}" {% if item.link-text == "Dónde" %}uk-toggle{% endif %}>
+          {% if item.href != "/" %}{{ item.link-text }}{% endif %} {% if item.class == "platform" %}<span class="icon {{ item.icon }}" aria-label="{{ item.aria-label }}"></span>{% endif %} {% if item.class == "nav-logo" %}<img src="{{ site.baseurl }}{{ item.logo-sm }}" aria-label="{{ item.aria-label }}">{% endif %}
         </a>
       </li>
       {% endfor %}

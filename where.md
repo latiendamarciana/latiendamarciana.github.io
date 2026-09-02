@@ -3,7 +3,7 @@
 layout: location
 title: "La Tienda Marciana ubicación y horario"
 name: "Ubicación y horarios"
-permalink: /ubicacion
+permalink: /ubicacion/
 
 # --- SEO / Metadatos ---
 description: "platea sit eu id nisi litora libero. Neque vulputate consequat ac amet augue blandit maximus aliquet congue. Pharetra vestibulum posuere ornare faucibus fusce dictumst orci aenean eu facilisis ut volutpat commodo senectus purus."

@@ -4,7 +4,7 @@
     <ul class="nav-logo">
       {% for item in site.posts-logos %}
       <li><a href="{{ item.href }}" aria-label="{{ item.aria-label }}">
-        <img src="{{ item.logo-xs }}" alt="Logo de La Tienda Marciana. Una marciana que mira a la cámara y sonríe."></a>
+        <img src="{{ site.baseurl }}{{ item.logo-xs }}" alt="Logo de La Tienda Marciana. Una marciana que mira a la cámara y sonríe."></a>
       </li>
       {% endfor %}
     </ul>

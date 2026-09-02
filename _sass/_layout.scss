@@ -316,8 +316,8 @@ footer{
         font-weight: var(--bold);
         border-bottom: 1px solid var(--bright-inferno) !important;
         &:hover{
-          color: var(--inferno);
-          border-bottom: 1px solid var(--inferno) !important;
+          color: var(--bright-vivid-indigo);
+          border-bottom: 1px solid var(--text) !important;
         }
       }
      &:last-of-type{

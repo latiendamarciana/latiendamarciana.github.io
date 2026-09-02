@@ -76,6 +76,9 @@ nav{
       transition: var(--fade);
     }
   }
+  .active:not(.nav-logo){
+    background-color: var(--brown-10);
+  }
 }
 
 .nav-logo{

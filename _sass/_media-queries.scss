@@ -214,6 +214,15 @@
     }
   }
 
+  .contact-responses{
+    figure{
+      grid-column: 1 / 4;
+    }
+    .responses-info{
+      grid-column: 4 / 7;
+    }
+  }
+
   .containers-container,
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
@@ -417,7 +426,7 @@
 
   .responses{
     max-width: 1148px;
-    margin: 6rem auto 4rem auto;
+    margin: 6rem auto 5rem auto;
     grid-template-columns: repeat(10, 1fr);
     gap: 2rem;
     figure{
