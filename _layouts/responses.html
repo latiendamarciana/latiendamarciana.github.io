@@ -1,0 +1,46 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+{% include head.html %}
+  <body id="index">
+    {% include alert.html %}
+    {% include nav-mobile.html %}
+    {% include nav.html %}
+
+    <!-- Responses -->
+    <section class="responses full-width">
+      <figure>
+        <img 
+            srcset="
+              {{ page.image-xs }} 686w,
+              {{ page.image-sm }} 448w,
+              {{ page.image-lg }} 880w"
+            sizes="
+              (min-width: 1025px) 440px,
+              (min-width: 641px) 224px,
+              343px"
+            src="{{ page.src }}"  
+            alt="{{ page.alt }}"
+            loading="lazy">
+      </figure>
+      <div class="responses-info">
+        <h1 class="h-l">{{ page.heading }}</h1>
+        {{ page.content | markdownify | replace: '<p>', '<p class="p-base">' }}
+        <a href="{{ page.href }}" class="button button-base">{{ page.button-text }}</a>  
+      </div>
+    </section>
+    <!-- Responses end -->
+
+    {% include footer.html %}
+
+    {% include modal-nav.html %}
+
+    {% include modal-location.html %}
+
+    {% include uikit-javascript.html %}
+
+  </body>
+</html>

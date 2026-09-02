@@ -299,3 +299,30 @@ footer{
     }
   }
 }
+
+.responses{
+  margin: 3rem 0;
+  img{
+    border-radius: var(--rounded-border-m);
+    border: 2px solid var(--dark-m);
+    margin-bottom: 1.5rem;
+  }
+  .responses-info{
+    h1{
+      margin-bottom:1rem;
+    }
+    p{
+      a{
+        font-weight: var(--bold);
+        border-bottom: 1px solid var(--bright-inferno) !important;
+        &:hover{
+          color: var(--inferno);
+          border-bottom: 1px solid var(--inferno) !important;
+        }
+      }
+     &:last-of-type{
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
