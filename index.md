@@ -8,8 +8,8 @@ header-button: "¿Dónde?"
 permalink: /
 
 # --- SEO / Metadatos ---
-description: "Obra gráfica, accesorios, música y comida a base de plantas, haz tu pedido o visitame en un puesto o alguna feria"
-author: "fluorescente.design"
+description: "Obra gráfica, accesorios, música y comida a base de plantas, haz tu pedido, o visitame en mi sitio, o en alguna feria"
+author: "La Tienda Marciana"
 date: 2026-07-30
 tags: ["Tienda", "Obra gráfica", "Comida a base de plantas", "Accesorios", "Música", "Medellín", "Colombia", "Comida vegana", "Marciana"]
 keywords: "Tienda, Obra gráfica, Comida a base de plantas, Accesorios, Música, Medellín, Colombia, Comida vegana, Marciana"
