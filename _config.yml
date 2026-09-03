@@ -18,21 +18,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: La Tienda Marciana
-email: latiendamarciana@pm.me
-description: Obra gráfica, accesorios, música y comida a base de plantas
+title: "La Tienda Marciana"
+email: "latiendamarciana@pm.me"
+description: "Obra gráfica, accesorios, música y comida a base de plantas"
 baseurl: ""
 author-url: "https://fluorescente.design"
 author-link-text: "fluorescente.design"
-author: Fluorescente
-creator: Fluorescente
+author: "La Tienda Marciana"
+creator: "La Tienda Marciana"
 credits: "Diseño y desarrollo:"
 # twitter_username: jekyllrb
-github_username: fluorescente
+github_username: "fluorescente"
 ko-fi_url: "https://ko-fi.com/latiendamarciana"
-lang: es
-locale: es_CO
-logo: assets/images/logo.png
+lang: "es"
+locale: "es_CO"
+logo: "assets/images/logo.png"
 image: "assets/images/basic/estilos-y-componentes-basicos-card.png"
 store-button: "Ver todos los productos"
 product-details-button: "Detalles"

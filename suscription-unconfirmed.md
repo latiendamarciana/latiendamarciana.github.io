@@ -6,7 +6,7 @@ name: "Suscripción por confirmar"
 permalink: /suscripcion-por-confirmar/
 
 # --- SEO / Metadatos ---
-description: "platea sit eu id nisi litora libero. Neque vulputate consequat ac amet augue blandit maximus aliquet congue. Pharetra vestibulum posuere ornare faucibus fusce dictumst orci aenean eu facilisis ut volutpat commodo senectus purus."
+description: "La Tienda Marciana, página para indicar que quien se suscribe debe confirmar sus suscripción desde su correo electrónico"
 author: "fluorescente.design"
 date: 2026-07-30
 tags: ["Tienda", "Obra gráfica", "Comida a base de plantas", "Accesorios", "Música", "Medellín", "Colombia", "Comida vegana", "Marciana"]
@@ -18,11 +18,10 @@ src: "/assets/images/respuestas/marciana-suscripcion-por-confirmar-transparente-
 image-xs: "/assets/images/respuestas/marciana-suscripcion-por-confirmar-transparente-xs.png"
 image-sm: "/assets/images/respuestas/marciana-suscripcion-por-confirmar-transparente-sm.png"
 image-lg: "/assets/images/respuestas/marciana-suscripcion-por-confirmar-transparente-lg.png"
-alt: "Sánduche de berenjena con hummus, tomate, lechuga y cebolla roja"
+alt: "Marciana celebrando"
 heading: "Gracias por suscribirte a La Tienda Marciana"
 button-text: "Volver"
 href: "/"
-
 ---
 
 Solo falta un paso: revisa tu bandeja de entrada y confirma tu suscripción haciendo clic en el enlace que te envié.
