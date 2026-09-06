@@ -326,3 +326,16 @@ footer{
     }
   }
 }
+
+#store{
+  header{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    figure{
+      margin-bottom: 1.5rem;
+      img{
+        border-radius: var(--rounded-border-l);
+      }
+    }
+  }
+}

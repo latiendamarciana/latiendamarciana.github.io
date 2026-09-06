@@ -164,6 +164,9 @@ nav{
 .modal-nav-platforms {
   margin-bottom: 2rem !important;
   color: var(--brown-0);
+  .active{
+    background-color: var(--bright-vivid-indigo);
+  }
 }
 
 .modal-nav-close {

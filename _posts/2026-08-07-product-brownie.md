@@ -2,6 +2,8 @@
 published: "true"
 featured: "true"
 online: "false"
+product: "true"
+categories: [Todos, Comida a base de plantas]
 src: "/assets/images/productos/brownie-productos-lg.jpg"
 image-xxs: "/assets/images/prductos/brownie-productos-xxs.jpg"
 image-xs: "/assets/images/productos-carrusel/brownie-carrusel-productos-xs.jpg"

@@ -32,8 +32,8 @@ github_username: "fluorescente"
 ko-fi_url: "https://ko-fi.com/latiendamarciana"
 lang: "es"
 locale: "es_CO"
-logo: "assets/images/logo.png"
-image: "assets/images/basic/estilos-y-componentes-basicos-card.png"
+logo: "/assets/images/logos/logo-la-tienda-marciana-224.svg"
+image: "/assets/images/basic/estilos-y-componentes-basicos-card.png"
 store-button: "Ver todos los productos"
 product-details-button: "Detalles"
 buy-button: "Comprar"
@@ -70,8 +70,16 @@ collections:
     output: true
   posts-newsletter:
     output: true
+  posts-news:
+    output: true   
   posts-footer:
     output: true        
+    
+feed:
+  icon: "/icon-la-tienda-marciana.png"  
+  logo: "/assets/images/logos/logo-la-tienda-marciana-224.svg"
+  collections:
+    - posts-news
   
 
 # Exclude from processing.

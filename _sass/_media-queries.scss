@@ -223,6 +223,22 @@
     }
   }
 
+  #store{
+    header{
+      padding-top: 5rem;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1.5rem;
+      align-items: center;
+      figure{
+        grid-column: 1 / 4;
+      }
+      h1{
+        grid-column: 4 / 7;
+      }
+    }
+  }
+
   .containers-container,
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
