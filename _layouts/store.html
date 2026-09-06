@@ -20,6 +20,18 @@ layout: compress
     </header>
     <!-- Store header end -->
 
+    <div class="full-width">
+      <div>
+        <h5>Categorías</h5>
+        <ul>
+          {% for category in site.categories %}
+            <li>{{ category }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div>--------</div>
+    </div>  
+
     {% include footer.html %}
 
     {% include modal-nav.html %}
