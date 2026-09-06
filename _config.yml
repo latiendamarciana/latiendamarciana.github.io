@@ -51,6 +51,12 @@ sass:
   style: compressed
   sourcemap: never 
 
+feed:
+  icon: "/icon-la-tienda-marciana.png"  
+  logo: "/assets/images/logos/logo-la-tienda-marciana-224.svg"
+  collections:
+    - posts-news
+
 collections:
   posts-alert:
     output: true
@@ -73,14 +79,10 @@ collections:
   posts-news:
     output: true   
   posts-footer:
-    output: true        
-    
-feed:
-  icon: "/icon-la-tienda-marciana.png"  
-  logo: "/assets/images/logos/logo-la-tienda-marciana-224.svg"
-  collections:
-    - posts-news
-  
+    output: true  
+
+webmaster_verifications:
+    google: lnZ4AtNlxnPSR2dYkaLXuiHiGcvBuIR5fBHrZGqmyiU               
 
 # Exclude from processing.
 # The following items will not be processed, by default.
