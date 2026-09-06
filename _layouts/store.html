@@ -57,6 +57,39 @@ layout: compress
         </ul>
       </div>
       <div>--------</div>
+      <div>
+        <h5>Posts con paginador</h5>
+        <div>
+          <ul>
+            {% for post in site.posts %}
+              {% if forloop.index <= 1 %}
+              <li>{{ forloop.index }}. {{ post.title }}</li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+          <p class="p-base"><a uk-toggle="target: #another; animation: uk-animation-fade">Otro producto</a></p>
+        </div>
+        <div id="another" hidden>
+          <ul>
+            {% for post in site.posts %}
+              {% if forloop.index > 1 and forloop.index < 3 %}
+              <li>{{ forloop.index }}. {{ post.title }}</li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+          <p class="p-base"><a uk-toggle="target: #another-2; animation: uk-animation-fade">Otro producto 2</a></p>
+        </div>
+        <div id="another-2" hidden>
+          <ul>
+            {% for post in site.posts %}
+              {% if forloop.index > 2 and forloop.index < 4 %}
+              <li>{{ forloop.index }}. {{ post.title }}</li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>  
+      </div> 
+      <div>---------</div> 
     </div>  
 
     {% include footer.html %}
