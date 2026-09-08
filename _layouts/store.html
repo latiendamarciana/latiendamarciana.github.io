@@ -20,6 +20,34 @@ layout: compress
     </header>
     <!-- Store header end -->
 
+    <!-- Product gallery -->
+    <section class="product-gallery">
+      <div class="full-width" uk-filter="target: .gallery-items">
+        <!-- Filter controls -->
+        <ul>
+          {% for category in site.categories %}
+            <li uk-filter-control="filter: [data-tags*='{{ category | first | replace: ' ', '-'}}']"><a href="#">{{ category | first }}</a></li>
+          {% endfor %}
+        </ul>  
+        <!-- Filter controls end -->
+        <!-- Gallery items -->
+        <ul class="gallery-items">
+          {% for post in site.posts %}
+            {% assign category_classes = "" %}
+            {% for category in post.categories %}
+              {% assign clean_category = category | replace: " ", "-" %}
+              {% assign category_classes = category_classes | append: clean_category | append: " " %}
+            {% endfor %}
+            {% assign category_classes = category_classes | strip %}
+            <li data-tags="{{ category_classes }}">{{ post.title }}</li>
+          {% endfor %}
+        </ul> 
+        <!-- Gallery items end -->
+      </div>
+    </section>
+    <!-- Product gallery end   -->
+
+
     <div class="full-width">
       <div>
         <h5>Categorías</h5>
