@@ -3,7 +3,8 @@ published: "true"
 featured: "true"
 online: "true"
 product: "true"
-categories: [Todos, Obra gráfica]
+categories: [Obra gráfica]
+category-number: "5"
 src: "/assets/images/productos/lobito-productos-lg.jpg"
 image-xxs: "/assets/images/prductos/lobito-productos-xxs.jpg"
 image-xs: "/assets/images/productos-carrusel/lobito-carrusel-productos-xs.jpg"

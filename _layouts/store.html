@@ -25,6 +25,7 @@ layout: compress
       <div class="full-width" uk-filter="target: .gallery-items">
         <!-- Filter controls -->
         <ul>
+          <li uk-filter-control><a href="#">Todos</a></li>
           {% for category in site.categories %}
             <li uk-filter-control="filter: [data-tags*='{{ category | first | replace: ' ', '-'}}']"><a href="#">{{ category | first }}</a></li>
           {% endfor %}
@@ -32,6 +33,7 @@ layout: compress
         <!-- Filter controls end -->
         <!-- Gallery items -->
         <ul class="gallery-items">
+
           {% for post in site.posts %}
          
             {% assign category_classes = "" %}
@@ -40,8 +42,9 @@ layout: compress
               {% assign category_classes = category_classes | append: clean_category | append: " " %}
             {% endfor %}
             {% assign category_classes = category_classes | strip %}
-            <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">{{ forloop.length }}. {{ forloop.index }}. {{ post.title }} {{ post.categories }}</li>
-         
+
+            <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">{{ forloop.length }}. {{ forloop.index }}. {{ post.category-number }}. {{ post.title }} {{ post.categories }}</li>
+   
           {% endfor %}
         </ul> 
         <!-- Gallery items end -->
