@@ -40,7 +40,7 @@ layout: compress
               {% assign category_classes = category_classes | append: clean_category | append: " " %}
             {% endfor %}
             {% assign category_classes = category_classes | strip %}
-            <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">{{ forloop.index }}. {{ post.title }}</li>
+            <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">{{ forloop.length }}. {{ forloop.index }}. {{ post.title }} {{ post.categories }}</li>
          
           {% endfor %}
         </ul> 
