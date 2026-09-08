@@ -43,7 +43,13 @@ layout: compress
             {% endfor %}
             {% assign category_classes = category_classes | strip %}
 
+            {% if post.categories contains "Comida a base de plantas" and post.category-number <= "3" %}
             <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">{{ forloop.length }}. {{ forloop.index }}. {{ post.category-number }}. {{ post.title }} {{ post.categories }}</li>
+            {% endif %}
+
+            {% if post.categories contains "Obra gráfica" and post.category-number <= "3" %}
+            <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">{{ forloop.length }}. {{ forloop.index }}. {{ post.category-number }}. {{ post.title }} {{ post.categories }}</li>
+            {% endif %}
    
           {% endfor %}
         </ul> 

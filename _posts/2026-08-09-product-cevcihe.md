@@ -4,6 +4,7 @@ featured: "true"
 online: "false"
 product: "true"
 categories: [Comida a base de plantas]
+category-number: "2"
 src: "/assets/images/productos/sanduche-prouctos-lg.jpg"
 image-xxs: "/assets/images/productos/sanduche-prouctos-xxs.jpg"
 image-xs: "/assets/images/productos-carrusel/sanduche-carrusel-productos-xs.jpg"
