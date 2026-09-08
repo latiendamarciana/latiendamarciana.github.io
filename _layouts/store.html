@@ -25,9 +25,9 @@ layout: compress
       <div class="full-width" uk-filter="target: .gallery-items; sel-active: .todos">
         <!-- Filter links -->
         <ul>
-           <li class="todos" uk-filter-control="[data-tags='todos']"><a href="#">Todos</a></li>
+           <li class="todos" uk-filter-control="[data-tags='todos']"><a href="#">Todos {{ site.posts | size }}</a></li>
            {% for category in site.categories %}
-           <li uk-filter-control="filter: [data-tags*='{{ category | first | replace: ' ', '-'}}']"><a href="#">{{ category | first }}</a></li>
+           <li uk-filter-control="filter: [data-tags*='{{ category | first | replace: ' ', '-'}}']"><a href="#">{{ category | first }} {% assign posts_count = category | last | size %}{{ posts_count }}</a></li>
            {% endfor %}
         </ul>
         <!-- Filter links end -->
@@ -50,7 +50,6 @@ layout: compress
                   {% endif %}
                 {% endfor %}
               </ul>
-              {{ site.posts | size }}
               {% assign posts-number = site.posts | size %}
               {% if posts-number >= 4 %}
                 <a uk-toggle="target: #todos-4-6; animation: uk-animation-fade">Más productos</a>
@@ -72,7 +71,7 @@ layout: compress
                 {% endfor %}
               </ul>
               {% if posts-number >= 7 %}
-                {{ posts-number }} <a uk-toggle="target: #todos-7-9; animation: uk-animation-fade">Más productos</a>
+                <a uk-toggle="target: #todos-7-9; animation: uk-animation-fade">Más productos</a>
               {% endif %}  
             </div>
             <div id="todos-7-9" hidden>
@@ -91,7 +90,7 @@ layout: compress
                 {% endfor %}
               </ul>
               {% if posts-number >= 10 %}
-                {{ posts-number }} <a uk-toggle="target: #todos-7-9; animation: uk-animation-fade">Más que 9</a>
+                <a uk-toggle="target: #todos-10-12; animation: uk-animation-fade">Más productos</a>
               {% endif %}
             </div>
           </li>
@@ -112,7 +111,7 @@ layout: compress
                 {% assign category_name = category | first %}
                 {% assign first_word = category_name | split: " " | first %}
                 {% if posts_count >= 4 %}
-                  {{ posts_count }} <a uk-toggle="target: #{{ first_word }}-4-6; animation: uk-animation-fade">Más {{ first_word | downcase }}</a>
+                  <a uk-toggle="target: #{{ first_word }}-4-6; animation: uk-animation-fade">Más {{ first_word | downcase }}</a>
                 {% endif %}
              </div>
              <div id="{{ first_word }}-4-6" hidden>
@@ -127,7 +126,7 @@ layout: compress
                 {% assign category_name = category | first %}
                 {% assign first_word = category_name | split: " " | first %}
                 {% if posts_count >= 6 and posts_count <= 9  %}
-                  {{ posts_count }} <a uk-toggle="target: #{{ first_word }}-7-9; animation: uk-animation-fade">Más {{ first_word | downcase }}</a>
+                  <a uk-toggle="target: #{{ first_word }}-7-9; animation: uk-animation-fade">Más {{ first_word | downcase }}</a>
                 {% endif %}
              </div>
              <div id="{{ first_word }}-7-9" hidden>
