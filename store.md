@@ -1,8 +1,8 @@
 ---
 # --- Identificación ---
 layout: store
-title: "La Tienda Marciana ubicación y horario"
-name: "Ubicación y horarios"
+title: "La Tienda Marciana galería de productos"
+name: "Tienda"
 permalink: /tienda/
 
 # --- SEO / Metadatos ---
