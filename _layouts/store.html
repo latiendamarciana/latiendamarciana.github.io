@@ -33,6 +33,7 @@ layout: compress
         <!-- Filter links end -->
         <!-- Gallery items -->
         <ul class="gallery-items">
+          <!-- Todos -->
           <li data-tags="todos">
             <div>
               <ul>
@@ -94,7 +95,8 @@ layout: compress
               {% endif %}
             </div>
           </li>
-
+          <!-- Todos end -->
+          <!-- Categorías -->
           {% for category in site.categories %}
           {% assign category_name = category | first %}
            <li data-tags="{{ category | first | replace: ' ', '-'}}']">
@@ -107,16 +109,45 @@ layout: compress
                 {% endfor %}
                </ul>
                 {% assign posts_count = category | last | size %}
-                {{ posts_count }} 
                 {% assign category_name = category | first %}
                 {% assign first_word = category_name | split: " " | first %}
-                {{ first_word }}
-                {% if posts_count >= 3 %}
-                  {{ posts_number }} <a uk-toggle="target: #{{ first_word }}-7-9; animation: uk-animation-fade">Más {{ first_word | downcase }}</a>
+                {% if posts_count >= 4 %}
+                  {{ posts_count }} <a uk-toggle="target: #{{ first_word }}-4-6; animation: uk-animation-fade">Más {{ first_word | downcase }}</a>
+                {% endif %}
+             </div>
+             <div id="{{ first_word }}-4-6" hidden>
+               <ul>
+                {% for post in site.posts %}
+                  {% if post.categories contains category_name and post.category-number >= "4" and post.category-number <= "6" %}
+                    <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">Index {{ forloop.index }}. Category number {{ post.category-number }}. {{ post.title }} {{ post.categories }} {{ post.category-number }}</li>
+                  {% endif %}
+                {% endfor %}
+               </ul>
+                {% assign posts_count = category | last | size %}
+                {% assign category_name = category | first %}
+                {% assign first_word = category_name | split: " " | first %}
+                {% if posts_count >= 6 and posts_count <= 9  %}
+                  {{ posts_count }} <a uk-toggle="target: #{{ first_word }}-7-9; animation: uk-animation-fade">Más {{ first_word | downcase }}</a>
+                {% endif %}
+             </div>
+             <div id="{{ first_word }}-7-9" hidden>
+               <ul>
+                {% for post in site.posts %}
+                  {% if post.categories contains category_name and post.category-number <= "3" %}
+                    <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">Index {{ forloop.index }}. Category number {{ post.category-number }}. {{ post.title }} {{ post.categories }} {{ post.category-number }}</li>
+                  {% endif %}
+                {% endfor %}
+               </ul>
+                {% assign posts_count = category | last | size %}
+                {% assign category_name = category | first %}
+                {% assign first_word = category_name | split: " " | first %}
+                {% if posts_count >= 7 and posts_count <= 9  %}
+                  {{ posts_count }} <a uk-toggle="target: #{{ first_word }}-7-9; animation: uk-animation-fade">Más {{ first_word | downcase }}</a>
                 {% endif %}
              </div>
            </li>
           {% endfor %}
+          <!-- Categorías end -->
 
         </ul>  
         <!-- Gallery items end -->
