@@ -337,6 +337,39 @@ footer{
         border-radius: var(--rounded-border-l);
       }
     }
+    h1{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.filter-nav{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 0;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  background-image: url(../images/fondo-tienda-marciana.jpg);
+  z-index: 50;
+  li{
+    list-style: none;
+    font-size: var(--p-base);
+    font-weight: var(--bold);
+    color: var(--dark-m);
+    white-space: nowrap;
+    a{
+      border-bottom: 1px solid transparent;
+      padding-bottom: .5rem;
+      &:hover{
+        border-bottom: 1px solid var(--dark-m);
+      }
+    }
+  }
+  .uk-active{
+    a{
+      border-bottom: 1px solid var(--dark-m);
+    }
   }
 }
 
