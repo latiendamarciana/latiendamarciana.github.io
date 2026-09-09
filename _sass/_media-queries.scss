@@ -240,13 +240,24 @@
       grid-template-columns: repeat(6, 1fr);
       gap: 1.5rem;
       align-items: center;
+      padding-bottom: 1.5 rem;
       figure{
         grid-column: 1 / 4;
+        margin-bottom: 0;
       }
       h1{
         grid-column: 4 / 7;
       }
     }
+  }
+
+  .product-gallery{
+    margin-bottom: 5rem;
+  }
+
+
+  .filter-nav{
+    justify-content: center;
   }
 
   .gallery-items{

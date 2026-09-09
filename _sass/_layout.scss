@@ -331,7 +331,7 @@ footer{
 #store{
   header{
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     figure{
       margin-bottom: 1.5rem;
       img{
@@ -342,6 +342,10 @@ footer{
       margin-bottom: 0;
     }
   }
+}
+
+.product-gallery{
+  margin-bottom: 3rem;
 }
 
 .filter-nav{
