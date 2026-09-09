@@ -83,10 +83,12 @@ layout: compress
                     {% endif %}
                   {% endfor %}
                 </ul>
+                <div class="more">
                 {% assign posts-number = site.posts | size %}
                 {% if posts-number >= 4 %}
-                  <a uk-toggle="target: #todos-4-6; animation: uk-animation-fade">Más productos</a>
-                {% endif %}    
+                  <a class="button button-ghost" uk-toggle="target: #todos-4-6; animation: uk-animation-fade">Más productos <span class="icon icon-arrow-down"></span></a>
+                {% endif %}
+                </div>    
               </div>
               <div id="todos-4-6" hidden>
                 <ul>
@@ -135,9 +137,12 @@ layout: compress
                     {% endif %}
                   {% endfor %}
                 </ul>
+                <div class="more">
+                {% assign posts-number = site.posts | size %}
                 {% if posts-number >= 7 %}
-                  <a uk-toggle="target: #todos-7-9; animation: uk-animation-fade">Más productos</a>
-                {% endif %}  
+                  <a class="button button-ghost" uk-toggle="target: #todos-7-9; animation: uk-animation-fade">Más productos <span class="icon icon-arrow-down"></span></a>
+                {% endif %}
+                </div>
               </div>
               <div id="todos-7-9" hidden>
                 <ul>
@@ -186,9 +191,12 @@ layout: compress
                     {% endif %}
                   {% endfor %}
                 </ul>
+                <div class="more">
+                {% assign posts-number = site.posts | size %}
                 {% if posts-number >= 10 %}
-                  <a uk-toggle="target: #todos-10-12; animation: uk-animation-fade">Más productos</a>
+                  <a class="button button-ghost" uk-toggle="target: #todos-10-12; animation: uk-animation-fade">Más productos <span class="icon icon-arrow-down"></span></a>
                 {% endif %}
+                </div>
               </div>
             </li>
             <!-- Todos end -->
@@ -236,12 +244,14 @@ layout: compress
                     {% endif %}
                   {% endfor %}
                  </ul>
+                  <div class="more">
                   {% assign posts_count = category | last | size %}
                   {% assign category_name = category | first %}
                   {% assign first_word = category_name | split: " " | first %}
                   {% if posts_count >= 4 %}
-                    <a uk-toggle="target: #{{ first_word }}-4-6; animation: uk-animation-fade">Más {{ first_word | downcase }}</a>
+                    <a class="button button-ghost" uk-toggle="target: #{{ first_word }}-4-6; animation: uk-animation-fade">Más {{ first_word | downcase }} <span class="icon icon-arrow-down"></span></a>
                   {% endif %}
+                  </div>
                </div>
                <div id="{{ first_word }}-4-6" hidden>
                  <ul>
@@ -283,12 +293,14 @@ layout: compress
                     {% endif %}
                   {% endfor %}
                  </ul>
+                  <div class="more">
                   {% assign posts_count = category | last | size %}
                   {% assign category_name = category | first %}
                   {% assign first_word = category_name | split: " " | first %}
-                  {% if posts_count >= 6 and posts_count <= 9  %}
-                    <a uk-toggle="target: #{{ first_word }}-7-9; animation: uk-animation-fade">Más {{ first_word | downcase }}</a>
+                  {% if posts_count >= 6 and posts_count <= 9 %}
+                    <a class="button button-ghost" uk-toggle="target: #{{ first_word }}-7-9; animation: uk-animation-fade">Más {{ first_word | downcase }} <span class="icon icon-arrow-down"></span></a>
                   {% endif %}
+                  </div>
                </div>
                <div id="{{ first_word }}-7-9" hidden>
                  <ul>
@@ -333,9 +345,10 @@ layout: compress
                   {% assign posts_count = category | last | size %}
                   {% assign category_name = category | first %}
                   {% assign first_word = category_name | split: " " | first %}
-                  {% if posts_count >= 7 and posts_count <= 9  %}
-                    {{ posts_count }} <a uk-toggle="target: #{{ first_word }}-7-9; animation: uk-animation-fade">Más {{ first_word | downcase }}</a>
+                  {% if posts_count >= 9 and posts_count <= 12 %}
+                    <a class="button button-ghost" uk-toggle="target: #{{ first_word }}-9-12; animation: uk-animation-fade">Más {{ first_word | downcase }} <span class="icon icon-arrow-down"></span></a>
                   {% endif %}
+                  </div>
                </div>
              </li>
             {% endfor %}
