@@ -23,11 +23,11 @@
           <p class="p-m bold">${{ post.price }}</p>
           <nav>
             <ul>
-              <li><a class="button button-s button-ghost">Detalles</a></li>
+              <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
               {% if post.online == "true" %}
-              <li><a class="button button-s">Comprar</a></li>
+              <li><a class="button button-s">{{ site.buy-button }}</a></li>
               {% else %}
-              <li><a class="link link-xs">Sólo en sitio</a></li>
+              <li><a href="/ubicacion/" class="link link-xs">{{ site.offline-link }}</a></li>
               {% endif %}
             </ul>  
           </nav>
@@ -67,11 +67,11 @@
           <p class="p-m bold">${{ post.price }}</p>
           <nav>
             <ul>
-              <li><a class="button button-s button-ghost">Detalles</a></li>
+              <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
               {% if post.online == "true" %}
-              <li><a class="button button-s">Comprar</a></li>
+              <li><a class="button button-s">{{ site.buy-button }}</a></li>
               {% else %}
-              <li><a class="link link-xs">Sólo en sitio</a></li>
+              <li><a href="/ubicacion/" class="link link-xs">{{ site.offline-link }}</a></li>
               {% endif %}
             </ul>  
           </nav>
@@ -111,11 +111,11 @@
           <p class="p-m bold">${{ post.price }}</p>
           <nav>
             <ul>
-              <li><a class="button button-s button-ghost">Detalles</a></li>
+              <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
               {% if post.online == "true" %}
-              <li><a class="button button-s">Comprar</a></li>
+              <li><a class="button button-s">{{ site.buy-button }}</a></li>
               {% else %}
-              <li><a class="link link-xs">Sólo en sitio</a></li>
+              <li><a href="/ubicacion/" class="link link-xs">{{ site.offline-link }}</a></li>
               {% endif %}
             </ul>  
           </nav>

@@ -16,59 +16,62 @@ layout: compress
       <div class="header-text">
         <h1 class="h-xxl">{{ page.header-heading }}</h1>
         {{ page.content | markdownify | replace: '<p>', '<p class="p-base">' }}
-        <a class="button button-l bright-inferno">{{ page.header-button }}</a>
+        <a href="/ubicacion/" class="button button-l bright-inferno visible-xs hidden-sm hidden-lg">{{ page.header-button }}</a>
+        <a href="#modal-location" class="button button-l bright-inferno hidden-xs visible-sm visible-lg" uk-toggle>{{ page.header-button }}</a>
       </div>  
     </header>
-    <!-- Header Two Columns 01 end-->
-    {% include location-and-hours.html %}
 
-    <!-- Index Products -->
-    <section class="index-products full-width">
+    <main>
+      <!-- Header Two Columns 01 end-->
+      {% include location-and-hours.html %}
+
+      <!-- Index Products -->
+      <section class="index-products full-width">
+        
+        {% include index-products-slideshow.html %}
+
+        <div class="index-products-container hidden-xs visible-sm visible-lg">
+        {% for post in site.posts %}
+        {% if post.featured == "true" %}
+          <article class="product-card">
+            <a>
+              <img 
+              srcset="
+                {{ post.image-xs }} 686w,
+                {{ post.image-sm }} 696w,
+                {{ post.image-lg }} 880w"
+              sizes="
+                (min-width: 1025px) 440px,
+                (min-width: 641px) 348px,
+                343px"
+              src="{{ post.src }}"  
+              alt="{{ post.alt }}"
+              loading="lazy">
+            </a>
+            <div class="product-card-info">
+              <h3 clas="heading">{{ post.title }}</h3>
+              {{ post.excerpt | markdownify | replace: '<p>', '<p class="p-xs">' }}
+              <p class="p-m bold">${{ post.price }}</p>
+              <nav>
+                <ul>
+                  <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
+                  {% if post.online == "true" %}
+                  <li><a class="button button-s">{{ site.buy-button }}</a></li>
+                  {% else %}
+                  <li><a href="#modal-location" class="link link-xs" uk-toggle>{{ site.offline-link }}</a></li>
+                  {% endif %}
+                </ul>  
+              </nav>
+            </div>
+          </article> 
+        {% endif %}
+        {% endfor %}
+        </div> 
+        <a class="button button-l" href="/tienda/">{{ site.store-button }}</a>
+      </section>
+      <!-- Index Products End -->
       
-      {% include index-products-slideshow.html %}
-
-      <div class="index-products-container hidden-xs visible-sm visible-lg">
-      {% for post in site.posts %}
-      {% if post.featured == "true" %}
-        <article class="product-card">
-          <a>
-            <img 
-            srcset="
-              {{ post.image-xs }} 686w,
-              {{ post.image-sm }} 696w,
-              {{ post.image-lg }} 880w"
-            sizes="
-              (min-width: 1025px) 440px,
-              (min-width: 641px) 348px,
-              343px"
-            src="{{ post.src }}"  
-            alt="{{ post.alt }}"
-            loading="lazy">
-          </a>
-          <div class="product-card-info">
-            <h3 clas="heading">{{ post.title }}</h3>
-            {{ post.excerpt | markdownify | replace: '<p>', '<p class="p-xs">' }}
-            <p class="p-m bold">${{ post.price }}</p>
-            <nav>
-              <ul>
-                <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
-                {% if post.online == "true" %}
-                <li><a class="button button-s">{{ site.buy-button }}</a></li>
-                {% else %}
-                <li><a class="link link-xs">{{ site.offline-link }}</a></li>
-                {% endif %}
-              </ul>  
-            </nav>
-          </div>
-        </article> 
-      {% endif %}
-      {% endfor %}
-      </div> 
-
-      <a class="button button-l" href="#">{{ site.store-button }}</a>
-
-    </section>
-    <!-- Index Products End -->
+    </main>  
 
     {% include newsletter.html %}
 
@@ -78,7 +81,7 @@ layout: compress
 
     {% include modal-location.html %}
 
-    {% include uikit-javascript.html %}
+    {% include uikit-javascript.html %} 
 
   </body>
 </html>    

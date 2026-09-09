@@ -1,6 +1,6 @@
 ---
 published: "true"
-featured: "true"
+featured: "false"
 online: "false"
 product: "true"
 categories: [Comida a base de plantas]

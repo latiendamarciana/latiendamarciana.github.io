@@ -1,6 +1,6 @@
 ---
 published: "true"
-featured: "true"
+featured: "false"
 online: "true"
 product: "true"
 categories: [Obra gráfica]

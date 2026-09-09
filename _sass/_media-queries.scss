@@ -113,6 +113,16 @@
     }
   }
 
+  #index{
+    header{
+      .header-text{
+        .visible-sm, .visible-lg{
+          display: inline-block;
+        }
+      }
+    }
+  }
+
   .location{
     padding: 6rem 0 0 0;
     background-image: url(../images/fondo-ubicacion-sm.svg);
@@ -236,6 +246,12 @@
       h1{
         grid-column: 4 / 7;
       }
+    }
+  }
+
+  .gallery-items{
+    & ul{
+      gap: 1.5rem;
     }
   }
 
@@ -405,6 +421,23 @@
       }
     }
   }
+
+  .gallery-items{
+    & ul{
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    & li{
+      article{
+        nav{
+          ul{
+            flex-direction: row;
+            align-items: center !important;
+          }
+        }
+      }
+    }
+  }  
 
   footer{
     padding: 2rem 0 0 0;

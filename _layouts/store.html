@@ -20,141 +20,175 @@ layout: compress
     </header>
     <!-- Store header end -->
 
-    <section class="product-gallery">
-      <!-- Filter -->
-      <div class="full-width" uk-filter="target: .gallery-items; sel-active: .todos">
-        <!-- Filter links -->
-        <ul class="filter-nav" uk-sticky>
-           <li class="todos" uk-filter-control="[data-tags='todos']"><a href="#">Todos {{ site.posts | size }}</a></li>
-           {% for category in site.categories %}
-           <li uk-filter-control="filter: [data-tags*='{{ category | first | replace: ' ', '-'}}']"><a href="#">{{ category | first }} {% assign posts_count = category | last | size %}{{ posts_count }}</a></li>
-           {% endfor %}
-        </ul>
-        <!-- Filter links end -->
-        <!-- Gallery items -->
-        <ul class="gallery-items">
-          <!-- Todos -->
-          <li data-tags="todos">
-            <div>
-              <ul>
-                {% for post in site.posts %}
-                  {% assign category_classes = "" %}
-                  {% for category in post.categories %}
-                    {% assign clean_category = category | replace: " ", "-" %}
-                    {% assign category_classes = category_classes | append: clean_category | append: " " %}
-                  {% endfor %}
-                  {% assign category_classes = category_classes | strip %}
+    <main>
+      <section class="product-gallery">
+        <!-- Filter -->
+        <div class="full-width" uk-filter="target: .gallery-items; sel-active: .todos">
+          <!-- Filter links -->
+          <ul class="filter-nav">
+             <li class="todos" uk-filter-control="[data-tags='todos']"><a href="#">Todos {{ site.posts | size }}</a></li>
+             {% for category in site.categories %}
+             <li uk-filter-control="filter: [data-tags*='{{ category | first | replace: ' ', '-'}}']"><a href="#">{{ category | first }} {% assign posts_count = category | last | size %}{{ posts_count }}</a></li>
+             {% endfor %}
+          </ul>
+          <!-- Filter links end -->
+          <!-- Gallery items -->
+          <ul class="gallery-items">
+            <!-- Todos -->
+            <li data-tags="todos">
+              <div>
+                <ul>
+                  {% for post in site.posts %}
+                    {% assign category_classes = "" %}
+                    {% for category in post.categories %}
+                      {% assign clean_category = category | replace: " ", "-" %}
+                      {% assign category_classes = category_classes | append: clean_category | append: " " %}
+                    {% endfor %}
+                    {% assign category_classes = category_classes | strip %}
 
-                  {% if forloop.index <= 3 %}
-                  <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">Index {{ forloop.index }}. Category number {{ post.category-number }}. {{ post.title }} - {{ post.categories }}</li>
-                  {% endif %}
-                {% endfor %}
-              </ul>
-              {% assign posts-number = site.posts | size %}
-              {% if posts-number >= 4 %}
-                <a uk-toggle="target: #todos-4-6; animation: uk-animation-fade">Más productos</a>
-              {% endif %}    
-            </div>
-            <div id="todos-4-6" hidden>
-              <ul>
-                {% for post in site.posts %}
-                  {% assign category_classes = "" %}
-                  {% for category in post.categories %}
-                    {% assign clean_category = category | replace: " ", "-" %}
-                    {% assign category_classes = category_classes | append: clean_category | append: " " %}
+                    {% if forloop.index <= 3 %}
+                    <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">
+                      <article class="product-card">
+                        <a>
+                          <img 
+                          srcset="
+                            {{ post.image-xs }} 686w,
+                            {{ post.image-sm }} 696w,
+                            {{ post.image-lg }} 880w"
+                          sizes="
+                            (min-width: 1025px) 440px,
+                            (min-width: 641px) 348px,
+                            343px"
+                          src="{{ post.src }}"  
+                          alt="{{ post.alt }}"
+                          loading="lazy">
+                        </a>
+                        <div class="product-card-info">
+                          <h3 clas="heading">{{ post.title }}</h3>
+                          {{ post.excerpt | markdownify | replace: '<p>', '<p class="p-xs">' }}
+                          <p class="p-m bold">${{ post.price }}</p>
+                          <nav>
+                            <ul>
+                              <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
+                              {% if post.online == "true" %}
+                              <li><a class="button button-s">{{ site.buy-button }}</a></li>
+                              {% else %}
+                              <li><a href="#modal-location" class="link link-xs" uk-toggle>{{ site.offline-link }}</a></li>
+                              {% endif %}
+                            </ul>  
+                          </nav>
+                        </div>
+                      </article> 
+                    </li>
+                    {% endif %}
                   {% endfor %}
-                  {% assign category_classes = category_classes | strip %}
+                </ul>
+                {% assign posts-number = site.posts | size %}
+                {% if posts-number >= 4 %}
+                  <a uk-toggle="target: #todos-4-6; animation: uk-animation-fade">Más productos</a>
+                {% endif %}    
+              </div>
+              <div id="todos-4-6" hidden>
+                <ul>
+                  {% for post in site.posts %}
+                    {% assign category_classes = "" %}
+                    {% for category in post.categories %}
+                      {% assign clean_category = category | replace: " ", "-" %}
+                      {% assign category_classes = category_classes | append: clean_category | append: " " %}
+                    {% endfor %}
+                    {% assign category_classes = category_classes | strip %}
 
-                  {% if forloop.index >= 4 and forloop.index <= 6 %}
-                  <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">Index {{ forloop.index }}. Category number {{ post.category-number }}. {{ post.title }} - {{ post.categories }}</li>
-                  {% endif %}
-                {% endfor %}
-              </ul>
-              {% if posts-number >= 7 %}
-                <a uk-toggle="target: #todos-7-9; animation: uk-animation-fade">Más productos</a>
-              {% endif %}  
-            </div>
-            <div id="todos-7-9" hidden>
-              <ul>
-                {% for post in site.posts %}
-                  {% assign category_classes = "" %}
-                  {% for category in post.categories %}
-                    {% assign clean_category = category | replace: " ", "-" %}
-                    {% assign category_classes = category_classes | append: clean_category | append: " " %}
-                  {% endfor %}
-                  {% assign category_classes = category_classes | strip %}
-
-                  {% if forloop.index >= 7 and forloop.index <= 9 %}
-                  <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">Index {{ forloop.index }}. Category number {{ post.category-number }}. {{ post.title }} - {{ post.categories }}</li>
-                  {% endif %}
-                {% endfor %}
-              </ul>
-              {% if posts-number >= 10 %}
-                <a uk-toggle="target: #todos-10-12; animation: uk-animation-fade">Más productos</a>
-              {% endif %}
-            </div>
-          </li>
-          <!-- Todos end -->
-          <!-- Categorías -->
-          {% for category in site.categories %}
-          {% assign category_name = category | first %}
-           <li data-tags="{{ category | first | replace: ' ', '-'}}']">
-             <div>
-               <ul>
-                {% for post in site.posts %}
-                  {% if post.categories contains category_name and post.category-number <= "3" %}
+                    {% if forloop.index >= 4 and forloop.index <= 6 %}
                     <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">Index {{ forloop.index }}. Category number {{ post.category-number }}. {{ post.title }} - {{ post.categories }}</li>
-                  {% endif %}
-                {% endfor %}
-               </ul>
-                {% assign posts_count = category | last | size %}
-                {% assign category_name = category | first %}
-                {% assign first_word = category_name | split: " " | first %}
-                {% if posts_count >= 4 %}
-                  <a uk-toggle="target: #{{ first_word }}-4-6; animation: uk-animation-fade">Más {{ first_word | downcase }}</a>
-                {% endif %}
-             </div>
-             <div id="{{ first_word }}-4-6" hidden>
-               <ul>
-                {% for post in site.posts %}
-                  {% if post.categories contains category_name and post.category-number >= "4" and post.category-number <= "6" %}
-                    <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">Index {{ forloop.index }}. Category number {{ post.category-number }}. {{ post.title }} {{ post.categories }}</li>
-                  {% endif %}
-                {% endfor %}
-               </ul>
-                {% assign posts_count = category | last | size %}
-                {% assign category_name = category | first %}
-                {% assign first_word = category_name | split: " " | first %}
-                {% if posts_count >= 6 and posts_count <= 9  %}
-                  <a uk-toggle="target: #{{ first_word }}-7-9; animation: uk-animation-fade">Más {{ first_word | downcase }}</a>
-                {% endif %}
-             </div>
-             <div id="{{ first_word }}-7-9" hidden>
-               <ul>
-                {% for post in site.posts %}
-                  {% if post.categories contains category_name and post.category-number <= "3" %}
-                    <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">Index {{ forloop.index }}. Category number {{ post.category-number }}. {{ post.title }} {{ post.categories }} {{ post.category-number }}</li>
-                  {% endif %}
-                {% endfor %}
-               </ul>
-                {% assign posts_count = category | last | size %}
-                {% assign category_name = category | first %}
-                {% assign first_word = category_name | split: " " | first %}
-                {% if posts_count >= 7 and posts_count <= 9  %}
-                  {{ posts_count }} <a uk-toggle="target: #{{ first_word }}-7-9; animation: uk-animation-fade">Más {{ first_word | downcase }}</a>
-                {% endif %}
-             </div>
-           </li>
-          {% endfor %}
-          <!-- Categorías end -->
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+                {% if posts-number >= 7 %}
+                  <a uk-toggle="target: #todos-7-9; animation: uk-animation-fade">Más productos</a>
+                {% endif %}  
+              </div>
+              <div id="todos-7-9" hidden>
+                <ul>
+                  {% for post in site.posts %}
+                    {% assign category_classes = "" %}
+                    {% for category in post.categories %}
+                      {% assign clean_category = category | replace: " ", "-" %}
+                      {% assign category_classes = category_classes | append: clean_category | append: " " %}
+                    {% endfor %}
+                    {% assign category_classes = category_classes | strip %}
 
-        </ul>  
-        <!-- Gallery items end -->
-      </div>
-      <!-- Filter end   -->
-    </section>
+                    {% if forloop.index >= 7 and forloop.index <= 9 %}
+                    <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">Index {{ forloop.index }}. Category number {{ post.category-number }}. {{ post.title }} - {{ post.categories }}</li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+                {% if posts-number >= 10 %}
+                  <a uk-toggle="target: #todos-10-12; animation: uk-animation-fade">Más productos</a>
+                {% endif %}
+              </div>
+            </li>
+            <!-- Todos end -->
+            <!-- Categorías -->
+            {% for category in site.categories %}
+            {% assign category_name = category | first %}
+             <li data-tags="{{ category | first | replace: ' ', '-'}}']">
+               <div>
+                 <ul>
+                  {% for post in site.posts %}
+                    {% if post.categories contains category_name and post.category-number <= "3" %}
+                      <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">Index {{ forloop.index }}. Category number {{ post.category-number }}. {{ post.title }} - {{ post.categories }}</li>
+                    {% endif %}
+                  {% endfor %}
+                 </ul>
+                  {% assign posts_count = category | last | size %}
+                  {% assign category_name = category | first %}
+                  {% assign first_word = category_name | split: " " | first %}
+                  {% if posts_count >= 4 %}
+                    <a uk-toggle="target: #{{ first_word }}-4-6; animation: uk-animation-fade">Más {{ first_word | downcase }}</a>
+                  {% endif %}
+               </div>
+               <div id="{{ first_word }}-4-6" hidden>
+                 <ul>
+                  {% for post in site.posts %}
+                    {% if post.categories contains category_name and post.category-number >= "4" and post.category-number <= "6" %}
+                      <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">Index {{ forloop.index }}. Category number {{ post.category-number }}. {{ post.title }} {{ post.categories }}</li>
+                    {% endif %}
+                  {% endfor %}
+                 </ul>
+                  {% assign posts_count = category | last | size %}
+                  {% assign category_name = category | first %}
+                  {% assign first_word = category_name | split: " " | first %}
+                  {% if posts_count >= 6 and posts_count <= 9  %}
+                    <a uk-toggle="target: #{{ first_word }}-7-9; animation: uk-animation-fade">Más {{ first_word | downcase }}</a>
+                  {% endif %}
+               </div>
+               <div id="{{ first_word }}-7-9" hidden>
+                 <ul>
+                  {% for post in site.posts %}
+                    {% if post.categories contains category_name and post.category-number <= "3" %}
+                      <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">Index {{ forloop.index }}. Category number {{ post.category-number }}. {{ post.title }} {{ post.categories }} {{ post.category-number }}</li>
+                    {% endif %}
+                  {% endfor %}
+                 </ul>
+                  {% assign posts_count = category | last | size %}
+                  {% assign category_name = category | first %}
+                  {% assign first_word = category_name | split: " " | first %}
+                  {% if posts_count >= 7 and posts_count <= 9  %}
+                    {{ posts_count }} <a uk-toggle="target: #{{ first_word }}-7-9; animation: uk-animation-fade">Más {{ first_word | downcase }}</a>
+                  {% endif %}
+               </div>
+             </li>
+            {% endfor %}
+            <!-- Categorías end -->
 
+          </ul>  
+          <!-- Gallery items end -->
+        </div>
+        <!-- Filter end   -->
+      </section>
+    </main>  
 
+    {% include newsletter.html %}
 
     {% include footer.html %}
 
