@@ -86,7 +86,7 @@ layout: compress
                 {% assign posts-number = site.posts | size %}
                 {% if posts-number >= 4 %}
                 <div class="more">
-                  <a class="button button-ghost" uk-toggle="target: #todos-4-6; animation: uk-animation-fade">Más productos <span class="icon icon-arrow-down"></span></a>
+                  <a class="button button-ghost button-l" uk-toggle="target: #todos-4-6; animation: uk-animation-fade">Más productos <span class="icon icon-arrow-down"></span></a>
                 </div>   
                 {% endif %}  
               </div>
@@ -140,7 +140,7 @@ layout: compress
                 {% assign posts-number = site.posts | size %}
                 {% if posts-number >= 6 and posts-number <= 9 %}
                 <div class="more">
-                  <a class="button button-ghost" uk-toggle="target: #todos-7-9; animation: uk-animation-fade">Más productos <span class="icon icon-arrow-down"></span></a>
+                  <a class="button button-ghost button-l" uk-toggle="target: #todos-7-9; animation: uk-animation-fade">Más productos <span class="icon icon-arrow-down"></span></a>
                 </div>  
                 {% endif %}
               </div>
@@ -194,7 +194,7 @@ layout: compress
                 {% assign posts-number = site.posts | size %}
                 {% if posts-number >= 10 %}
                 <div class="more">
-                  <a class="button button-ghost" uk-toggle="target: #todos-10-12; animation: uk-animation-fade">Más productos <span class="icon icon-arrow-down"></span></a>
+                  <a class="button button-ghost button-l" uk-toggle="target: #todos-10-12; animation: uk-animation-fade">Más productos <span class="icon icon-arrow-down"></span></a>
                 </div>  
                 {% endif %}
               </div>
@@ -250,7 +250,7 @@ layout: compress
                   {% assign first_word = category_name | split: " " | first %}
                   {% if posts_count >= 4 %}
                   <div class="more">
-                    <a class="button button-ghost" uk-toggle="target: #{{ first_word }}-4-6; animation: uk-animation-fade">Más {{ first_word | downcase }} <span class="icon icon-arrow-down"></span></a>
+                    <a class="button button-ghost button-l" uk-toggle="target: #{{ first_word }}-4-6; animation: uk-animation-fade">Más {{ first_word | downcase }} <span class="icon icon-arrow-down"></span></a>
                   </div>  
                   {% endif %}
                </div>
@@ -299,7 +299,7 @@ layout: compress
                   {% assign first_word = category_name | split: " " | first %}
                   {% if posts_count >= 6 and posts_count <= 9  %}
                     <div class="more">
-                      <a class="button button-ghost" uk-toggle="target: #{{ first_word }}-7-9; animation: uk-animation-fade">Más {{ first_word | downcase }} <span class="icon icon-arrow-down"></span></a>
+                      <a class="button button-ghost button-l" uk-toggle="target: #{{ first_word }}-7-9; animation: uk-animation-fade">Más {{ first_word | downcase }} <span class="icon icon-arrow-down"></span></a>
                     </div> 
                   {% endif %}
                </div>
@@ -348,7 +348,7 @@ layout: compress
                   {% assign first_word = category_name | split: " " | first %}
                   {% if posts_count >= 10 %}
                     <div class="more">
-                      <a class="button button-ghost" uk-toggle="target: #{{ first_word }}-10-12; animation: uk-animation-fade">Más {{ first_word | downcase }} <span class="icon icon-arrow-down"></span></a>
+                      <a class="button button-ghost button-l" uk-toggle="target: #{{ first_word }}-10-12; animation: uk-animation-fade">Más {{ first_word | downcase }} <span class="icon icon-arrow-down"></span></a>
                     </div> 
                   {% endif %}
                </div>

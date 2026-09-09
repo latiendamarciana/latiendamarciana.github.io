@@ -421,9 +421,12 @@ footer{
   }
   .more{
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     margin-bottom: 2rem;
     .button{
+      &:hover{
+        color: var(--bright-inferno);
+      }
       span{
         margin-left: .75rem;
       }
