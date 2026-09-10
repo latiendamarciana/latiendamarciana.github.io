@@ -457,3 +457,12 @@ footer{
     }
   }
 }
+
+.gallery-item{
+  background-color: var(--brown-0);
+  border-radius: var(--rounded-border-m);
+  &:hover{
+    box-shadow: var(--shadow-logo-hover);
+    transition: var(--fade);
+  }
+}

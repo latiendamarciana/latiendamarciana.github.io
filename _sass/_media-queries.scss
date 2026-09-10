@@ -431,11 +431,11 @@
   }
 
   .gallery-items{
-    & ul{
+    ul{
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
     }
-    & li{
+    li{
       article{
         nav{
           ul{
