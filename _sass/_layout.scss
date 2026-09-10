@@ -12,6 +12,9 @@
           margin-bottom: 2rem;
         }
       }
+      .hidden-xs{
+        display: none;
+      }
     }
   }
 }
@@ -105,13 +108,27 @@
   }
 }
 
+.index-products-container{
+  li{
+    background-color: var(--brown-0);
+    border-radius: var(--rounded-border-m);
+    &:hover{
+      box-shadow: var(--shadow-logo-hover);
+      transition: var(--fade);
+    }
+  }
+}
+
+.uk-slideshow-items{
+  li{
+    background-color: var(--brown-0);
+    border-radius: var(--rounded-border-m);
+  }
+}
+
 .product-card{
   background-color: var(--brown-0);
   border-radius: var(--rounded-border-m);
-  &:hover{
-    box-shadow: var(--shadow-logo-hover);
-    transition: var(--fade);
-  }
   img{
     height: calc(100vw - 2rem);
     width: 100%;
@@ -142,6 +159,12 @@
         display: flex;
         gap: 1rem;
         align-items: center;
+        li{
+          &:hover{
+            box-shadow: none;
+            transition: none;
+          }
+        }
         .link{
           position: relative;
           top: -.25rem
@@ -411,6 +434,7 @@ footer{
     list-style: none;
     article{
       padding-bottom: .05rem;
+      height: 100%;
       nav{
         ul{
           flex-direction: column;
