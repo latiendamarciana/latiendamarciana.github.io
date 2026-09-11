@@ -260,9 +260,19 @@
   }
 
   .gallery-items{
-    & ul{
+    ul{
       gap: 1.5rem;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+    }
+    li{
+      article{
+        nav{
+          ul{
+            flex-direction: row;
+            align-items: center !important;
+          }
+        }
+      }
     }
   }
 
@@ -435,16 +445,6 @@
     ul{
       grid-template-columns: repeat(4, 1fr);
       gap: 2rem;
-    }
-    li{
-      article{
-        nav{
-          ul{
-            flex-direction: row;
-            align-items: center !important;
-          }
-        }
-      }
     }
   }  
 
