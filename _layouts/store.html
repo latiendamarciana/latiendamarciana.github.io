@@ -46,7 +46,7 @@ layout: compress
                     {% endfor %}
                     {% assign category_classes = category_classes | strip %}
 
-                    {% if forloop.index <= 3 %}
+                    {% if forloop.index <= 4 %}
                     <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">
                       <article class="product-card">
                         <a>
@@ -84,13 +84,13 @@ layout: compress
                   {% endfor %}
                 </ul>
                 {% assign posts-number = site.posts | size %}
-                {% if posts-number >= 4 %}
+                {% if posts-number >= 5 %}
                 <div class="more">
-                  <a class="button button-ghost button-l" uk-toggle="target: #todos-4-6; animation: uk-animation-fade">Más productos <span class="icon icon-arrow-down"></span></a>
+                  <a class="button button-ghost button-l" uk-toggle="target: #todos-5-8; animation: uk-animation-fade">Más productos <span class="icon icon-arrow-down"></span></a>
                 </div>   
                 {% endif %}  
               </div>
-              <div id="todos-4-6" hidden>
+              <div id="todos-5-8" hidden>
                 <ul>
                   {% for post in site.posts %}
                     {% assign category_classes = "" %}
@@ -100,7 +100,7 @@ layout: compress
                     {% endfor %}
                     {% assign category_classes = category_classes | strip %}
 
-                    {% if forloop.index >= 4 and forloop.index <= 6 %}
+                    {% if forloop.index >= 5 and forloop.index <= 8 %}
                     <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">
                       <article class="product-card">
                         <a>
@@ -138,13 +138,13 @@ layout: compress
                   {% endfor %}
                 </ul>
                 {% assign posts-number = site.posts | size %}
-                {% if posts-number >= 6 and posts-number <= 9 %}
+                {% if posts-number >= 9 and posts-number <= 12 %}
                 <div class="more">
-                  <a class="button button-ghost button-l" uk-toggle="target: #todos-7-9; animation: uk-animation-fade">Más productos <span class="icon icon-arrow-down"></span></a>
+                  <a class="button button-ghost button-l" uk-toggle="target: #todos-9-12; animation: uk-animation-fade">Más productos <span class="icon icon-arrow-down"></span></a>
                 </div>  
                 {% endif %}
               </div>
-              <div id="todos-7-9" hidden>
+              <div id="todos-9-12" hidden>
                 <ul>
                   {% for post in site.posts %}
                     {% assign category_classes = "" %}
@@ -154,7 +154,7 @@ layout: compress
                     {% endfor %}
                     {% assign category_classes = category_classes | strip %}
 
-                    {% if forloop.index >= 7 and forloop.index <= 9 %}
+                    {% if forloop.index >= 9 and forloop.index <= 12 %}
                     <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">
                       <article class="product-card">
                         <a>
@@ -207,7 +207,7 @@ layout: compress
                <div>
                  <ul>
                   {% for post in site.posts %}
-                    {% if post.categories contains category_name and post.category-number <= "3" %}
+                    {% if post.categories contains category_name and post.category-number <= "4" %}
                       <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">
                         <article class="product-card">
                           <a>
@@ -248,16 +248,16 @@ layout: compress
                   {% assign posts_count = category | last | size %}
                   {% assign category_name = category | first %}
                   {% assign first_word = category_name | split: " " | first %}
-                  {% if posts_count >= 4 %}
+                  {% if posts_count >= 5 %}
                   <div class="more">
-                    <a class="button button-ghost button-l" uk-toggle="target: #{{ first_word }}-4-6; animation: uk-animation-fade">Más {{ first_word | downcase }} <span class="icon icon-arrow-down"></span></a>
+                    <a class="button button-ghost button-l" uk-toggle="target: #{{ first_word }}-5-8; animation: uk-animation-fade">Más {{ first_word | downcase }} <span class="icon icon-arrow-down"></span></a>
                   </div>  
                   {% endif %}
                </div>
-               <div id="{{ first_word }}-4-6" hidden>
+               <div id="{{ first_word }}-5-8" hidden>
                  <ul>
                   {% for post in site.posts %}
-                    {% if post.categories contains category_name and post.category-number >= "4" and post.category-number <= "6" %}
+                    {% if post.categories contains category_name and post.category-number >= "5" and post.category-number <= "8" %}
                       <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">
                         <article class="product-card">
                           <a>
@@ -297,16 +297,19 @@ layout: compress
                   {% assign posts_count = category | last | size %}
                   {% assign category_name = category | first %}
                   {% assign first_word = category_name | split: " " | first %}
-                  {% if posts_count >= 6 and posts_count <= 9  %}
+                  {% if posts_count >= 9 and posts_count <= 12  %}
                     <div class="more">
-                      <a class="button button-ghost button-l" uk-toggle="target: #{{ first_word }}-7-9; animation: uk-animation-fade">Más {{ first_word | downcase }} <span class="icon icon-arrow-down"></span></a>
+                      <a class="button button-ghost button-l" uk-toggle="target: #{{ first_word }}-9-12; animation: uk-animation-fade">Más {{ first_word | downcase }} <span class="icon icon-arrow-down"></span></a>
                     </div> 
                   {% endif %}
                </div>
-               <div id="{{ first_word }}-7-9" hidden>
+               <div id="{{ first_word }}-9-12" hidden>
                  <ul>
                   {% for post in site.posts %}
-                    {% if post.categories contains category_name and post.category-number <= "3" %}
+                    {% assign posts_count = category | last | size %}
+                    {% assign category_name = category | first %}
+                    {% assign first_word = category_name | split: " " | first %}
+                    {% if posts_count >= 9 and posts_count <= 12  %}
                       <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">
                         <article class="product-card">
                           <a>
@@ -346,7 +349,7 @@ layout: compress
                   {% assign posts_count = category | last | size %}
                   {% assign category_name = category | first %}
                   {% assign first_word = category_name | split: " " | first %}
-                  {% if posts_count >= 10 %}
+                  {% if posts_count >= 13 %}
                     <div class="more">
                       <a class="button button-ghost button-l" uk-toggle="target: #{{ first_word }}-10-12; animation: uk-animation-fade">Más {{ first_word | downcase }} <span class="icon icon-arrow-down"></span></a>
                     </div> 
