@@ -195,7 +195,11 @@ layout: compress
                 {% if posts-number >= 10 %}
                 <div class="more">
                   <a class="button button-ghost button-l" uk-toggle="target: #todos-10-12; animation: uk-animation-fade">Más productos <span class="icon icon-arrow-down"></span></a>
-                </div>  
+                </div>
+                {% else %}
+                <div class="more">
+                  <p>Viste todos los productos <a href="/tienda/">Recarga la tienda <span class="icon icon-arrow-up"></span></a></p>
+                </div>
                 {% endif %}
               </div>
             </li>
