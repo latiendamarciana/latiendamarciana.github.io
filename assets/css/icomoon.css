@@ -73,12 +73,6 @@
 .icon-next:before {
   content: "\e90f";
 }
-
-
-/*.icon-prev:before {
-  content: "\e909";
+.icon-reload:before {
+  content: "\e910";
 }
-.icon-next:before {
-  content: "\e90a";
-}*/
-
