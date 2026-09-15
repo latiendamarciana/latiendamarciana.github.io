@@ -84,6 +84,14 @@ collections:
 webmaster_verifications:
     google: lnZ4AtNlxnPSR2dYkaLXuiHiGcvBuIR5fBHrZGqmyiU               
 
+defaults:  
+  -    
+    scope:      
+      path: ""      
+      type: "posts"    
+    values:      
+      layout: "product"   
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

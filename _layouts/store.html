@@ -93,12 +93,6 @@ layout: compress
               <div id="todos-5-8" hidden>
                 <ul>
                   {% for post in site.posts %}
-                    {% assign category_classes = "" %}
-                    {% for category in post.categories %}
-                      {% assign clean_category = category | replace: " ", "-" %}
-                      {% assign category_classes = category_classes | append: clean_category | append: " " %}
-                    {% endfor %}
-                    {% assign category_classes = category_classes | strip %}
 
                     {% if forloop.index >= 5 and forloop.index <= 8 %}
                     <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">
@@ -137,7 +131,6 @@ layout: compress
                     {% endif %}
                   {% endfor %}
                 </ul>
-                {% assign posts-number = site.posts | size %}
                 {% if posts-number >= 9 and posts-number <= 12 %}
                 <div class="more">
                   <a class="button button-ghost button-l" uk-toggle="target: #todos-9-12; animation: uk-animation-fade">Más productos <span class="icon icon-arrow-down"></span></a>
@@ -147,12 +140,6 @@ layout: compress
               <div id="todos-9-12" hidden>
                 <ul>
                   {% for post in site.posts %}
-                    {% assign category_classes = "" %}
-                    {% for category in post.categories %}
-                      {% assign clean_category = category | replace: " ", "-" %}
-                      {% assign category_classes = category_classes | append: clean_category | append: " " %}
-                    {% endfor %}
-                    {% assign category_classes = category_classes | strip %}
 
                     {% if forloop.index >= 9 and forloop.index <= 12 %}
                     <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">
@@ -191,14 +178,13 @@ layout: compress
                     {% endif %}
                   {% endfor %}
                 </ul>
-                {% assign posts-number = site.posts | size %}
                 {% if posts-number >= 10 %}
                 <div class="more">
                   <a class="button button-ghost button-l" uk-toggle="target: #todos-10-12; animation: uk-animation-fade">Más productos <span class="icon icon-arrow-down"></span></a>
                 </div>
                 {% else %}
                 <div class="more">
-                  <p>Viste todos los productos <a class="link bold" href="/tienda/">Recarga la tienda <span class="icon icon-reload"></span></a></p>
+                  <p>{{ page.products-end }} <a class="link bold" href="/tienda/">{{ page.products-end-link }} <span class="icon icon-reload"></span></a></p>
                 </div>
                 {% endif %}
               </div>
@@ -248,9 +234,7 @@ layout: compress
                     {% endif %}
                   {% endfor %}
                  </ul>
-                  
                   {% assign posts_count = category | last | size %}
-                  {% assign category_name = category | first %}
                   {% assign first_word = category_name | split: " " | first %}
                   {% if posts_count >= 5 %}
                   <div class="more">
@@ -298,7 +282,6 @@ layout: compress
                     {% endif %}
                   {% endfor %}
                  </ul>
-                  {% assign posts_count = category | last | size %}
                   {% assign category_name = category | first %}
                   {% assign first_word = category_name | split: " " | first %}
                   {% if posts_count >= 9 and posts_count <= 12  %}

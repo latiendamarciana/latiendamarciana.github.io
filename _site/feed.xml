@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
   <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="es" />
-  <updated>2026-09-11T21:25:39-05:00</updated>
+  <updated>2026-09-15T17:09:14-05:00</updated>
   <id>http://localhost:4000/feed.xml</id>
 
   
@@ -62,13 +62,15 @@
       
 
       <title type="html">Postal expulsión</title>
-      <link href="http://localhost:4000/obra%20gr%C3%A1fica/2026/08/15/postal-expulsion.html" rel="alternate" type="text/html" title="Postal expulsión" />
+      <link href="http://localhost:4000/tienda/postal-expulsion/" rel="alternate" type="text/html" title="Postal expulsión" />
       <published>2026-08-15T00:00:00-05:00</published>
       <updated>2026-08-15T00:00:00-05:00</updated>
-      <id>http://localhost:4000/obra%20gr%C3%A1fica/2026/08/15/postal-expulsion</id>
+      <id>http://localhost:4000/tienda/postal-expulsion</id>
       
       
-        <content type="html" xml:base="http://localhost:4000/obra%20gr%C3%A1fica/2026/08/15/postal-expulsion.html"><![CDATA[]]></content>
+        <content type="html" xml:base="http://localhost:4000/tienda/postal-expulsion/"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<p>Tempor ilust vivere est.</p>]]></content>
       
 
       

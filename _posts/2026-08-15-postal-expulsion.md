@@ -14,4 +14,32 @@ alt: "Brownie vegano de chocolate"
 title: "Postal expulsión"
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 price: "12.000"
+permalink: "/tienda/postal-expulsion/"
+slideshow-images:
+  - image-xxs: "/assets/images/prductos/lobito-productos-xxs.jpg"
+    image-xs: "/assets/images/productos-carrusel/lobito-carrusel-productos-xs.jpg"
+    image-sm: "/assets/images/productos/lobito-productos-sm.jpg"
+    image-lg: "/assets/images/productos/lobito-productos-lg.jpg"
+    alt: "Postal expulsión"
+  - image-xxs: "/assets/images/prductos/lobito-productos-xxs.jpg"
+    image-xs: "/assets/images/productos-carrusel/lobito-carrusel-productos-xs.jpg"
+    image-sm: "/assets/images/productos/lobito-productos-sm.jpg"
+    image-lg: "/assets/images/productos/lobito-productos-lg.jpg"
+    alt: "Postal lobito"
+colors:
+  - color: "#AB66F2"
+  - color: "#FF5A9A"
+  - color: "#7FECEA"
+sizes:
+  - size: "xl"
+  - size: "l"
+  - size: "m"
+  - size: "s"
+genders:
+  - gender: "Mujer"
+  - gender: "Hombre"             
 ---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+Tempor ilust vivere est.

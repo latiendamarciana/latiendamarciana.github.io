@@ -1,0 +1,100 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+{% include head.html %}
+  <body>
+    {% include alert.html %}
+    {% include nav-mobile.html %}
+    {% include nav.html %}
+
+    <main class="product full-width">
+      <h3>{{ page.url }}</h3>
+      <!-- Slideshow  -->
+      <div class="product-slideshow visible-xs visible-sm hidden-lg" uk-slideshow="ratio: 1:1; animation:push; autoplay:true; autoplay-interval: 4000">
+        <div class="slideshow-content" tabindex="-1">
+          <div class="uk-slideshow-items">
+            {% for item in page.slideshow-images %}
+            <img 
+              srcset="
+                {{ item.image-xs }} 686w,
+                {{ item.image-sm }} 744w,
+                {{ item.image-lg }} 1416w"
+              sizes="
+                (min-width: 1025px) 708px,
+                (min-width: 641px) 372px,
+                343px"
+              src="{{ item.src }}"  
+              alt="{{ item.alt }}"
+              loading="lazy" uk-cover>
+            {% endfor %}
+          </div>
+          <a class="uk-position-center-left prev" href uk-slidenav-previous uk-slideshow-item="previous"><span class="icon icon-prev"></span></a>
+          <a class="uk-position-center-right next" href uk-slidenav-next uk-slideshow-item="next"><span class="icon icon-next"></span></a>
+          <ul class="uk-slideshow-nav uk-dotnav"></ul>
+        </div>  
+      </div>
+      <!-- Slideshow end  -->
+      <!-- Product info -->
+      <div class="product-info">
+        <h1>{{ page.title }}</h1>
+        {{ page.content | markdownify | replace: '<p>', '<p class="p-s">' }}
+        <aside>
+          <div class="product-options">
+            {% if page.genders or page.colors or page.sizes %}
+            <div class="note">
+              <p class="bold p-m">Opciones disponibles</p>
+              <p class="p-s">Recuerda las opciones que escojas para hacer el pedido.</p>
+            </div>  
+            {% endif %}
+            {% if page.genders %}
+            <div class="options-list">
+              <p class="p-s bold">Género</p>
+              <ul>
+                {% for item in page.genders %}
+                <li><p class="p-s">{{ item.gender }}</p></li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+            {% if page.colors %}
+            <div class="options-list">
+              <p class="p-s bold">Color</p>
+              <ul>
+                {% for item in page.colors %}
+                <li><span class="color" style="background-color: {{ item.color }};"></span></li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+            {% if page.sizes %}
+            <div class="options-list">
+              <p class="p-s bold">Talla</p>
+              <ul>
+                {% for item in page.sizes %}
+                <li><p class="p-s">{{ item.size }}</p></li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+          </div>
+          <p class="bold p-xl">${{ page.price }}</p>
+          <a class="button button-s">{{ site.buy-button }}</a>
+          <p><a class="link bold p-s">Volver a la tienda</a></p>
+        </aside>  
+      </div>  
+      <!-- Product info end -->
+    </main>  
+
+    {% include footer.html %}
+
+    {% include modal-nav.html %}
+
+    {% include modal-location.html %}
+
+    {% include uikit-javascript.html %}
+
+  </body>
+</html>
