@@ -185,24 +185,19 @@
 .product-info{
   h1{
     margin-bottom: 1rem;
+    font-size: var(--h2);
   }
-  p{
-    &:last-of-type{
-      margin-bottom: 2rem;
-    }
+  .price{
+    margin-bottom: 1rem;
   }
   .button{
-    margin-bottom: 1rem;
+    margin-bottom: .75rem;
   }
 }
 
 .product-options{
+  margin-top: 2rem;
   margin-bottom: 1.5rem;
-  .note{
-    .bold{
-      margin-bottom: .5rem;
-    }
-  }
   .options-list{
     border-top: 1px solid var(--neutral-30);
     padding: .75rem 0 .75rem 0;

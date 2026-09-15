@@ -4,7 +4,7 @@
     <ul class="main-nav-links">
       {% for item in site.posts-nav-links %}
       <li>
-        <a href="{{ item.href }}" class="{{ item.class }} {% if page.url == item.active or page.url == item.href %}active{% endif %} {% if page.url and item.href contains "tienda" %}active{% endif %}" target="{{ item.target }}" {% if item.link-text == "Dónde" %}uk-toggle{% endif %}>
+        <a href="{{ item.href }}" class="{{ item.class }} {% if page.url == item.active or page.url == item.href %}active{% endif %} {% if page.url and item.href contains "/tienda/" %}active{% endif %}" target="{{ item.target }}" {% if item.link-text == "Dónde" %}uk-toggle{% endif %}>
           {% if item.href != "/" %}{{ item.link-text }}{% endif %} {% if item.class == "platform" %}<span class="icon {{ item.icon }}" aria-label="{{ item.aria-label }}"></span>{% endif %} {% if item.class == "nav-logo" %}<img src="{{ site.baseurl }}{{ item.logo-sm }}" aria-label="{{ item.aria-label }}">{% endif %}
         </a>
       </li>

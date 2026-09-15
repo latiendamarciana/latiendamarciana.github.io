@@ -163,6 +163,21 @@
     }
   }
 
+  .product{
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+    .product-slideshow{
+      grid-column: 1 / 4;
+      display: block;
+    }
+    .product-info{
+      grid-column: 4 / 7;
+    }
+  }
+
   .newsletter{
     form{
       display: grid;

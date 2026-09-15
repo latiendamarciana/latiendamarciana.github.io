@@ -11,7 +11,6 @@ layout: compress
     {% include nav.html %}
 
     <main class="product full-width">
-      <h3>{{ page.url }}</h3>
       <!-- Slideshow  -->
       <div class="product-slideshow visible-xs visible-sm hidden-lg" uk-slideshow="ratio: 1:1; animation:push; autoplay:true; autoplay-interval: 4000">
         <div class="slideshow-content" tabindex="-1">
@@ -43,12 +42,6 @@ layout: compress
         {{ page.content | markdownify | replace: '<p>', '<p class="p-s">' }}
         <aside>
           <div class="product-options">
-            {% if page.genders or page.colors or page.sizes %}
-            <div class="note">
-              <p class="bold p-m">Opciones disponibles</p>
-              <p class="p-s">Recuerda las opciones que escojas para hacer el pedido.</p>
-            </div>  
-            {% endif %}
             {% if page.genders %}
             <div class="options-list">
               <p class="p-s bold">Género</p>
@@ -80,7 +73,12 @@ layout: compress
             </div>
             {% endif %}
           </div>
-          <p class="bold p-xl">${{ page.price }}</p>
+          {% if page.genders or page.colors or page.sizes %}
+            <div class="note">
+              <p class="p-s">Recuerda las opciones que escojas al hacer tu pedido.</p>
+            </div>  
+          {% endif %}
+          <p class="bold p-xl price">${{ page.price }}</p>
           <a class="button button-s">{{ site.buy-button }}</a>
           <p><a class="link bold p-s">Volver a la tienda</a></p>
         </aside>  

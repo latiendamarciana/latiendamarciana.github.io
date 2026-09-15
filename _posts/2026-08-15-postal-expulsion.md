@@ -27,9 +27,9 @@ slideshow-images:
     image-lg: "/assets/images/productos/lobito-productos-lg.jpg"
     alt: "Postal lobito"
 colors:
-  - color: "#AB66F2"
-  - color: "#FF5A9A"
-  - color: "#7FECEA"
+  - color: "#D9D9D9"
+  - color: "#5C5C5C"
+  - color: "#ADADAD"
 sizes:
   - size: "xl"
   - size: "l"
