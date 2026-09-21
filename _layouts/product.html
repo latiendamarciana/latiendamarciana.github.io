@@ -36,6 +36,34 @@ layout: compress
         </div>  
       </div>
       <!-- Slideshow end  -->
+      <!-- Product images -->
+      <div class="product-images hidden-xs hidden-sm visible-lg">
+        <ul class="first-row">
+          {% for item in page.product-images %}
+          {% if item.image-number <= "2"%}
+          <li>
+            <img
+              src="{{ item.image }}"  
+              alt="{{ item.alt }}"
+              loading="lazy">
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+        <ul class="second-row">
+          {% for item in page.product-images %}
+          {% if item.image-number >= "3"%}
+          <li>
+            <img 
+              src="{{ item.image }}"  
+              alt="{{ item.alt }}"
+              loading="lazy">
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      <!-- Product images end -->
       <!-- Product info -->
       <div class="product-info">
         <h1>{{ page.title }}</h1>

@@ -37,7 +37,23 @@ sizes:
   - size: "s"
 genders:
   - gender: "Mujer"
-  - gender: "Hombre"             
+  - gender: "Hombre"
+product-images:
+  - image: "/assets/images/productos/lobito-productos-lg.jpg"
+    image-number: "1"
+    alt: "Postal lobito"
+  - image: "/assets/images/productos/lobito-productos-lg.jpg"
+    image-number: "2"
+    alt: "Postal lobito"
+  - image: "/assets/images/productos/lobito-productos-lg.jpg"
+    image-number: "3"
+    alt: "Postal lobito"
+  - image: "/assets/images/productos/lobito-productos-lg.jpg"
+    image-number: "4" 
+    alt: "Postal lobito"
+  - image: "/assets/images/productos/lobito-productos-lg.jpg"
+    image-number: "5"
+    alt: "Postal lobito"                     
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

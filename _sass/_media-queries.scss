@@ -255,7 +255,7 @@
       grid-template-columns: repeat(6, 1fr);
       gap: 1.5rem;
       align-items: center;
-      padding-bottom: 1.5 rem;
+      padding-bottom: 1.5rem;
       figure{
         grid-column: 1 / 4;
         margin-bottom: 0;
@@ -436,6 +436,37 @@
         display: inherit;
       }
     } 
+  }
+
+  .product{
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    .product-slideshow{
+      grid-column: 1 / 9;
+      display: none !important;
+    }
+    .product-images{
+      grid-column: 1 / 9;
+      .first-row, .second-row{
+        display: flex;
+        gap: 2rem;
+        padding: 0;
+        li{
+          list-style: none;
+          img{
+            border-radius: var(--rounded-border-m);
+          }
+        }
+      }
+      .first-row{
+        margin-bottom: 2rem;
+      }
+    }
+    .product-info{
+      grid-column: 9 / 13;
+    }
   }
 
   .newsletter{
