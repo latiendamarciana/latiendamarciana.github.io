@@ -35,7 +35,7 @@ layout: compress
           {% if post.featured == "true" %}
             <li>
               <article class="product-card">
-                <a>
+                <a href="{{ post.url }}">
                   <img 
                   srcset="
                     {{ post.image-xs }} 686w,
@@ -57,7 +57,7 @@ layout: compress
                     <ul>
                       <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
                       {% if post.online == "true" %}
-                      <li><a class="button button-s">{{ site.buy-button }}</a></li>
+                      <li><a href="{{ post.url }}" class="button button-s">{{ site.buy-button }}</a></li>
                       {% else %}
                       <li><a href="#modal-location" class="link link-xs" uk-toggle>{{ site.offline-link }}</a></li>
                       {% endif %}

@@ -466,6 +466,13 @@
     }
     .product-info{
       grid-column: 9 / 13;
+      .offline.visible-xs.visible-sm{
+        display: none;
+      }
+      .offline.visible-lg{
+        display: inline-block;
+        margin-bottom: 1rem;
+      }
     }
   }
 

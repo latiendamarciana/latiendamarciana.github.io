@@ -49,7 +49,7 @@ layout: compress
                     {% if forloop.index <= 4 %}
                     <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">
                       <article class="product-card">
-                        <a>
+                        <a href="{{ post.url }}">
                           <img 
                           srcset="
                             {{ post.image-xs }} 686w,
@@ -71,7 +71,7 @@ layout: compress
                             <ul>
                               <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
                               {% if post.online == "true" %}
-                              <li><a class="button button-s">{{ site.buy-button }}</a></li>
+                              <li><a href="{{ post.url }}" class="button button-s">{{ site.buy-button }}</a></li>
                               {% else %}
                               <li><a href="#modal-location" class="link link-xs" uk-toggle>{{ site.offline-link }}</a></li>
                               {% endif %}
@@ -97,7 +97,7 @@ layout: compress
                     {% if forloop.index >= 5 and forloop.index <= 8 %}
                     <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">
                       <article class="product-card">
-                        <a>
+                        <a href="{{ post.url }}">
                           <img 
                           srcset="
                             {{ post.image-xs }} 686w,
@@ -119,7 +119,7 @@ layout: compress
                             <ul>
                               <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
                               {% if post.online == "true" %}
-                              <li><a class="button button-s">{{ site.buy-button }}</a></li>
+                              <li><a href="{{ post.url }}" class="button button-s">{{ site.buy-button }}</a></li>
                               {% else %}
                               <li><a href="#modal-location" class="link link-xs" uk-toggle>{{ site.offline-link }}</a></li>
                               {% endif %}
@@ -144,7 +144,7 @@ layout: compress
                     {% if forloop.index >= 9 and forloop.index <= 12 %}
                     <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">
                       <article class="product-card">
-                        <a>
+                        <a href="{{ post.url }}">
                           <img 
                           srcset="
                             {{ post.image-xs }} 686w,
@@ -166,7 +166,7 @@ layout: compress
                             <ul>
                               <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
                               {% if post.online == "true" %}
-                              <li><a class="button button-s">{{ site.buy-button }}</a></li>
+                              <li><a href="{{ post.url }}" class="button button-s">{{ site.buy-button }}</a></li>
                               {% else %}
                               <li><a href="#modal-location" class="link link-xs" uk-toggle>{{ site.offline-link }}</a></li>
                               {% endif %}
@@ -200,7 +200,7 @@ layout: compress
                     {% if post.categories contains category_name and post.category-number <= "4" %}
                       <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">
                         <article class="product-card">
-                          <a>
+                          <a href="{{ post.url }}">
                             <img 
                             srcset="
                               {{ post.image-xs }} 686w,
@@ -222,7 +222,7 @@ layout: compress
                               <ul>
                                 <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
                                 {% if post.online == "true" %}
-                                <li><a class="button button-s">{{ site.buy-button }}</a></li>
+                                <li><a href="{{ post.url }}" class="button button-s">{{ site.buy-button }}</a></li>
                                 {% else %}
                                 <li><a href="#modal-location" class="link link-xs" uk-toggle>{{ site.offline-link }}</a></li>
                                 {% endif %}
@@ -248,7 +248,7 @@ layout: compress
                     {% if post.categories contains category_name and post.category-number >= "5" and post.category-number <= "8" %}
                       <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">
                         <article class="product-card">
-                          <a>
+                          <a href="{{ post.url }}">
                             <img 
                             srcset="
                               {{ post.image-xs }} 686w,
@@ -270,7 +270,7 @@ layout: compress
                               <ul>
                                 <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
                                 {% if post.online == "true" %}
-                                <li><a class="button button-s">{{ site.buy-button }}</a></li>
+                                <li><a href="{{ post.url }}" class="button button-s">{{ site.buy-button }}</a></li>
                                 {% else %}
                                 <li><a href="#modal-location" class="link link-xs" uk-toggle>{{ site.offline-link }}</a></li>
                                 {% endif %}
@@ -299,7 +299,7 @@ layout: compress
                     {% if posts_count >= 9 and posts_count <= 12  %}
                       <li class="gallery-item {{ category_classes }}" data-tags="{{ category_classes }}">
                         <article class="product-card">
-                          <a>
+                          <a href="{{ post.url }}">
                             <img 
                             srcset="
                               {{ post.image-xs }} 686w,
@@ -321,7 +321,7 @@ layout: compress
                               <ul>
                                 <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
                                 {% if post.online == "true" %}
-                                <li><a class="button button-s">{{ site.buy-button }}</a></li>
+                                <li><a href="{{ post.url }}" class="button button-s">{{ site.buy-button }}</a></li>
                                 {% else %}
                                 <li><a href="#modal-location" class="link link-xs" uk-toggle>{{ site.offline-link }}</a></li>
                                 {% endif %}

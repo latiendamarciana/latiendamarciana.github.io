@@ -6,18 +6,20 @@
       {% if post.featured == "true" %}
         <li>
           <article class="product-card">
-            <img 
-              srcset="
-                {{ post.image-xs }} 686w,
-                {{ post.image-sm }} 696w,
-                {{ post.image-lg }} 880w"
-              sizes="
-                (min-width: 1025px) 440px,
-                (min-width: 641px) 348px,
-                343px"
-              src="{{ post.src }}"  
-              alt="{{ post.alt }}"
-              loading="lazy">
+            <a href="{{ post.url }}">
+              <img 
+                srcset="
+                  {{ post.image-xs }} 686w,
+                  {{ post.image-sm }} 696w,
+                  {{ post.image-lg }} 880w"
+                sizes="
+                  (min-width: 1025px) 440px,
+                  (min-width: 641px) 348px,
+                  343px"
+                src="{{ post.src }}"  
+                alt="{{ post.alt }}"
+                loading="lazy">
+            </a>
             <div class="product-card-info">
               <h3 clas="heading">{{ post.title }}</h3>
               {{ post.excerpt | markdownify | replace: '<p>', '<p class="p-xs">' }}
@@ -26,7 +28,7 @@
                 <ul>
                   <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
                   {% if post.online == "true" %}
-                  <li><a class="button button-s">{{ site.buy-button }}</a></li>
+                  <li><a href="{{ post.url }}" class="button button-s">{{ site.buy-button }}</a></li>
                   {% else %}
                   <li><a href="/ubicacion/" class="link link-xs">{{ site.offline-link }}</a></li>
                   {% endif %}
@@ -52,18 +54,20 @@
       {% if post.featured == "true" %}
       <li>
         <article class="product-card">
-          <img 
-            srcset="
-              {{ post.image-xs }} 686w,
-              {{ post.image-sm }} 696w,
-              {{ post.image-lg }} 880w"
-            sizes="
-              (min-width: 1025px) 440px,
-              (min-width: 641px) 348px,
-              343px"
-            src="{{ post.src }}"  
-            alt="{{ post.alt }}"
-            loading="lazy">
+          <a href="{{ post.url }}">
+            <img 
+              srcset="
+                {{ post.image-xs }} 686w,
+                {{ post.image-sm }} 696w,
+                {{ post.image-lg }} 880w"
+              sizes="
+                (min-width: 1025px) 440px,
+                (min-width: 641px) 348px,
+                343px"
+              src="{{ post.src }}"  
+              alt="{{ post.alt }}"
+              loading="lazy">
+          </a>  
           <div class="product-card-info">
             <h3 clas="heading">{{ post.title }}</h3>
             {{ post.excerpt | markdownify | replace: '<p>', '<p class="p-xs">' }}
@@ -72,7 +76,7 @@
               <ul>
                 <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
                 {% if post.online == "true" %}
-                <li><a class="button button-s">{{ site.buy-button }}</a></li>
+                <li><a href="{{ post.url }}" class="button button-s">{{ site.buy-button }}</a></li>
                 {% else %}
                 <li><a href="/ubicacion/" class="link link-xs">{{ site.offline-link }}</a></li>
                 {% endif %}
@@ -98,18 +102,20 @@
       {% if post.featured == "true" %}
       <li>
         <article class="product-card">
-          <img 
-            srcset="
-              {{ post.image-xs }} 686w,
-              {{ post.image-sm }} 696w,
-              {{ post.image-lg }} 880w"
-            sizes="
-              (min-width: 1025px) 440px,
-              (min-width: 641px) 348px,
-              343px"
-            src="{{ post.src }}"  
-            alt="{{ post.alt }}"
-            loading="lazy">
+          <a href="{{ post.url }}">
+            <img 
+              srcset="
+                {{ post.image-xs }} 686w,
+                {{ post.image-sm }} 696w,
+                {{ post.image-lg }} 880w"
+              sizes="
+                (min-width: 1025px) 440px,
+                (min-width: 641px) 348px,
+                343px"
+              src="{{ post.src }}"  
+              alt="{{ post.alt }}"
+              loading="lazy">
+          </a>  
           <div class="product-card-info">
             <h3 clas="heading">{{ post.title }}</h3>
             {{ post.excerpt | markdownify | replace: '<p>', '<p class="p-xs">' }}
@@ -118,7 +124,7 @@
               <ul>
                 <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
                 {% if post.online == "true" %}
-                <li><a class="button button-s">{{ site.buy-button }}</a></li>
+                <li><a href="{{ post.url }}" class="button button-s">{{ site.buy-button }}</a></li>
                 {% else %}
                 <li><a href="/ubicacion/" class="link link-xs">{{ site.offline-link }}</a></li>
                 {% endif %}

@@ -85,7 +85,7 @@ layout: compress
               <p class="p-s bold">Color</p>
               <ul>
                 {% for item in page.colors %}
-                <li><span class="color" style="background-color: {{ item.color }};"></span></li>
+                <li><span class="color" style="background-color: {{ item.color }};" aria-label="{{ item.aria-label }}"></span></li>
                 {% endfor %}
               </ul>
             </div>
@@ -107,8 +107,13 @@ layout: compress
             </div>  
           {% endif %}
           <p class="bold p-xl price">${{ page.price }}</p>
-          <a class="button button-s">{{ site.buy-button }}</a>
-          <p><a class="link bold p-s">Volver a la tienda</a></p>
+          {% if page.online == "true" %}
+            <a class="button button-s">{{ site.buy-button }}</a>
+          {% else %}
+            <a class="link bold p-s offline visible-xs visible-sm hidden-lg" href="/ubicacion/">{{ site.offline-link }}</a>
+            <a class="link bold p-s offline hidden-xs hidden-sm visible-lg" href="#modal-location" uk-toggle>{{ site.offline-link }}</a>   
+          {% endif %}
+          <p><a class="link bold p-s" href="/tienda/">Volver a la tienda</a></p>
         </aside>  
       </div>  
       <!-- Product info end -->

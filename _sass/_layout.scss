@@ -129,6 +129,10 @@
 .product-card{
   background-color: var(--brown-0);
   border-radius: var(--rounded-border-m);
+  a:has(> img){
+    display: block;
+    border-bottom: 1px solid transparent;
+  }
   img{
     height: calc(100vw - 2rem);
     width: 100%;
@@ -188,6 +192,13 @@
     font-size: var(--h2);
   }
   .price{
+    margin-bottom: 1rem;
+  }
+  .offline.hidden-lg{
+    display: none;
+  }
+  .offline.visible-xs.visible-sm{
+    display: inline-block;
     margin-bottom: 1rem;
   }
   .button{

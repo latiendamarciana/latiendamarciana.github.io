@@ -28,8 +28,11 @@ slideshow-images:
     alt: "Postal lobito"
 colors:
   - color: "#D9D9D9"
+    aria-label: "mid-gray"
   - color: "#5C5C5C"
+    aria-label: "gray"
   - color: "#ADADAD"
+    aria-label: "light-gray"
 sizes:
   - size: "xl"
   - size: "l"
