@@ -262,20 +262,31 @@
       height: auto;
       margin-bottom: 2rem;
     }
+    label:has(+ input:focus-visible),
+    label:has(+ textarea:focus-visible) {
+      transition: var(--fade);
+      color: var(--bright-inferno);
+    }
     .newsletter-info-and-form{
       padding: 0 1.5rem;
-    }
-    .newsletter-info{
-      margin-bottom: 2rem;
-      .link{
-        color: var(--bright-inferno);
-        border-bottom: 1px solid var(--bright-inferno);
-        span{
-          margin-left: .25rem;
+      .newsletter-info{
+        margin-bottom: 2rem;
+        .link{
+          color: var(--bright-inferno);
+          border-bottom: 1px solid var(--bright-inferno);
+          span{
+            margin-left: .25rem;
+          }
+          &:hover{
+            color: var(--brown-0);
+            border-bottom: 1px solid var(--bright-vivid-indigo);
+          }
         }
-        &:hover{
+      }
+      form{
+        input{
           color: var(--brown-0);
-          border-bottom: 1px solid var(--bright-vivid-indigo);
+          border-bottom: 1px solid var(--brown-0);
         }
       }
     }
@@ -286,6 +297,57 @@
       &:hover{
         background-color: var(--bright-inferno);
         color: var(--text);
+      }
+    }
+  }
+}
+
+#newsletter-page{
+  .newsletter{
+    background-color: transparent;
+    .newsletter-container{
+      img{
+        background-color: transparent;
+      }
+      h3{
+        color: var(--dark);
+      }
+      p{
+        color: var(--text);
+      }
+      label{
+        color: var(--dark);
+      }
+      label:has(+ input:focus-visible),
+      label:has(+ textarea:focus-visible) {
+        transition: var(--fade);
+        color: var(--bright-inferno);
+      }
+      .newsletter-info-and-form{
+        .newsletter-info{
+          .link{
+            color: var(--dark-m);
+            border-bottom: 1px solid var(--dark-m);
+            &:hover{
+              color: var(--bright-inferno);
+              border-bottom: 1px solid var(--bright-inferno);
+            }
+          }
+        }
+        form{
+          input{
+            color: var(--neutral-90);
+            border-bottom: 1px solid var(--neutral-30);
+          }
+        }
+      }
+      button{
+        color: var(--dark-m);
+        background-color: var(--bright-inferno);
+        &:hover{
+          color: var(--bright-inferno);
+          background-color: var(--dark-m);
+        }
       }
     }
   }
