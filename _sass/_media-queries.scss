@@ -500,7 +500,23 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 2rem;
     }
-  }  
+  }
+
+  .contact-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 6rem;
+    img{
+      grid-column: 2 / 7;
+      border-radius: var(--rounded-border-m);
+      border: 2px solid var(--dark-m);
+    }
+    .contact-content{
+      grid-column: 7 / 12;
+      padding: 0;
+    }
+  }
 
   footer{
     padding: 2rem 0 0 0;

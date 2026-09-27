@@ -262,6 +262,9 @@
       height: auto;
       margin-bottom: 2rem;
     }
+    label{
+      color: var(--brown-0);
+    }
     label:has(+ input:focus-visible),
     label:has(+ textarea:focus-visible) {
       transition: var(--fade);
@@ -350,6 +353,17 @@
         }
       }
     }
+  }
+}
+
+.contact-container{
+  img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .contact-content{
+    padding: 0 1rem;
   }
 }
 
