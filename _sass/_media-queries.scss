@@ -181,6 +181,31 @@
     }
   }
 
+  .modal-product{
+    .modal-product-content{
+      .modal-product-section{
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1.5rem;
+        padding: 0 1.5rem 3rem 1.5rem;
+        .product-slideshow{
+          grid-column: 1 / 4;
+          display: block;
+        }
+        .uk-slideshow-items{
+          border-radius: var(--rounded-border-m);
+        }
+        .modal-product-info{
+          grid-column: 4 / 7;
+          padding: 0;
+        } 
+      }
+    }
+  }
+
+
+
   .newsletter{
     form{
       display: grid;
@@ -481,6 +506,28 @@
       .offline.visible-lg{
         display: inline-block;
         margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .modal-product{
+    .modal-product-content{
+      max-width: 1148px !important;
+      .modal-product-section{
+        grid-template-columns: repeat(10, 1fr);
+        gap: 2rem;
+        padding: 0 6rem 3rem 1.5rem;
+        .product-slideshow{
+          grid-column: 1 / 6;
+          display: block;
+        }
+        .uk-slideshow-items{
+          border-radius: var(--rounded-border-m);
+        }
+        .modal-product-info{
+          grid-column: 6 / 11;
+          padding: 0;
+        } 
       }
     }
   }
