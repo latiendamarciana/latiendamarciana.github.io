@@ -171,7 +171,7 @@
         }
         .link{
           position: relative;
-          top: -.25rem
+          top: -.12rem
         }
       }
     }
@@ -294,12 +294,12 @@
       }
     }
     button{
-      color: var(--brown-0);
-      background-color: var(--bright-vivid-indigo);
+      // color: var(--dark-,);
+      // background-color: var(--bright-vivid-indigo);
       margin-bottom: 2rem;
       &:hover{
-        background-color: var(--bright-inferno);
-        color: var(--text);
+        background-color: var(--brown-0);
+        color: var(--dark-m);
       }
     }
   }
