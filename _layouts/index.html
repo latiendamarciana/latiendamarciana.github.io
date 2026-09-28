@@ -24,7 +24,6 @@ layout: compress
     <main>
       <!-- Header Two Columns 01 end-->
       {% include location-and-hours.html %}
-
       <!-- Index Products -->
       <section class="index-products full-width">
         
@@ -33,7 +32,7 @@ layout: compress
         <ul class="index-products-container hidden-xs visible-sm visible-lg">
           {% for post in site.posts %}
           {% if post.featured == "true" %}
-            <li>
+            <li class="index-product">
               <article class="product-card">
                 <a href="{{ post.url }}">
                   <img 
@@ -55,7 +54,7 @@ layout: compress
                   <p class="p-m bold">${{ post.price }}</p>
                   <nav>
                     <ul>
-                      <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
+                      <li><a class="button button-s button-ghost" href="#{{ post.modal }}" uk-toggle>{{ site.product-details-button }}</a></li>
                       {% if post.online == "true" %}
                       <li><a href="{{ post.url }}" class="button button-s">{{ site.buy-button }}</a></li>
                       {% else %}
@@ -82,6 +81,95 @@ layout: compress
     {% include modal-nav.html %}
 
     {% include modal-location.html %}
+
+    <!-- Product modals -->
+    {% for post in site.posts %}
+    <div id="{{ post.modal }}" class="modal-product" uk-modal>
+      <div class="modal-product-content uk-modal-dialog uk-modal-body">
+        <li class="modal-nav-close">
+          <a href="" class="uk-modal-close" uk-close aria-label="Cerrar"><span class="icon icon-close"></span></a>
+        </li>
+        <section class="modal-product-section">
+          <!-- Slideshow  -->
+          <div class="product-slideshow visible-xs visible-sm hidden-lg" uk-slideshow="ratio: 1:1; animation:push; autoplay:true; autoplay-interval: 4000">
+            <div class="slideshow-content" tabindex="-1">
+              <div class="uk-slideshow-items">
+                {% for item in post.slideshow-images %}
+                <img 
+                  srcset="
+                    {{ item.image-xs }} 686w,
+                    {{ item.image-sm }} 744w,
+                    {{ item.image-lg }} 1416w"
+                  sizes="
+                    (min-width: 1025px) 708px,
+                    (min-width: 641px) 372px,
+                    343px"
+                  src="{{ item.src }}"  
+                  alt="{{ item.alt }}"
+                  loading="lazy" uk-cover>
+                {% endfor %}
+              </div>
+              <a class="uk-position-center-left prev" href uk-slidenav-previous uk-slideshow-item="previous"><span class="icon icon-prev"></span></a>
+              <a class="uk-position-center-right next" href uk-slidenav-next uk-slideshow-item="next"><span class="icon icon-next"></span></a>
+              <ul class="uk-slideshow-nav uk-dotnav"></ul>
+            </div>  
+          </div>
+          <!-- Slideshow end  -->
+          <div class="modal-product-info">
+            <h2>{{ post.title }}</h2>
+            {{ page.content | markdownify | replace: '<p>', '<p class="p-s">' }}
+            <aside>
+              <div class="product-options">
+                {% if post.genders %}
+                <div class="options-list">
+                  <p class="p-s bold">Género</p>
+                  <ul>
+                    {% for item in post.genders %}
+                    <li><p class="p-s">{{ item.gender }}</p></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                {% endif %}
+                {% if post.colors %}
+                <div class="options-list">
+                  <p class="p-s bold">Color</p>
+                  <ul>
+                    {% for item in post.colors %}
+                    <li><span class="color" style="background-color: {{ item.color }};" aria-label="{{ item.aria-label }}"></span></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                {% endif %}
+                {% if post.sizes %}
+                <div class="options-list">
+                  <p class="p-s bold">Talla</p>
+                  <ul>
+                    {% for item in post.sizes %}
+                    <li><p class="p-s">{{ item.size }}</p></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                {% endif %}
+              </div>
+              {% if post.genders or post.colors or post.sizes %}
+                <div class="note">
+                  <p class="p-s">Recuerda las opciones que escojas al hacer tu pedido.</p>
+                </div>  
+              {% endif %}
+              <p class="bold p-xl price">${{ post.price }}</p>
+              {% if post.online == "true" %}
+                <a class="button button-s">{{ site.buy-button }}</a>
+              {% else %}
+                <a class="link bold p-s offline visible-xs visible-sm hidden-lg" href="/ubicacion/">{{ site.offline-link }}</a>
+                <a class="link bold p-s offline hidden-xs hidden-sm visible-lg" href="#modal-location" uk-toggle>{{ site.offline-link }}</a>   
+              {% endif %}
+            </aside>               
+          </div>    
+        </section>
+      </div> 
+    </div>
+    {% endfor %}
+    <!-- Product modals end -->
 
     {% include uikit-javascript.html %} 
 

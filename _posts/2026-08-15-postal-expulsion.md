@@ -1,6 +1,6 @@
 ---
 published: "true"
-featured: "false"
+featured: "true"
 online: "true"
 product: "true"
 categories: [Obra gráfica]
@@ -14,6 +14,7 @@ alt: "Brownie vegano de chocolate"
 title: "Postal expulsión"
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 price: "12.000"
+modal: "expulsion"
 permalink: "/tienda/postal-expulsion/"
 slideshow-images:
   - image-xxs: "/assets/images/prductos/lobito-productos-xxs.jpg"

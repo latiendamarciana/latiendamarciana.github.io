@@ -206,6 +206,41 @@
   }
 }
 
+.modal-product{
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+  background-color: rgba(25, 25, 25, 0.25);
+  .modal-nav-close{
+    right: 1.5rem;
+    list-style: none;
+  }
+  .modal-product-content{
+    background-color: var(--brown-0);
+    color: var(--text);
+    width: 100%;
+    padding: 0;
+    .uk-close{
+      color: var(--dark-m) !important;
+      font-size: var(--h3);
+      &:hover{
+        color: var(--bright-vivid-indigo) !important;
+      }
+    }
+    .modal-product-section{
+      margin-top: 4rem;
+      .uk-slideshow-items{
+        border-radius: 0;
+      }
+      .modal-product-info{
+        padding: 0 1rem 2rem 1rem;
+        h2{
+          margin-bottom: 1rem;
+        }
+      }
+    } 
+  }    
+}
+
 .product-options{
   margin-top: 2rem;
   margin-bottom: 1.5rem;
@@ -455,6 +490,7 @@ footer{
   background-color: rgba(25, 25, 25, 0.25);
   .modal-nav-close{
     right: 1.5rem;
+    list-style: none;
   }
   .modal-location-content{
     background-image: url(../images/fondo-tienda-marciana.jpg);
@@ -470,6 +506,7 @@ footer{
     } 
     .location{
       background-color: transparent;
+      padding-top: 4rem;
       img.visible-sm{
         margin-top: -5rem;
       }

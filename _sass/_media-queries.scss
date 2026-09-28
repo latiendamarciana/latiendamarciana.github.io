@@ -152,8 +152,10 @@
       gap: 1.5rem;
       margin-bottom: 3rem;
       padding: 0;
-      li:last-child{
-        display: none;
+      .index-product{
+        &:last-child{
+          display: none;
+        }
       }
       .product-card{
         img{
@@ -437,8 +439,10 @@
     .index-products-container{
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
-      li:last-child{
-        display: inherit;
+      .index-product{
+        &:last-child{
+          display: inherit;
+        }
       }
     } 
   }

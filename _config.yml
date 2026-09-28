@@ -38,6 +38,7 @@ store-button: "Ver todos los productos"
 product-details-button: "Detalles"
 buy-button: "Comprar"
 offline-link: "Sólo en sitio"
+back-to-store: "Volver a la tienda"
 
 # Build settings
 # theme: minima
