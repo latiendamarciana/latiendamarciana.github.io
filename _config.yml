@@ -59,6 +59,8 @@ feed:
     - posts-news
 
 collections:
+  posts-product-forms:
+    output: true
   posts-alert:
     output: true
   posts-logos:
