@@ -69,7 +69,7 @@ layout: compress
                           <p class="p-m bold">${{ post.price }}</p>
                           <nav>
                             <ul>
-                              <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
+                              <li><a class="button button-s button-ghost" href="#{{ post.modal }}" uk-toggle>{{ site.product-details-button }}</a></li>
                               {% if post.online == "true" %}
                               <li><a href="{{ post.url }}" class="button button-s">{{ site.buy-button }}</a></li>
                               {% else %}
@@ -117,7 +117,7 @@ layout: compress
                           <p class="p-m bold">${{ post.price }}</p>
                           <nav>
                             <ul>
-                              <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
+                              <li><a class="button button-s button-ghost" href="#{{ post.modal }}" uk-toggle>{{ site.product-details-button }}</a></li>
                               {% if post.online == "true" %}
                               <li><a href="{{ post.url }}" class="button button-s">{{ site.buy-button }}</a></li>
                               {% else %}
@@ -164,7 +164,7 @@ layout: compress
                           <p class="p-m bold">${{ post.price }}</p>
                           <nav>
                             <ul>
-                              <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
+                              <li><a class="button button-s button-ghost" href="#{{ post.modal }}" uk-toggle>{{ site.product-details-button }}</a></li>
                               {% if post.online == "true" %}
                               <li><a href="{{ post.url }}" class="button button-s">{{ site.buy-button }}</a></li>
                               {% else %}
@@ -220,7 +220,7 @@ layout: compress
                             <p class="p-m bold">${{ post.price }}</p>
                             <nav>
                               <ul>
-                                <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
+                                <li><a class="button button-s button-ghost" href="#{{ post.modal }}" uk-toggle>{{ site.product-details-button }}</a></li>
                                 {% if post.online == "true" %}
                                 <li><a href="{{ post.url }}" class="button button-s">{{ site.buy-button }}</a></li>
                                 {% else %}
@@ -268,7 +268,7 @@ layout: compress
                             <p class="p-m bold">${{ post.price }}</p>
                             <nav>
                               <ul>
-                                <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
+                                <li><a class="button button-s button-ghost" href="#{{ post.modal }}" uk-toggle>{{ site.product-details-button }}</a></li>
                                 {% if post.online == "true" %}
                                 <li><a href="{{ post.url }}" class="button button-s">{{ site.buy-button }}</a></li>
                                 {% else %}
@@ -319,7 +319,7 @@ layout: compress
                             <p class="p-m bold">${{ post.price }}</p>
                             <nav>
                               <ul>
-                                <li><a class="button button-s button-ghost">{{ site.product-details-button }}</a></li>
+                                <li><a class="button button-s button-ghost" href="#{{ post.modal }}" uk-toggle>{{ site.product-details-button }}</a></li>
                                 {% if post.online == "true" %}
                                 <li><a href="{{ post.url }}" class="button button-s">{{ site.buy-button }}</a></li>
                                 {% else %}
@@ -360,6 +360,8 @@ layout: compress
     {% include modal-nav.html %}
 
     {% include modal-location.html %}
+
+    {% include modal-product.html %}
 
     {% include uikit-javascript.html %}
 
