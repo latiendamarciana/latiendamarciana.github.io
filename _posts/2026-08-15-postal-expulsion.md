@@ -16,7 +16,7 @@ excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
 price: "12.000"
 modal: "expulsion"
 permalink: "/tienda/postal-expulsion/"
-form-link: "/tienda/postal-expulsion/pedido/" 
+order: "/tienda/postal-expulsion/pedido/" 
 slideshow-images:
   - image-xxs: "/assets/images/prductos/lobito-productos-xxs.jpg"
     image-xs: "/assets/images/productos-carrusel/lobito-carrusel-productos-xs.jpg"
