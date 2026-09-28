@@ -356,7 +356,10 @@
   }
 }
 
+// contact
+
 .contact-container{
+  margin-bottom: 3rem;
   img{
     width: 100%;
     height: auto;
@@ -364,6 +367,11 @@
   }
   .contact-content{
     padding: 0 1rem;
+    form{
+      button{
+        margin-bottom: 1.5rem;
+      }
+    }
   }
 }
 
