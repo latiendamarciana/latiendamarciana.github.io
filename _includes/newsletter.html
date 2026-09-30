@@ -2,18 +2,18 @@
 <section class="newsletter">
   <div class="newsletter-container full-width">
     {% for item in site.posts-newsletter %}
-    <img 
-        srcset="
-          {{ item.image-xs }} 750w,
-          {{ item.image-sm }} 1536w,
-          {{ item.image-lg }} 1652w"
-        sizes="
-          (min-width: 1025px) 826px,
-          (min-width: 641px) 768px,
-          375px"
-        src="{{ item.src }}"  
+    <picture>
+      <source 
+        media="(min-width: 1025px)" 
+        srcset="{{ item.image-lg }}">
+      <source 
+        media="(min-width: 641px)" 
+        srcset="{{ item.image-sm }}">
+      <img 
+        src="{{ item.image-xs }}" 
         alt="{{ item.alt }}"
         loading="lazy">
+    </picture>
     <div class="newsletter-info-and-form">
       <div class="newsletter-info">
         <h3>{{ item.heading }}</h3>
