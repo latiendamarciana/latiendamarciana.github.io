@@ -125,8 +125,9 @@ input[type="radio"] {
   }
 
   &:checked::before {
-    transform: translate(3px, 3px) scale(1);
-    background-color: var(--neutral-70);
+    transform: translate(2px, 2px) scale(1);
+    background-color: var(--radio-color, var(--text));
+    border: 1px solid var(--neutral-40);
   }
 }
 

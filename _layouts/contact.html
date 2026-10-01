@@ -24,23 +24,17 @@ layout: compress
       </picture>
       <div class="contact-content full-width">
         <header>     
-          <h1>{{ page.content }}</h1>  
+          <h1 id="contact-form-heading">{{ page.content }}</h1>  
         </header>
         <main>
           <form method="post" action="https://formsubmit.co/latiendamarciana@pm.me" aria-labelledby="contact-form-heading">
             <input type="hidden" name="_next" value="https://latiendamarciana.com/mensaje-recibido/">
             <input type="hidden" name="_subject" value="¡Nuevo mensaje marciano!">
             <input type="hidden" name="_cc" value="tiendamarciana@proton.me">
-            <div class="name-and-phone">
-              <div class="name">
-                <label for="name">Nombre</label>
-                <input required type="text" name="name" id="name" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu nombre')" oninput="this.setCustomValidity('')">
-              </div>
-              <div class="phone">  
-                <label for="phone">Celular</label>
-                <input required type="tel" name="phone" id="phone" pattern=".{7,}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu número de teléfono celular')" oninput="this.setCustomValidity('')">
-              </div>  
-            </div>
+            <label for="name">Nombre</label>
+            <input required type="text" name="name" id="name" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu nombre')" oninput="this.setCustomValidity('')">
+            <label for="phone">Celular</label>
+            <input required type="tel" name="phone" id="phone" pattern=".{7,}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu número de teléfono celular')" oninput="this.setCustomValidity('')">
             <label for="email">Correo electrónico</label>
             <input required type="email" name="email" id="email" pattern=".{4,64}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
             <label for="message">Mensaje</label>

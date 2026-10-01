@@ -71,7 +71,77 @@ layout: compress
     </header>
 
     <main>
-      
+      <h3 id="order-form-heading">Llena este formulario para separar tu pedido</h3>
+      {% for post in site.posts %}
+      {% if post.title == page.title %}
+      <h4>{{ post.title }}</h4>
+      <p class="p-s">{{ post.excerpt }}</p>
+      {% endif %}        
+      {% endfor %}
+      <form method="post" action="https://formsubmit.co/latiendamarciana@pm.me" aria-labelledby="order-form-heading" class="order-form">
+        <input type="hidden" name="_next" value="https://latiendamarciana.com/mensaje-recibido/">
+        <input type="hidden" name="_subject" value="¡Nuevo mensaje marciano!">
+        <input type="hidden" name="_cc" value="tiendamarciana@proton.me">
+        {% for post in site.posts %}
+        {% if post.title == page.title %}
+          {% if post.genders %}
+          <fieldset>
+            <legend>Género</legend>
+            <div class="radio-buttons-container">
+              {% for item in post.genders %}
+              <div class="radio-button-container">
+                <input id="{{ item.gender }}" type="radio" name="gender" value="{{ item.gender }}" class="radio-button-xs">
+                <label for="{{ item.gender }}" class="p-xs bold checkbox-label">{{ item.gender }}</label>
+              </div> 
+              {% endfor %}
+            </div>
+          </fieldset> 
+          {% endif %}
+          {% if post.colors %}
+          <fieldset>
+            <legend>Color</legend>
+            <div class="radio-buttons-container">
+              {% for item in post.colors %}
+              <div class="radio-button-container">
+                <input id="{{ item.id }}" type="radio" name="color" value="{{ item.aria-label }}" class="radio-button-xs" style="--radio-color: {{ item.color }};">
+                <label for="{{ item.id }}" class="p-xs bold checkbox-label">{{ item.aria-label }}</label>
+              </div> 
+              {% endfor %}
+            </div>
+          </fieldset> 
+          {% endif %}
+          {% if post.sizes %}
+          <fieldset>
+            <legend>Tamaño</legend>
+            <div class="radio-buttons-container">
+              {% for item in post.sizes %}
+              <div class="radio-button-container">
+                <input id="{{ item.size }}" type="radio" name="size" value="{{ item.size }}" class="radio-button-xs">
+                <label for="{{ item.size }}" class="p-xs bold checkbox-label">{{ item.size }}</label>
+              </div> 
+              {% endfor %}
+            </div>
+          </fieldset> 
+          {% endif %}          
+        {% endif %}        
+        {% endfor %}
+        <label for="name">Nombre</label>
+        <input required type="text" name="name" id="name" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu nombre')" oninput="this.setCustomValidity('')">
+        <label for="phone">Celular</label>
+        <input required type="tel" name="phone" id="phone" pattern=".{7,}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu número de teléfono celular')" oninput="this.setCustomValidity('')">
+        <label for="email">Correo electrónico</label>
+        <input required type="email" name="email" id="email" pattern=".{4,64}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
+        <label for="email">Municipio (Sólo dentro del territorio colombiano)</label>
+        <input required type="text" name="town" id="town" pattern=".{3,30}" autocomplete="on" oninvalid="this.setCustomValidity('Escribe el nombre de tu municipio')" oninput="this.setCustomValidity('')">
+        <label for="email">Dirección</label>
+        <input required type="text" name="address" id="address" pattern=".{3,30}" autocomplete="on" oninvalid="this.setCustomValidity('Escribe tu dirección')" oninput="this.setCustomValidity('')">
+        <label for="message">Mensaje (opcional)</label>
+        <textarea name="message" id="message" rows="3" pattern=".{4,}" oninvalid="this.setCustomValidity('Por favor escribe un mensaje')" oninput="this.setCustomValidity('')" placeholder="Hola, quiero hacer un pedido de... "></textarea>
+        <div class="button-and-note">
+          <button type="submit" aria-describedby="form-note">Enviar</button>
+          <p class="note p-s" id="form-note">Recuerda dejar tus datos reales para poder contactarte respecto a tu pedido. Sólo los usaré con ese fin.</p>
+        </div>
+      </form>
     </main>  
 
     {% include footer.html %}

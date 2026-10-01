@@ -308,6 +308,16 @@
   }
 }
 
+.order-form{
+  .radio-buttons-container{
+    display: flex;
+    gap: 2rem;
+    .radio-button-container{
+      display: flex;
+    }
+  }
+}
+
 // Newsletter
 
 .newsletter{
