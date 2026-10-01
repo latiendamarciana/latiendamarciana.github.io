@@ -60,7 +60,7 @@ feed:
     - posts-news
 
 collections:
-  posts-product-forms:
+  posts-product-orders:
     output: true
   posts-alert:
     output: true

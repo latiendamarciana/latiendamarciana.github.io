@@ -10,149 +10,197 @@ layout: compress
     {% include nav-mobile.html %}
     {% include nav.html %}
 
-    <aside class="product-form-info">
-      <div class="product-form-info-img-and-header">      
-        <img src="{{ page.src }}">
-        <div class="product-form-info-header">
-          <h1>Tu pedido</h1>
-          <h2>{{ page.title }}</h2>
-        </div>
-       </div>
-       <div class="product-form-info-content">
-        {% for post in site.posts %}
-        {% if post.title == page.title %}
-        {{ post.content | markdownify | replace: '<p>', '<p class="p-s">' }}
-        {% endif %}        
-        {% endfor %}
-       </div>  
-      {% for post in site.posts %}
-      {% if post.title == page.title %}
-      <div>
-      <div class="product-options">
-        {% if post.genders %}
-        <div class="options-list">
-          <p class="p-s bold">Género</p>
-          <ul>
-            {% for item in post.genders %}
-            <li><p class="p-s">{{ item.gender }}</p></li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endif %}
-        {% if post.colors %}
-        <div class="options-list">
-          <p class="p-s bold">Color</p>
-          <ul>
-            {% for item in post.colors %}
-            <li><span class="color" style="background-color: {{ item.color }};" aria-label="{{ item.aria-label }}" uk-tooltip="title: {{ item.aria-label }}; pos: left"></span></li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endif %}
-        {% if post.sizes %}
-        <div class="options-list">
-          <p class="p-s bold">Talla</p>
-          <ul>
-            {% for item in post.sizes %}
-            <li><p class="p-s">{{ item.size }}</p></li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endif %}
-      </div>
-        {% if post.genders or post.colors or post.sizes %}
-          <div class="note">
-            <p class="p-s">Recuerda las opciones que escojas al hacer tu pedido.</p>
-          </div>  
-        {% endif %}
-        <p class="bold p-xl price">${{ post.price }}</p>
-      </div>
-      {% endif %}        
-      {% endfor %}      
-    </aside>
+    <div class="product-order-container full-width"> 
 
-    <header>
-      <h3>Todavía no tengo carrito de compra, debes especificar en el formulario las variables del producto. Si vas a pedir más de un producto, o más de una copia del mismo producto, puedes agregarlo en el mensaje.</h3>
-      <p class="p-s">Confirmaré personalmente el pedido antes del cobro y el envío. Tus datos serán únicamente usados para este propósito y sólo serán compartidos los necesarios para hacer el envío con la empresa de envíos seleccionada.</p>
-    </header>
+      <aside class="product-order-info-container">
+        <div class="product-order-info">      
+          <img src="{{ page.src }}">
+          <div class="product-order-info-header">
+            <h2>{{ page.title }}</h2>
+            <div class="product-order-info-text hidden-xs visible-sm visible-lg">
+            {% for post in site.posts %}
+            {% if post.title == page.title %}
+            {{ post.content | markdownify | replace: '<p>', '<p class="p-s">' }}
+            {% endif %}        
+            {% endfor %}
+            </div>
+            <div class="product-options-container hidden-xs visible-sm visible-lg">
+              {% for post in site.posts %}
+              {% if post.title == page.title %}
+              <div class="product-options">
+                {% if post.genders %}
+                <div class="options-list">
+                  <p class="p-s bold">Género</p>
+                  <ul>
+                    {% for item in post.genders %}
+                    <li><p class="p-s">{{ item.gender }}</p></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                {% endif %}
+                {% if post.colors %}
+                <div class="options-list">
+                  <p class="p-s bold">Color</p>
+                  <ul>
+                    {% for item in post.colors %}
+                    <li><span class="color" style="background-color: {{ item.color }};" aria-label="{{ item.aria-label }}" uk-tooltip="title: {{ item.aria-label }}; pos: left"></span></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                {% endif %} 
+                {% if post.sizes %}
+                <div class="options-list">
+                  <p class="p-s bold">Talla</p>
+                  <ul>
+                    {% for item in post.sizes %}
+                    <li><p class="p-s">{{ item.size }}</p></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                {% endif %}                                              
+              </div>
+              <p class="bold p-xl price">${{ post.price }}</p>  
+              {% endif %}
+              {% endfor %}
+            </div>           
+          </div>
+          <div class="product-order-info-text visible-xs hidden-sm hidden-lg">
+            {% for post in site.posts %}
+            {% if post.title == page.title %}
+            {{ post.content | markdownify | replace: '<p>', '<p class="p-s">' }}
+            {% endif %}        
+            {% endfor %}
+          </div>
+          <div class="product-options-container visible-xs hidden-sm hidden-lg">
+            {% for post in site.posts %}
+            {% if post.title == page.title %}
+            <div class="product-options">
+              {% if post.genders %}
+              <div class="options-list">
+                <p class="p-s bold">Género</p>
+                <ul>
+                  {% for item in post.genders %}
+                  <li><p class="p-s">{{ item.gender }}</p></li>
+                  {% endfor %}
+                </ul>
+              </div>
+              {% endif %}
+              {% if post.colors %}
+              <div class="options-list">
+                <p class="p-s bold">Color</p>
+                <ul>
+                  {% for item in post.colors %}
+                  <li><span class="color" style="background-color: {{ item.color }};" aria-label="{{ item.aria-label }}" uk-tooltip="title: {{ item.aria-label }}; pos: left"></span></li>
+                  {% endfor %}
+                </ul>
+              </div>
+              {% endif %} 
+              {% if post.sizes %}
+              <div class="options-list">
+                <p class="p-s bold">Talla</p>
+                <ul>
+                  {% for item in post.sizes %}
+                  <li><p class="p-s">{{ item.size }}</p></li>
+                  {% endfor %}
+                </ul>
+              </div>
+              {% endif %}                                              
+            </div>
+            <p class="bold p-xl price">${{ post.price }}</p>  
+            {% endif %}
+            {% endfor %}
+          </div>        
+        </div>           
+      </aside>
 
-    <main>
-      <h3 id="order-form-heading">Llena este formulario para separar tu pedido</h3>
-      {% for post in site.posts %}
-      {% if post.title == page.title %}
-      <h4>{{ post.title }}</h4>
-      <p class="p-s">{{ post.excerpt }}</p>
-      {% endif %}        
-      {% endfor %}
-      <form method="post" action="https://formsubmit.co/latiendamarciana@pm.me" aria-labelledby="order-form-heading" class="order-form">
-        <input type="hidden" name="_next" value="https://latiendamarciana.com/mensaje-recibido/">
+      <div class="product-order">
+      <header>
+        <h2>Debes especificar en el formulario las opciones. Si vas a pedir más de un producto, o más de una copia del mismo, puedes agregarlo en el mensaje.</h2>
+        <p class="p-s">Confirmaré personalmente el pedido antes del cobro y el envío. Tus datos serán únicamente usados para este propósito y sólo serán compartidos los necesarios para hacer el envío con la empresa de envíos seleccionada.</p>
+      </header>
+
+      <main>
+        <h3 id="order-form-heading">Llena este formulario para separar tu pedido</h3>
         {% for post in site.posts %}
         {% if post.title == page.title %}
-        <input type="hidden" name="_subject" value="¡Pedido de {{ post.title }}!">
+        <h4>Opciones para {{ post.title }}:</h4>
         {% endif %}        
         {% endfor %}
-        <input type="hidden" name="_cc" value="tiendamarciana@proton.me">
-        {% for post in site.posts %}
-        {% if post.title == page.title %}
-          {% if post.genders %}
-          <fieldset>
-            <legend>Género</legend>
-            <div class="radio-buttons-container">
-              {% for item in post.genders %}
-              <div class="radio-button-container">
-                <input id="{{ item.gender }}" type="radio" name="gender" value="{{ item.gender }}" class="radio-button-xs">
-                <label for="{{ item.gender }}" class="p-xs bold checkbox-label">{{ item.gender }}</label>
-              </div> 
-              {% endfor %}
-            </div>
-          </fieldset> 
-          {% endif %}
-          {% if post.colors %}
-          <fieldset>
-            <legend>Color</legend>
-            <div class="radio-buttons-container">
-              {% for item in post.colors %}
-              <div class="radio-button-container">
-                <input id="{{ item.id }}" type="radio" name="color" value="{{ item.aria-label }}" class="radio-button-xs" style="--radio-color: {{ item.color }};">
-                <label for="{{ item.id }}" class="p-xs bold checkbox-label">{{ item.aria-label }}</label>
-              </div> 
-              {% endfor %}
-            </div>
-          </fieldset> 
-          {% endif %}
-          {% if post.sizes %}
-          <fieldset>
-            <legend>Tamaño</legend>
-            <div class="radio-buttons-container">
-              {% for item in post.sizes %}
-              <div class="radio-button-container">
-                <input id="{{ item.size }}" type="radio" name="size" value="{{ item.size }}" class="radio-button-xs">
-                <label for="{{ item.size }}" class="p-xs bold checkbox-label">{{ item.size }}</label>
-              </div> 
-              {% endfor %}
-            </div>
-          </fieldset> 
-          {% endif %}          
-        {% endif %}        
-        {% endfor %}
-        <label for="name">Nombre</label>
-        <input required type="text" name="name" id="name" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu nombre')" oninput="this.setCustomValidity('')">
-        <label for="phone">Celular</label>
-        <input required type="tel" name="phone" id="phone" pattern=".{7,}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu número de teléfono celular')" oninput="this.setCustomValidity('')">
-        <label for="email">Correo electrónico</label>
-        <input required type="email" name="email" id="email" pattern=".{4,64}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
-        <label for="email">Municipio (Sólo dentro del territorio colombiano)</label>
-        <input required type="text" name="town" id="town" pattern=".{3,30}" autocomplete="on" oninvalid="this.setCustomValidity('Escribe el nombre de tu municipio')" oninput="this.setCustomValidity('')">
-        <label for="email">Dirección</label>
-        <input required type="text" name="address" id="address" pattern=".{3,30}" autocomplete="on" oninvalid="this.setCustomValidity('Escribe tu dirección')" oninput="this.setCustomValidity('')">
-        <label for="message">Mensaje (opcional)</label>
-        <textarea name="message" id="message" rows="3" pattern=".{4,}" oninvalid="this.setCustomValidity('Por favor escribe un mensaje')" oninput="this.setCustomValidity('')" placeholder="Hola, quiero hacer un pedido de... "></textarea>
-        <div class="button-and-note">
-          <button type="submit" aria-describedby="form-note">Enviar</button>
-          <p class="note p-s" id="form-note">Recuerda dejar tus datos reales para poder contactarte respecto a tu pedido. Sólo los usaré con ese fin.</p>
-        </div>
-      </form>
-    </main>  
+        <form method="post" action="https://formsubmit.co/latiendamarciana@pm.me" aria-labelledby="order-form-heading" class="order-form">
+          <input type="hidden" name="_next" value="https://latiendamarciana.com/mensaje-recibido/">
+          {% for post in site.posts %}
+          {% if post.title == page.title %}
+          <input type="hidden" name="_subject" value="¡Pedido de {{ post.title }}!">
+          {% endif %}        
+          {% endfor %}
+          <input type="hidden" name="_cc" value="tiendamarciana@proton.me">
+          {% for post in site.posts %}
+          {% if post.title == page.title %}
+            {% if post.genders %}
+            <fieldset>
+              <legend>Género</legend>
+              <div class="radio-buttons-container">
+                {% for item in post.genders %}
+                <div class="radio-button-container">
+                  <input id="{{ item.gender }}" type="radio" name="gender" value="{{ item.gender }}" class="radio-button-xs">
+                  <label for="{{ item.gender }}" class="p-xs bold checkbox-label">{{ item.gender }}</label>
+                </div> 
+                {% endfor %}
+              </div>
+            </fieldset> 
+            {% endif %}
+            {% if post.colors %}
+            <fieldset>
+              <legend>Color</legend>
+              <div class="radio-buttons-container">
+                {% for item in post.colors %}
+                <div class="radio-button-container">
+                  <input id="{{ item.id }}" type="radio" name="color" value="{{ item.aria-label }}" class="radio-button-xs" style="--radio-color: {{ item.color }};">
+                  <label for="{{ item.id }}" class="p-xs bold checkbox-label">{{ item.aria-label }}</label>
+                </div> 
+                {% endfor %}
+              </div>
+            </fieldset> 
+            {% endif %}
+            {% if post.sizes %}
+            <fieldset>
+              <legend>Talla</legend>
+              <div class="radio-buttons-container">
+                {% for item in post.sizes %}
+                <div class="radio-button-container">
+                  <input id="{{ item.size }}" type="radio" name="size" value="{{ item.size }}" class="radio-button-xs">
+                  <label for="{{ item.size }}" class="p-xs bold checkbox-label">{{ item.size }}</label>
+                </div> 
+                {% endfor %}
+              </div>
+            </fieldset> 
+            {% endif %}          
+          {% endif %}        
+          {% endfor %}
+          <fieldset class="user-info">
+            <legend>Tu información:</legend>
+            <label for="name">Nombre</label>
+            <input required type="text" name="name" id="name" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu nombre')" oninput="this.setCustomValidity('')">
+            <label for="phone">Celular</label>
+            <input required type="tel" name="phone" id="phone" pattern=".{7,}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu número de teléfono celular')" oninput="this.setCustomValidity('')">
+            <label for="email">Correo electrónico</label>
+            <input required type="email" name="email" id="email" pattern=".{4,64}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
+            <label for="email">Municipio (Sólo dentro del territorio colombiano)</label>
+            <input required type="text" name="town" id="town" pattern=".{3,30}" autocomplete="on" oninvalid="this.setCustomValidity('Escribe el nombre de tu municipio')" oninput="this.setCustomValidity('')">
+            <label for="email">Dirección</label>
+            <input required type="text" name="address" id="address" pattern=".{3,30}" autocomplete="on" oninvalid="this.setCustomValidity('Escribe tu dirección')" oninput="this.setCustomValidity('')">
+            <label for="message">Mensaje (opcional)</label>
+            <textarea name="message" id="message" rows="4" pattern=".{4,}" oninvalid="this.setCustomValidity('Por favor escribe un mensaje')" oninput="this.setCustomValidity('')" placeholder="Hola, quiero hacer un pedido de... "></textarea>
+          </fieldset>
+          <div class="button-and-note">
+            <button type="submit" aria-describedby="form-note">Enviar</button>
+            <p class="note p-s" id="form-note">Recuerda dejar tus datos reales para poder contactarte respecto a tu pedido. Sólo los usaré con ese fin.</p>
+          </div>
+        </form>
+      </main>
+      </div>
+
+    </div>      
 
     {% include footer.html %}
 

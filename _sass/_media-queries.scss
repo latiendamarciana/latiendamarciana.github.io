@@ -204,6 +204,27 @@
     }
   }
 
+  .product-order-info-container{
+    margin: 4rem 0 3rem 0;
+    padding: 2rem 1.5rem;
+    .product-order-info{
+      align-items: start;
+      gap: 2rem 1.5rem;
+      img{
+        grid-column: 1 / 3;
+      }
+      .product-order-info-header{
+        grid-column: 3 / 7;
+        h2{
+          margin-bottom: .75rem;
+        }
+      }
+      .product-order-info-text{
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
   .newsletter{
     form{
       display: grid;
@@ -393,8 +414,6 @@
   .radio-buttons-container {
     grid-template-columns: repeat(3, 1fr);
   }
-
-
 }
 
 // L screens
@@ -527,6 +546,23 @@
           padding: 0;
         } 
       }
+    }
+  }
+
+  .product-order-container{
+    margin-top: 5rem;
+    .product-order-info-container{
+      margin-top: 0;
+      display: inline-block;
+      position: sticky;
+      top: 2rem;
+      z-index: 500;
+      width: calc(50% - 1rem);
+      float: right;
+    }
+    .product-order{
+      display: inline-block;
+      width: calc(50% - 1rem);
     }
   }
 

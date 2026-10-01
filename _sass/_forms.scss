@@ -37,7 +37,13 @@ textarea {
 label:has(+ input:focus-visible),
 label:has(+ textarea:focus-visible) {
   transition: var(--fade);
-  color: var(--bright-inferno);
+  color: var(--neutral-80);
+}
+
+legend:has(input:checked),
+legend:has(input:focus-visible) {
+  transition: var(--fade);
+  color: var(--neutral-80);
 }
 
 .form-note {
