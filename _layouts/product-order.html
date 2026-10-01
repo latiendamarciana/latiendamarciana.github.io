@@ -11,49 +11,55 @@ layout: compress
     {% include nav.html %}
 
     <aside class="product-form-info">
-      <img src="{{ page.src }}">
-      <h1>Tu pedido</h1>
-      <h2>{{ page.title }}</h2>
-      {% for post in site.posts %}
-      {% if post.title == page.title %}
-      {{ post.content | markdownify | replace: '<p>', '<p class="p-s">' }}
-      {% endif %}        
-      {% endfor %} 
+      <div class="product-form-info-img-and-header">      
+        <img src="{{ page.src }}">
+        <div class="product-form-info-header">
+          <h1>Tu pedido</h1>
+          <h2>{{ page.title }}</h2>
+        </div>
+       </div>
+       <div class="product-form-info-content">
+        {% for post in site.posts %}
+        {% if post.title == page.title %}
+        {{ post.content | markdownify | replace: '<p>', '<p class="p-s">' }}
+        {% endif %}        
+        {% endfor %}
+       </div>  
       {% for post in site.posts %}
       {% if post.title == page.title %}
       <div>
-        <div class="product-options">
-          {% if post.genders %}
-          <div class="options-list">
-            <p class="p-s bold">Género</p>
-            <ul>
-              {% for item in post.genders %}
-              <li><p class="p-s">{{ item.gender }}</p></li>
-              {% endfor %}
-            </ul>
-          </div>
-          {% endif %}
-          {% if post.colors %}
-          <div class="options-list">
-            <p class="p-s bold">Color</p>
-            <ul>
-              {% for item in post.colors %}
-              <li><span class="color" style="background-color: {{ item.color }};" aria-label="{{ item.aria-label }}"></span></li>
-              {% endfor %}
-            </ul>
-          </div>
-          {% endif %}
-          {% if post.sizes %}
-          <div class="options-list">
-            <p class="p-s bold">Talla</p>
-            <ul>
-              {% for item in post.sizes %}
-              <li><p class="p-s">{{ item.size }}</p></li>
-              {% endfor %}
-            </ul>
-          </div>
-          {% endif %}
+      <div class="product-options">
+        {% if post.genders %}
+        <div class="options-list">
+          <p class="p-s bold">Género</p>
+          <ul>
+            {% for item in post.genders %}
+            <li><p class="p-s">{{ item.gender }}</p></li>
+            {% endfor %}
+          </ul>
         </div>
+        {% endif %}
+        {% if post.colors %}
+        <div class="options-list">
+          <p class="p-s bold">Color</p>
+          <ul>
+            {% for item in post.colors %}
+            <li><span class="color" style="background-color: {{ item.color }};" aria-label="{{ item.aria-label }}" uk-tooltip="title: {{ item.aria-label }}; pos: left"></span></li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+        {% if post.sizes %}
+        <div class="options-list">
+          <p class="p-s bold">Talla</p>
+          <ul>
+            {% for item in post.sizes %}
+            <li><p class="p-s">{{ item.size }}</p></li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
         {% if post.genders or post.colors or post.sizes %}
           <div class="note">
             <p class="p-s">Recuerda las opciones que escojas al hacer tu pedido.</p>
@@ -80,7 +86,11 @@ layout: compress
       {% endfor %}
       <form method="post" action="https://formsubmit.co/latiendamarciana@pm.me" aria-labelledby="order-form-heading" class="order-form">
         <input type="hidden" name="_next" value="https://latiendamarciana.com/mensaje-recibido/">
-        <input type="hidden" name="_subject" value="¡Nuevo mensaje marciano!">
+        {% for post in site.posts %}
+        {% if post.title == page.title %}
+        <input type="hidden" name="_subject" value="¡Pedido de {{ post.title }}!">
+        {% endif %}        
+        {% endfor %}
         <input type="hidden" name="_cc" value="tiendamarciana@proton.me">
         {% for post in site.posts %}
         {% if post.title == page.title %}

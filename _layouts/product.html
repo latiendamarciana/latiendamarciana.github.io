@@ -85,7 +85,7 @@ layout: compress
               <p class="p-s bold">Color</p>
               <ul>
                 {% for item in page.colors %}
-                <li><span class="color" style="background-color: {{ item.color }};" aria-label="{{ item.aria-label }}"></span></li>
+                <li><span class="color" style="background-color: {{ item.color }};" aria-label="{{ item.aria-label }}" uk-tooltip="title: {{ item.aria-label }}; pos: left"></span></li>
                 {% endfor %}
               </ul>
             </div>
