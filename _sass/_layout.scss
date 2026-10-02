@@ -387,6 +387,11 @@
           font-size: var(--base);
           margin-bottom: 1rem;
         }
+        // legend:has(+ input:checked),
+        // legend:has(+ input:focus-visible) {
+        //   transition: var(--fade);
+        //   color: var(--text);
+        // }
       }
       .user-info{
         margin-top: 2rem;

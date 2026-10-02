@@ -73,9 +73,9 @@
               <p class="p-s">Recuerda las opciones que escojas al hacer tu pedido.</p>
             </div>  
           {% endif %}
-          <p class="bold p-xl price">${{ post.price }}</p>
+          <p class="bold p-xl price">${{ post.price }} + envío</p>
           {% if post.online == "true" %}
-            <a class="button button-s" href="{{ post.order }}">{{ site.buy-button }}</a>
+            <a class="button button-s" href="{{ post.order }}" >{{ site.start-shopping }}</a>
           {% else %}
             <a class="link bold p-s offline visible-xs visible-sm hidden-lg" href="/ubicacion/">{{ site.offline-link }}</a>
             <a class="link bold p-s offline hidden-xs hidden-sm visible-lg" href="#modal-location" uk-toggle>{{ site.offline-link }}</a>   
