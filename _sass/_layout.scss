@@ -713,6 +713,12 @@ footer{
           -webkit-transform: scaleX(1);
         }
       }
+      &:focus {
+        outline: 0;
+        &:after{
+          background-color: var(--bright-vivid-indigo);
+        }
+      }
     }
   }
   .uk-active{
