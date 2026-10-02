@@ -386,6 +386,7 @@
           width: 100%;
           padding-top: 1.5rem;
           font-size: var(--h4);
+          margin-bottom: 1.25rem;
         }
       }
       .radio-buttons-container{
@@ -401,6 +402,10 @@
       }
     }
   }
+}
+
+.price{
+  color: var(--dark-m);
 }
 
 // Newsletter

@@ -51,7 +51,7 @@ layout: compress
                 <div class="product-card-info">
                   <h3 clas="heading">{{ post.title }}</h3>
                   {{ post.excerpt | markdownify | replace: '<p>', '<p class="p-xs">' }}
-                  <p class="p-m bold">${{ post.price }}</p>
+                  <p class="p-m bold price">${{ post.price }}</p>
                   <nav>
                     <ul>
                       <li><a class="button button-s button-ghost" href="#{{ post.modal }}" uk-toggle>{{ site.product-details-button }}</a></li>

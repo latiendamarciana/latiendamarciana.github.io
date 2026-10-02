@@ -38,6 +38,7 @@ image: "/assets/images/basic/estilos-y-componentes-basicos-card.png"
 store-button: "Ver todos los productos"
 product-details-button: "Detalles"
 buy-button: "Comprar"
+start-shopping: "Iniciar compra"
 offline-link: "Sólo en sitio"
 back-to-store: "Volver a la tienda"
 

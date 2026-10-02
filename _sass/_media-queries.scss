@@ -550,7 +550,7 @@
   }
 
   .product-order-container{
-    margin-top: 5rem;
+    margin-top: 4.5rem;
     .product-order-info-container{
       margin-top: 0;
       display: inline-block;
@@ -561,6 +561,7 @@
       float: right;
     }
     .product-order{
+      margin-top: 2rem;
       display: inline-block;
       width: calc(50% - 1rem);
     }

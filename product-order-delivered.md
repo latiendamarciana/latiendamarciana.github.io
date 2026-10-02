@@ -20,9 +20,9 @@ image-xs: "/assets/images/respuestas/marciana-pedido-recibido-transparente-xs.pn
 image-sm: "/assets/images/respuestas/marciana-pedido-recibido-transparente-sm.png"
 image-lg: "/assets/images/respuestas/marciana-pedido-recibido-transparente-lg.png"
 alt: "Marciana en un café recibiendo un pedido, con expresión de concentración"
-heading: "He recibido el mensaje de tu pedido"
+heading: "He recibido tu pedido"
 button-text: "Volver a la tienda"
 href: "/tienda"
 ---
 
-Te escribiré un correo para confirmar detalles, envío y modo de pago desde el la dirección: [latiendarmarciana@pm.me](mailto:latiendarmarciana@pm.me), en caso de que no funcione intentaré llamar a tu número de teléfono celular.
+Te enviaré un correo para confirmar los detalles, el envío y el modo de pago desde: [latiendarmarciana@pm.me](mailto:latiendarmarciana@pm.me), Si no obtengo respuesta, intentaré llamarte a tu celular.

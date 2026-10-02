@@ -115,19 +115,19 @@ layout: compress
 
       <div class="product-order">
       <header>
-        <h2>Debes especificar en el formulario las opciones. Si vas a pedir más de un producto, o más de una copia del mismo, puedes agregarlo en el mensaje.</h2>
-        <p class="p-s">Confirmaré personalmente el pedido antes del cobro y el envío. Tus datos serán únicamente usados para este propósito y sólo serán compartidos los necesarios para hacer el envío con la empresa de envíos seleccionada.</p>
+        <h2>Completa las opciones en el formulario. Si quieres pedir más de un producto, o más de una unidad del mismo, indícalo en el campo de mensaje.</h2>
+        <p class="p-s">El pedido será confirmado personalmente antes del cobro y el envío. Los datos proporcionados se utilizarán exclusivamente para esta finalidad y solo se compartirán aquellos necesarios para gestionar el envío con la empresa de mensajería seleccionada.</p>
       </header>
 
       <main>
-        <h3 id="order-form-heading">Llena este formulario para separar tu pedido</h3>
+        <h3 id="order-form-heading">Completa este formulario para hacer tu pedido</h3>
         {% for post in site.posts %}
         {% if post.title == page.title %}
         <h4>Opciones para {{ post.title }}:</h4>
         {% endif %}        
         {% endfor %}
         <form method="post" action="https://formsubmit.co/latiendamarciana@pm.me" aria-labelledby="order-form-heading" class="order-form">
-          <input type="hidden" name="_next" value="https://latiendamarciana.com/mensaje-recibido/">
+          <input type="hidden" name="_next" value="https://latiendamarciana.com/pedido-recibido/">
           {% for post in site.posts %}
           {% if post.title == page.title %}
           <input type="hidden" name="_subject" value="¡Pedido de {{ post.title }}!">
@@ -193,7 +193,7 @@ layout: compress
             <textarea name="message" id="message" rows="4" pattern=".{4,}" oninvalid="this.setCustomValidity('Por favor escribe un mensaje')" oninput="this.setCustomValidity('')" placeholder="Hola, quiero hacer un pedido de... "></textarea>
           </fieldset>
           <div class="button-and-note">
-            <button type="submit" aria-describedby="form-note">Enviar</button>
+            <button type="submit" aria-describedby="form-note">{{ site.buy-button }}</button>
             <p class="note p-s" id="form-note">Recuerda dejar tus datos reales para poder contactarte respecto a tu pedido. Sólo los usaré con ese fin.</p>
           </div>
         </form>
