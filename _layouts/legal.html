@@ -1,0 +1,32 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+{% include head.html %}
+  <body class="legal">
+    {% include alert.html %}
+    {% include nav-mobile.html %}
+    {% include nav.html %}
+
+    <header class="full-width">
+      <h1>{{ page.title  }}</h1>
+    </header>
+    <main class="full-width">
+      <article>
+        {{ page.content | markdownify | replace: '<p>', '<p class="p-base">' }}
+      </article> 
+      <a href="{{ page.href }}" class="button button-base">{{ page.button-text }}</a>
+    </main> 
+
+    {% include footer.html %}
+
+    {% include modal-nav.html %}
+
+    {% include modal-location.html %}
+
+    {% include uikit-javascript.html %} 
+
+  </body>
+</html>    
