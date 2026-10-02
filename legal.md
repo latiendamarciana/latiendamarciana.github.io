@@ -31,15 +31,15 @@ En esta tienda no existe un carrito de compra ni un pago automático. El proceso
 
 **3. Pago y Envío:** Apenas se confirme el pago, prepararé tu pedido y te enviaré la información sobre el envío y una factura electrónica.
 
-### 1.1 Pedidos y donaciones a través de Ko-fi
+### 1.1 Pedidos y propinas a través de Ko-fi
 
 Además del formulario de este sitio, también puedes apoyarme con una donación o comprar productos a través de mi perfil de Ko-fi.
 
-**Donaciones:** Son un apoyo voluntario y no generan ningún pedido ni envío. Ko-fi no cobra comisión por las donaciones, solo la propia de PayPal o Stripe.
+**Propinas:** Son un apoyo voluntario y no generan ningún pedido ni envío. Ko-fi no cobra comisión por las donaciones, solo la propia de PayPal o Stripe.
 
-**Pedidos de la tienda de Ko-fi:** Si realizas un pedido a través de la tienda de Ko-fi, la venta se gestiona con [las mismas condiciones de envío y devolución descritas en esta página.](https://more.ko-fi.com/terms){:target="_blank" rel="noopener"}
+**Pedidos de la tienda de Ko-fi:** Si realizas un pedido a través de la tienda de Ko-fi, la venta se gestiona con las mismas condiciones de envío y devolución descritas en esta página.
 
-**Datos:** Cuando compras o donas a través de Ko-fi, los datos de pago los gestionan Ko-fi, Stripe y PayPal. Como creador, recibo tu nombre y correo electrónico para poder gestionar tu pedido o agradecerte el apoyo.
+**Datos:** Cuando compras o donas a través de Ko-fi, los datos de pago los gestionan [Ko-fi](https://more.ko-fi.com/terms){:target="_blank" rel="noopener"}, Stripe y PayPal. Como creador, recibo tu nombre y correo electrónico para poder gestionar tu pedido o agradecerte el apoyo.
 
 **Requisito de Ko-fi:** Ko-fi exige a los creadores disponer de sus propios términos y condiciones. Al finalizar una compra en su tienda, se muestran estos términos y deberás aceptarlos para completar el pedido.
 
@@ -57,13 +57,13 @@ Tu privacidad es importante. Aquí detallo qué datos recojo y quién los gestio
 
 **Servicio técnico:** Los formularios se envían a través de FormSubmit. Este servicio [no almacena los datos una vez enviados a mi correo.](https://formsubmit.co/privacy.pdf){:target="_blank" rel="noopener"}
 
-#### Para pedidos y donaciones a través de Ko-fi:
+#### Para pedidos y propinas a través de Ko-fi:
 
 **Datos recogidos:** Nombre y correo electrónico (recibidos de Ko-fi). Los datos de pago son gestionados por Ko-fi, Stripe y PayPal.
 
 **Finalidad:** Gestionar tu pedido o agradecerte una donación.
 
-**Servicio técnico:** Ko-fi, Stripe y PayPal. Como creador, soy responsable independiente del uso que haga de los datos que Ko-fi me comparte. No los compartiré con terceros ni los usaré con otros fines. 
+**Servicio técnico:** Ko-fi, Stripe y PayPal. Como creador, soy responsable independiente del uso que haga de los datos que Ko-fi me comparte.
 
 #### Para el boletín de correo:
 
