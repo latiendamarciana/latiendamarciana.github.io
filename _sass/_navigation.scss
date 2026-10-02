@@ -59,13 +59,15 @@ nav{
   align-items: center;
   .nav-logo{
     position: relative;
-    top: 1.5rem;
+    top: 1.75rem;
     right: .75rem;
     width: 128px;
     height: 128px;
     img{
       width: 110px;
       height: 110px;
+      position: relative;
+      top: .12rem;
     }
   }
   a:not(.nav-logo){
