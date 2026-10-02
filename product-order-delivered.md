@@ -25,4 +25,4 @@ button-text: "Volver a la tienda"
 href: "/tienda"
 ---
 
-Te enviaré un correo para confirmar los detalles, el envío y el modo de pago desde: [latiendarmarciana@pm.me](mailto:latiendarmarciana@pm.me), Si no obtengo respuesta, intentaré llamarte a tu celular.
+Te enviaré un correo para confirmar los detalles, el envío y el modo de pago desde [latiendarmarciana@pm.me](mailto:latiendarmarciana@pm.me), Si no obtengo respuesta, intentaré llamarte a tu celular.

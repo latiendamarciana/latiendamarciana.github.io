@@ -106,14 +106,17 @@ layout: compress
               <p class="p-s">Recuerda las opciones que escojas al hacer tu pedido.</p>
             </div>  
           {% endif %}
-          <p class="bold p-xl price">${{ page.price }}</p>
-          {% if page.online == "true" %}
+          <p class="bold p-xl price">${{ page.price }} + envío</p>
+          <div class="product-button-container">
+            {% if page.online == "true" %}
             <a class="button button-s" href="{{ page.order }}">{{ site.start-shopping }}</a>
-          {% else %}
+            {% else %}
             <a class="link bold p-s offline visible-xs visible-sm hidden-lg" href="/ubicacion/">{{ site.offline-link }}</a>
             <a class="link bold p-s offline hidden-xs hidden-sm visible-lg" href="#modal-location" uk-toggle>{{ site.offline-link }}</a>   
-          {% endif %}
-          <p><a class="link bold p-s" href="/tienda/">Volver a la tienda</a></p>
+            {% endif %}
+            <p><a class="link bold p-s" href="/tienda/">Volver a la tienda</a></p>
+          </div>
+          
         </aside>  
       </div>  
       <!-- Product info end -->

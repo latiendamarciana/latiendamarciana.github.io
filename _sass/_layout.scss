@@ -231,8 +231,14 @@
     display: inline-block;
     margin-bottom: 1rem;
   }
-  .button{
-    margin-bottom: .75rem;
+  .product-button-container{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    .link{
+      position: relative;
+      top: -.12rem;
+    }
   }
 }
 
