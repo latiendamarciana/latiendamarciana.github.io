@@ -310,6 +310,7 @@
       border-radius: 50%;
       vertical-align: middle;
       border: 1px solid var(--neutral-20);
+      cursor: pointer;
     }
   }
 }
@@ -344,6 +345,9 @@
     }
     .product-options-container{
       grid-column: 1 / 7;
+      a{
+        border-bottom: none;
+      }
       .product-options{
         margin-top: 0;
       }

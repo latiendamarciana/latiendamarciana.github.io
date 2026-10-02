@@ -106,14 +106,14 @@ layout: compress
               </div>
               {% endif %}                                              
             </div>
-            <p class="bold p-xl price">${{ post.price }}</p>  
+            <p class="bold p-xl price"><a href="#product-form">${{ post.price }} + envío</a></p>  
             {% endif %}
             {% endfor %}
           </div>        
         </div>           
       </aside>
 
-      <div class="product-order">
+      <div class="product-order" id="product-form">
       <header>
         <h2>Completa las opciones en el formulario. Si quieres pedir más de un producto, o más de una unidad del mismo, indícalo en el campo de mensaje.</h2>
         <p class="p-s">El pedido será confirmado personalmente antes del cobro y el envío. Los datos proporcionados se utilizarán exclusivamente para esta finalidad y solo se compartirán aquellos necesarios para gestionar el envío con la empresa de mensajería seleccionada.</p>
