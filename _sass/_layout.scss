@@ -820,6 +820,14 @@ footer{
         }
       }
     }
+    .button{
+      &:hover{
+        color: var(--bright-inferno);
+      }
+      &:focus{
+        color: var(--brown-0);
+      }
+    }
   }
 }
 
@@ -869,6 +877,16 @@ footer{
       }
       p:last-of-type{
         margin-bottom: 0;
+      }
+    }
+    .button-container{
+      a{
+        &:hover{
+          color: var(--bright-inferno);
+        }
+        &:focus{
+          color: var(--brown-0);
+        }
       }
     }
   }
