@@ -1,0 +1,49 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+{% include head.html %}
+  <body class="news">
+    {% include alert.html %}
+    {% include nav-mobile.html %}
+    {% include nav.html %}
+
+    <header>
+      <h1 class="full-width">{{ page.title  }}</h1>
+      <figure>
+        <img 
+          srcset="
+            {{ page.image-xs }} 750w,
+            {{ page.image-sm }} 1536w,
+            {{ page.image-lg }} 2296w"
+          sizes="
+            (min-width: 1025px) 1148px,
+            (min-width: 641px) 768px,
+            375px"
+          src="{{ page.src }}"  
+          alt="{{ page.alt }}"
+          loading="lazy">
+          <figcaption class="p-s">{{ page.figcaption | markdownify }} </figcaption>
+      </figure>
+    </header>
+    <main class="full-width">
+      <article>
+        {{ page.content | markdownify | replace: '<p>', '<p class="p-base">' }}
+      </article>
+      <div class="button-container"> 
+        <a href="{{ page.href }}" class="button button-base">{{ page.button-text }}</a>
+      </div>
+    </main> 
+
+    {% include footer.html %}
+
+    {% include modal-nav.html %}
+
+    {% include modal-location.html %}
+
+    {% include uikit-javascript.html %} 
+
+  </body>
+</html>    

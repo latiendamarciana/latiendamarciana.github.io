@@ -14,7 +14,7 @@ keywords: "Tienda, Obra gráfica, Comida a base de plantas, Accesorios, Música,
 image: "assets/images/basic/estilos-y-componentes-basicos-card.png"
 
 # --- Contenido ---
-button-text: "Volver al inicio"
+button-text: "Ve al inicio"
 href: "/"
 ---
 
