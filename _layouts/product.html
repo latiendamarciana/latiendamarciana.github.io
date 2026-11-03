@@ -111,10 +111,9 @@ layout: compress
             {% if page.online == "true" %}
             <a class="button button-s" href="{{ page.order }}">{{ site.start-shopping }}</a>
             {% else %}
-            <a class="link bold p-s offline visible-xs visible-sm hidden-lg" href="/ubicacion/">{{ site.offline-link }}</a>
-            <a class="link bold p-s offline hidden-xs hidden-sm visible-lg" href="#modal-location" uk-toggle>{{ site.offline-link }}</a>   
+            <a class="link bold p-s offline" href="#modal-location" uk-toggle>{{ site.offline-link }}</a>   
             {% endif %}
-            <p><a class="link bold p-s" href="/tienda/">Volver a la tienda</a></p>
+            <a class="link bold p-s" href="/tienda/">Volver a la tienda</a>
           </div>
           
         </aside>  
