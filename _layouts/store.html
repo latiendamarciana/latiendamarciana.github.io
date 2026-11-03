@@ -13,7 +13,18 @@ layout: compress
     <!-- Store header -->
     <header class="full-width">
       <figure>
-        <img src="{{ page.header-image-lg }}" alt="{{ page.alt }}">
+        <img 
+          srcset="
+            {{ page.header-image-lg }} 686w,
+            {{ page.header-image-lg }} 696w,
+            {{ page.header-image-lg }} 1352w"
+          sizes="
+            (min-width: 1025px) 676px,
+            (min-width: 641px) 348px,
+            343px"
+          src="{{ page.header-image-lg }}"  
+          alt="{{ page.alt }}"
+          loading="lazy">
       </figure>
       <h1 class="visible-xs visible-sm hidden-lg">{{ page.content }}</h1>
       <h1 class="h-l hidden-xs hidden-sm visible-lg">{{ page.content }}</h1>  
