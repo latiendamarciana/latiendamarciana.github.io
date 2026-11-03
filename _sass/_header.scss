@@ -18,8 +18,7 @@
   }
 }
 
-.header-two-columns-01,
-.header-two-columns-02 {
+.header-two-columns-01{
   padding-bottom: 3rem;
   display: grid;
   grid-template-columns: 1fr;
@@ -31,24 +30,17 @@
   margin-bottom: -1rem !important;
 }
 
-.header-two-columns-02 {
-  padding-top: 3rem;
-}
-
-.header-two-columns-01 .header-text,
-.header-two-columns-02 .header-text {
+.header-two-columns-01 .header-text{
   // margin-bottom: 2rem;
 }
 
 .header-background .header-text h1,
-.header-two-columns-01 .header-text h1,
-.header-two-columns-02 .header-text h1 {
+.header-two-columns-01 .header-text h1{
   margin-bottom: 1rem;
 }
 
 .header-background .header-text p,
-.header-two-columns-01 .header-text p,
-.header-two-columns-02 .header-text h1 {
+.header-two-columns-01 .header-text p{
   margin-bottom: 1rem;
 }
 
