@@ -16,6 +16,4 @@ keywords: "Tienda, Obra gráfica, Comida a base de plantas, Accesorios, Música,
 image: "assets/images/basic/estilos-y-componentes-basicos-card.png"
 ---
 
-platea sit eu id nisi litora libero. Neque vulputate consequat ac amet augue blandit maximus aliquet congue. Pharetra vestibulum posuere ornare faucibus fusce dictumst orci aenean eu facilisis ut volutpat commodo senectus purus.
-
-Lorem ipsum.
+Un "lugar" para comer algo rico (a base de plantas), escuchar y comprar música, accesorios y obra gráfica (proximamente la producción). Estaré en el Carlos E. Restrepo, de Jueves a sábado en la noche, a partir del 12 de noviembre.

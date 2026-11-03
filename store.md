@@ -19,11 +19,8 @@ image-xs: "/assets/images/respuestas/marciana-suscripcion-por-confirmar-transpar
 image-sm: "/assets/images/respuestas/marciana-suscripcion-por-confirmar-transparente-sm.png"
 image-lg: "/assets/images/respuestas/marciana-suscripcion-por-confirmar-transparente-lg.png"
 alt: "Marciana celebrando"
-heading: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 products-end: "Viste todos los productos"
 products-end-link: "Recarga la tienda"
 ---
 
-platea sit eu id nisi litora libero. Neque vulputate consequat ac amet augue blandit maximus aliquet congue. Pharetra vestibulum posuere ornare faucibus fusce dictumst orci aenean eu facilisis ut volutpat commodo senectus purus.
-
-Lorem ipsum.
+Si ves algo que te guste, puedes pedirlo por acá. Por ahora la comida sólo en el <a href="#modal-location" uk-toggle>sitio.</a>

@@ -24,7 +24,7 @@ button-text: "Volver"
 href: "/"
 ---
 
-Ya estás adentro. A partir de ahora recibirás en tu correo:
+Ya estás adentro <span class="icon icon-smile"></span>. A partir de ahora recibirás en tu correo:
 
 * Noticias sobre ferias y eventos en los que participaré
 * Si consigo food truck, o local te avisaré para que caigas

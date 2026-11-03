@@ -673,6 +673,15 @@ footer{
     }
     h1{
       margin-bottom: 0;
+      a{
+        width: fit-content;
+        color: var(--dark-m);
+        display: inline-block;
+        &:hover{
+          color: var(--bright-vivid-indigo);
+          border-bottom: 1px solid var(--bright-vivid-indigo);
+        }
+      }
     }
   }
 }

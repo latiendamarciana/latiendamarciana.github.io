@@ -504,6 +504,14 @@
     }
   }
 
+  #store{
+    header{
+      .visible-lg{
+        display: inline-block;
+      }
+    }
+  }
+
   .index-products{
     .index-products-container{
       grid-template-columns: repeat(3, 1fr);
