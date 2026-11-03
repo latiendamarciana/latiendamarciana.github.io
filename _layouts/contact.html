@@ -31,17 +31,17 @@ layout: compress
             <input type="hidden" name="_next" value="https://latiendamarciana.com/mensaje-recibido/">
             <input type="hidden" name="_subject" value="¡Nuevo mensaje marciano!">
             <input type="hidden" name="_cc" value="tiendamarciana@proton.me">
-            <label for="name">Nombre</label>
-            <input required type="text" name="name" id="name" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu nombre')" oninput="this.setCustomValidity('')">
-            <label for="phone">Celular</label>
-            <input required type="tel" name="phone" id="phone" pattern=".{7,}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu número de teléfono celular')" oninput="this.setCustomValidity('')">
-            <label for="email">Correo electrónico</label>
-            <input required type="email" name="email" id="email" pattern=".{4,64}" autocomplete="on" oninvalid="this.setCustomValidity('Por favor escribe tu correo electrónico')" oninput="this.setCustomValidity('')">
-            <label for="message">Mensaje</label>
-            <textarea required name="message" id="message" rows="4" pattern=".{4,}" oninvalid="this.setCustomValidity('Por favor escribe un mensaje')" oninput="this.setCustomValidity('')"></textarea>
+            <label for="name">{{ page.contact-name }}</label>
+            <input required type="text" name="name" id="name" autocomplete="on" oninvalid="this.setCustomValidity('{{ page.name-error-message }}')" oninput="this.setCustomValidity('')">
+            <label for="phone">{{ page.phone }}</label>
+            <input required type="tel" name="phone" id="phone" pattern=".{7,}" autocomplete="on" oninvalid="this.setCustomValidity('{{ page.phone-error-message }}')" oninput="this.setCustomValidity('')">
+            <label for="email">{{ page.email }}</label>
+            <input required type="email" name="email" id="email" pattern=".{4,64}" autocomplete="on" oninvalid="this.setCustomValidity('{{ page.email-error-message }}')" oninput="this.setCustomValidity('')">
+            <label for="message">{{ page.message }}</label>
+            <textarea required name="message" id="message" rows="4" pattern=".{4,}" oninvalid="this.setCustomValidity('{{ page.message-error-message }}')" oninput="this.setCustomValidity('')"></textarea>
             <div class="button-and-note">
               <button type="submit" aria-describedby="form-note">Enviar</button>
-              <p class="note p-s" id="form-note">Recuerda dejar tus datos reales para poder contactarte. Sólo los usaré con ese fin.</p>
+              <p class="note p-s" id="form-note">{{ page.form-note }}</p>
             </div>
           </form>            
         </main>
