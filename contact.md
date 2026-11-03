@@ -16,7 +16,7 @@ image-sm: "../assets/images/contacto/marciana-contacto-sm.png"
 image-lg: "../assets/images/contacto/marciana-contacto-lg.png"
 src: "../assets/images/contacto/marciana-contacto-lg.png"
 alt: "Marciana dentro de su nave usando telepatía"
-image: "assets/images/basic/estilos-y-componentes-basicos-card.png"
+image: "assets/images/la-tienda-marciana-card.jpg"
 ---
 
 Puedes escribir un comentario llenando este formulario, o en el chat ( <span class="icon icon-smallchat"></span> ) de la esquina inferior derecha.

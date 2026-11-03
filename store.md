@@ -11,16 +11,15 @@ author: "fluorescente.design"
 date: 2026-07-30
 tags: ["Tienda", "Obra gráfica", "Comida a base de plantas", "Accesorios", "Música", "Medellín", "Colombia", "Comida vegana", "Marciana"]
 keywords: "Tienda, Obra gráfica, Comida a base de plantas, Accesorios, Música, Medellín, Colombia, Comida vegana, Marciana"
-image: "assets/images/basic/estilos-y-componentes-basicos-card.png"
+image: "assets/images/la-tienda-marciana-card.jpg"
 
 # --- Contenido ---
-src: "/assets/images/respuestas/marciana-suscripcion-por-confirmar-transparente-lg.png"
-image-xs: "/assets/images/respuestas/marciana-suscripcion-por-confirmar-transparente-xs.png"
-image-sm: "/assets/images/respuestas/marciana-suscripcion-por-confirmar-transparente-sm.png"
-image-lg: "/assets/images/respuestas/marciana-suscripcion-por-confirmar-transparente-lg.png"
-alt: "Marciana celebrando"
+
+header-image-lg: "/assets/images/tienda/hero-tienda.jpg"
+alt: "foto de una repisa con libros"
 products-end: "Viste todos los productos"
 products-end-link: "Recarga la tienda"
+
 ---
 
 Si ves algo que te guste, puedes pedirlo por acá. Por ahora la comida sólo en el <a href="#modal-location" uk-toggle>sitio.</a>
