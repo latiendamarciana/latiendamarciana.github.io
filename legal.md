@@ -29,7 +29,7 @@ En esta tienda no existe un carrito de compra ni un pago automático. El proceso
 
 **2. Confirmación:** Una vez recibido el formulario, calcularé el coste exacto del envío y me pondré en contacto contigo para informarte del precio final y las alternativas de pago disponibles.
 
-**3. Pago y Envío:** Apenas se confirme el pago, prepararé tu pedido y te enviaré la información sobre el envío y una factura electrónica.
+**3. Pago y Envío:** Apenas se confirme el pago, prepararé tu pedido y te enviaré la información sobre el envío. Aún no estoy obligado a enviar factura electrónica.
 
 ### 1.1 Pedidos y propinas a través de Ko-fi
 
