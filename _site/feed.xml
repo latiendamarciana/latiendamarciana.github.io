@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
   <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="es" />
-  <updated>2026-11-21T16:10:13-05:00</updated>
+  <updated>2026-11-21T17:07:53-05:00</updated>
   <id>http://localhost:4000/feed.xml</id>
 
   
@@ -57,6 +57,50 @@
   
 
   
+  
+    <entry>
+      
+
+      <title type="html">The Police / Greatest Hits / CD</title>
+      <link href="http://localhost:4000/tienda/postal-expulsion/" rel="alternate" type="text/html" title="The Police / Greatest Hits / CD" />
+      <published>2026-08-16T00:00:00-05:00</published>
+      <updated>2026-08-16T00:00:00-05:00</updated>
+      <id>http://localhost:4000/tienda/cd-the-police-greatest-hits</id>
+      
+      
+        <content type="html" xml:base="http://localhost:4000/tienda/postal-expulsion/"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<p>Tempor ilust vivere est.</p>]]></content>
+      
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>La Tienda Marciana</name>
+        
+        
+      </author>
+
+      
+        
+          <category term="Música" />
+        
+      
+
+      
+
+      
+      
+        <summary type="html"><![CDATA[Antología de The Police en disco compacto usado. Edición estadounidense de 1992. El Disco compacto reproduce sin saltos y el librito tiene un desgaste mínimo.]]></summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       
@@ -435,70 +479,6 @@
       
 
       
-      
-    </entry>
-  
-    <entry>
-      
-
-      <title type="html">Estaré en La Revueltería, en la Pascasia del 27 al 30 de enero de 2027</title>
-      <link href="http://localhost:4000/novedades/revuelteria-enero/" rel="alternate" type="text/html" title="Estaré en La Revueltería, en la Pascasia del 27 al 30 de enero de 2027" />
-      <published>2026-07-30T00:00:00-05:00</published>
-      <updated>2026-07-30T00:00:00-05:00</updated>
-      <id>http://localhost:4000/novedades/noticia-revuelteria-enero</id>
-      
-      
-        <content type="html" xml:base="http://localhost:4000/novedades/revuelteria-enero/"><![CDATA[<p>Lorem ipsum dolor sit amet consectetur adipiscing elit <a href="https://lapascasia.org/" target="_blank" rel="noopener">La Pascasia</a>. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-
-<p>In id cursus mi pretium tellus. <span class="icon icon-heart"></span></p>]]></content>
-      
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>fluorescente.design</name>
-        
-        
-      </author>
-
-      
-        
-      
-
-      
-        <category term="Tienda" />
-      
-        <category term="Obra gráfica" />
-      
-        <category term="Comida a base de plantas" />
-      
-        <category term="Accesorios" />
-      
-        <category term="Música" />
-      
-        <category term="Medellín" />
-      
-        <category term="Colombia" />
-      
-        <category term="Comida vegana" />
-      
-        <category term="Marciana" />
-      
-
-      
-      
-        <summary type="html"><![CDATA[La Tienda Marciana, Información legal.]]></summary>
-      
-
-      
-      
-        
-        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/la-tienda-marciana-card.jpg" />
-        <media:content medium="image" url="http://localhost:4000/assets/images/la-tienda-marciana-card.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
       
     </entry>
   
