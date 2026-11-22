@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
   <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="es" />
-  <updated>2026-11-21T17:07:53-05:00</updated>
+  <updated>2026-11-21T20:39:03-05:00</updated>
   <id>http://localhost:4000/feed.xml</id>
 
   
@@ -61,16 +61,14 @@
     <entry>
       
 
-      <title type="html">The Police / Greatest Hits / CD</title>
-      <link href="http://localhost:4000/tienda/postal-expulsion/" rel="alternate" type="text/html" title="The Police / Greatest Hits / CD" />
-      <published>2026-08-16T00:00:00-05:00</published>
-      <updated>2026-08-16T00:00:00-05:00</updated>
-      <id>http://localhost:4000/tienda/cd-the-police-greatest-hits</id>
+      <title type="html">Rage Against the Machine / Rage Against the Machine / CD</title>
+      <link href="http://localhost:4000/tienda/cd-rage-against-the-machine/" rel="alternate" type="text/html" title="Rage Against the Machine / Rage Against the Machine / CD" />
+      <published>2026-08-17T00:00:00-05:00</published>
+      <updated>2026-08-17T00:00:00-05:00</updated>
+      <id>http://localhost:4000/tienda/cd-rage-against-the-machine</id>
       
       
-        <content type="html" xml:base="http://localhost:4000/tienda/postal-expulsion/"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-<p>Tempor ilust vivere est.</p>]]></content>
+        <content type="html" xml:base="http://localhost:4000/tienda/cd-rage-against-the-machine/"><![CDATA[<p>Álbum <em>Rage Against the Machine</em> en disco compacto usado. Edición estadounidense de 1992, el disco compacto reproduce sin saltos y el librito tiene un desgaste mínimo.</p>]]></content>
       
 
       
@@ -95,7 +93,49 @@
 
       
       
-        <summary type="html"><![CDATA[Antología de The Police en disco compacto usado. Edición estadounidense de 1992. El Disco compacto reproduce sin saltos y el librito tiene un desgaste mínimo.]]></summary>
+        <summary type="html"><![CDATA[Álbum *Rage Against the Machine* en disco compacto usado. Edición estadounidense de 1992, el disco compacto reproduce sin saltos y el librito tiene un desgaste mínimo.]]></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      
+
+      <title type="html">The Police / Greatest Hits / CD</title>
+      <link href="http://localhost:4000/tienda/cd-the-police-greatest-hits/" rel="alternate" type="text/html" title="The Police / Greatest Hits / CD" />
+      <published>2026-08-16T00:00:00-05:00</published>
+      <updated>2026-08-16T00:00:00-05:00</updated>
+      <id>http://localhost:4000/tienda/cd-the-police-greatest-hits</id>
+      
+      
+        <content type="html" xml:base="http://localhost:4000/tienda/cd-the-police-greatest-hits/"><![CDATA[<p>Antología de <em>The Police</em> en disco compacto usado. Edición estadounidense de 1992, el disco compacto reproduce sin saltos y el librito tiene un desgaste mínimo.</p>]]></content>
+      
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>La Tienda Marciana</name>
+        
+        
+      </author>
+
+      
+        
+          <category term="Música" />
+        
+      
+
+      
+
+      
+      
+        <summary type="html"><![CDATA[Antología de *The Police* en disco compacto usado. Edición estadounidense de 1992, el disco compacto reproduce sin saltos y el librito tiene un desgaste mínimo.]]></summary>
       
 
       
@@ -434,48 +474,6 @@
       
       
         <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]]></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      
-
-      <title type="html">Sánduche de berenjena y tomate asado</title>
-      <link href="http://localhost:4000/comida%20a%20base%20de%20plantas/2026/08/06/product-sanduche.html" rel="alternate" type="text/html" title="Sánduche de berenjena y tomate asado" />
-      <published>2026-08-06T00:00:00-05:00</published>
-      <updated>2026-08-06T00:00:00-05:00</updated>
-      <id>http://localhost:4000/comida%20a%20base%20de%20plantas/2026/08/06/product-sanduche</id>
-      
-      
-        <content type="html" xml:base="http://localhost:4000/comida%20a%20base%20de%20plantas/2026/08/06/product-sanduche.html"><![CDATA[]]></content>
-      
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>La Tienda Marciana</name>
-        
-        
-      </author>
-
-      
-        
-          <category term="Comida a base de plantas" />
-        
-      
-
-      
-
-      
-      
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit.]]></summary>
       
 
       

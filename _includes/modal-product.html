@@ -15,9 +15,9 @@
               srcset="
                 {{ item.image-xs }} 686w,
                 {{ item.image-sm }} 744w,
-                {{ item.image-lg }} 1416w"
+                {{ item.image-lg }} 998w"
               sizes="
-                (min-width: 1025px) 708px,
+                (min-width: 1025px) 499px,
                 (min-width: 641px) 372px,
                 343px"
               src="{{ item.src }}"  
@@ -33,7 +33,7 @@
       <!-- Slideshow end  -->
       <div class="modal-product-info">
         <h2>{{ post.title }}</h2>
-        {{ page.content | markdownify | replace: '<p>', '<p class="p-s">' }}
+        {{ post.content | markdownify | replace: '<p>', '<p class="p-s">' }}
         <aside>
           <div class="product-options">
             {% if post.genders %}
@@ -51,7 +51,7 @@
               <p class="p-s bold">Color</p>
               <ul>
                 {% for item in post.colors %}
-                <li><span class="color" style="background-color: {{ item.color }};" aria-label="{{ item.aria-label }}"></span></li>
+                <li><span class="color" style="background-color: {{ item.color }};" aria-label="{{ item.aria-label }}" uk-tooltip="title: {{ item.aria-label }}; pos: left"></span></li>
                 {% endfor %}
               </ul>
             </div>

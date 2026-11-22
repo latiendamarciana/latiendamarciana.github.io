@@ -123,7 +123,9 @@ layout: compress
         <h3 id="order-form-heading">Completa este formulario para hacer tu pedido</h3>
         {% for post in site.posts %}
         {% if post.title == page.title %}
+        {% if post.genders or post.colors or post.sizes %}
         <h4>Opciones para {{ post.title }}:</h4>
+        {% endif %}
         {% endif %}        
         {% endfor %}
         <form method="post" action="https://formsubmit.co/latiendamarciana@pm.me" aria-labelledby="order-form-heading" class="order-form">
