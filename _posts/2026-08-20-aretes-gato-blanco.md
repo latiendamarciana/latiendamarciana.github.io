@@ -1,0 +1,63 @@
+---
+published: "true"
+featured: "false"
+online: "true"
+product: "true"
+categories: [Accesorios]
+category-number: "4"
+src: "/assets/images/productos/aretes-gato-blanco-index-lg-01.jpg"
+image-xxs: "/assets/images/productos/aretes-gato-blanco-index-xs-01.jpg"
+image-xs: "/assets/images/productos/aretes-gato-blanco-index-sm-01.jpg"
+image-sm: "/assets/images/productos/aretes-gato-blanco-index-sm-01.jpg"
+image-lg: "/assets/images/productos/aretes-gato-blanco-index-lg-01.jpg"
+alt: "Aretes colgantes de camafeo negro con gato blanco, de aleación de zinc y plástico."
+title: "Aretes colgantes gato blanco"
+excerpt: "Aretes colgantes de camafeo negro con gato blanco, de aleación de zinc y plástico. 5.8cm de alto por 2.1cm de ancho y 7g de peso."
+price: "15.000"
+modal: "aretes-gato-blanco"
+permalink: "/tienda/aretes-gato-blanco/"
+order: "/tienda/aretes-gato-blanco/pedido/" 
+slideshow-images:
+  - image-xs: "/assets/images/productos/aretes-gato-blanco-index-sm-01.jpg"
+    image-sm: "/assets/images/productos/aretes-gato-blanco-index-sm-01.jpg"
+    image-lg: "/assets/images/productos/aretes-gato-blanco-slideshow-lg-01.jpg"
+    alt: "Aretes colgantes de camafeo negro con gato blanco, de aleación de zinc y plástico."
+  - image-xs: "/assets/images/productos/aretes-gato-blanco-index-sm-02.jpg"
+    image-sm: "/assets/images/productos/aretes-gato-blanco-index-sm-02.jpg"
+    image-lg: "/assets/images/productos/aretes-gato-blanco-slideshow-lg-02.jpg"
+    alt: "Aretes colgantes de camafeo negro con gato blanco, de aleación de zinc y plástico." 
+# colors:
+#   - color: "#D9D9D9"
+#     aria-label: "mid-gray"
+#     id: "midgray"
+#   - color: "#5C5C5C"
+#     aria-label: "gray"
+#     id: "gray"
+#   - color: "#ADADAD"
+#     aria-label: "light-gray"
+#     id: "lightgray"
+#   - color: "#fff"
+#     aria-label: "white"
+#     id: "white"
+#   - color: "#FF543E"
+#     aria-label: "inferno"
+#     id: "inferno"    
+# sizes:
+#   - size: "xl"
+#   - size: "l"
+#   - size: "m"
+#   - size: "s"
+# genders:
+#   - gender: "Mujer"
+#   - gender: "Hombre"      
+product-images:
+  - image: "/assets/images/productos/aretes-gato-blanco-index-lg-01.jpg"
+    image-number: "1"
+    alt: "Aretes colgantes de camafeo negro con gato blanco, de aleación de zinc y plástico."
+  - image: "/assets/images/productos/aretes-gato-blanco-index-lg-02.jpg"
+    image-number: "2"
+    alt: "Aretes colgantes de camafeo negro con gato blanco, de aleación de zinc y plástico."
+
+---
+
+Aretes colgantes de camafeo negro con gato blanco, de aleación de zinc y plástico. 5.8cm de alto por 2.1cm de ancho y 7g de peso.
