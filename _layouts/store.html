@@ -13,10 +13,22 @@ layout: compress
     <!-- Store header -->
     <header class="full-width">
       <figure>
-        <img 
+        <picture>
+          <source 
+            media="(min-width: 1025px)" 
+            srcset="{{ page.header-image-lg }}">
+          <source 
+            media="(min-width: 641px)" 
+            srcset="{{ page.header-image-sm  }}">
+          <img 
+            src="{{ page.header-image-xs }}" 
+            alt="{{ page.alt }}"
+            loading="lazy">
+        </picture>
+<!--         <img 
           srcset="
-            {{ page.header-image-lg }} 686w,
-            {{ page.header-image-lg }} 696w,
+            {{ page.header-image-xs }} 686w,
+            {{ page.header-image-sm }} 696w,
             {{ page.header-image-lg }} 1352w"
           sizes="
             (min-width: 1025px) 676px,
@@ -24,7 +36,7 @@ layout: compress
             343px"
           src="{{ page.header-image-lg }}"  
           alt="{{ page.alt }}"
-          loading="lazy">
+          loading="lazy"> -->
       </figure>
       <h1 class="visible-xs visible-sm hidden-lg">{{ page.content }}</h1>
       <h1 class="h-l hidden-xs hidden-sm visible-lg">{{ page.content }}</h1>  

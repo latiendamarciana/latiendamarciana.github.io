@@ -15,8 +15,10 @@ image: "assets/images/la-tienda-marciana-card.jpg"
 
 # --- Contenido ---
 
-header-image-lg: "/assets/images/tienda/hero-tienda.jpg"
-alt: "foto de una repisa con libros"
+header-image-lg: "/assets/images/tienda/hero-tienda-lg.jpg"
+header-image-sm: "/assets/images/tienda/hero-tienda-sm.jpg"
+header-image-xs: "/assets/images/tienda/hero-tienda-xs.jpg"
+alt: "Mesa con productos de la tienda, en una vía peatonal de Carlos E. Restrepo"
 products-end: "Viste todos los productos"
 products-end-link: "Recarga la tienda"
 
