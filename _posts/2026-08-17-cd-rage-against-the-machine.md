@@ -1,6 +1,6 @@
 ---
 published: "true"
-featured: "true"
+featured: "false"
 online: "true"
 product: "true"
 categories: [Música]
@@ -11,8 +11,8 @@ image-xs: "/assets/images/productos/cd-rage-against-the-machine-index-sm-01.jpg"
 image-sm: "/assets/images/productos/cd-rage-against-the-machine-index-sm-01.jpg"
 image-lg: "/assets/images/productos/cd-rage-against-the-machine-index-lg-01.jpg"
 alt: "Portada del CD Rage Against the Machine."
-title: "Rage Against the Machine / Rage Against the Machine / CD"
-excerpt: "Álbum *Rage Against the Machine* en disco compacto usado. Edición estadounidense de 1992, el disco compacto reproduce sin saltos y el librito tiene un desgaste mínimo."
+title: "Rage Against the Machine / CD"
+excerpt: "Álbum *Rage Against the Machine* en disco compacto usado. Reedición europea de 1992, el disco compacto reproduce sin saltos y el librito tiene un desgaste mínimo."
 price: "25.000"
 modal: "rage-against-the-machine"
 permalink: "/tienda/cd-rage-against-the-machine/"
@@ -61,17 +61,19 @@ slideshow-images:
 product-images:
   - image: "/assets/images/productos/cd-rage-against-the-machine-index-lg-01.jpg"
     image-number: "1"
-    alt: "Portada del CD de The Police / Greatest Hits."
+    alt: "Portada del CD Rage Against the Machine."
   - image: "/assets/images/productos/cd-rage-against-the-machine-index-lg-02.jpg"
     image-number: "2"
-    alt: "Contraportada del CD de The Police / Greatest Hits."
+    alt: "Contraportada del CD Rage Against the Machine."
   - image: "/assets/images/productos/cd-rage-against-the-machine-index-lg-03.jpg"
     image-number: "3"
-    alt: "Caja de CD de The Police / Greatest Hits abierta."
+    alt: "Caja de CD Rage Against the Machine abierta."
   - image: "/assets/images/productos/cd-rage-against-the-machine-index-lg-04.jpg"
     image-number: "4" 
-    alt: "Caja de CD de The Police / Greatest Hits abierta con librito encima abierto."  
+    alt: "Caja de CD Rage Against the Machine, abierta con librito encima abierto."  
 
 ---
 
-Álbum *Rage Against the Machine* en disco compacto usado. Edición estadounidense de 1992, el disco compacto reproduce sin saltos y el librito tiene un desgaste mínimo.
+Álbum *Rage Against the Machine* en disco compacto usado. Reedición europea de 1992, el disco compacto reproduce sin saltos y el librito tiene un desgaste mínimo.
+
+Número 120 en la lista de los 150 mejores álbumes de la década de 1990 según la revista [Pitchfork.](https://pitchfork.com/features/lists-and-guides/the-best-albums-of-the-1990s/){:target="_blank"}
