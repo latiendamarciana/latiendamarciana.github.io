@@ -82,7 +82,7 @@ collections:
   posts-newsletter:
     output: true
   posts-news:
-    output: true   
+    output: false   
   posts-footer:
     output: true  
 

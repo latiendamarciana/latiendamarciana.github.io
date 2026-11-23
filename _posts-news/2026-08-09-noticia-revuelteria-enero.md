@@ -1,6 +1,6 @@
 ---
 layout: news
-published: "true"
+published: "false"
 src: "/assets/images/novedades/la-revuelteria-pascasia.jpg"
 image-xs: "/assets/images/novedades/la-revuelteria-pascasia.jpg"
 image-sm: "/assets/images/novedades/la-revuelteria-pascasia.jpg"
