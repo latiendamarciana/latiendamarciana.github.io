@@ -12,7 +12,7 @@ image-sm: "/assets/images/productos/cd-bjork-debut-index-sm-01.jpg"
 image-lg: "/assets/images/productos/cd-bjork-debut-index-lg-01.jpg"
 alt: "Portada del CD Debut de Björk."
 title: "Björk / Debut / CD"
-excerpt: "Álbum *Debut* de Björk en CD usado. Edición europea de 1993; el disco reproduce sin saltos y el librito tiene un desgaste mínimo, además de una mancha y una marca."
+excerpt: "Álbum *Debut* de Björk en disco compacto usado. Edición europea de 1993; el disco reproduce sin saltos y el librito tiene un desgaste mínimo, además de una mancha y una marca."
 price: "25.000"
 modal: "bjork-debut"
 permalink: "/tienda/cd-bjork-debut/"
@@ -74,4 +74,4 @@ product-images:
 
 ---
 
-Álbum *Debut* de Björk en CD usado. Edición europea de 1993; el disco reproduce sin saltos y el librito tiene un desgaste mínimo, además de una mancha y una marca.
+Álbum *Debut* de Björk en disco compacto usado. Edición europea de 1993; el disco reproduce sin saltos y el librito tiene un desgaste mínimo, además de una mancha y una marca.

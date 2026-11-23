@@ -12,7 +12,7 @@ image-sm: "/assets/images/productos/cd-prince-purple-rain-index-sm-01.jpg"
 image-lg: "/assets/images/productos/cd-prince-purple-rain-index-lg-01.jpg"
 alt: "Portada del CD Purple Rain, de Prince & The Revolution."
 title: "Prince & The Revolution / Purple Rain / CD"
-excerpt: "Álbum *Purple Rain* de Prince & The Revolution, publicado originalmente en 1984, en CD usado. Reedición alemana de 1999; el disco reproduce sin saltos y el librito tiene un desgaste mínimo."
+excerpt: "Álbum *Purple Rain* de Prince & The Revolution, publicado originalmente en 1984, en disco compacto usado. Reedición alemana de 1999; el disco reproduce sin saltos y el librito tiene un desgaste mínimo."
 price: "25.000"
 modal: "prince-purple-rain"
 permalink: "/tienda/cd-prince-purple-rain/"
@@ -74,6 +74,6 @@ product-images:
 
 ---
 
-Álbum *Purple Rain* de Prince & The Revolution, publicado originalmente en 1984, en CD usado. Reedición alemana de 1999; el disco reproduce sin saltos y el librito tiene un desgaste mínimo.
+Álbum *Purple Rain* de Prince & The Revolution, publicado originalmente en 1984, en disco compacto usado. Reedición alemana de 1999; el disco reproduce sin saltos y el librito tiene un desgaste mínimo.
 
 Número 1 en la lista de los 200 mejores álbumes de la década de 1980 según la revista [Pitchfork.](https://pitchfork.com/features/lists-and-guides/the-200-best-albums-of-the-1980s/){: .link target="_blank" rel="noopener"}

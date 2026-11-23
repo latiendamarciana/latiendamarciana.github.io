@@ -12,7 +12,7 @@ image-sm: "/assets/images/productos/cd-the-police-greatest-hits-index-sm-01.jpg"
 image-lg: "/assets/images/productos/cd-the-police-greatest-hits-index-lg-01.jpg"
 alt: "Portada del CD de The Police / Greatest Hits."
 title: "The Police / Greatest Hits / CD"
-excerpt: "Antología de *The Police* en CD usado. Edición estadounidense de 1992; el disco reproduce sin saltos y el librillo tiene un desgaste mínimo."
+excerpt: "Antología de *The Police* en disco compacto usado. Edición estadounidense de 1992; el disco reproduce sin saltos y el librillo tiene un desgaste mínimo."
 price: "25.000"
 modal: "the-police-greatest-hits"
 permalink: "/tienda/cd-the-police-greatest-hits/"
@@ -74,4 +74,4 @@ product-images:
 
 ---
 
-Antología de *The Police* en CD usado. Edición estadounidense de 1992; el disco reproduce sin saltos y el librillo tiene un desgaste mínimo.
+Antología de *The Police* en disco compacto usado. Edición estadounidense de 1992; el disco reproduce sin saltos y el librillo tiene un desgaste mínimo.
