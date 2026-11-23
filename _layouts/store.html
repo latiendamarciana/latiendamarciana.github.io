@@ -51,7 +51,7 @@ layout: compress
           <ul class="filter-nav">
              <li class="todos" uk-filter-control="[data-tags='todos']"><a href="#">Todos {{ site.posts | size }}</a></li>
              {% for category in site.categories %}
-             <li uk-filter-control="filter: [data-tags*='{{ category | first | replace: ' ', '-'}}']"><a href="#">{{ category | first }} {% assign posts_count = category | last | size %}{{ posts_count }}</a></li>
+             <li uk-filter-control="filter: [data-tags*='{{ category | first | replace: ' ', '-'}}']"><a href="#">{{ category | first }} {% assign posts_count = category | last | size %}</a></li>
              {% endfor %}
           </ul>
           <!-- Filter links end -->

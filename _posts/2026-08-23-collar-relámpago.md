@@ -21,15 +21,15 @@ slideshow-images:
   - image-xs: "/assets/images/productos/collar-relampago-index-sm-01.jpg"
     image-sm: "/assets/images/productos/collar-relampago-index-sm-01.jpg"
     image-lg: "/assets/images/productos/collar-relampago-slideshow-lg-01.jpg"
-    alt: "Collar de acero inoxidable con un microcassette como dije."
+    alt: "Collar de acero inoxidable con un dije de relámpago de acero inoxidable color *arco iris.*"
   - image-xs: "/assets/images/productos/collar-relampago-index-sm-02.jpg"
     image-sm: "/assets/images/productos/collar-relampago-index-sm-02.jpg"
     image-lg: "/assets/images/productos/collar-relampago-slideshow-lg-02.jpg"
-    alt: "Modelo vistiendo camiseta negra y un collar de acero inoxidable con un dije de calavera con huesos."
+    alt: "Modelo vistiendo camiseta negra y un collar de acero inoxidable con un dije de relámpago de acero inoxidable color *arco iris.*"
   - image-xs: "/assets/images/productos/collar-relampago-index-sm-03.jpg"
     image-sm: "/assets/images/productos/collar-relampago-index-sm-03.jpg"
     image-lg: "/assets/images/productos/collar-relampago-slideshow-lg-03.jpg"
-    alt: "Collar de acero inoxidable con un microcassette como dije."   
+    alt: "Collar de acero inoxidable con un dije de relámpago de acero inoxidable color *arco iris.*"   
 # colors:
 #   - color: "#D9D9D9"
 #     aria-label: "mid-gray"
@@ -67,4 +67,4 @@ product-images:
 
 ---
 
-Collar de acero inoxidable con un dije de calavera con huesos de aleación de zinc con acabado en plata antigua. el dije es de 1.5cm de alto por 1.4cm de ancho.
+Collar de acero inoxidable con un dije de relámpago de acero inoxidable color *arco iris.* el dije es de 1.8cm de alto por .4cm de ancho.

@@ -1,6 +1,6 @@
 ---
 published: "true"
-featured: "false"
+featured: "true"
 online: "true"
 product: "true"
 categories: [Accesorios]

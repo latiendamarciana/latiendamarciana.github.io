@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
   <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="es" />
-  <updated>2026-11-22T17:59:31-05:00</updated>
+  <updated>2026-11-22T19:47:37-05:00</updated>
   <id>http://localhost:4000/feed.xml</id>
 
   
@@ -61,6 +61,48 @@
     <entry>
       
 
+      <title type="html">Ceviche (vegano)</title>
+      <link href="http://localhost:4000/tienda/ceviche-vegano/" rel="alternate" type="text/html" title="Ceviche (vegano)" />
+      <published>2026-08-24T00:00:00-05:00</published>
+      <updated>2026-08-24T00:00:00-05:00</updated>
+      <id>http://localhost:4000/tienda/ceviche-vegano</id>
+      
+      
+        <content type="html" xml:base="http://localhost:4000/tienda/ceviche-vegano/"><![CDATA[<p>Ceviche de soya texturizada con pasta de tomate, zumo de limón, cebolla, cilantro y mango. De aproximadamente 265g, en empaque de 12 onzas. Viene acompañado de nachos o galletas de soda.</p>]]></content>
+      
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>La Tienda Marciana</name>
+        
+        
+      </author>
+
+      
+        
+          <category term="Comida a base de plantas" />
+        
+      
+
+      
+
+      
+      
+        <summary type="html"><![CDATA[Ceviche de soya texturizada con pasta de tomate, zumo de limón, cebolla, cilantro y mango. De aproximadamente 265g, en empaque de 12 onzas. Viene acompañado de nachos o galletas de soda.]]></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      
+
       <title type="html">Collar relámpago</title>
       <link href="http://localhost:4000/tienda/collar-relampago/" rel="alternate" type="text/html" title="Collar relámpago" />
       <published>2026-08-23T00:00:00-05:00</published>
@@ -68,7 +110,7 @@
       <id>http://localhost:4000/tienda/collar-rel%C3%A1mpago</id>
       
       
-        <content type="html" xml:base="http://localhost:4000/tienda/collar-relampago/"><![CDATA[<p>Collar de acero inoxidable con un dije de calavera con huesos de aleación de zinc con acabado en plata antigua. el dije es de 1.5cm de alto por 1.4cm de ancho.</p>]]></content>
+        <content type="html" xml:base="http://localhost:4000/tienda/collar-relampago/"><![CDATA[<p>Collar de acero inoxidable con un dije de relámpago de acero inoxidable color <em>arco iris.</em> el dije es de 1.8cm de alto por .4cm de ancho.</p>]]></content>
       
 
       
@@ -322,7 +364,7 @@
       <id>http://localhost:4000/tienda/cd-rage-against-the-machine</id>
       
       
-        <content type="html" xml:base="http://localhost:4000/tienda/cd-rage-against-the-machine/"><![CDATA[<p>Álbum <em>Rage Against the Machine</em> en disco compacto usado. Reedición europea de 1992, el disco compacto reproduce sin saltos y el librito tiene un desgaste mínimo.</p>
+        <content type="html" xml:base="http://localhost:4000/tienda/cd-rage-against-the-machine/"><![CDATA[<p>Álbum <em>Rage Against the Machine,</em> de <em>Rage Against the Machine</em> en disco compacto usado. Reedición europea de 1992, el disco compacto reproduce sin saltos y el librito tiene un desgaste mínimo.</p>
 
 <p>Número 120 en la lista de los 150 mejores álbumes de la década de 1990 según la revista <a href="https://pitchfork.com/features/lists-and-guides/the-best-albums-of-the-1990s/" target="_blank">Pitchfork.</a></p>]]></content>
       
@@ -349,7 +391,7 @@
 
       
       
-        <summary type="html"><![CDATA[Álbum *Rage Against the Machine* en disco compacto usado. Reedición europea de 1992, el disco compacto reproduce sin saltos y el librito tiene un desgaste mínimo.]]></summary>
+        <summary type="html"><![CDATA[Álbum *Rage Against the Machine,* de *Rage Against the Machine* en disco compacto usado. Reedición europea de 1992, el disco compacto reproduce sin saltos y el librito tiene un desgaste mínimo.]]></summary>
       
 
       
@@ -401,58 +443,16 @@
     <entry>
       
 
-      <title type="html">Postal lobito</title>
-      <link href="http://localhost:4000/tienda/postal-expulsion/" rel="alternate" type="text/html" title="Postal lobito" />
-      <published>2026-08-15T00:00:00-05:00</published>
-      <updated>2026-08-15T00:00:00-05:00</updated>
-      <id>http://localhost:4000/tienda/postal-expulsion</id>
+      <title type="html">Estaré en La Revueltería, en la Pascasia del 27 al 30 de enero de 2027</title>
+      <link href="http://localhost:4000/novedades/revuelteria-enero/" rel="alternate" type="text/html" title="Estaré en La Revueltería, en la Pascasia del 27 al 30 de enero de 2027" />
+      <published>2026-07-30T00:00:00-05:00</published>
+      <updated>2026-07-30T00:00:00-05:00</updated>
+      <id>http://localhost:4000/novedades/noticia-revuelteria-enero</id>
       
       
-        <content type="html" xml:base="http://localhost:4000/tienda/postal-expulsion/"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <content type="html" xml:base="http://localhost:4000/novedades/revuelteria-enero/"><![CDATA[<p>Lorem ipsum dolor sit amet consectetur adipiscing elit <a href="https://lapascasia.org/" target="_blank" rel="noopener">La Pascasia</a>. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
 
-<p>Tempor ilust vivere est.</p>]]></content>
-      
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>La Tienda Marciana</name>
-        
-        
-      </author>
-
-      
-        
-          <category term="Obra gráfica" />
-        
-      
-
-      
-
-      
-      
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]]></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      
-
-      <title type="html">Brownie (vegano)</title>
-      <link href="http://localhost:4000/comida%20a%20base%20de%20plantas/2026/08/07/product-brownie.html" rel="alternate" type="text/html" title="Brownie (vegano)" />
-      <published>2026-08-07T00:00:00-05:00</published>
-      <updated>2026-08-07T00:00:00-05:00</updated>
-      <id>http://localhost:4000/comida%20a%20base%20de%20plantas/2026/08/07/product-brownie</id>
-      
-      
-        <content type="html" xml:base="http://localhost:4000/comida%20a%20base%20de%20plantas/2026/08/07/product-brownie.html"><![CDATA[]]></content>
+<p>In id cursus mi pretium tellus. <span class="icon icon-heart"></span></p>]]></content>
       
 
       
@@ -462,25 +462,45 @@
       
 
       <author>
-          <name>La Tienda Marciana</name>
+          <name>fluorescente.design</name>
         
         
       </author>
 
       
         
-          <category term="Comida a base de plantas" />
+      
+
+      
+        <category term="Tienda" />
+      
+        <category term="Obra gráfica" />
+      
+        <category term="Comida a base de plantas" />
+      
+        <category term="Accesorios" />
+      
+        <category term="Música" />
+      
+        <category term="Medellín" />
+      
+        <category term="Colombia" />
+      
+        <category term="Comida vegana" />
+      
+        <category term="Marciana" />
+      
+
+      
+      
+        <summary type="html"><![CDATA[La Tienda Marciana, Información legal.]]></summary>
+      
+
+      
+      
         
-      
-
-      
-
-      
-      
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]]></summary>
-      
-
-      
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/la-tienda-marciana-card.jpg" />
+        <media:content medium="image" url="http://localhost:4000/assets/images/la-tienda-marciana-card.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
       
     </entry>
   
