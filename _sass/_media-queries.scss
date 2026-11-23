@@ -558,6 +558,12 @@
     }
   }
 
+  .modal-product-info{
+    .offline.visible-xs.visible-sm{
+      display: none;
+    }
+  }
+
   .modal-product{
     .modal-product-content{
       max-width: 1148px !important;

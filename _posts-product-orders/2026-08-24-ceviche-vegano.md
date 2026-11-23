@@ -1,6 +1,6 @@
 ---
 layout: product-order
-title: "Collar relámpago"
-permalink: "/tienda/collar-relampago/pedido/" 
-src: "/assets/images/productos/collar-relampago-store-xs-01.jpg"                    
+title: "Ceviche (vegano)"
+permalink: "/tienda/ceviche-vegano/pedido/" 
+src: "/assets/images/productos/ceviche-vegano-store-xs-01.jpg"                    
 ---
