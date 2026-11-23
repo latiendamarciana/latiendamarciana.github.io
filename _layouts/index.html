@@ -16,8 +16,7 @@ layout: compress
       <div class="header-text">
         <h1 class="h-xxl">{{ page.header-heading }}</h1>
         {{ page.content | markdownify | replace: '<p>', '<p class="p-base">' }}
-        <a href="/ubicacion/" class="button button-l bright-inferno visible-xs hidden-sm hidden-lg">{{ page.header-button }}</a>
-        <a href="#modal-location" class="button button-l bright-inferno hidden-xs visible-sm visible-lg" uk-toggle>{{ page.header-button }}</a>
+        <a href="#modal-location" class="button button-l bright-inferno" uk-toggle>{{ page.header-button }}</a>
       </div>  
     </header>
 
