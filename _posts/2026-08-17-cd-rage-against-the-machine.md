@@ -76,4 +76,4 @@ product-images:
 
 Álbum debut homónimo de *Rage Against the Machine* en CD usado. Edición estadounidense original de 1992; el disco reproduce sin saltos y el librito tiene un desgaste mínimo.
 
-Número 120 en la lista de los 150 mejores álbumes de la década de 1990 según la revista [Pitchfork.](https://pitchfork.com/features/lists-and-guides/the-best-albums-of-the-1990s/){:target="_blank"}
+Número 120 en la lista de los 150 mejores álbumes de la década de 1990 según la revista [Pitchfork.](https://pitchfork.com/features/lists-and-guides/the-best-albums-of-the-1990s/){: .link target="_blank" rel="noopener"}

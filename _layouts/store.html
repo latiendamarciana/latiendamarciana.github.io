@@ -49,7 +49,7 @@ layout: compress
         <div class="full-width" uk-filter="target: .gallery-items; sel-active: .todos">
           <!-- Filter links -->
           <ul class="filter-nav">
-             <li class="todos" uk-filter-control="[data-tags='todos']"><a href="#">Todos {{ site.posts | size }}</a></li>
+             <li class="todos" uk-filter-control="[data-tags='todos']"><a href="#">Todos</a></li>
              {% for category in site.categories %}
              <li uk-filter-control="filter: [data-tags*='{{ category | first | replace: ' ', '-'}}']"><a href="#">{{ category | first }} {% assign posts_count = category | last | size %}</a></li>
              {% endfor %}
