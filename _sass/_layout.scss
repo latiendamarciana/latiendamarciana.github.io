@@ -222,7 +222,7 @@
     font-size: var(--h2);
   }
   .price{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   .offline.hidden-lg{
     display: none;
@@ -233,7 +233,7 @@
   .product-button-container{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     align-items: start;
     .link{
       position: relative;

@@ -35,6 +35,7 @@
         <h2>{{ post.title }}</h2>
         {{ post.content | markdownify | replace: '<p>', '<p class="p-s">' }}
         <aside>
+          {% if post.genders or post.colors or post.sizes %}
           <div class="product-options">
             {% if post.genders %}
             <div class="options-list">
@@ -67,6 +68,7 @@
             </div>
             {% endif %}
           </div>
+          {% endif %}
           {% if post.genders or post.colors or post.sizes %}
             <div class="note">
               <p class="p-s">Recuerda las opciones que escojas al hacer tu pedido.</p>

@@ -12,7 +12,7 @@ image-sm: "/assets/images/productos/collar-relampago-index-sm-01.jpg"
 image-lg: "/assets/images/productos/collar-relampago-index-lg-01.jpg"
 alt: "Collar de acero inoxidable con un dije de relámpago de acero inoxidable color *arco iris.*"
 title: "Collar relámpago"
-excerpt: "Collar de acero inoxidable con un dije de relámpago de acero inoxidable color *arco iris.* el dije es de 1.8cm de alto por .4cm de ancho."
+excerpt: "Collar de acero inoxidable con un dije de relámpago también de acero inoxidable, en color *arcoíris.* El dije mide 1,8 cm de alto por 0,4 cm de ancho."
 price: "12.000"
 modal: "collar-relampago"
 permalink: "/tienda/collar-relampago/"
@@ -67,4 +67,4 @@ product-images:
 
 ---
 
-Collar de acero inoxidable con un dije de relámpago de acero inoxidable color *arco iris.* el dije es de 1.8cm de alto por .4cm de ancho.
+Collar de acero inoxidable con un dije de relámpago también de acero inoxidable, en color *arcoíris.* El dije mide 1,8 cm de alto por 0,4 cm de ancho.

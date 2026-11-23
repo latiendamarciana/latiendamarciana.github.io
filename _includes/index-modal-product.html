@@ -36,6 +36,7 @@
         <h2>{{ post.title }}</h2>
         {{ post.content | markdownify | replace: '<p>', '<p class="p-s">' }}
         <aside>
+          {% if post.genders or post.colors or post.sizes %}
           <div class="product-options">
             {% if post.genders %}
             <div class="options-list">
@@ -68,6 +69,7 @@
             </div>
             {% endif %}
           </div>
+          {% endif %}
           {% if post.genders or post.colors or post.sizes %}
             <div class="note">
               <p class="p-s">Recuerda las opciones que escojas al hacer tu pedido.</p>
@@ -78,8 +80,7 @@
             {% if post.online == "true" %}
               <a class="button button-s" href="{{ post.order }}" >{{ site.start-shopping }}</a>
             {% else %}
-              <a class="link bold p-s offline visible-xs visible-sm hidden-lg" href="/ubicacion/">{{ site.offline-link }}</a>
-              <a class="link bold p-s offline hidden-xs hidden-sm visible-lg" href="#modal-location" uk-toggle>{{ site.offline-link }}</a>   
+              <a class="link bold p-s offline" href="#modal-location" uk-toggle>{{ site.offline-link }}</a>  
             {% endif %}
           </div>  
         </aside>               

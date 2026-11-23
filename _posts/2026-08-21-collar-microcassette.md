@@ -12,7 +12,7 @@ image-sm: "/assets/images/productos/collar-microcassette-index-sm-01.jpg"
 image-lg: "/assets/images/productos/collar-microcassette-index-lg-01.jpg"
 alt: "Collar de acero inoxidable con un microcassette como dije."
 title: "Collar microcassette"
-excerpt: "Collar de acero inoxidable con un microcassette como dije. el microcassette es de 5cm de alto por 3.3cm de ancho y .8cm de profundidad."
+excerpt: "Collar de acero inoxidable con un microcassette. El microcassette mide 5 cm de alto, 3,3 cm de ancho y 0,8 cm de profundidad."
 price: "20.000"
 modal: "collar-microcassette"
 permalink: "/tienda/collar-microcassette/"
@@ -67,4 +67,4 @@ product-images:
 
 ---
 
-Collar de acero inoxidable con un microcassette como dije. el microcassette es de 5cm de alto por 3.3cm de ancho y .8cm de profundidad.
+Collar de acero inoxidable con un microcassette. El microcassette mide 5 cm de alto, 3,3 cm de ancho y 0,8 cm de profundidad.

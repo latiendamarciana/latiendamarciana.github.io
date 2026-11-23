@@ -10,9 +10,9 @@ image-xxs: "/assets/images/productos/aretes-gato-blanco-index-xs-01.jpg"
 image-xs: "/assets/images/productos/aretes-gato-blanco-index-sm-01.jpg"
 image-sm: "/assets/images/productos/aretes-gato-blanco-index-sm-01.jpg"
 image-lg: "/assets/images/productos/aretes-gato-blanco-index-lg-01.jpg"
-alt: "Aretes colgantes de camafeo negro con gato blanco, de aleación de zinc y plástico."
+alt: "Aretes colgantes de camafeo negro con figura de gato blanco, de aleación de zinc y plástico."
 title: "Aretes colgantes gato blanco"
-excerpt: "Aretes colgantes de camafeo negro con gato blanco, de aleación de zinc y plástico. 5.8cm de alto por 2.1cm de ancho y 7g de peso."
+excerpt: "Aretes colgantes de camafeo negro con figura de gato blanco, elaborados en aleación de zinc y plástico. Cada arete mide 5,8 cm de alto por 2,1 cm de ancho y pesa 7 g."
 price: "15.000"
 modal: "aretes-gato-blanco"
 permalink: "/tienda/aretes-gato-blanco/"
@@ -21,7 +21,7 @@ slideshow-images:
   - image-xs: "/assets/images/productos/aretes-gato-blanco-index-sm-01.jpg"
     image-sm: "/assets/images/productos/aretes-gato-blanco-index-sm-01.jpg"
     image-lg: "/assets/images/productos/aretes-gato-blanco-slideshow-lg-01.jpg"
-    alt: "Aretes colgantes de camafeo negro con gato blanco, de aleación de zinc y plástico."
+    alt: "Aretes colgantes de camafeo negro con figura de gato blanco, de aleación de zinc y plástico."
   - image-xs: "/assets/images/productos/aretes-gato-blanco-index-sm-02.jpg"
     image-sm: "/assets/images/productos/aretes-gato-blanco-index-sm-02.jpg"
     image-lg: "/assets/images/productos/aretes-gato-blanco-slideshow-lg-02.jpg"
@@ -60,4 +60,4 @@ product-images:
 
 ---
 
-Aretes colgantes de camafeo negro con gato blanco, de aleación de zinc y plástico. 5.8cm de alto por 2.1cm de ancho y 7g de peso.
+Aretes colgantes de camafeo negro con figura de gato blanco, elaborados en aleación de zinc y plástico. Cada arete mide 5,8 cm de alto por 2,1 cm de ancho y pesa 7 g.

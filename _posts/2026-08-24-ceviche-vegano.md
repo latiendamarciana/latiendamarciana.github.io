@@ -12,7 +12,7 @@ image-sm: "/assets/images/productos/ceviche-vegano-index-sm-01.jpg"
 image-lg: "/assets/images/productos/ceviche-vegano-index-lg-01.jpg"
 alt: "Una porción de ceviche de soya texturizada sobre una mesa de madera, acompañado de nachos y galletas de soda."
 title: "Ceviche (vegano)"
-excerpt: "Ceviche de soya texturizada con pasta de tomate, zumo de limón, cebolla, cilantro y mango. De aproximadamente 265g, en empaque de 12 onzas. Viene acompañado de nachos o galletas de soda."
+excerpt: "Ceviche de soya texturizada con pasta de tomate, zumo de limón, cebolla, cilantro y mango. Contenido aproximado: 265 g, en envase de 12 onzas. Viene acompañado de nachos o galletas de soda."
 price: "12.000"
 modal: "ceviche-vegano"
 permalink: "/tienda/ceviche-vegano/"
@@ -81,4 +81,4 @@ product-images:
 
 ---
 
-Ceviche de soya texturizada con pasta de tomate, zumo de limón, cebolla, cilantro y mango. De aproximadamente 265g, en empaque de 12 onzas. Viene acompañado de nachos o galletas de soda.
+Ceviche de soya texturizada con pasta de tomate, zumo de limón, cebolla, cilantro y mango. Contenido aproximado: 265 g, en envase de 12 onzas. Viene acompañado de nachos o galletas de soda.

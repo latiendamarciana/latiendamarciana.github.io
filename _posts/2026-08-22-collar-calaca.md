@@ -12,7 +12,7 @@ image-sm: "/assets/images/productos/collar-calaca-con-huesos-index-sm-01.jpg"
 image-lg: "/assets/images/productos/collar-calaca-con-huesos-index-lg-01.jpg"
 alt: "Collar de acero inoxidable con un dije de calavera con huesos"
 title: "Collar calaca con huesos"
-excerpt: "Collar de acero inoxidable con un dije de calavera con huesos de aleación de zinc con acabado en plata antigua. El dije es de 1.5cm de alto por 1.4cm de ancho."
+excerpt: "Collar de acero inoxidable con un dije de calaca con huesos, de aleación de zinc con acabado en plata antigua. El dije mide 1,5 cm de alto por 1,4 cm de ancho."
 price: "12.000"
 modal: "collar-calaca-con-huesos"
 permalink: "/tienda/collar-calaca-con-huesos/"
@@ -67,4 +67,4 @@ product-images:
 
 ---
 
-Collar de acero inoxidable con un dije de calavera con huesos de aleación de zinc con acabado en plata antigua. El dije es de 1.5cm de alto por 1.4cm de ancho.
+Collar de acero inoxidable con un dije de calaca con huesos, de aleación de zinc con acabado en plata antigua. El dije mide 1,5 cm de alto por 1,4 cm de ancho.

@@ -12,7 +12,7 @@ image-sm: "/assets/images/productos/cd-rage-against-the-machine-index-sm-01.jpg"
 image-lg: "/assets/images/productos/cd-rage-against-the-machine-index-lg-01.jpg"
 alt: "Portada del CD Rage Against the Machine."
 title: "Rage Against the Machine / CD"
-excerpt: "Álbum *Rage Against the Machine,* de *Rage Against the Machine* en disco compacto usado. Reedición europea de 1992, el disco compacto reproduce sin saltos y el librito tiene un desgaste mínimo."
+excerpt: "Álbum debut homónimo de *Rage Against the Machine* en CD usado. Edición estadounidense original de 1992; el disco reproduce sin saltos y el librito tiene un desgaste mínimo."
 price: "25.000"
 modal: "rage-against-the-machine"
 permalink: "/tienda/cd-rage-against-the-machine/"
@@ -74,6 +74,6 @@ product-images:
 
 ---
 
-Álbum *Rage Against the Machine,* de *Rage Against the Machine* en disco compacto usado. Reedición europea de 1992, el disco compacto reproduce sin saltos y el librito tiene un desgaste mínimo.
+Álbum debut homónimo de *Rage Against the Machine* en CD usado. Edición estadounidense original de 1992; el disco reproduce sin saltos y el librito tiene un desgaste mínimo.
 
 Número 120 en la lista de los 150 mejores álbumes de la década de 1990 según la revista [Pitchfork.](https://pitchfork.com/features/lists-and-guides/the-best-albums-of-the-1990s/){:target="_blank"}

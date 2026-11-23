@@ -69,6 +69,7 @@ layout: compress
         <h1>{{ page.title }}</h1>
         {{ page.content | markdownify | replace: '<p>', '<p class="p-s">' }}
         <aside>
+          {% if page.genders or page.colors or page.sizes %}
           <div class="product-options">
             {% if page.genders %}
             <div class="options-list">
@@ -101,6 +102,7 @@ layout: compress
             </div>
             {% endif %}
           </div>
+          {% endif %}
           {% if page.genders or page.colors or page.sizes %}
             <div class="note">
               <p class="p-s">Recuerda las opciones que escojas al hacer tu pedido.</p>
