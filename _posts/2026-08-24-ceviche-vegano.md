@@ -81,4 +81,4 @@ product-images:
 
 ---
 
-Ceviche de soya texturizada con pasta de tomate, zumo de limón, cebolla, cilantro y mango. Contenido aproximado: 265 g, en envase de 12 onzas. Viene acompañado de nachos o galletas de soda.
+Ceviche de soya texturizada con pasta de tomate, zumo de limón, cebolla, cilantro y mango. Contenido aproximado: 250 g, en envase de 12 onzas. Viene acompañado de nachos o galletas de soda.
