@@ -16,4 +16,4 @@ keywords: "Tienda, Obra gráfica, Comida a base de plantas, Accesorios, Música,
 image: "assets/images/la-tienda-marciana-card.jpg"
 ---
 
-Una tienda en línea y un puesto donde puedes comer algo rico (a base de plantas), escuchar y comprar música, accesorios y obra gráfica. Estaré en el Carlos E. Restrepo de jueves a sábado en la noche, a partir del 26 de noviembre.
+Una tienda en línea y un puesto donde puedes comer algo rico (a base de plantas), escuchar y comprar música, accesorios y obra gráfica. Estaré en el Carlos E. Restrepo de jueves a sábado en la noche.
